@@ -1,0 +1,2125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Adrenaline Rush</string>
+	<string>Alfalfa Seeds Sprouted Raw</string>
+	<string>All-Bran Cereal</string>
+	<string>Almonds Slivered</string>
+	<string>Almonds Whole</string>
+	<string>Angelfood Cake From Mix</string>
+	<string>Apple Juice Canned</string>
+	<string>Apple Pie</string>
+	<string>Apples Dried Sulfured</string>
+	<string>Apples Raw Peeled Sliced</string>
+	<string>Apples Raw Unpeeled 2 Per Lb</string>
+	<string>Apples Raw Unpeeled 3 Per Lb</string>
+	<string>Applesauce Canned Sweetened</string>
+	<string>Applesauce Canned Unsweetened</string>
+	<string>Apricot Canned Heavy Syrup</string>
+	<string>Apricot Nectar No Added Vit C</string>
+	<string>Apricots Canned Juice Pack</string>
+	<string>Apricots Dried Cooked Unswtn</string>
+	<string>Apricots Dried Uncooked</string>
+	<string>Apricots Raw</string>
+	<string>Artichokes Globe Cooked Drn</string>
+	<string>Asparagus Canned Spears Nosalt</string>
+	<string>Asparagus Canned Spears W/Salt</string>
+	<string>Asparagus Ckd Frm Frz Dr Sper</string>
+	<string>Asparagus Ckd Frm Frz Drn Cut</string>
+	<string>Asparagus Ckd Frm Raw Dr Cut</string>
+	<string>Asparagus Ckd Frm Raw Dr Sper</string>
+	<string>Avocados California</string>
+	<string>Avocados Florida</string>
+	<string>Bagels Egg</string>
+	<string>Bagels Plain</string>
+	<string>Baking Powder Low Sodium</string>
+	<string>Baking Powder Sas Ca Po4</string>
+	<string>Baking Powder Sas Capo4+Caso4</string>
+	<string>Baking Powder Strght Phosphat</string>
+	<string>Baking Pwdr Biscuits From Mix</string>
+	<string>Baking Pwdr Biscuits Homerecpe</string>
+	<string>Baking Pwdr Biscuits Refrgdogh</string>
+	<string>Bamboo Shoots Canned Drained</string>
+	<string>Bananas</string>
+	<string>Bananas Sliced</string>
+	<string>Barbecue Sauce</string>
+	<string>Barley Pearled Light Uncookd</string>
+	<string>Bean Sprouts Mung Cookd Dran</string>
+	<string>Bean Sprouts Mung Raw</string>
+	<string>Bean With Bacon Soup Canned</string>
+	<string>Beans Dry Canned W/Frankfurter</string>
+	<string>Beans Dry Canned W/Pork+Swtsce</string>
+	<string>Beans Dry Canned W/Pork+Tomsce</string>
+	<string>Beef And Vegetable Stew Hm Rcp</string>
+	<string>Beef Broth Boulln Consm Cnnd</string>
+	<string>Beef Canned Corned</string>
+	<string>Beef Ckd Bttm Round Lean +Fat</string>
+	<string>Beef Ckd Bttm Round Lean Only</string>
+	<string>Beef Ckd Chuck Blade Lean+Fat</string>
+	<string>Beef Ckd Chuck Blade Leanonly</string>
+	<string>Beef Dried Chipped</string>
+	<string>Beef Gravy Canned</string>
+	<string>Beef Heart Braised</string>
+	<string>Beef Liver Fried</string>
+	<string>Beef Noodle Soup Canned</string>
+	<string>Beef Potpie Home Recipe</string>
+	<string>Beef Roast Eye O Rnd Lean</string>
+	<string>Beef Roast Rib Lean +Fat</string>
+	<string>Beef Roast Rib Lean Only</string>
+	<string>Beef Steak Sirloin Broil Lean</string>
+	<string>Beef Steak Sirloin Broil Ln+Ft</string>
+	<string>Beer Light</string>
+	<string>Beer Regular</string>
+	<string>Beet Greens Cooked Drained</string>
+	<string>Beets Canned Drained No Salt</string>
+	<string>Beets Canned Drained W/ Salt</string>
+	<string>Beets Cooked Drained Diced</string>
+	<string>Beets Cooked Drained Whole</string>
+	<string>Black Beans Dry Cooked Drand</string>
+	<string>Black-Eyed Peas Dry Cooked</string>
+	<string>Blackberries Raw</string>
+	<string>Blackeye Peas Immatr Raw Cked</string>
+	<string>Blackeye Peas Immtr Frzn Cked</string>
+	<string>Blue Cheese</string>
+	<string>Blue Cheese Salad Dressing</string>
+	<string>Blueberries Frozen Sweetened</string>
+	<string>Blueberries Raw</string>
+	<string>Blueberry Muffins From Com Mix</string>
+	<string>Blueberry Muffins Home Recipe</string>
+	<string>Blueberry Pie</string>
+	<string>Bologna</string>
+	<string>Boston Brown Bread W/Whtecrnm</string>
+	<string>Boston Brown Bread W/Yllwcrnml</string>
+	<string>Bouillon Dehydrtd Unprepared</string>
+	<string>Bran Flakes Kellogg's</string>
+	<string>Bran Muffins From Commerl Mix</string>
+	<string>Bran Muffins Home Recipe</string>
+	<string>Braunschweiger</string>
+	<string>Brazil Nuts</string>
+	<string>Bread Stuffing From Mx Drytype</string>
+	<string>Bread Stuffing From Mx Moist</string>
+	<string>Breadcrumbs Dry Grated</string>
+	<string>Broccoli Frzn Cooked Draned</string>
+	<string>Broccoli Raw</string>
+	<string>Broccoli Raw Cooked Drained</string>
+	<string>Brown And Serve Sausage Brwnd</string>
+	<string>Brown Gravy From Dry Mix</string>
+	<string>Brownies W/ Nuts Frm Home Recp</string>
+	<string>Brownies W/ Nuts Frstng Cmmrcl</string>
+	<string>Brussels Sprouts Frzn Cooked</string>
+	<string>Brussels Sprouts Raw Cooked</string>
+	<string>Buckwheat Flour Light Sifted</string>
+	<string>Bulgur Uncooked</string>
+	<string>Butter Salted</string>
+	<string>Butter Unsalted</string>
+	<string>Buttermilk Dried</string>
+	<string>Buttermilk Fluid</string>
+	<string>Cabbage Chinese Pak-Choi Ckd</string>
+	<string>Cabbage Chinese Pe-Tsai Raw</string>
+	<string>Cabbage Common Cooked Drned</string>
+	<string>Cabbage Common Raw</string>
+	<string>Cabbage Red Raw</string>
+	<string>Cabbage Savoy Raw</string>
+	<string>Cake Or Pastry Flour Sifted</string>
+	<string>Caloric Content of foods</string>
+	<string>Camembert Cheese</string>
+	<string>Cantaloup Raw</string>
+	<string>Cap'n Crunch Cereal</string>
+	<string>Caramels Plain Or Chocolate</string>
+	<string>Carob Flour</string>
+	<string>Carrot Cake Cremchese Frst Rec</string>
+	<string>Carrots Canned Drn W/ Salt</string>
+	<string>Carrots Canned Drnd W/O Salt</string>
+	<string>Carrots Cooked From Frozen</string>
+	<string>Carrots Cooked From Raw</string>
+	<string>Carrots Raw Grated</string>
+	<string>Carrots Raw Whole</string>
+	<string>Cashew Nuts Dry Roastd Salted</string>
+	<string>Cashew Nuts Dry Roastd Unsalt</string>
+	<string>Cashew Nuts Dry Roasted Saltd</string>
+	<string>Cashew Nuts Oil Roastd Salted</string>
+	<string>Cashew Nuts Oil Roastd Unsalt</string>
+	<string>Catsup</string>
+	<string>Cauliflower Cooked From Frozn</string>
+	<string>Cauliflower Cooked From Raw</string>
+	<string>Cauliflower Raw</string>
+	<string>Celery Pascal Type Raw Piece</string>
+	<string>Celery Pascal Type Raw Stalk</string>
+	<string>Celery Seed</string>
+	<string>Cheddar Cheese</string>
+	<string>Chedddar Cheese Shredded</string>
+	<string>Cheerios Cereal</string>
+	<string>Cheese Crackers Plain</string>
+	<string>Cheese Crackers Sandwch Peant</string>
+	<string>Cheese Sauce W/ Milk Frm Mix</string>
+	<string>Cheeseburger 4oz Patty</string>
+	<string>Cheeseburger Regular</string>
+	<string>Cheesecake</string>
+	<string>Cherries Sour Red Cannd Water</string>
+	<string>Cherries Sweet Raw</string>
+	<string>Cherry Pie</string>
+	<string>Chestnuts European Roasted</string>
+	<string>Chicken A La King Home Recipe</string>
+	<string>Chicken And Noodles Home Recp</string>
+	<string>Chicken Canned Boneless</string>
+	<string>Chicken Chow Mein Canned</string>
+	<string>Chicken Chow Mein Home Recipe</string>
+	<string>Chicken Frankfurter</string>
+	<string>Chicken Fried Batter Breast</string>
+	<string>Chicken Fried Batter Drmstck</string>
+	<string>Chicken Fried Flour Breast</string>
+	<string>Chicken Fried Flour Drmstck</string>
+	<string>Chicken Gravy Canned</string>
+	<string>Chicken Gravy From Dry Mix</string>
+	<string>Chicken Liver Cooked</string>
+	<string>Chicken Noodle Soup Canned</string>
+	<string>Chicken Noodle Soup Dehyd Prpd</string>
+	<string>Chicken Potpie Home Recipe</string>
+	<string>Chicken Rice Soup Canned</string>
+	<string>Chicken Roasted Breast</string>
+	<string>Chicken Roasted Drumstick</string>
+	<string>Chicken Roll Light</string>
+	<string>Chicken Stewed Light +Dark</string>
+	<string>Chickpeas Cooked Drained</string>
+	<string>Chili Con Carne W/ Beans Cnnd</string>
+	<string>Chili Powder</string>
+	<string>Chocolate Bitter Ot Baking</string>
+	<string>Chocolate Chip Cookies Commrcl</string>
+	<string>Chocolate Chip Cookies Hme Rcp</string>
+	<string>Chocolate Chip Cookies Refrig</string>
+	<string>Chocolate Milk Lowfat 1%</string>
+	<string>Chocolate Milk Lowfat 2%</string>
+	<string>Chocolate Milk Regular</string>
+	<string>Chop Suey W/ Beef +Pork Hmrcp</string>
+	<string>Cinnamon</string>
+	<string>Clam Chowder Manhattan Cannd</string>
+	<string>Clam Chowder New Eng W/ Milk</string>
+	<string>Clams Canned Drained</string>
+	<string>Clams Raw</string>
+	<string>Club Soda</string>
+	<string>Coca Pwdr W/O Nofat Drymlk Prd</string>
+	<string>Coca Pwdr W/O Nonfat Dry Milk</string>
+	<string>Cocoa Pwdr W/ Nofat Drmlk Prpd</string>
+	<string>Cocoa Pwdr With Nonfat Drymilk</string>
+	<string>Coconut Dried Sweetnd Shredd</string>
+	<string>Coconut Raw Piece</string>
+	<string>Coconut Raw Shredded</string>
+	<string>Coffee Brewed</string>
+	<string>Coffee Instant Prepared</string>
+	<string>Coffeecake Crumb From Mix</string>
+	<string>Cola Diet Aspartame Only</string>
+	<string>Cola Diet Asprtame +Sacchrn</string>
+	<string>Cola Diet Saccharin Only</string>
+	<string>Cola Regular</string>
+	<string>Collards Cooked From Frozen</string>
+	<string>Collards Cooked From Raw</string>
+	<string>Cooked Salad Drssing Home Rcp</string>
+	<string>Corn Chips</string>
+	<string>Corn Cnnd Crm Stl Whit No Sal</string>
+	<string>Corn Cnnd Crm Stl Whit W/Salt</string>
+	<string>Corn Cnnd Crm Stl Yllw No Sal</string>
+	<string>Corn Cnnd Crm Stl Yllw W/Salt</string>
+	<string>Corn Cnnd Whl Krnl Whte No Sal</string>
+	<string>Corn Cnnd Whl Krnl Whte W/Salt</string>
+	<string>Corn Cnnd Whl Krnl Yllw No Sal</string>
+	<string>Corn Cnnd Whl Krnl Yllw W/Salt</string>
+	<string>Corn Cooked Frm Frozn White</string>
+	<string>Corn Cooked Frm Frozn Yellow</string>
+	<string>Corn Cooked From Raw White</string>
+	<string>Corn Cooked From Raw Yellow</string>
+	<string>Corn Flakes Kellogg's</string>
+	<string>Corn Flakes Toasties</string>
+	<string>Corn Grits Ckd Reg Whte Nosalt</string>
+	<string>Corn Grits Ckd Reg Whte W/Salt</string>
+	<string>Corn Grits Ckd Reg Yllw Nosalt</string>
+	<string>Corn Grits Ckd Reg Yllw W/Salt</string>
+	<string>Corn Grits Cooked Instant</string>
+	<string>Corn Muffins From Commerl Mix</string>
+	<string>Corn Muffins Home Recipe</string>
+	<string>Corn Oil</string>
+	<string>Cornmeal Bolted Dry Form</string>
+	<string>Cornmeal Degermed Enrched Cook</string>
+	<string>Cornmeal Degermed Enriched Dry</string>
+	<string>Cornmeal Whole-Grnd Unbolt Dry</string>
+	<string>Cottage Cheese Cremd Lrge Curd</string>
+	<string>Cottage Cheese Cremd Smll Curd</string>
+	<string>Cottage Cheese Cremd W/Fruit</string>
+	<string>Cottage Cheese Lowfat 2%</string>
+	<string>Cottage Cheese Uncreamed</string>
+	<string>Cr Of Chicken Soup W/ H20 Cnnd</string>
+	<string>Cr Of Chicken Soup W/ Mlk Cnnd</string>
+	<string>Cr Of Mushrom Soup W/ H2o Cnnd</string>
+	<string>Cr Of Mushrom Soup W/ Mlk Cnnd</string>
+	<string>Crabmeat Canned</string>
+	<string>Cracked-Wheat Bread</string>
+	<string>Cracked-Wheat Bread Toasted</string>
+	<string>Cranberry Juice Cocktal W/Vitc</string>
+	<string>Cranberry Sauce Canned Swtnd</string>
+	<string>Cream Cheese</string>
+	<string>Cream Of Wheat Ckd Mix N Eat</string>
+	<string>Creme Pie</string>
+	<string>Crm Wheat Ckd Quick No Salt</string>
+	<string>Crm Wheat Ckd Quick W/  Salt</string>
+	<string>Crm Wheat Ckd Reg Inst No Salt</string>
+	<string>Crm Wheat Ckd Reg Inst W/Salt</string>
+	<string>Croissants</string>
+	<string>Cucumber W/ Peel</string>
+	<string>Curry Powder</string>
+	<string>Custard Baked</string>
+	<string>Custard Pie</string>
+	<string>Dandelion Greens Cooked Drnd</string>
+	<string>Danish Pastry Fruit</string>
+	<string>Danish Pastry Plain No Nuts</string>
+	<string>Dates</string>
+	<string>Dates Chopped</string>
+	<string>Devil's Food Cake Chocfrst Fmx</string>
+	<string>Doughnuts Cake Type Plain</string>
+	<string>Doughnuts Yeast-Leavend Glzed</string>
+	<string>Duck Roasted Flesh Only</string>
+	<string>Eggnog</string>
+	<string>Eggplant Cooked Steamed</string>
+	<string>Eggs Cooked Fried</string>
+	<string>Eggs Cooked Hard-Cooked</string>
+	<string>Eggs Cooked Poached</string>
+	<string>Eggs Cooked Scrambled/Omelet</string>
+	<string>Eggs Raw White</string>
+	<string>Eggs Raw Whole</string>
+	<string>Eggs Raw Yolk</string>
+	<string>Enchilada</string>
+	<string>Endive Curly Raw</string>
+	<string>Eng Muffin Egg Cheese Bacon</string>
+	<string>English Muffins Plain</string>
+	<string>English Muffins Plain Toastd</string>
+	<string>Evaporated Milk Skim Canned</string>
+	<string>Evaporated Milk Whole Canned</string>
+	<string>F100 Multipower</string>
+	<string>F80 Ironman</string>
+	<string>Fats Cooking/Vegetbl Shorteng</string>
+	<string>Feta Cheese</string>
+	<string>Fig Bars</string>
+	<string>Figs Dried</string>
+	<string>Filberts (Hazelnuts) Chopped</string>
+	<string>Fish Sandwich Lge W/O Cheese</string>
+	<string>Fish Sandwich Reg W/ Cheese</string>
+	<string>Fish Sticks Frozen Reheated</string>
+	<string>Flounder Or Sole Baked Buttr</string>
+	<string>Flounder Or Sole Baked Margrn</string>
+	<string>Flounder Or Sole Baked W/Ofat</string>
+	<string>Fondant Uncoated</string>
+	<string>Frankfurter Cooked</string>
+	<string>French Bread</string>
+	<string>French Or Vienna Bread</string>
+	<string>French Salad Dressing Localor</string>
+	<string>French Salad Dressing Regular</string>
+	<string>French Toast Home Recipe</string>
+	<string>Fried Pie Apple</string>
+	<string>Fried Pie Cherry</string>
+	<string>Froot Loops Cereal</string>
+	<string>Fruit Cocktail Cnnd Heavysyrup</string>
+	<string>Fruit Cocktail Cnnd Juice Pack</string>
+	<string>Fruit Punch Drink Canned</string>
+	<string>Fruitcake Dark From recipe</string>
+	<string>Fudge Chocolate Plain</string>
+	<string>Garlic Powder</string>
+	<string>Gelatin Dessert Prepared</string>
+	<string>Gelatin Dry</string>
+	<string>Gin Rum Vodka Whisky 80-Proof</string>
+	<string>Gin Rum Vodka Whisky 86-Proof</string>
+	<string>Gin Rum Vodka Whisky 90-Proof</string>
+	<string>Ginger Ale</string>
+	<string>Gingerbread Cake From Mix</string>
+	<string>Golden Grahams Cereal</string>
+	<string>Graham Cracker Plain</string>
+	<string>Grape Drink Canned</string>
+	<string>Grape Juice Canned</string>
+	<string>Grape Soda</string>
+	<string>Grape-Nuts Cereal</string>
+	<string>Grapefrt Jce Frzn Cncn Unswten</string>
+	<string>Grapefrt Jce Frzn Dltd Unswten</string>
+	<string>Grapefruit Canned Syrup Pack</string>
+	<string>Grapefruit Juice Canned Swtnd</string>
+	<string>Grapefruit Juice Canned Unswt</string>
+	<string>Grapefruit Juice Raw</string>
+	<string>Grapefruit Raw Pink</string>
+	<string>Grapefruit Raw White</string>
+	<string>Grapejce Frzn Concen Swtnd W/C</string>
+	<string>Grapejce Frzn Dilutd Swtnd W/C</string>
+	<string>Grapes European Raw Thompsn</string>
+	<string>Grapes European Raw Tokay</string>
+	<string>Gravy And Turkey Frozen</string>
+	<string>Great Northn Beans Dry Ckd Drn</string>
+	<string>Ground Beef Broiled Lean</string>
+	<string>Ground Beef Broiled Regular</string>
+	<string>Gum Drops</string>
+	<string>Haddock Breaded Fried</string>
+	<string>Half And Half Cream</string>
+	<string>Halibut Broiled Butter Lemju</string>
+	<string>Hamburger 4oz Patty</string>
+	<string>Hamburger Regular</string>
+	<string>Hard Candy</string>
+	<string>Herring Pickled</string>
+	<string>Hollandaise Sce W/ H2o Frm Mx</string>
+	<string>Honey</string>
+	<string>Honey Nut Cheerios Cereal</string>
+	<string>Honeydew Melon Raw</string>
+	<string>Ice Cream Vanlla Regulr 11%</string>
+	<string>Ice Cream Vanlla Rich 16% Ft</string>
+	<string>Ice Cream Vanlla Soft Serve</string>
+	<string>Ice Milk Vanilla 4% Fat</string>
+	<string>Ice Milk Vanilla Softserv 3%</string>
+	<string>Imitation Creamers Liquid Frz</string>
+	<string>Imitation Creamers Powdered</string>
+	<string>Imitation Whipped Topping Frzn</string>
+	<string>Imitatn Sour Dressing</string>
+	<string>Imitatn Whipd Toping Pressrzd</string>
+	<string>Imitatn Whipd Toping Pwdrd Prp</string>
+	<string>Italian Bread</string>
+	<string>Italian Salad Dressing Localor</string>
+	<string>Italian Salad Dressing Regular</string>
+	<string>Jams And Preserves</string>
+	<string>Jellies</string>
+	<string>Jelly Beans</string>
+	<string>Jerusalem-Artichoke Raw</string>
+	<string>Kale Cooked From Frozen</string>
+	<string>Kale Cooked From Raw</string>
+	<string>Kiwifruit Raw</string>
+	<string>Kohlrabi Cooked Drained</string>
+	<string>Lamb Chops Arm Braised Lean</string>
+	<string>Lamb Chops Arm Braised Lean+Ft</string>
+	<string>Lamb Chops Loin Broil Lean</string>
+	<string>Lamb Chops Loin Broil Lean+Fat</string>
+	<string>Lamb Leg Roasted Lean +Fat</string>
+	<string>Lamb Leg Roasted Lean Only</string>
+	<string>Lamb Rib Roasted Lean +Fat</string>
+	<string>Lamb Rib Roasted Lean Only</string>
+	<string>Lard</string>
+	<string>Lemon Juice Canned</string>
+	<string>Lemon Juice Frzn Single-Strngh</string>
+	<string>Lemon Juice Raw</string>
+	<string>Lemon Meringue Pie</string>
+	<string>Lemon-Lime Soda</string>
+	<string>Lemonade Concen Frzen Diluted</string>
+	<string>Lemonade Concentrate Frz Undil</string>
+	<string>Lemons Raw</string>
+	<string>Lentils Dry Cooked</string>
+	<string>Lettuce Butterhead Raw Head</string>
+	<string>Lettuce Butterhead Raw Leave</string>
+	<string>Lettuce Crisphead Raw Head</string>
+	<string>Lettuce Crisphead Raw Pieces</string>
+	<string>Lettuce Crisphead Raw Wedge</string>
+	<string>Lettuce Looseleaf</string>
+	<string>Light Coffee Or Table Cream</string>
+	<string>Lima Beans Baby Frzn Cked Drn</string>
+	<string>Lima Beans Dry Cooked Draned</string>
+	<string>Lima Beans Thick Seed Frzn Ckd</string>
+	<string>Lime Juice Canned</string>
+	<string>Lime Juice Raw</string>
+	<string>Limeade Concen Frozen Diluted</string>
+	<string>Limeade Concentrate Frzn Undil</string>
+	<string>Lucky Charms Cereal</string>
+	<string>Macadamia Nuts Oilrstd Salted</string>
+	<string>Macadamia Nuts Oilrstd Unsalt</string>
+	<string>Macaroni And Cheese Canned</string>
+	<string>Macaroni And Cheese Home Rcpe</string>
+	<string>Macaroni Cooked Firm</string>
+	<string>Macaroni Cooked Tender Cold</string>
+	<string>Macaroni Cooked Tender Hot</string>
+	<string>Malt-O-Meal W/O Salt</string>
+	<string>Malt-O-Meal With Salt</string>
+	<string>Malted Milk Chocolate Powder</string>
+	<string>Malted Milk Chocolate Pwdrppd</string>
+	<string>Malted Milk Natural Powder</string>
+	<string>Malted Milk Natural Pwdr Pprd</string>
+	<string>Mangos Raw</string>
+	<string>Margarine Imitation 40% Fat</string>
+	<string>Margarine Regulr Hard 80% Fat</string>
+	<string>Margarine Regulr Soft 80% Fat</string>
+	<string>Margarine Spread Hard 60% Fat</string>
+	<string>Margarine Spread Soft 60% Fat</string>
+	<string>Marshmallows</string>
+	<string>Mayonnaise Imitation</string>
+	<string>Mayonnaise Regular</string>
+	<string>Mayonnaise Type Salad Dressing</string>
+	<string>Melba Toast Plain</string>
+	<string>Milk Chocolate Candy Plain</string>
+	<string>Milk Chocolate Candy W/ Almond</string>
+	<string>Milk Chocolate Candy W/ Penuts</string>
+	<string>Milk Chocolate Candy W/ Rice C</string>
+	<string>Milk Lofat 1% Added Solids</string>
+	<string>Milk Lofat 1% No Addedsolid</string>
+	<string>Milk Lofat 2% Added Solids</string>
+	<string>Milk Lofat 2% No Addedsolid</string>
+	<string>Milk Skim Added Milk Solids</string>
+	<string>Milk Skim No Added Milksolid</string>
+	<string>Milk Whole 3.3% Fat</string>
+	<string>Minestrone Soup Canned</string>
+	<string>Miso</string>
+	<string>Mixed Grain Bread</string>
+	<string>Mixed Grain Bread Toasted</string>
+	<string>Mixed Nuts W/ Peants Dry Saltd</string>
+	<string>Mixed Nuts W/ Peants Dry Unslt</string>
+	<string>Mixed Nuts W/ Peants Oil Saltd</string>
+	<string>Mixed Nuts W/ Peants Oil Unslt</string>
+	<string>Molasses Cane Blackstrap</string>
+	<string>Mozzarella Cheese Whole Milk</string>
+	<string>Mozzarella Chese Skim Lomoist</string>
+	<string>Muenster Cheese</string>
+	<string>Mushroom Gravy Canned</string>
+	<string>Mushrooms Canned Drnd W/Salt</string>
+	<string>Mushrooms Cooked Drained</string>
+	<string>Mushrooms Raw</string>
+	<string>Mustard Greens Cooked Draned</string>
+	<string>Mustard Prepared Yellow</string>
+	<string>Nature Valley Granola Cereal</string>
+	<string>Nectarines Raw</string>
+	<string>Nonfat Dry Milk Instantized</string>
+	<string>Noodles Chow Mein Canned</string>
+	<string>Noodles Egg Cooked</string>
+	<string>Oatmeal Bread</string>
+	<string>Oatmeal Bread Toasted</string>
+	<string>Oatmeal Ckd Instnt Flvrd Fortf</string>
+	<string>Oatmeal Ckd Instnt Plain Fortf</string>
+	<string>Oatmeal Ckd Rg Qck Inst W/Osal</string>
+	<string>Oatmeal Ckd Rg Qck Inst W/Salt</string>
+	<string>Oatmeal W/ Raisins Cookies</string>
+	<string>Ocean Perch Breaded Fried</string>
+	<string>Okra Pods Cooked</string>
+	<string>Olive Oil</string>
+	<string>Olives Canned Green</string>
+	<string>Olives Canned Ripe Mission</string>
+	<string>Onion Powder</string>
+	<string>Onion Rings Breaded Frzn Prpd</string>
+	<string>Onion Soup Dehydratd Prepred</string>
+	<string>Onion Soup Dehydrtd Unprpred</string>
+	<string>Onions Raw Chopped</string>
+	<string>Onions Raw Cooked Drained</string>
+	<string>Onions Raw Sliced</string>
+	<string>Onions Spring Raw</string>
+	<string>Orange +Grapefruit Juce Cannd</string>
+	<string>Orange Juice Canned</string>
+	<string>Orange Juice Chilled</string>
+	<string>Orange Juice Frozen Concentrte</string>
+	<string>Orange Juice Frzn Cncn Diluted</string>
+	<string>Orange Juice Raw</string>
+	<string>Orange Soda</string>
+	<string>Oranges Raw</string>
+	<string>Oranges Raw Sections</string>
+	<string>Oregano</string>
+	<string>Oysters Breaded Fried</string>
+	<string>Oysters Raw</string>
+	<string>Pancakes Buckwheat From Mix</string>
+	<string>Pancakes Plain From Mix</string>
+	<string>Pancakes Plain Home Recipe</string>
+	<string>Papayas Raw</string>
+	<string>Paprika</string>
+	<string>Parmesan Cheese Grated</string>
+	<string>Parsley Freeze-Dried</string>
+	<string>Parsley Raw</string>
+	<string>Parsnips Cooked Drained</string>
+	<string>Pasterzd Proces Cheese Americn</string>
+	<string>Pasterzd Proces Cheese Swiss</string>
+	<string>Pasterzd Proces Chese Food Amr</string>
+	<string>Pasterzd Proces Chese Spred Am</string>
+	<string>Pea Beans Dry Cooked Drained</string>
+	<string>Pea Green Soup Canned</string>
+	<string>Peach Pie</string>
+	<string>Peaches Canned Heavy Syrup</string>
+	<string>Peaches Canned Juice Pack</string>
+	<string>Peaches Dried</string>
+	<string>Peaches Dried Cooked Unswetnd</string>
+	<string>Peaches Frozen Swetned W/Vitc</string>
+	<string>Peaches Raw</string>
+	<string>Peaches Raw Sliced</string>
+	<string>Peanut Butter</string>
+	<string>Peanut Butter Cookie Home Recp</string>
+	<string>Peanut Oil</string>
+	<string>Peanuts Oil Roasted Salted</string>
+	<string>Peanuts Oil Roasted Unsalted</string>
+	<string>Pears Canned Heavy Syrup</string>
+	<string>Pears Canned Juice Pack</string>
+	<string>Pears Raw Bartlett</string>
+	<string>Pears Raw Bosc</string>
+	<string>Pears Raw D'anjou</string>
+	<string>Peas Edible Pod Cooked Drned</string>
+	<string>Peas Green Cnnd Drnd W/ Salt</string>
+	<string>Peas Green Cnnd Drnd W/O Salt</string>
+	<string>Peas Grn Frozen Cooked Draned</string>
+	<string>Peas Split Dry Cooked</string>
+	<string>Pecan Pie</string>
+	<string>Pecans Halves</string>
+	<string>Pepper Black</string>
+	<string>Pepper-Type Soda</string>
+	<string>Peppers Hot Chili Raw Green</string>
+	<string>Peppers Hot Chili Raw Red</string>
+	<string>Peppers Sweet Cooked Green</string>
+	<string>Peppers Sweet Cooked Red</string>
+	<string>Peppers Sweet Raw Green</string>
+	<string>Peppers Sweet Raw Red</string>
+	<string>Pickles Cucumber Dill</string>
+	<string>Pickles Cucumber Fresh Pack</string>
+	<string>Pickles Cucumber Swt Gherkin</string>
+	<string>Piecrust From Home Recipe</string>
+	<string>Piecrust From Mix</string>
+	<string>Pine Nuts</string>
+	<string>Pineapple Canned Heavy Syrup</string>
+	<string>Pineapple Canned Juice Pack</string>
+	<string>Pineapple Juice Canned Unswtn</string>
+	<string>Pineapple Raw Diced</string>
+	<string>Pineapple-Grapefruit Juicedrnk</string>
+	<string>Pinto Beans Dry Cooked Drained</string>
+	<string>Pistachio Nuts</string>
+	<string>Pita Bread</string>
+	<string>Pizza Cheese</string>
+	<string>Plantains Cooked</string>
+	<string>Plantains Raw</string>
+	<string>Plums Canned Heavy Syrup</string>
+	<string>Plums Canned Juice Pack</string>
+	<string>Plums Raw 1-1/2-In Diam</string>
+	<string>Plums Raw 2-1/8-In Diam</string>
+	<string>Popcorn Air-Popped Unsalted</string>
+	<string>Popcorn Popped Veg Oil Saltd</string>
+	<string>Popcorn Sugar Syrup Coated</string>
+	<string>Popsicle</string>
+	<string>Pork Chop Loin Broil Lean</string>
+	<string>Pork Chop Loin Broil Len+Ft</string>
+	<string>Pork Chop Loin Panfry Lean</string>
+	<string>Pork Chop Loin Panfry Lean+Ft</string>
+	<string>Pork Cured Bacon Canadn Cked</string>
+	<string>Pork Cured Bacon Regul Cked</string>
+	<string>Pork Cured Ham Canned Roast</string>
+	<string>Pork Cured Ham Rosted Lean</string>
+	<string>Pork Cured Ham Rosted Ln+Ft</string>
+	<string>Pork Fresh Ham Roastd Lean</string>
+	<string>Pork Fresh Ham Roastd Lean+Ft</string>
+	<string>Pork Fresh Rib Roastd Lean</string>
+	<string>Pork Fresh Rib Roastd Lean+Ft</string>
+	<string>Pork Link Cooked</string>
+	<string>Pork Luncheon Meat Canned</string>
+	<string>Pork Luncheon Meat Choppd Ham</string>
+	<string>Pork Luncheon Meat Ckd Ham Ln</string>
+	<string>Pork Luncheon Meat Ckd Ham Rg</string>
+	<string>Pork Shoulder Braisd Lean</string>
+	<string>Pork Shoulder Braisd Lean+Fat</string>
+	<string>Potato Chips</string>
+	<string>Potato Salad Made W/ Mayonnais</string>
+	<string>Potatoes Au Gratin From Mix</string>
+	<string>Potatoes Au Gratin Home Recp</string>
+	<string>Potatoes Baked Flesh Only</string>
+	<string>Potatoes Baked With Skin</string>
+	<string>Potatoes Boiled Peeled After</string>
+	<string>Potatoes Boiled Peeled Befor</string>
+	<string>Potatoes French-Frd Frzn Fried</string>
+	<string>Potatoes French-Frd Frzn Oven</string>
+	<string>Potatoes Hashed Brown Fr Frzn</string>
+	<string>Potatoes Mashed Frm Dehydrted</string>
+	<string>Potatoes Mashed Recpe Mlk+Mar</string>
+	<string>Potatoes Mashed Recpe W/ Milk</string>
+	<string>Potatoes Scalloped From Mix</string>
+	<string>Potatoes Scalloped Home Recp</string>
+	<string>Pound Cake Commercial</string>
+	<string>Pound Cake From Home Recipe</string>
+	<string>Powerade</string>
+	<string>Pretzels Stick</string>
+	<string>Pretzels Twisted Dutch</string>
+	<string>Pretzels Twisted Thin</string>
+	<string>Product 19 Cereal</string>
+	<string>Provolone Cheese</string>
+	<string>Prune Juice Canned</string>
+	<string>Prunes Dried</string>
+	<string>Prunes Dried Cooked Unswtned</string>
+	<string>Pudding Choc Cooked From Mix</string>
+	<string>Pudding Choc Instant Fr Mix</string>
+	<string>Pudding Chocolate Canned</string>
+	<string>Pudding Rice From Mix</string>
+	<string>Pudding Tapioca Canned</string>
+	<string>Pudding Tapioca From Mix</string>
+	<string>Pudding Vanilla Canned</string>
+	<string>Pudding Vnlla Cooked From Mix</string>
+	<string>Pudding Vnlla Instant Frm Mix</string>
+	<string>Pumpernickel Bread</string>
+	<string>Pumpernickel Bread Toasted</string>
+	<string>Pumpkin And Squash Kernels</string>
+	<string>Pumpkin Canned</string>
+	<string>Pumpkin Cooked From Raw</string>
+	<string>Pumpkin Pie</string>
+	<string>Quiche Lorraine</string>
+	<string>Radishes Raw</string>
+	<string>Raisin Bran Kellogg's</string>
+	<string>Raisin Bran Post</string>
+	<string>Raisin Bread</string>
+	<string>Raisin Bread Toasted</string>
+	<string>Raisins</string>
+	<string>Raspberries Frozen Sweetened</string>
+	<string>Raspberries Raw</string>
+	<string>Red Kidney Beans Dry Canned</string>
+	<string>Refried Beans Canned</string>
+	<string>Relish Sweet</string>
+	<string>Rhubarb Cooked Added Sugar</string>
+	<string>Rice Brown Cooked</string>
+	<string>Rice Krispies Cereal</string>
+	<string>Rice White Cooked</string>
+	<string>Rice White Instant Cooked</string>
+	<string>Rice White Parboiled Cooked</string>
+	<string>Rice White Parboiled Raw</string>
+	<string>Rice White Raw</string>
+	<string>Ricotta Cheese Part Skim Milk</string>
+	<string>Ricotta Cheese Whole Milk</string>
+	<string>Roast Beef Sandwich</string>
+	<string>Rolls Dinner Commercial</string>
+	<string>Rolls Dinner Home Recipe</string>
+	<string>Rolls Frankfurter +Hamburger</string>
+	<string>Rolls Hard</string>
+	<string>Rolls Hoagie Or Submarine</string>
+	<string>Root Beer</string>
+	<string>Rye Bread Light</string>
+	<string>Rye Bread Light Toasted</string>
+	<string>Rye Wafers Whole-Grain</string>
+	<string>Safflower Oil</string>
+	<string>Salami Cooked Type</string>
+	<string>Salami Dry Type</string>
+	<string>Salmon Baked Red</string>
+	<string>Salmon Canned Pink W/ Bones</string>
+	<string>Salmon Smoked</string>
+	<string>Salt</string>
+	<string>Saltines</string>
+	<string>Sandwich Spread Pork Beef</string>
+	<string>Sandwich Type Cookie</string>
+	<string>Sardines Atlntc Cnned Oil Drn</string>
+	<string>Sauerkraut Canned</string>
+	<string>Scallops Breaded Frzn Reheat</string>
+	<string>Seaweed Kelp Raw</string>
+	<string>Seaweed Spirulina Dried</string>
+	<string>Self-Rising Flour Unsifted</string>
+	<string>Semisweet Chocolate</string>
+	<string>Sesame Seeds</string>
+	<string>Shakes Thick Chocolate</string>
+	<string>Shakes Thick Vanilla</string>
+	<string>Sheetcake W/ Whfrstng recipe</string>
+	<string>Sheetcake W/O Frstng recipe</string>
+	<string>Sherbet 2% Fat</string>
+	<string>Shortbread Cookie Commercial</string>
+	<string>Shortbread Cookie Home Recipe</string>
+	<string>Shredded Wheat Cereal</string>
+	<string>Shrimp Canned Drained</string>
+	<string>Shrimp French Fried</string>
+	<string>Snack Cakes Devils Food Cremfl</string>
+	<string>Snack Cakes Sponge Creme Fllng</string>
+	<string>Snack Type Crackers</string>
+	<string>Snap Bean Cnnd Drnd Green Salt</string>
+	<string>Snap Bean Cnnd Drnd Grn Nosalt</string>
+	<string>Snap Bean Cnnd Drnd Yllw Nosal</string>
+	<string>Snap Bean Cnnd Drnd Yllw Salt</string>
+	<string>Snap Bean Frz Ckd Drnd Green</string>
+	<string>Snap Bean Frz Ckd Drnd Yellow</string>
+	<string>Snap Bean Raw Ckd Drnd Green</string>
+	<string>Snap Bean Raw Ckd Drnd Yellow</string>
+	<string>Sour Cream</string>
+	<string>Soy Sauce</string>
+	<string>Soybean Oil Hydrogenated</string>
+	<string>Soybean-Cottonseed Oil Hydrgn</string>
+	<string>Soybeans Dry Cooked Drained</string>
+	<string>Spaghetti Cooked Firm</string>
+	<string>Spaghetti Cooked Tender</string>
+	<string>Spaghetti Meatballs Tomsa Hmrp</string>
+	<string>Spaghetti Meatballs Tomsac Cnd</string>
+	<string>Spaghetti Tom Sauce Chee Hmrp</string>
+	<string>Spaghetti Tom Sauce Chees Cnd</string>
+	<string>Special K Cereal</string>
+	<string>Spinach Canned Drnd W/ Salt</string>
+	<string>Spinach Canned Drnd W/O Salt</string>
+	<string>Spinach Cooked Fr Frzen Drnd</string>
+	<string>Spinach Cooked From Raw Drnd</string>
+	<string>Spinach Raw</string>
+	<string>Spinach Souffle</string>
+	<string>Squash Summer Cooked Draind</string>
+	<string>Squash Winter Baked</string>
+	<string>Strawberries Frozen Sweetend</string>
+	<string>Strawberries Raw</string>
+	<string>Sugar Brown Pressed Down</string>
+	<string>Sugar Cookie From Refrig Dogh</string>
+	<string>Sugar Frosted Flakes Kellogg</string>
+	<string>Sugar Powdered Sifted</string>
+	<string>Sugar Smacks Cereal</string>
+	<string>Sugar White Granulated</string>
+	<string>Sunflower Oil</string>
+	<string>Sunflower Seeds</string>
+	<string>Super Sugar Crisp Cereal</string>
+	<string>Sweet (Dark) Chocolate</string>
+	<string>Sweetened Condensed Milk Cnnd</string>
+	<string>Sweetpotatoes Baked Peeled</string>
+	<string>Sweetpotatoes Boiled W/O Peel</string>
+	<string>Sweetpotatoes Candied</string>
+	<string>Sweetpotatoes Canned Mashed</string>
+	<string>Sweetpotatoes Cnned Vac Pack</string>
+	<string>Swiss Cheese</string>
+	<string>Syrup Chocolate Flavored Thin</string>
+	<string>Syrup Chocolate Flvred Fudge</string>
+	<string>Table Syrup (Corn And Maple)</string>
+	<string>Taco</string>
+	<string>Tahini</string>
+	<string>Tangerine Juice Canned Swtned</string>
+	<string>Tangerines Canned Light Syrp</string>
+	<string>Tangerines Raw</string>
+	<string>Tartar Sauce</string>
+	<string>Tea Brewed</string>
+	<string>Tea Instant Prepard Sweetened</string>
+	<string>Tea Instant Preprd Unsweetend</string>
+	<string>Toaster Pastries</string>
+	<string>Tofu</string>
+	<string>Tomato Juice Canned W/O Salt</string>
+	<string>Tomato Juice Canned With Salt</string>
+	<string>Tomato Paste Canned W/O Salt</string>
+	<string>Tomato Paste Canned With Salt</string>
+	<string>Tomato Puree Canned W/O Salt</string>
+	<string>Tomato Puree Canned With Salt</string>
+	<string>Tomato Sauce Canned With Salt</string>
+	<string>Tomato Soup W/ Water Canned</string>
+	<string>Tomato Soup With Milk Canned</string>
+	<string>Tomato Veg Soup Dehyd Prepred</string>
+	<string>Tomatoes Canned S+L W/ Salt</string>
+	<string>Tomatoes Canned S+L W/O Salt</string>
+	<string>Tomatoes Raw</string>
+	<string>Tortillas Corn</string>
+	<string>Total Cereal</string>
+	<string>Trix Cereal</string>
+	<string>Trout Broiled W/ Buttr Lemju</string>
+	<string>Tuna Cannd Drnd Oil Chk Lght</string>
+	<string>Tuna Cannd Drnd Watr White</string>
+	<string>Tuna Salad</string>
+	<string>Turkey Ham Cured Turkey Thigh</string>
+	<string>Turkey Loaf Breast Meat W/ C</string>
+	<string>Turkey Loaf Breast Meat W/O C</string>
+	<string>Turkey Patties Brd Battd Frid</string>
+	<string>Turkey Roast Frzn Lght+Drk Ck</string>
+	<string>Turkey Roasted Dark Meat</string>
+	<string>Turkey Roasted Light +Dark</string>
+	<string>Turkey Roasted Light Meat</string>
+	<string>Turnip Greens Cked Frm Frozen</string>
+	<string>Turnip Greens Cooked From Raw</string>
+	<string>Turnips Cooked Diced</string>
+	<string>Vanilla Wafers</string>
+	<string>Veal Cutlet Med Fat Brsd Brld</string>
+	<string>Veal Rib Med Fat Roasted</string>
+	<string>Vegetable Beef Soup Canned</string>
+	<string>Vegetable Juice Cocktail Cnnd</string>
+	<string>Vegetables Mixed Canned</string>
+	<string>Vegetables Mixed Cked Fr Frz</string>
+	<string>Vegetarian Soup Canned</string>
+	<string>Vienna Bread</string>
+	<string>Vienna Sausage</string>
+	<string>Vinegar And Oil Salad Dressing</string>
+	<string>Vinegar Cider</string>
+	<string>Waffles From Home Recipe</string>
+	<string>Waffles From Mix</string>
+	<string>Walnuts Black Chopped</string>
+	<string>Walnuts English Pieces</string>
+	<string>Water Chestnuts Canned</string>
+	<string>Watermelon Raw</string>
+	<string>Watermelon Raw Diced</string>
+	<string>Wheat Bread</string>
+	<string>Wheat Bread Toasted</string>
+	<string>Wheat Flour All-Purpose Siftd</string>
+	<string>Wheat Flour All-Purpose Unsif</string>
+	<string>Wheat Thin Crackers</string>
+	<string>Wheaties Cereal</string>
+	<string>Whey Protein Multipower</string>
+	<string>Whey Protein Prostar (Ultimate Nutrition)</string>
+	<string>Whipped Topping Pressurized</string>
+	<string>Whipping Cream Unwhiped Heavy</string>
+	<string>Whipping Cream Unwhiped Light</string>
+	<string>White Bread</string>
+	<string>White Bread Crumbs Soft</string>
+	<string>White Bread Cubes</string>
+	<string>White Bread Slice 18 Per Loaf</string>
+	<string>White Bread Slice 22 Per Loaf</string>
+	<string>White Bread Toasted 18 Per</string>
+	<string>White Bread Toasted 22 Per</string>
+	<string>White Cake W/ Wht Frstng Comml</string>
+	<string>White Sauce Medium Home Recp</string>
+	<string>White Sauce W/ Milk From Mix</string>
+	<string>Whole-Wheat Bread</string>
+	<string>Whole-Wheat Bread Toasted</string>
+	<string>Whole-Wheat Flour Hrd Wht Stir</string>
+	<string>Whole-Wheat Wafers Crackers</string>
+	<string>Wine Dessert</string>
+	<string>Wine Table Red</string>
+	<string>Wine Table White</string>
+	<string>Yeast Bakers Dry Active</string>
+	<string>Yeast Brewers Dry</string>
+	<string>Yellow Cake W/ Choc Frst Frmix</string>
+	<string>Yellowcake W/ Chocfrstng Comml</string>
+	<string>Yogurt W/ Lofat Milk Fruitflv</string>
+	<string>Yogurt W/ Lofat Milk Plain</string>
+	<string>Yogurt W/ Nonfat Milk</string>
+	<string>Yogurt W/ Whole Milk</string>
+	<string>Абиу</string>
+	<string>Абрикос</string>
+	<string>Абрикосовые косточки</string>
+	<string>Абрикосовый сок</string>
+	<string>Абрикосы</string>
+	<string>Абрикосы сушеные без косточки (курага)</string>
+	<string>Абрикосы сушеные с косточкой (урюк)</string>
+	<string>Авара</string>
+	<string>Авокадо</string>
+	<string>Аджика</string>
+	<string>Айва</string>
+	<string>Айвовый сок</string>
+	<string>Айран</string>
+	<string>Актинидия</string>
+	<string>Алыча</string>
+	<string>Амарант</string>
+	<string>Ананас</string>
+	<string>Ананасовый сок</string>
+	<string>Анчоусное масло</string>
+	<string>Анчоусы</string>
+	<string>Апельсин</string>
+	<string>Апельсиновый майонез</string>
+	<string>Апельсиновый сок</string>
+	<string>Апельсиновый соус</string>
+	<string>Арахис</string>
+	<string>арахис</string>
+	<string>Арбуз</string>
+	<string>Артишок</string>
+	<string>Асаи</string>
+	<string>Ацидофилин</string>
+	<string>Базилик свежий</string>
+	<string>Баклажан</string>
+	<string>Баклажаны</string>
+	<string>Балык осетровый</string>
+	<string>Бальзамический уксус</string>
+	<string>Бамия</string>
+	<string>Банан</string>
+	<string>Бананы сушеные</string>
+	<string>Баранина</string>
+	<string>Баранина отварная</string>
+	<string>Баранки простые</string>
+	<string>Баранки сдобные</string>
+	<string>Барбадосская вишня ацерола</string>
+	<string>Барбарис</string>
+	<string>Бастурма сыровяленная (Останкино)</string>
+	<string>Бастурма сыровяленная (Черкизовский)</string>
+	<string>Бастурма тюркская (Царицыно)</string>
+	<string>Батат</string>
+	<string>Батон нарезной</string>
+	<string>Батон простой</string>
+	<string>Батон столовый</string>
+	<string>Батончик с отрубями</string>
+	<string>Батончики</string>
+	<string>Белуга бланшированная</string>
+	<string>Белые грибы</string>
+	<string>Белые грибы сушеные</string>
+	<string>Белый гриб</string>
+	<string>Белый рис</string>
+	<string>Белый соус</string>
+	<string>Белый хлеб хрустящий</string>
+	<string>Беляши</string>
+	<string>Бефстроганов</string>
+	<string>Биточки паровые</string>
+	<string>Бифштекс</string>
+	<string>Блинчики с творогом и сметаной</string>
+	<string>Блины</string>
+	<string>Бобы</string>
+	<string>Бобы консервированные</string>
+	<string>Борщ из квашеной капусты</string>
+	<string>Борщ из свежей капусты с томатами</string>
+	<string>Борщ летний</string>
+	<string>Борщ с капустой и картофелем</string>
+	<string>Борщ сибирский</string>
+	<string>Борщ украинский</string>
+	<string>Боярышник</string>
+	<string>Бразильский орех</string>
+	<string>Бренди 40% алкоголя</string>
+	<string>Брокколи</string>
+	<string>Брусника</string>
+	<string>Брынза</string>
+	<string>Брынза из коровьего молока</string>
+	<string>Брынза из овечьего молока</string>
+	<string>Брынза коровья</string>
+	<string>Брынза Фетаки</string>
+	<string>Брюква</string>
+	<string>Брюссельская капуста</string>
+	<string>Бублики</string>
+	<string>Бузина</string>
+	<string>Булгур</string>
+	<string>Булка городская</string>
+	<string>Булочка кунцевская</string>
+	<string>Булочки диетические с лецитином</string>
+	<string>Бульон говяжий</string>
+	<string>Бульон грибной</string>
+	<string>Бульон куриный</string>
+	<string>Бульон рыбный</string>
+	<string>Бычки</string>
+	<string>Ванильный сахар</string>
+	<string>Варенец</string>
+	<string>Варенье из айвы</string>
+	<string>Варенье из груш</string>
+	<string>Варенье из клубники</string>
+	<string>Варенье из малины</string>
+	<string>Варенье из мандаринов</string>
+	<string>Варенье из персиков</string>
+	<string>Варенье из сливы</string>
+	<string>Варенье из черноплодной рябины</string>
+	<string>Варенье из яблок</string>
+	<string>Варенье малиновое</string>
+	<string>Ватрушка с творогом</string>
+	<string>Вафли FLARONIS</string>
+	<string>Вафли с жиросодержащими начинками</string>
+	<string>Вафли с фруктовыми начинками</string>
+	<string>Верблюжатина </string>
+	<string>Вермут 13% алкоголя</string>
+	<string>Ветчина в форме</string>
+	<string>Ветчина из говядины (Империя вкуса)</string>
+	<string>Ветчина из говядины запеченая (Империя вкуса)</string>
+	<string>Ветчина из индейки (Империя вкуса)</string>
+	<string>Ветчина Индейка европейская (Микоян)</string>
+	<string>Ветчина любительская</string>
+	<string>Ветчина особая</string>
+	<string>Вешенки</string>
+	<string>Винегрет</string>
+	<string>Винный уксус</string>
+	<string>Вино белое 10% алкоголя</string>
+	<string>Вино белое 12.5% алкоголя</string>
+	<string>Вино белое сладкое 12% алкоголя</string>
+	<string>Вино белое сладкое 13.5%алкоголя</string>
+	<string>Вино белое сухое 12% алкоголя</string>
+	<string>Вино красное 12% алкоголя</string>
+	<string>Виноград</string>
+	<string>Виноградный сок</string>
+	<string>Виски 40% алкоголя</string>
+	<string>Вишневый сок</string>
+	<string>Вишня</string>
+	<string>Вишня кислая (морож.)</string>
+	<string>Вобла вяленая</string>
+	<string>Вобла хол.копч.</string>
+	<string>Вода</string>
+	<string>Водка 40% алкоголя</string>
+	<string>Водяника</string>
+	<string>Воздушная кукуруза</string>
+	<string>Войлочная вишня</string>
+	<string>Ворк</string>
+	<string>Восковица</string>
+	<string>Вяленая вишня</string>
+	<string>Галеты</string>
+	<string>Гематоген</string>
+	<string>Геркулес</string>
+	<string>Глухарь </string>
+	<string>Говядина</string>
+	<string>Говядина антрекот (МЕТРО)</string>
+	<string>Говядина вырезка</string>
+	<string>Говядина вырезка (МЕТРО)</string>
+	<string>Говядина копченая (МИКОЯН)</string>
+	<string>Говядина отварная</string>
+	<string>Говядина тушеная</string>
+	<string>Говяжий язык</string>
+	<string>говяжьи почки</string>
+	<string>Говяжья печень</string>
+	<string>Голавль</string>
+	<string>Голландский соус</string>
+	<string>Голубика</string>
+	<string>Горбуша</string>
+	<string>Горбуша в томатн.соусе</string>
+	<string>Горбуша вареная</string>
+	<string>Горбуша соленая</string>
+	<string>Горох консервированный</string>
+	<string>Горох молодой</string>
+	<string>Горох сушеный</string>
+	<string>Горошек зеленый</string>
+	<string>Горчица столовая</string>
+	<string>Гранат</string>
+	<string>Гранатовый сок</string>
+	<string>Грейпфрут</string>
+	<string>Грейпфрутовый сок</string>
+	<string>Грецкий орех</string>
+	<string>Гречневая каша (Myllyn Paras)</string>
+	<string>Гречневая крупа</string>
+	<string>Гречневая крупа Мистраль</string>
+	<string>Гречневая продел</string>
+	<string>Гречневая ядрица</string>
+	<string>Грибной соус</string>
+	<string>Грибы ассорти "Грибное лукошко"</string>
+	<string>Грибы сушеные</string>
+	<string>Грудинка сырокопченая</string>
+	<string>Грузди</string>
+	<string>Груздь</string>
+	<string>Груша</string>
+	<string>Гуава</string>
+	<string>Гуарана</string>
+	<string>Гуляш</string>
+	<string>Гуляш говяжий</string>
+	<string>Гуляш свиной</string>
+	<string>Гусь</string>
+	<string>Дайкон</string>
+	<string>Джем из абрикосов</string>
+	<string>Джем из мандаринов</string>
+	<string>Джем из черной смородины</string>
+	<string>Джин 40% алкоголя</string>
+	<string>Дикая утка </string>
+	<string>Дикобраз</string>
+	<string>Дичь (дикая утка)</string>
+	<string>Дорадо</string>
+	<string>Драже ореховое</string>
+	<string>Драже сахарное</string>
+	<string>Драже фруктово-ягодное в шоколаде</string>
+	<string>Дуриан</string>
+	<string>Душица сушеная, измельченная</string>
+	<string>Дыня</string>
+	<string>Ежевика</string>
+	<string>Ежовик желтый</string>
+	<string>Ерш</string>
+	<string>Желатин пищевой</string>
+	<string>Жимолость</string>
+	<string>Жир бараний топленый</string>
+	<string>Жир говяжий топленый</string>
+	<string>Жир свиной (лярд)</string>
+	<string>Завтрак туриста (говядина)</string>
+	<string>Завтрак туриста (свинина)</string>
+	<string>Заправка горчичная</string>
+	<string>Заправка для салатов</string>
+	<string>Зеленушка</string>
+	<string>Землеклуника</string>
+	<string>Земляника</string>
+	<string>Земляника садовая</string>
+	<string>Зерна пшеницы</string>
+	<string>Зефир</string>
+	<string>Зубатка</string>
+	<string>Изюм</string>
+	<string>икра баклажаная "От михалыча"</string>
+	<string>Икра белужья зернистая</string>
+	<string>Икра горбуши зернистая</string>
+	<string>Икра из баклажанов</string>
+	<string>Икра из кабачков</string>
+	<string>Икра кеты зернистая</string>
+	<string>Икра минтаевая пробойная</string>
+	<string>Икра осетровая зернистая</string>
+	<string>Икра осетровая паюсная</string>
+	<string>Икра севрюжья зернистая</string>
+	<string>Имунеле NEO (Вимм-Билль-Данн)</string>
+	<string>Индейка</string>
+	<string>Индейка жареная</string>
+	<string>Индейка отварная</string>
+	<string>Индейка филе (БИБИГОН)</string>
+	<string>Индейка шницель (Егорьевская п/ф)</string>
+	<string>Инжир</string>
+	<string>Инжир сушеный</string>
+	<string>Иогурт 3.2%-ной жирн. Сладкий</string>
+	<string>Ирга</string>
+	<string>Ирис полутвердый</string>
+	<string>Ирис тираженный</string>
+	<string>Йогурт</string>
+	<string>Йогурт "Активия" с черносливом</string>
+	<string>Йогурт 1.5%-нойжирн.</string>
+	<string>Йогурт 1.5%-ный сладкий</string>
+	<string>Йогурт 3.2%-ной жирн.</string>
+	<string>Йогурт козий</string>
+	<string>Кабачки</string>
+	<string>Кабачки жареные</string>
+	<string>Кабачок приготовленный</string>
+	<string>Каймак</string>
+	<string>Какао порошок "Золотой ярлык"</string>
+	<string>Какао порошок "Российский"</string>
+	<string>Какао со сгущ. молоком с сахаром</string>
+	<string>Какао со сгущ. сливками с сахаром</string>
+	<string>Калач московский</string>
+	<string>Калина</string>
+	<string>Кальмар</string>
+	<string>Камбала</string>
+	<string>Камбала в томатн.соусе</string>
+	<string>Камбала гор.копч.</string>
+	<string>Камбала обжаренная в масле</string>
+	<string>Каперсы консервированные</string>
+	<string>Капуста белокочанная</string>
+	<string>Капуста белокочанная жареная</string>
+	<string>Капуста белокочанная отварная</string>
+	<string>Капуста белокочанная тушеная</string>
+	<string>Капуста брокколи</string>
+	<string>Капуста брюссельская</string>
+	<string>Капуста брюссельская хортекс</string>
+	<string>Капуста квашеная</string>
+	<string>Капуста кольраби</string>
+	<string>Капуста краснокочанная</string>
+	<string>Капуста пекинская</string>
+	<string>Капуста Романеско (Бондюэль)</string>
+	<string>Капуста цветная</string>
+	<string>Капуста цветная отварная</string>
+	<string>Карамель леденцовая</string>
+	<string>Карамель с ликерными начинками</string>
+	<string>Карамель с молочными начинками</string>
+	<string>Карамель с ореховыми начинками</string>
+	<string>Карамель с помадными начинками</string>
+	<string>Карамель с прохладительными начинками</string>
+	<string>Карамель с фруктово-ягодными начинками</string>
+	<string>Карамель с шоколадно-ореховыми начинками</string>
+	<string>Карась</string>
+	<string>Карп</string>
+	<string>Картофель</string>
+	<string>Картофель жареный</string>
+	<string>Картофель отварной</string>
+	<string>Картофельное пюре</string>
+	<string>Картофельные чипсы</string>
+	<string>Катык</string>
+	<string>Катык Долголетие</string>
+	<string>Каша геркулесовая молочная</string>
+	<string>Каша геркулесовая на воде</string>
+	<string>Каша гречневая вязкая на воде</string>
+	<string>Каша гречневая рассыпчатая</string>
+	<string>Каша манная молочная</string>
+	<string>Каша манная на воде</string>
+	<string>Каша овсяная молочная</string>
+	<string>Каша овсяная на воде</string>
+	<string>Каша перловая рассыпчатая</string>
+	<string>Каша пшеничная вязкая на воде</string>
+	<string>Каша пшеничная рассыпчатая</string>
+	<string>Каша пшенная вязкая на воде</string>
+	<string>Каша пшенная рассыпчатая</string>
+	<string>Каша рисовая молочная</string>
+	<string>Каша рисовая на воде</string>
+	<string>Каша ячневая вязкая на воде</string>
+	<string>Каша ячневая рассыпчатая</string>
+	<string>Каштан </string>
+	<string>Каштаны жареные</string>
+	<string>Кедровые орехи</string>
+	<string>Кедровые орешки</string>
+	<string>Кета</string>
+	<string>Кета соленая</string>
+	<string>Кетчуп</string>
+	<string>Кефаль</string>
+	<string>Кефир 2.5% жирн.</string>
+	<string>Кефир 2.5% жирности</string>
+	<string>Кефир 3.2% жирности</string>
+	<string>кефир 33 коровы 1%</string>
+	<string>Кефир жирный</string>
+	<string>Кефир нежирный</string>
+	<string>Кефир обезжиренный</string>
+	<string>кефир Пастушок 1%</string>
+	<string>Кешью</string>
+	<string>Киви</string>
+	<string>Кизил</string>
+	<string>Килька</string>
+	<string>Килька балтийская соленая</string>
+	<string>Килька гор.копч.</string>
+	<string>Килька пряного посола</string>
+	<string>Кинза</string>
+	<string>Киноа</string>
+	<string>Кислое молоко</string>
+	<string>Китайская клубника</string>
+	<string>Клубника</string>
+	<string>Клюква</string>
+	<string>клюква</string>
+	<string>Клюква сушеная</string>
+	<string>Княженика</string>
+	<string>Козинак кунжутный на фруктозе</string>
+	<string>Кокос</string>
+	<string>Кокосовый орех</string>
+	<string>Колбаса армавирская</string>
+	<string>Колбаса диетическая</string>
+	<string>Колбаса для завтрака</string>
+	<string>Колбаса докторская</string>
+	<string>Колбаса закусочная</string>
+	<string>Колбаса зернистая</string>
+	<string>Колбаса краковская</string>
+	<string>Колбаса кубанская</string>
+	<string>Колбаса любительская</string>
+	<string>Колбаса майкопская</string>
+	<string>Колбаса минская</string>
+	<string>Колбаса молочная</string>
+	<string>Колбаса московская</string>
+	<string>Колбаса одесская</string>
+	<string>Колбаса отдельная</string>
+	<string>Колбаса полтавская</string>
+	<string>Колбаса прима</string>
+	<string>Колбаса русская</string>
+	<string>Колбаса салями</string>
+	<string>Колбаса свиная</string>
+	<string>Колбаса сервелат</string>
+	<string>Колбаса советская</string>
+	<string>Колбаса степная</string>
+	<string>Колбаса столичная</string>
+	<string>Колбаса столовая</string>
+	<string>Колбаса таллиннская</string>
+	<string>Колбаса украинская</string>
+	<string>Колбаса чайная</string>
+	<string>Колбаса южная</string>
+	<string>Кольраби</string>
+	<string>Компот из абрикосов</string>
+	<string>Компот из айвы</string>
+	<string>Компот из винограда</string>
+	<string>Компот из вишни</string>
+	<string>Компот из мандаринов</string>
+	<string>Компот из персиков</string>
+	<string>Компот из слив</string>
+	<string>Компот из черешни</string>
+	<string>Компот из яблок</string>
+	<string>Компот ит груш</string>
+	<string>Конина</string>
+	<string>Конфеты Грильяж (Рот-Фронт)</string>
+	<string>Конфеты Мишка косолапый  (Кр. октябрь)</string>
+	<string>Конфеты молочные</string>
+	<string>Конфеты Огни Москвы (Рот-Фронт)</string>
+	<string>Конфеты помадные</string>
+	<string>Конфеты Российские (Рот-Фронт)</string>
+	<string>Конфеты Трюфели с амаретто (Победа)</string>
+	<string>Конфеты Фруже клюква в желе и шок. (16гр/шт)</string>
+	<string>Конфеты фруктово-помадные</string>
+	<string>Конфеты шоколадные с грильяжной начинкой</string>
+	<string>Конфеты шоколадные с кремовой начинкой</string>
+	<string>Конфеты шоколадные с начинкой между слоями вафель</string>
+	<string>Конфеты шоколадные с помадной начинкой</string>
+	<string>Конфеты шоколадные с пралиновой начинкой</string>
+	<string>Конфеты шоколадные с фруктовой начинкой</string>
+	<string>Конфеты шоколадные с шоколадно-кремовой начинкой</string>
+	<string>Конфеты шоколадные с шоколадно-ореховой начинкой</string>
+	<string>Коньяк 40%</string>
+	<string>Корейка сырокопченая</string>
+	<string>Коричневый рис</string>
+	<string>Коричневый соус</string>
+	<string>Корюшка</string>
+	<string>Костяника</string>
+	<string>Косуля</string>
+	<string>Котлеты говяжьи</string>
+	<string>котлеты из говядины с индейкой</string>
+	<string>Котлеты свиные</string>
+	<string>Кофе жареный в зернах (сухой)</string>
+	<string>Кофе растворимый (сухой)</string>
+	<string>Кофе со сгущ. молоком с сахаром</string>
+	<string>Кофе со сгущ. сливками. с сахаром</string>
+	<string>Кофейн.напиток Здоровье (сухой)</string>
+	<string>Краб</string>
+	<string>Крабы</string>
+	<string>Крапива</string>
+	<string>Красника</string>
+	<string>Креветка</string>
+	<string>Креветки</string>
+	<string>Крекеры</string>
+	<string>Криль</string>
+	<string>Кролик</string>
+	<string>Кролик жареный</string>
+	<string>Кролик отварной</string>
+	<string>Крупа кукурузная</string>
+	<string>Крупа манная</string>
+	<string>Крупа перловая</string>
+	<string>Крыжовник</string>
+	<string>Кукуруза</string>
+	<string>Кукуруза дробленая</string>
+	<string>Кукуруза консерв. (Бондюэль)</string>
+	<string>Кукуруза сахарная</string>
+	<string>Кукуруза целыми зернами</string>
+	<string>Кукурузная крупа</string>
+	<string>Кукурузные зерна</string>
+	<string>Кукурузные хлопья</string>
+	<string>Кумкват</string>
+	<string>Кумыс</string>
+	<string>Кунжут</string>
+	<string>Кунжутное семя</string>
+	<string>Кура</string>
+	<string>Курага</string>
+	<string>Куриная грудка</string>
+	<string>Куриная грудка Петелинка</string>
+	<string>Куриная печень</string>
+	<string>Куриное сердце</string>
+	<string>Куриные котлеты</string>
+	<string>Курица жареная</string>
+	<string>Курица отварная</string>
+	<string>Куропатка </string>
+	<string>Кус-кус</string>
+	<string>Лаваш</string>
+	<string>Лавровый лист сушеный</string>
+	<string>Лайм</string>
+	<string>Лапша японская "Соба" из гречн. муки</string>
+	<string>Лещ</string>
+	<string>Лещ в томатн.соусе</string>
+	<string>Лещ вяленый</string>
+	<string>Лещ гор.копч.</string>
+	<string>Лещ хол.копч.</string>
+	<string>Ликер 24% алкоголя</string>
+	<string>Лимон</string>
+	<string>Лимонник</string>
+	<string>Лимонный сок</string>
+	<string>Линь</string>
+	<string>Лисички</string>
+	<string>Личи</string>
+	<string>Логанова ягода</string>
+	<string>лосось (горбуша)</string>
+	<string>лосось (кета)</string>
+	<string>Лосось соленый</string>
+	<string>Лук зеленый</string>
+	<string>Лук зеленый (перо)</string>
+	<string>Лук порей</string>
+	<string>Лук репчатый</string>
+	<string>Лук-порей</string>
+	<string>Лук-шалот</string>
+	<string>Лукум сбивной</string>
+	<string>Льняное масло</string>
+	<string>Люцерна семена пророщенные, сырые</string>
+	<string>Мадера 18% алкоголя</string>
+	<string>Майонез Провансаль</string>
+	<string>Майоран сушеный, измельченный</string>
+	<string>Макароны</string>
+	<string>Макароны "Топинамбурные" (МакМастер)</string>
+	<string>Макароны "Целеб" ржаные</string>
+	<string>Макароны 1-го сорта</string>
+	<string>Макароны высшего сорта</string>
+	<string>Макароны жареные</string>
+	<string>Макароны отварные</string>
+	<string>Макароны яичные</string>
+	<string>Макрель</string>
+	<string>Малина</string>
+	<string>Манго</string>
+	<string>Мангольд</string>
+	<string>Мангостин</string>
+	<string>Мандарин</string>
+	<string>Мандариновый сок</string>
+	<string>Маниок</string>
+	<string>Манная крупа</string>
+	<string>Маракуйя</string>
+	<string>Маргарин Молочный</string>
+	<string>Маргарин Славянский</string>
+	<string>Маргарин Сливочный</string>
+	<string>Маргарин Солнечный</string>
+	<string>Маргарин Экстра</string>
+	<string>Маргарин Эра</string>
+	<string>Маринад овощной без томата</string>
+	<string>Маринад овощной с томатом</string>
+	<string>Маринованные грибы</string>
+	<string>Мармелад фруктово-ягодный</string>
+	<string>Маслины</string>
+	<string>Масло арахисовое рафинир.</string>
+	<string>Масло горчичное</string>
+	<string>Масло грецкого ореха</string>
+	<string>Масло зеленое</string>
+	<string>Масло килечное, </string>
+	<string>Масло конопляное рафинир.</string>
+	<string>Масло крестьянское несоленое</string>
+	<string>Масло кукурузное</string>
+	<string>Масло кунжутное</string>
+	<string>Масло любительское несоленое</string>
+	<string>Масло оливковое</string>
+	<string>Масло подсолнечное</string>
+	<string>Масло рапсовое рафинир.</string>
+	<string>Масло расторопши</string>
+	<string>Масло ростков пшеницы</string>
+	<string>Масло с кильками</string>
+	<string>Масло селедочное</string>
+	<string>Масло сливочное</string>
+	<string>Масло сливочное бутербродное</string>
+	<string>Масло сливочное вологодское</string>
+	<string>Масло сливочное несоленое</string>
+	<string>Масло со шпротами или сардинами</string>
+	<string>Масло соевое рафинир.</string>
+	<string>Масло топленое</string>
+	<string>Масло хлопковое рафинир.</string>
+	<string>Маслята</string>
+	<string>Масса творожная особая</string>
+	<string>Мацони</string>
+	<string>Мед</string>
+	<string>Меланж</string>
+	<string>Мидии</string>
+	<string>Миндаль</string>
+	<string>Миндаль сладкий</string>
+	<string>Миндальная мука</string>
+	<string>Миндальное молоко</string>
+	<string>Минтай</string>
+	<string>Мозги говяжьи</string>
+	<string>Мойва</string>
+	<string>молоко 0.5% ДвД</string>
+	<string>молоко 0.5% Пармалат</string>
+	<string>молоко 1.5% ДвД</string>
+	<string>Молоко 1.5%-ной жирн.</string>
+	<string>Молоко 2.5%-ной жирн.</string>
+	<string>Молоко 3.2%-ной жирн.</string>
+	<string>молоко 3.5% ДвД</string>
+	<string>Молоко 3.5%-ной жирн.</string>
+	<string>Молоко 6 %-ной жир.</string>
+	<string>Молоко белковое</string>
+	<string>Молоко буйвола</string>
+	<string>Молоко кобылье</string>
+	<string>Молоко козье</string>
+	<string>Молоко концентрированное</string>
+	<string>Молоко коровье</string>
+	<string>Молоко обезжиренное</string>
+	<string>Молоко сгущ. без сахара</string>
+	<string>Молоко сгущ. с сахаром</string>
+	<string>Молоко сгущ. с сахаром нежирное</string>
+	<string>Молоко соевое</string>
+	<string>Молоко соевое 1.5% (ДакгоМЗ)</string>
+	<string>Молоко сухое обезжиренное</string>
+	<string>Молоко сухое цельное</string>
+	<string>Молоко топленое</string>
+	<string>Молочная лапша</string>
+	<string>Молочная сыворотка</string>
+	<string>Молочный соус</string>
+	<string>мор.ов. "Summer mix" (Ardo)</string>
+	<string>мор.ов. "Борщ украинский" (Хортино)</string>
+	<string>мор.ов. "Весенний овощной букет" (Хортекс)</string>
+	<string>мор.ов. "Весенняя" (ов.смесь Бондюэль)</string>
+	<string>мор.ов. "Грибной" (Бондюэль)</string>
+	<string>мор.ов. "Гювеч" (4 сезона)</string>
+	<string>мор.ов. "Из цветной капусты" (Хортекс)</string>
+	<string>мор.ов. "Итальянский" (Хортекс)</string>
+	<string>мор.ов. "Китайская смесь" (4 сезона)</string>
+	<string>мор.ов. "Кускус" (Овощной мир)</string>
+	<string>мор.ов. "Лечо" (Хортекс)</string>
+	<string>мор.ов. "Лечо" (Эликом)</string>
+	<string>мор.ов. "Овощи для супа" (Хортино)</string>
+	<string>мор.ов. "Овощное рагу" (4 сезона)</string>
+	<string>мор.ов. "Осенний" (Хортекс)</string>
+	<string>мор.ов. "Президентский" (Хортекс)</string>
+	<string>Морковь</string>
+	<string>Морковь желт.</string>
+	<string>Морковь красная</string>
+	<string>Морковь отварная</string>
+	<string>Мороженое</string>
+	<string>Мороженое молочное</string>
+	<string>Мороженое молочное крем-брюле</string>
+	<string>Мороженое молочное шоколадное</string>
+	<string>Мороженое сливочное</string>
+	<string>Мороженое сливочное крем-брюле</string>
+	<string>Мороженое сливочное шоколадное</string>
+	<string>Морошка</string>
+	<string>Морская капуста</string>
+	<string>Морской карась </string>
+	<string>Мука гречневая</string>
+	<string>Мука кукурузная (диетическая)</string>
+	<string>Мука пшеничная 1-го сорта</string>
+	<string>Мука пшеничная 2-го сорта</string>
+	<string>Мука пшеничная высшего сорта</string>
+	<string>Мука пшеничная обойная</string>
+	<string>Мука ржаная обдирная</string>
+	<string>Мука ржаная обойная</string>
+	<string>Мука рисовая (диетическая)</string>
+	<string>Мышечный желудок кур</string>
+	<string>Мюсли "Ягодная поляна" (Фруктовница)</string>
+	<string>Мюсли Гренола яблочные с корицей</string>
+	<string>Мясо в белом соусе</string>
+	<string>Мясо дикобраза</string>
+	<string>Навага</string>
+	<string>Налим</string>
+	<string>Нерка красная</string>
+	<string>Нут консервированный</string>
+	<string>Нут сухой</string>
+	<string>Нут сушеный</string>
+	<string>Облепиха</string>
+	<string>Овсяная крупа</string>
+	<string>Овсянка</string>
+	<string>Овсяные отруби</string>
+	<string>Овсяные хлопья быстрого приготовления</string>
+	<string>Овсяные хлопья цельные</string>
+	<string>Огурец</string>
+	<string>Огурцы грунтовые</string>
+	<string>Огурцы парниковые</string>
+	<string>Огурцы соленые</string>
+	<string>Окорок тамбовский</string>
+	<string>Окорочка жареные</string>
+	<string>Окрошка мясная (с квасом)</string>
+	<string>Окрошка на кефире</string>
+	<string>Окунь морской</string>
+	<string>Окунь морской (балычок)</string>
+	<string>Окунь морской гор.копч.</string>
+	<string>Окунь морской тушка</string>
+	<string>Окунь речной</string>
+	<string>Окунь речной филе</string>
+	<string>Оладьи</string>
+	<string>Оливки зеленые маринованные</string>
+	<string>Оливки консервированные</string>
+	<string>оливки с анчоусом</string>
+	<string>Оливки черные консервированные</string>
+	<string>Оливковое масло</string>
+	<string>Омлет</string>
+	<string>Опята</string>
+	<string>Орех лещина</string>
+	<string>Орех макадамия</string>
+	<string>Орех пекан</string>
+	<string>Орех чилим</string>
+	<string>Орехи грецкие</string>
+	<string>Орехи кешью жареные с медом и кунжутом</string>
+	<string>Ореховое молоко</string>
+	<string>Оробланко</string>
+	<string>Осетр</string>
+	<string>Осетр в томатн.соусе</string>
+	<string>осетр натуральный</string>
+	<string>Осьминог</string>
+	<string>отруби "Здравица" с бета-каротином</string>
+	<string>Отруби (пшеница, овес.. )</string>
+	<string>отруби лимонные</string>
+	<string>отруби пшеничные</string>
+	<string>отруби ржаные</string>
+	<string>отруби с корицей</string>
+	<string>отруби с морковью</string>
+	<string>отруби с морской капустой</string>
+	<string>отруби с топинамбуром</string>
+	<string>отруби с яблоком</string>
+	<string>отруби со свеклой</string>
+	<string>Охотничьи колбаски</string>
+	<string>Палтус</string>
+	<string>Папайя</string>
+	<string>Паста Океан</string>
+	<string>Пастернак (корень)</string>
+	<string>Пастила</string>
+	<string>Патиссон</string>
+	<string>Патиссоны</string>
+	<string>Патуссу</string>
+	<string>Пахта</string>
+	<string>Паштет печеночный</string>
+	<string>Пекинская капуста</string>
+	<string>Пельмени отварные</string>
+	<string>Перец душистый</string>
+	<string>Перец зеленый сладкий</string>
+	<string>Перец красный сладкий</string>
+	<string>Перец сладкий</string>
+	<string>Перец сладкий мороженный (4 сезона)</string>
+	<string>Перец чили красный молотый</string>
+	<string>Перечная приправа</string>
+	<string>Перловая крупа</string>
+	<string>Персик</string>
+	<string>Персики</string>
+	<string>Персики сушеные (курага)</string>
+	<string>Персиковый сок</string>
+	<string>Петрушка</string>
+	<string>Петрушка (зелень)</string>
+	<string>Петрушка (корень)</string>
+	<string>Печень говяжья</string>
+	<string>Печень кур</string>
+	<string>Печень свиная</string>
+	<string>Печень трески</string>
+	<string>Печенье затяжное</string>
+	<string>Печенье сахарное</string>
+	<string>Печенье сдобное</string>
+	<string>Пиво 1.8% алкоголя</string>
+	<string>Пиво 2.8% алкоголя</string>
+	<string>Пиво 4.5% алкоголя</string>
+	<string>Пикша</string>
+	<string>Пирог с мясом</string>
+	<string>Пирог с повидлом</string>
+	<string>Пирожное бисквитное с фруктовой начинкой</string>
+	<string>Пирожное заварное</string>
+	<string>Пирожное крошковое</string>
+	<string>Пирожное песочное с фруктовой начинкой</string>
+	<string>Пирожное слоеное с кремом</string>
+	<string>Пирожное слоеное с фруктовой начинкой</string>
+	<string>Пломбир</string>
+	<string>Пломбир крем-брюле</string>
+	<string>Пломбир шоколадный</string>
+	<string>Плотва</string>
+	<string>Плюшка московская</string>
+	<string>Побеги бамбука</string>
+	<string>Повидло сливовое</string>
+	<string>Повидло яблочное</string>
+	<string>Подберёзовик</string>
+	<string>Подберезовики</string>
+	<string>Подберезовики сушеные</string>
+	<string>Подосиновик</string>
+	<string>Подосиновики</string>
+	<string>Подосиновики сушеные</string>
+	<string>Полба</string>
+	<string>Полевка цилиндрическая</string>
+	<string>Помелит</string>
+	<string>Помелло</string>
+	<string>Помидор</string>
+	<string>Пончики</string>
+	<string>Портвейн 20%алкоголя</string>
+	<string>Почки говяжьи</string>
+	<string>Почки свиные</string>
+	<string>Приятный соус</string>
+	<string>Пророщенная пшеница</string>
+	<string>Просо</string>
+	<string>Простокваша</string>
+	<string>Пряники</string>
+	<string>Пунш 26% алкоголя</string>
+	<string>Пшеничная каша (Myllyn Paras)</string>
+	<string>Пшенная каша (Myllyn Paras)</string>
+	<string>Пшенная крупа</string>
+	<string>Пшено</string>
+	<string>Пюре яблочное</string>
+	<string>Рассольник домашний</string>
+	<string>Рассольник ленинградский</string>
+	<string>Растительное масло</string>
+	<string>Ревень</string>
+	<string>Ревень (черешки)</string>
+	<string>редис</string>
+	<string>Редис</string>
+	<string>Редька</string>
+	<string>Редька зеленая</string>
+	<string>Репа</string>
+	<string>Ржаные хлопья</string>
+	<string>Рис Арборио</string>
+	<string>Рис Басмати</string>
+	<string>Рис дикий, чёрный</string>
+	<string>Рис длиннозерный</string>
+	<string>Рис для суши</string>
+	<string>Рис Жасмин</string>
+	<string>Рис Карнароли</string>
+	<string>Рис коричневый</string>
+	<string>Рис круглозерный шлифованный</string>
+	<string>Рис нишики</string>
+	<string>Рис полированный</string>
+	<string>Рис рассыпчатый (т.е. вареный)</string>
+	<string>Рис фушигон</string>
+	<string>Рис черный Мистраль</string>
+	<string>Рисовая мука</string>
+	<string>Рисовый уксус</string>
+	<string>Рожки обсыпные</string>
+	<string>Рожь зерно</string>
+	<string>Розмарин свежий</string>
+	<string>Розмарин сушеный</string>
+	<string>Ром 40% алкоголя</string>
+	<string>Российский плавленый сыр</string>
+	<string>Руккола</string>
+	<string>рыбий жир в капсулах</string>
+	<string>Рыжик</string>
+	<string>Рыжики</string>
+	<string>Рябина садовая</string>
+	<string>Рябина садовая красная</string>
+	<string>Рябина черноплодная</string>
+	<string>Рябчик</string>
+	<string>Ряженка</string>
+	<string>Ряженка 6 %-ной жирн.</string>
+	<string>Ряженка из Простоквашино (Петмол)</string>
+	<string>Ряженка Останкинская</string>
+	<string>Ряженка Очаковская 4%</string>
+	<string>Саго</string>
+	<string>Сазан</string>
+	<string>Сазан в томатн.соусе</string>
+	<string>Сайра</string>
+	<string>Сайра бланшировання в масле</string>
+	<string>Салака</string>
+	<string>Салака </string>
+	<string>Салака в томатн.соусе</string>
+	<string>Салака гор.копч.</string>
+	<string>Салат</string>
+	<string>Салат кочанный</string>
+	<string>Салат листовой</string>
+	<string>Салатная заправка</string>
+	<string>Сардельки говяжьи</string>
+	<string>Сардельки свиные</string>
+	<string>Сардина</string>
+	<string>сардина</string>
+	<string>Сардины (ломтики) в масле</string>
+	<string>Сахар (песок)</string>
+	<string>Сахар-рафинад</string>
+	<string>Сацибели</string>
+	<string>Свекла</string>
+	<string>Свекла натур.</string>
+	<string>Свекла отварная</string>
+	<string>Свекла сырая</string>
+	<string>Свекольник</string>
+	<string>Свиная печень</string>
+	<string>Свинина </string>
+	<string>Свинина жирная</string>
+	<string>Свинина отварная</string>
+	<string>Свинина тушеная</string>
+	<string>Свити (Помелит, Оробланко)</string>
+	<string>Сгущенное молоко</string>
+	<string>Сгущенные сливки</string>
+	<string>Сдоба выборгская с маком</string>
+	<string>Сдоба выборгская с повидлом</string>
+	<string>Сдоба донская</string>
+	<string>Сдоба обыкновенная</string>
+	<string>Севрюга в томатн.соусе</string>
+	<string>Сельдерей</string>
+	<string>Сельдерей (зелень)</string>
+	<string>Сельдерей (корень)</string>
+	<string>Сельдь</string>
+	<string>Сельдь атлантическая соленая</string>
+	<string>Сельдь иваси соленая</string>
+	<string>Сельдь тихоокеанская жирная хол.копч.</string>
+	<string>Семга</string>
+	<string>Семга соленая</string>
+	<string>Семга стейк мороженый</string>
+	<string>Семена льна</string>
+	<string>Семечки подсолнечника</string>
+	<string>Семечки подсолнуха сушеные</string>
+	<string>Семечки тыквы сушеные</string>
+	<string>Сердце говяжье</string>
+	<string>Сердце кур</string>
+	<string>Сердце свиное</string>
+	<string>Сиг</string>
+	<string>Сироп топинамбура</string>
+	<string>Скумбрия</string>
+	<string>Скумбрия в масле</string>
+	<string>Скумбрия хол.копч.</string>
+	<string>Сладкий картофель</string>
+	<string>Слива</string>
+	<string>Слива садовая</string>
+	<string>Сливки</string>
+	<string>Сливки 10 %-ной жир.</string>
+	<string>Сливки 20 %-ной жир.</string>
+	<string>Сливки 35 %-ной жир.</string>
+	<string>Сливки взбитые с ванилью</string>
+	<string>Сливки сгущ. с сахаром</string>
+	<string>Сливки сухие Сопью Крима</string>
+	<string>Сливовый сок</string>
+	<string>Сметана</string>
+	<string>Сметана 10 %-ной жир.</string>
+	<string>сметана 15% "Домик в деревне"</string>
+	<string>Сметана 20 %-ной жир.</string>
+	<string>Сметана 25 %-ной жир.</string>
+	<string>Сметана 30 %-ной жир.</string>
+	<string>сметана 42% Валио</string>
+	<string>Смородина белая</string>
+	<string>Смородина красная</string>
+	<string>Смородина черная</string>
+	<string>Смородиновый соус</string>
+	<string>Сморчки</string>
+	<string>Сморчок</string>
+	<string>Соевое мясо</string>
+	<string>Соевый соус</string>
+	<string>Сок</string>
+	<string>сок "Перец красный" (8 овощей)</string>
+	<string>Сок морковный</string>
+	<string>Сок свекольный</string>
+	<string>Сок томатный</string>
+	<string>Соломка сладкая</string>
+	<string>Солянка овоще-грибная из свежей капусты</string>
+	<string>Солянка овощная из квашеной капусты</string>
+	<string>Сом</string>
+	<string>Сом в томатн.соусе</string>
+	<string>Сорго</string>
+	<string>Сосиски говяжьи</string>
+	<string>Сосиски любительские</string>
+	<string>Сосиски молочные</string>
+	<string>Сосиски особые</string>
+	<string>Сосиски русские</string>
+	<string>Соус - белое вино</string>
+	<string>Соус "Кетчуп паприкаш" (Calve)</string>
+	<string>Соус "Кисло-сладкий" для мяса (Calve)</string>
+	<string>Соус белый (для запекания рыбы)</string>
+	<string>Соус белый основной</string>
+	<string>Соус белый с яйцом</string>
+	<string>Соус грибной с томатом</string>
+	<string>Соус из зелени</string>
+	<string>Соус из масла и крутого яйца</string>
+	<string>Соус из репчатого лука</string>
+	<string>Соус из сельдерея</string>
+	<string>Соус из хрена</string>
+	<string>Соус из шампиньонов со сливками.</string>
+	<string>Соус красный кисло-сладкий</string>
+	<string>Соус красный основной</string>
+	<string>Соус красный с вином</string>
+	<string>Соус красный с кореньями (для тефтелей)</string>
+	<string>Соус красный с кореньями (для тушеного мяса)</string>
+	<string>Соус красный с луком и грибами (охотничий)</string>
+	<string>Соус красный с луком и огурцами</string>
+	<string>Соус кубанский</string>
+	<string>Соус луковый</string>
+	<string>Соус майонез</string>
+	<string>Соус майонез со сметаной</string>
+	<string>Соус паровой</string>
+	<string>Соус польский</string>
+	<string>Соус сметанный</string>
+	<string>Соус сухарный</string>
+	<string>Соус татарский</string>
+	<string>Соус томатный</string>
+	<string>Соус томатный острый</string>
+	<string>Соус томатный с грибами</string>
+	<string>Соус томатный с овощами</string>
+	<string>Соус универсальный</string>
+	<string>Соус яблочный</string>
+	<string>Соя</string>
+	<string>Соя ростки</string>
+	<string>Соя сушеная</string>
+	<string>Спаржа</string>
+	<string>Спред</string>
+	<string>Ставрида</string>
+	<string>Ставрида в томатн.соусе</string>
+	<string>Ставрида обжаренная в масле</string>
+	<string>Ставрида хол.копч.</string>
+	<string>Стерлядь</string>
+	<string>Студень из говяжьих ножек</string>
+	<string>Судак</string>
+	<string>Судак в томатн.соусе</string>
+	<string>Сулугуни</string>
+	<string>Суп картофельный</string>
+	<string>Суп картофельный с бобовыми</string>
+	<string>Суп картофельный с грибами</string>
+	<string>Суп картофельный с крупой</string>
+	<string>Суп картофельный с макаронными изделиями</string>
+	<string>Суп крестьянский</string>
+	<string>Суп овощной</string>
+	<string>Суп овощной с фасолью</string>
+	<string>Суп рисовый с мясом</string>
+	<string>Суп с бобовыми</string>
+	<string>Суп с макаронными изделиями</string>
+	<string>Суринамская вишня питанга</string>
+	<string>Сухари с изюмом</string>
+	<string>Сухие сливки</string>
+	<string>Сухое молоко</string>
+	<string>Сухой белок</string>
+	<string>Сухой желток</string>
+	<string>Сушеная дыня</string>
+	<string>Сушеное манго</string>
+	<string>Сушеные яблоки</string>
+	<string>Сушеный инжир</string>
+	<string>Сушеный шиповник</string>
+	<string>Сушки новые</string>
+	<string>Сушки простые</string>
+	<string>Сыр</string>
+	<string>Сыр "Вест" 10% (Швейцарский)</string>
+	<string>Сыр "Хит" 17% (Польша)</string>
+	<string>Сыр балыковый копченый</string>
+	<string>Сыр голландский брусковый</string>
+	<string>Сыр голландский круглый</string>
+	<string>Сыр домашний 4% (Карат)</string>
+	<string>Сыр копченый</string>
+	<string>Сыр копченый к пиву</string>
+	<string>Сыр костромской</string>
+	<string>Сыр латвийский</string>
+	<string>Сыр Маскарпоне (IGOR)</string>
+	<string>Сыр Моццарелла Cilieqine (Феномен-ХХ)</string>
+	<string>Сыр Моццарелла Santa Lucia (Galbani)</string>
+	<string>Сыр Ольтерманни 17% (Валио)</string>
+	<string>Сыр Ольтерманни 33% (Валио)</string>
+	<string>Сыр пармезан</string>
+	<string>Сыр плавленый</string>
+	<string>Сыр плавленый President</string>
+	<string>Сыр плавленый Городской (Карат)</string>
+	<string>Сыр плавленый Колбасный копченый</string>
+	<string>Сыр плавленый Костромской</string>
+	<string>Сыр плавленый Латвийский</string>
+	<string>Сыр плавленый Советский</string>
+	<string>Сыр пошехонский</string>
+	<string>Сыр прибалтийский</string>
+	<string>Сыр рокфор</string>
+	<string>Сыр российский</string>
+	<string>Сыр советский</string>
+	<string>Сыр Старый голландец</string>
+	<string>Сыр Сулугуни</string>
+	<string>Сыр Сулугуни (Умалат)</string>
+	<string>Сыр сулугуни копч. (сыр-лапша ж - 20%)</string>
+	<string>Сыр тофу</string>
+	<string>Сыр филадельфия</string>
+	<string>Сыр чеддер</string>
+	<string>Сыр швейцарский</string>
+	<string>Сыр Эдамский (Hofmeister)</string>
+	<string>Сыр эстонский</string>
+	<string>Сыр ярославский</string>
+	<string>Сырки глазированные</string>
+	<string>Сырный соус</string>
+	<string>Сыроежка</string>
+	<string>Сыроежки</string>
+	<string>Сычужный сыр</string>
+	<string>Тан</string>
+	<string>Творог</string>
+	<string>творог 0% (домик в деревне)</string>
+	<string>творог 33 коровы 0%</string>
+	<string>творог 33 коровы 4%</string>
+	<string>творог взбитый 0.8% (Веселый молочник)</string>
+	<string>творог Домашний 4%</string>
+	<string>Творог жирный</string>
+	<string>Творог жирный 18%</string>
+	<string>Творог жирный 9%</string>
+	<string>Творог зерненый</string>
+	<string>Творог кварк</string>
+	<string>Творог нежирный</string>
+	<string>творог нежирный "Славянский" из Вологды</string>
+	<string>творог нежирный останкинский </string>
+	<string>творог обезжиренный Svalia</string>
+	<string>Творог столовый 2% жирн.</string>
+	<string>творог Хуторок нежирный</string>
+	<string>Творожная масса</string>
+	<string>Творожный крем</string>
+	<string>Творожный майонез</string>
+	<string>Творожный сыр</string>
+	<string>Творожный торт Ежевика (Морозный узор)</string>
+	<string>Телятина</string>
+	<string>телятина грудная часть</string>
+	<string>телятина запеченая</string>
+	<string>телятина окорок (Метро)</string>
+	<string>Терн</string>
+	<string>Тесто дрожжевое</string>
+	<string>Тесто дрожжевое сдобное</string>
+	<string>Тесто слоеное пресное</string>
+	<string>Тетерев</string>
+	<string>Тилапия</string>
+	<string>Тимьян</string>
+	<string>тирамису</string>
+	<string>Ткемали</string>
+	<string>Толокно</string>
+	<string>Толокнянка</string>
+	<string>Томат-паста</string>
+	<string>Томат-пюре</string>
+	<string>томатная паста Дядя Ваня</string>
+	<string>томаты</string>
+	<string>Томаты без кожицы</string>
+	<string>Томаты с кожицей</string>
+	<string>Томаты соленые</string>
+	<string>топинамбур</string>
+	<string>Топинамбур</string>
+	<string>Торт "Мистер йогурт" низкокалорийный</string>
+	<string>Торт бисквитный с орехово-сливочным кремом</string>
+	<string>Торт бисквитный с фруктовой начинкой</string>
+	<string>Торт бисквитный с шоколадным кремом</string>
+	<string>Торт слоеный с кремом</string>
+	<string>Тофу фитосыр из сои (Флора)</string>
+	<string>Треска</string>
+	<string>Треска гор.копч.</string>
+	<string>Треска печень</string>
+	<string>Треска соленая</string>
+	<string>Трутовик</string>
+	<string>Трюфель</string>
+	<string>Трюфель (Solo Italia)</string>
+	<string>Тунец</string>
+	<string>Тунец в масле</string>
+	<string>тунец с соб. соку HEINZ</string>
+	<string>тунец стейк</string>
+	<string>турецкий горох (Muller's Muhle)</string>
+	<string>Тыква</string>
+	<string>тыква</string>
+	<string>Тыква жареная</string>
+	<string>Тыквенное масло</string>
+	<string>Тыквенные семечки</string>
+	<string>Тюлька соленая</string>
+	<string>Угорь</string>
+	<string>угорь морск. г/к в/у (БИМ продукт)</string>
+	<string>Угорь морской</string>
+	<string>Ужевика</string>
+	<string>Укроп</string>
+	<string>Урюк</string>
+	<string>Утка</string>
+	<string>Утка жареная</string>
+	<string>Утка отварная</string>
+	<string>Уха</string>
+	<string>Фазан </string>
+	<string>Фасоль (стручок)</string>
+	<string>фасоль белая в том. соусе (бондюэль)</string>
+	<string>Фасоль белая консервированная</string>
+	<string>Фасоль вареная</string>
+	<string>фасоль желтая мороженая хортино</string>
+	<string>Фасоль красная консервированная</string>
+	<string>фасоль Лоби зеленый (4 сезона)</string>
+	<string>Фасоль стручковая</string>
+	<string>Фасоль сухая</string>
+	<string>фасоль сушеная</string>
+	<string>фасоль целая мороженая (бондюэль)</string>
+	<string>Фасоль черная консервированная</string>
+	<string>Фенхель</string>
+	<string>Физалис </string>
+	<string>Финик</string>
+	<string>Финики</string>
+	<string>Финики сушеные</string>
+	<string>Фисташки</string>
+	<string>Фисташки жареные соленые</string>
+	<string>Фитнес-шейк +Л-карнитин (Мультипауэр)</string>
+	<string>Форель </string>
+	<string>форель свежая филе</string>
+	<string>Фруктовая смесь "4 сезона"</string>
+	<string>Фруктоза</string>
+	<string>Фундук</string>
+	<string>Халва подсолнечная ванильная</string>
+	<string>Халва тахинная Дружба</string>
+	<string>Хамса соленая</string>
+	<string>Хариус</string>
+	<string>Хек</string>
+	<string>Хлеб "8 злаков" (ЩелковоХлеб)</string>
+	<string>Хлеб "Аромат"</string>
+	<string>Хлеб "Довольство" (кориандр и солод)</string>
+	<string>Хлеб "Довольство" (с яблочной подваркой)</string>
+	<string>Хлеб "Куликовский"</string>
+	<string>Хлеб белково-отрубевой</string>
+	<string>Хлеб белый батон нарезной </string>
+	<string>Хлеб бородинский</string>
+	<string>Хлеб докторский</string>
+	<string>Хлеб Здоровье</string>
+	<string>Хлеб зерновой</string>
+	<string>Хлеб пониженной калорийности</string>
+	<string>Хлеб пшеничный из муки высшего сорта</string>
+	<string>Хлеб пшеничный подовый</string>
+	<string>Хлеб пшеничный формовой</string>
+	<string>Хлеб ржаной московский</string>
+	<string>Хлеб ржаной подовый</string>
+	<string>Хлеб ржаной формовой</string>
+	<string>Хлеб ржаной хрустящий</string>
+	<string>Хлеб с семенами подсолнечника (delba)</string>
+	<string>Хлеб украинский подовый</string>
+	<string>Хлеб украинский формовой</string>
+	<string>Хлебный соус</string>
+	<string>Хлебцы  Finn Crisp (Sesame)</string>
+	<string>Хлебцы  Finn Crisp (Мультизерновые)</string>
+	<string>Хлебцы  Finn Crisp (Тмин)</string>
+	<string>Хлебцы гречневые (Русская нива)</string>
+	<string>Хлебцы ржаные хрустящие (Хлебный дом)</string>
+	<string>Хлопья ржаные ячменные</string>
+	<string>Хрен</string>
+	<string>Хурма</string>
+	<string>Цезарский гриб</string>
+	<string>Цесарка </string>
+	<string>Цукаты</string>
+	<string>Цыплята отварные</string>
+	<string>Цыплята табака</string>
+	<string>Чабрец (тимьян)</string>
+	<string>Чай черный байховый (сухой)</string>
+	<string>Чайный гриб</string>
+	<string>Чебуреки</string>
+	<string>Черемша</string>
+	<string>Черешня</string>
+	<string>черешня</string>
+	<string>Черника</string>
+	<string>черника</string>
+	<string>Черноплодно-рябиновый сок</string>
+	<string>Чернослив</string>
+	<string>Черносмородинов.сок</string>
+	<string>Чернушка</string>
+	<string>Чеснок</string>
+	<string>Четырехзерновая каша (Myllyn Paras)</string>
+	<string>Чечевица вареная</string>
+	<string>Чечевица красная (Muller's Muhle)</string>
+	<string>Чечевица сухая</string>
+	<string>Шампиньоны</string>
+	<string>Шарлотка</string>
+	<string>Шашлык из свинины</string>
+	<string>Шелковица</string>
+	<string>Шерри 20% алкоголя</string>
+	<string>Шиитаке</string>
+	<string>Шикша</string>
+	<string>Шиповник свежий</string>
+	<string>Шиповник сушеный</string>
+	<string>Шиповниковый сок</string>
+	<string>Шницель</string>
+	<string>Шницель свиной</string>
+	<string>Шоколад без добавлений</string>
+	<string>Шоколад горький 87% "Русский шоколад"</string>
+	<string>Шоколад молочно-ореховый</string>
+	<string>Шоколад молочно-сливочный</string>
+	<string>Шоколад молочный</string>
+	<string>Шоколад пористый молочный</string>
+	<string>Шоколад с дробленым и целым орехом</string>
+	<string>Шоколад черный пористый "Русский шоколад"</string>
+	<string>Шоколадное молоко</string>
+	<string>Шпик свиной (без шкурки)</string>
+	<string>Шпинат</string>
+	<string>Шпроты</string>
+	<string>Шубат</string>
+	<string>Щавель</string>
+	<string>Щи из квашеной капусты с картофелем</string>
+	<string>Щи из свежей капусты</string>
+	<string>Щи из свежей капусты с картофелем</string>
+	<string>Щи суточные</string>
+	<string>Щленина</string>
+	<string>Щука</string>
+	<string>Щука в томатн.соусе</string>
+	<string>Эскалоп</string>
+	<string>Эскимо</string>
+	<string>Эстрагон</string>
+	<string>Яблоки</string>
+	<string>Яблоки сушеные</string>
+	<string>Яблоко</string>
+	<string>Яблочный сок</string>
+	<string>Яблочный уксус</string>
+	<string>Ягненок</string>
+	<string>Ягода дереза китайская</string>
+	<string>Ягоды годжи</string>
+	<string>Язык говяжий</string>
+	<string>Язь</string>
+	<string>Яичница-глазунья</string>
+	<string>Яично-масляный соус</string>
+	<string>Яичный белок</string>
+	<string>Яичный желток</string>
+	<string>Яичный порошок</string>
+	<string>Яйца куриные вареные вкрутую</string>
+	<string>Яйца куриные вареные всмятку</string>
+	<string>Яйца куриные сырые</string>
+	<string>Ямс</string>
+	<string>Ячменные хлопья</string>
+	<string>Ячмень зерно</string>
+	<string>Ячневая крупа</string>
+</array>
+</plist>

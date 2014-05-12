@@ -1,0 +1,2320 @@
+Вода
+Ворк
+Сок
+Овсянка
+Баранина
+Верблюжатина 
+Говядина
+Говяжья печень
+говяжьи почки
+Говяжий язык
+Гусь
+Индейка
+Конина
+Косуля
+Кролик
+Кура
+Куриная печень
+Куриное сердце
+Свинина 
+Свиная печень
+Телятина
+Утка
+Дичь (дикая утка)
+Дикая утка 
+Цесарка 
+Щленина
+Мясо дикобраза
+Дикобраз
+Ягненок
+Тетерев
+Фазан 
+Глухарь 
+Куропатка 
+Рябчик
+Анчоусы
+Бычки
+Голавль
+Горбуша
+Дорадо
+Морской карась 
+Ерш
+Зубатка
+Камбала
+Кальмар
+Карась
+Карп
+Кета
+Кефаль
+Килька
+Корюшка
+Краб
+Креветка
+Линь
+Лещ
+Семга
+Мидии
+Минтай
+Мойва
+Навага
+Налим
+Окунь морской
+Окунь речной
+Осетр
+Осьминог
+Палтус
+Пикша
+Плотва
+Патуссу
+Сазан
+Сайра
+Салака 
+сардина
+Сельдь
+Сиг
+Скумбрия
+Сом
+Ставрида
+Стерлядь
+Судак
+Тилапия
+Треска
+Треска печень
+Тунец
+Форель 
+Угорь
+Угорь морской
+Хек
+Хариус
+Щука
+Язь
+Айран
+Ацидофилин
+Брынза
+Варенец
+Йогурт
+Йогурт козий
+Каймак
+Катык
+Кефир 2.5% жирности
+Кефир 3.2% жирности
+Кефир обезжиренный
+Кислое молоко
+Кумыс
+Масло сливочное
+Масло топленое
+Мацони
+Молоко белковое
+Молоко буйвола
+Молоко кобылье
+Молоко козье
+Молоко концентрированное
+Молоко коровье
+Молоко обезжиренное
+Молоко соевое
+Молоко сухое цельное
+Молоко топленое
+Молочная сыворотка
+Мороженое
+Ореховое молоко
+Пахта
+Простокваша
+Ряженка
+Сгущенное молоко
+Сгущенные сливки
+Сливки
+Сметана
+Спред
+Сухие сливки
+Сухое молоко
+Сыр
+Сыр тофу
+Сыр копченый
+Сыр плавленый
+Сычужный сыр
+Сыр филадельфия
+Тан
+Творог
+Творог жирный
+Творог зерненый
+Творог кварк
+Творожная масса
+Творожный крем
+Творожный сыр
+Шоколадное молоко
+Шубат
+Артишок
+Базилик свежий
+Баклажан
+Батат
+Брокколи
+Брюква
+Брюссельская капуста
+Дайкон
+Душица сушеная, измельченная
+Каперсы консервированные
+Капуста белокочанная
+Капуста краснокочанная
+Капуста цветная
+Кольраби
+Кабачок приготовленный
+Картофель
+Кинза
+Крапива
+Кукуруза
+Кукуруза сахарная
+Лавровый лист сушеный
+Лук зеленый
+Лук репчатый
+Лук-порей
+Лук-шалот
+Люцерна семена пророщенные, сырые
+Майоран сушеный, измельченный
+Мангольд
+Маниок
+Маслины
+Морковь
+Огурец
+Оливки консервированные
+Пастернак (корень)
+Патиссон
+Пекинская капуста
+Перец душистый
+Перец сладкий
+Перец чили красный молотый
+Петрушка
+Побеги бамбука
+Помидор
+Ревень (черешки)
+Редис
+Редька
+Репа
+Розмарин свежий
+Розмарин сушеный
+Руккола
+Салат листовой
+Свекла
+Сельдерей
+Спаржа
+Топинамбур
+Сироп топинамбура
+Тыква
+Укроп
+Фенхель
+Хрен
+Чабрец (тимьян)
+Тимьян
+Чеснок
+Шпинат
+Щавель
+Эстрагон
+Ямс
+Абиу
+Абрикос
+Авара
+Авокадо
+Айва
+Ананас
+Апельсин
+Банан
+Виноград
+Гранат
+Грейпфрут
+Груша
+Гуава
+Гуарана
+Дуриан
+Дыня
+Инжир
+Киви
+Кокос
+Кумкват
+Лайм
+Лимон
+Личи
+Манго
+Мангостин
+Мандарин
+Маракуйя
+Папайя
+Персик
+Помелло
+Свити (Помелит, Оробланко)
+Помелит
+Оробланко
+Физалис 
+Финик
+Хурма
+Слива
+Яблоко
+Алыча
+Актинидия
+Арбуз
+Асаи
+Барбадосская вишня ацерола
+Барбарис
+Боярышник
+Брусника
+Бузина
+Войлочная вишня
+Вишня
+Водяника
+Шикша
+Голубика
+Ужевика
+Жимолость
+Землеклуника
+Земляника
+Ирга
+Калина
+Кизил
+Китайская клубника
+Восковица
+Клубника
+Клюква
+Костяника
+Княженика
+Красника
+Крыжовник
+Лимонник
+Логанова ягода
+Малина
+Морошка
+Облепиха
+Рябина садовая красная
+Рябина черноплодная
+Смородина белая
+Смородина красная
+Смородина черная
+Суринамская вишня питанга
+Терн
+Толокнянка
+Черешня
+Черника
+Шелковица
+Шиповник свежий
+Ягоды годжи
+Ягода дереза китайская
+Амарант
+Белый рис
+Булгур
+Гречневая крупа
+Зерна пшеницы
+Киноа
+Коричневый рис
+Кукурузная крупа
+Кукурузные хлопья
+Кус-кус
+Макароны
+Манная крупа
+Овсяная крупа
+Овсяные отруби
+Овсяные хлопья быстрого приготовления
+Овсяные хлопья цельные
+Отруби (пшеница, овес.. )
+Перловая крупа
+Полба
+Пророщенная пшеница
+Просо
+Пшенная крупа
+Ржаные хлопья
+Рис Арборио
+Рис Басмати
+Рис дикий, чёрный
+Рис длиннозерный
+Рис для суши
+Рис Жасмин
+Рис Карнароли
+Рис круглозерный шлифованный
+Рис нишики
+Рис фушигон
+Рисовая мука
+Рожь зерно
+Саго
+Сорго
+Ячменные хлопья
+Ячмень зерно
+Ячневая крупа
+Груздь
+Белый гриб
+Лисички
+Сыроежка
+Маслята
+Опята
+Шампиньоны
+Подберёзовик
+Подосиновик
+Рыжик
+Сморчок
+Трюфель
+Чернушка
+Вешенки
+Шиитаке
+Ежовик желтый
+Зеленушка
+Трутовик
+Цезарский гриб
+Полевка цилиндрическая
+Чайный гриб
+Грибы сушеные
+Маринованные грибы
+Арахис
+Бобы
+Бобы консервированные
+Горох молодой
+Горох консервированный
+Нут сухой
+Нут консервированный
+Соя
+Соя ростки
+Фасоль сухая
+Фасоль белая консервированная
+Фасоль красная консервированная
+Фасоль черная консервированная
+Фасоль стручковая
+Чечевица сухая
+Аджика
+Анчоусное масло
+Апельсиновый майонез
+Апельсиновый соус
+Белый соус
+Голландский соус
+Горчица столовая
+Грибной соус
+Заправка горчичная
+Заправка для салатов
+Коричневый соус
+Маринад овощной без томата
+Маринад овощной с томатом
+Масло горчичное
+Масло зеленое
+Масло килечное, 
+Масло селедочное
+Масло с кильками
+Масло со шпротами или сардинами
+Молочный соус
+Перечная приправа
+Приятный соус
+Салатная заправка
+Соус - белое вино
+Соус белый (для запекания рыбы)
+Соус белый основной
+Соус белый с яйцом
+Соус грибной с томатом
+Соус из зелени
+Соус из масла и крутого яйца
+Соус из репчатого лука
+Соус из сельдерея
+Соус из хрена
+Соус из шампиньонов со сливками.
+Соус красный кисло-сладкий
+Соус красный основной
+Соус красный с вином
+Соус красный с кореньями (для тефтелей)
+Соус красный с кореньями (для тушеного мяса)
+Соус красный с луком и грибами (охотничий)
+Соус красный с луком и огурцами
+Соус луковый
+Соус майонез
+Соус майонез со сметаной
+Соус паровой
+Соус польский
+Соус сметанный
+Соус сухарный
+Соус татарский
+Соус томатный
+Соус томатный с грибами
+Соус томатный с овощами
+Соус универсальный
+Сырный соус
+Творожный майонез
+Хлебный соус
+Ткемали
+Яично-масляный соус
+Бальзамический уксус
+Винный уксус
+Тыквенное масло
+Сацибели
+Смородиновый соус
+Соевый соус
+Кетчуп
+Оливковое масло
+Льняное масло
+Растительное масло
+Рисовый уксус
+Яблочный уксус
+Курага
+Арахис
+Бананы сушеные
+Бразильский орех
+Грецкий орех
+Сушеная дыня
+Изюм
+Каштан 
+Кедровые орехи
+Кешью
+Сушеный инжир
+Кокосовый орех
+Миндаль сладкий
+Миндальное молоко
+Миндальная мука
+Семена льна
+Семечки подсолнечника
+Тыквенные семечки
+Урюк
+Финики
+Фисташки
+Фундук
+Чернослив
+Сушеные яблоки
+Орех пекан
+Цукаты
+Вяленая вишня
+Сушеный шиповник
+Сушеное манго
+Клюква сушеная
+Орех макадамия
+Орех чилим
+Абрикосовые косточки
+Орех лещина
+Кунжут
+Adrenaline Rush
+F100 Multipower
+F80 Ironman
+Powerade
+Whey Protein Multipower
+Whey Protein Prostar (Ultimate Nutrition)
+Абрикосовый сок
+Абрикосы
+Абрикосы сушеные без косточки (курага)
+Абрикосы сушеные с косточкой (урюк)
+Авокадо
+Айва
+Айвовый сок
+Алыча
+Ананас
+Ананасовый сок
+Апельсин
+Апельсиновый сок
+арахис
+Арбуз
+Ацидофилин
+Баклажаны
+Балык осетровый
+Бамия
+Банан
+Бананы сушеные
+Баранина отварная
+Баранки простые
+Баранки сдобные
+Бастурма сыровяленная (Останкино)
+Бастурма сыровяленная (Черкизовский)
+Бастурма тюркская (Царицыно)
+Батон нарезной
+Батон простой
+Батон столовый
+Батончик с отрубями
+Батончики
+Белуга бланшированная
+Белые грибы
+Белые грибы сушеные
+Белый хлеб хрустящий
+Беляши
+Бефстроганов
+Биточки паровые
+Бифштекс
+Блинчики с творогом и сметаной
+Блины
+Бобы
+Борщ из квашеной капусты
+Борщ из свежей капусты с томатами
+Борщ летний
+Борщ с капустой и картофелем
+Борщ сибирский
+Борщ украинский
+Бренди 40% алкоголя
+Брусника
+Брынза из коровьего молока
+Брынза из овечьего молока
+Брынза коровья
+Брынза Фетаки
+Брюква
+Бублики
+Булка городская
+Булочка кунцевская
+Булочки диетические с лецитином
+Бульон говяжий
+Бульон грибной
+Бульон куриный
+Бульон рыбный
+Ванильный сахар
+Варенье из айвы
+Варенье из груш
+Варенье из клубники
+Варенье из малины
+Варенье из мандаринов
+Варенье из персиков
+Варенье из сливы
+Варенье из черноплодной рябины
+Варенье из яблок
+Варенье малиновое
+Ватрушка с творогом
+Вафли FLARONIS
+Вафли с жиросодержащими начинками
+Вафли с фруктовыми начинками
+Вермут 13% алкоголя
+Ветчина в форме
+Ветчина из говядины (Империя вкуса)
+Ветчина из говядины запеченая (Империя вкуса)
+Ветчина из индейки (Империя вкуса)
+Ветчина Индейка европейская (Микоян)
+Ветчина любительская
+Ветчина особая
+Винегрет
+Вино белое 10% алкоголя
+Вино белое 12.5% алкоголя
+Вино белое сладкое 12% алкоголя
+Вино белое сладкое 13.5%алкоголя
+Вино белое сухое 12% алкоголя
+Вино красное 12% алкоголя
+Виноград
+Виноградный сок
+Виски 40% алкоголя
+Вишневый сок
+Вишня
+Вишня кислая (морож.)
+Вобла вяленая
+Вобла хол.копч.
+Водка 40% алкоголя
+Воздушная кукуруза
+Галеты
+Гематоген
+Геркулес
+Говядина антрекот (МЕТРО)
+Говядина вырезка
+Говядина вырезка (МЕТРО)
+Говядина копченая (МИКОЯН)
+Говядина отварная
+Говядина тушеная
+Голубика
+Горбуша
+Горбуша в томатн.соусе
+Горбуша вареная
+Горбуша соленая
+Горох сушеный
+Горошек зеленый
+Гранат
+Гранатовый сок
+Грейпфрут
+Грейпфрутовый сок
+Гречневая каша (Myllyn Paras)
+Гречневая крупа Мистраль
+Гречневая продел
+Гречневая ядрица
+Грибы ассорти "Грибное лукошко"
+Грудинка сырокопченая
+Грузди
+Груша
+Гуава
+Гуляш
+Гуляш говяжий
+Гуляш свиной
+Джем из абрикосов
+Джем из мандаринов
+Джем из черной смородины
+Джин 40% алкоголя
+Драже ореховое
+Драже сахарное
+Драже фруктово-ягодное в шоколаде
+Дыня
+Ежевика
+Желатин пищевой
+Жир бараний топленый
+Жир говяжий топленый
+Жир свиной (лярд)
+Завтрак туриста (говядина)
+Завтрак туриста (свинина)
+Земляника садовая
+Зерна пшеницы
+Зефир
+Зубатка
+Изюм
+икра баклажаная "От михалыча"
+Икра белужья зернистая
+Икра горбуши зернистая
+Икра из баклажанов
+Икра из кабачков
+Икра кеты зернистая
+Икра минтаевая пробойная
+Икра осетровая зернистая
+Икра осетровая паюсная
+Икра севрюжья зернистая
+Имунеле NEO (Вимм-Билль-Данн)
+Индейка жареная
+Индейка отварная
+Индейка филе (БИБИГОН)
+Индейка шницель (Егорьевская п/ф)
+Инжир
+Инжир сушеный
+Иогурт 3.2%-ной жирн. Сладкий
+Ирис полутвердый
+Ирис тираженный
+Йогурт "Активия" с черносливом
+Йогурт 1.5%-нойжирн.
+Йогурт 1.5%-ный сладкий
+Йогурт 3.2%-ной жирн.
+Кабачки
+Кабачки жареные
+Какао порошок "Золотой ярлык"
+Какао порошок "Российский"
+Какао со сгущ. молоком с сахаром
+Какао со сгущ. сливками с сахаром
+Калач московский
+Кальмар
+Камбала
+Камбала в томатн.соусе
+Камбала гор.копч.
+Камбала обжаренная в масле
+Капуста белокочанная
+Капуста белокочанная жареная
+Капуста белокочанная отварная
+Капуста белокочанная тушеная
+Капуста брокколи
+Капуста брюссельская
+Капуста брюссельская хортекс
+Капуста квашеная
+Капуста кольраби
+Капуста краснокочанная
+Капуста пекинская
+Капуста Романеско (Бондюэль)
+Капуста цветная
+Капуста цветная отварная
+Карамель леденцовая
+Карамель с ликерными начинками
+Карамель с молочными начинками
+Карамель с ореховыми начинками
+Карамель с помадными начинками
+Карамель с прохладительными начинками
+Карамель с фруктово-ягодными начинками
+Карамель с шоколадно-ореховыми начинками
+Карась
+Карп
+Картофель
+Картофель жареный
+Картофель отварной
+Картофельное пюре
+Картофельные чипсы
+Катык Долголетие
+Каша геркулесовая молочная
+Каша геркулесовая на воде
+Каша гречневая вязкая на воде
+Каша гречневая рассыпчатая
+Каша манная молочная
+Каша манная на воде
+Каша овсяная молочная
+Каша овсяная на воде
+Каша перловая рассыпчатая
+Каша пшеничная вязкая на воде
+Каша пшеничная рассыпчатая
+Каша пшенная вязкая на воде
+Каша пшенная рассыпчатая
+Каша рисовая молочная
+Каша рисовая на воде
+Каша ячневая вязкая на воде
+Каша ячневая рассыпчатая
+Каштаны жареные
+Кедровые орешки
+Кета
+Кета соленая
+Кетчуп
+Кефир 2.5% жирн.
+кефир 33 коровы 1%
+Кефир жирный
+Кефир нежирный
+кефир Пастушок 1%
+Кешью
+Киви
+Килька балтийская соленая
+Килька гор.копч.
+Килька пряного посола
+клюква
+Козинак кунжутный на фруктозе
+Кокосовый орех
+Колбаса армавирская
+Колбаса диетическая
+Колбаса для завтрака
+Колбаса докторская
+Колбаса закусочная
+Колбаса зернистая
+Колбаса краковская
+Колбаса кубанская
+Колбаса любительская
+Колбаса майкопская
+Колбаса минская
+Колбаса молочная
+Колбаса московская
+Колбаса одесская
+Колбаса отдельная
+Колбаса полтавская
+Колбаса прима
+Колбаса русская
+Колбаса салями
+Колбаса свиная
+Колбаса сервелат
+Колбаса советская
+Колбаса степная
+Колбаса столичная
+Колбаса столовая
+Колбаса таллиннская
+Колбаса украинская
+Колбаса чайная
+Колбаса южная
+Компот из абрикосов
+Компот из айвы
+Компот из винограда
+Компот из вишни
+Компот из вишни
+Компот из мандаринов
+Компот из персиков
+Компот из слив
+Компот из черешни
+Компот из яблок
+Компот ит груш
+Конфеты Грильяж (Рот-Фронт)
+Конфеты Мишка косолапый  (Кр. октябрь)
+Конфеты молочные
+Конфеты Огни Москвы (Рот-Фронт)
+Конфеты помадные
+Конфеты Российские (Рот-Фронт)
+Конфеты Трюфели с амаретто (Победа)
+Конфеты Фруже клюква в желе и шок. (16гр/шт)
+Конфеты фруктово-помадные
+Конфеты шоколадные с грильяжной начинкой
+Конфеты шоколадные с кремовой начинкой
+Конфеты шоколадные с начинкой между слоями вафель
+Конфеты шоколадные с помадной начинкой
+Конфеты шоколадные с пралиновой начинкой
+Конфеты шоколадные с фруктовой начинкой
+Конфеты шоколадные с шоколадно-кремовой начинкой
+Конфеты шоколадные с шоколадно-ореховой начинкой
+Коньяк 40%
+Корейка сырокопченая
+Коричневый рис
+Котлеты говяжьи
+котлеты из говядины с индейкой
+Котлеты свиные
+Кофе жареный в зернах (сухой)
+Кофе растворимый (сухой)
+Кофе со сгущ. молоком с сахаром
+Кофе со сгущ. сливками. с сахаром
+Кофейн.напиток Здоровье (сухой)
+Краб
+Крабы
+Креветки
+Крекеры
+Криль
+Кролик жареный
+Кролик отварной
+Крупа кукурузная
+Крупа манная
+Крупа перловая
+Крыжовник
+Кукуруза дробленая
+Кукуруза консерв. (Бондюэль)
+Кукуруза целыми зернами
+Кукурузные зерна
+Кунжутное семя
+Курага
+Куриная грудка
+Куриная грудка Петелинка
+Куриные котлеты
+Курица жареная
+Курица отварная
+Лаваш
+Лапша японская "Соба" из гречн. муки
+Лещ
+Лещ в томатн.соусе
+Лещ вяленый
+Лещ гор.копч.
+Лещ хол.копч.
+Ликер 24% алкоголя
+Лимон
+Лимонный сок
+Лисички
+лосось (горбуша)
+лосось (кета)
+Лосось соленый
+Лук зеленый (перо)
+Лук порей
+Лук репчатый
+Лукум сбивной
+Мадера 18% алкоголя
+Майонез Провансаль
+Макароны "Топинамбурные" (МакМастер)
+Макароны "Целеб" ржаные
+Макароны 1-го сорта
+Макароны высшего сорта
+Макароны жареные
+Макароны отварные
+Макароны яичные
+Макрель
+Малина
+Манго
+Мандарин
+Мандариновый сок
+Маргарин Молочный
+Маргарин Славянский
+Маргарин Сливочный
+Маргарин Солнечный
+Маргарин Экстра
+Маргарин Эра
+Мармелад фруктово-ягодный
+Масло арахисовое рафинир.
+Масло горчичное
+Масло грецкого ореха
+Масло конопляное рафинир.
+Масло крестьянское несоленое
+Масло кукурузное
+Масло кунжутное
+Масло любительское несоленое
+Масло оливковое
+Масло подсолнечное
+Масло рапсовое рафинир.
+Масло расторопши
+Масло ростков пшеницы
+Масло сливочное
+Масло сливочное бутербродное
+Масло сливочное вологодское
+Масло сливочное несоленое
+Масло соевое рафинир.
+Масло топленое
+Масло хлопковое рафинир.
+Маслята
+Масса творожная особая
+Мед
+Меланж
+Мидии
+Миндаль
+Минтай
+Мозги говяжьи
+молоко 0.5% ДвД
+молоко 0.5% Пармалат
+молоко 1.5% ДвД
+Молоко 1.5%-ной жирн.
+Молоко 2.5%-ной жирн.
+Молоко 3.2%-ной жирн.
+молоко 3.5% ДвД
+Молоко 3.5%-ной жирн.
+Молоко 6 %-ной жир.
+Молоко обезжиренное
+Молоко сгущ. без сахара
+Молоко сгущ. с сахаром
+Молоко сгущ. с сахаром нежирное
+Молоко соевое 1.5% (ДакгоМЗ)
+Молоко сухое обезжиренное
+Молоко сухое цельное
+Молочная лапша
+мор.ов. "Summer mix" (Ardo)
+мор.ов. "Борщ украинский" (Хортино)
+мор.ов. "Весенний овощной букет" (Хортекс)
+мор.ов. "Весенняя" (ов.смесь Бондюэль)
+мор.ов. "Грибной" (Бондюэль)
+мор.ов. "Гювеч" (4 сезона)
+мор.ов. "Из цветной капусты" (Хортекс)
+мор.ов. "Итальянский" (Хортекс)
+мор.ов. "Китайская смесь" (4 сезона)
+мор.ов. "Кускус" (Овощной мир)
+мор.ов. "Лечо" (Хортекс)
+мор.ов. "Лечо" (Эликом)
+мор.ов. "Овощи для супа" (Хортино)
+мор.ов. "Овощное рагу" (4 сезона)
+мор.ов. "Осенний" (Хортекс)
+мор.ов. "Президентский" (Хортекс)
+Морковь желт.
+Морковь красная
+Морковь отварная
+Мороженое молочное
+Мороженое молочное крем-брюле
+Мороженое молочное шоколадное
+Мороженое сливочное
+Мороженое сливочное
+Мороженое сливочное крем-брюле
+Мороженое сливочное шоколадное
+Морошка
+Морская капуста
+Мука гречневая
+Мука кукурузная (диетическая)
+Мука пшеничная 1-го сорта
+Мука пшеничная 2-го сорта
+Мука пшеничная высшего сорта
+Мука пшеничная обойная
+Мука ржаная обдирная
+Мука ржаная обойная
+Мука рисовая (диетическая)
+Мышечный желудок кур
+Мюсли "Ягодная поляна" (Фруктовница)
+Мюсли Гренола яблочные с корицей
+Мясо в белом соусе
+Налим
+Нерка красная
+Нут сушеный
+Облепиха
+Овсяная крупа
+Огурцы грунтовые
+Огурцы парниковые
+Огурцы соленые
+Окорок тамбовский
+Окорочка жареные
+Окрошка мясная (с квасом)
+Окрошка на кефире
+Окунь морской
+Окунь морской (балычок)
+Окунь морской гор.копч.
+Окунь морской тушка
+Окунь речной филе
+Оладьи
+Оливки зеленые маринованные
+оливки с анчоусом
+Оливки черные консервированные
+Омлет
+Опята
+Орехи грецкие
+Орехи кешью жареные с медом и кунжутом
+Осетр
+Осетр в томатн.соусе
+осетр натуральный
+отруби "Здравица" с бета-каротином
+отруби лимонные
+отруби пшеничные
+отруби ржаные
+отруби с корицей
+отруби с морковью
+отруби с морской капустой
+отруби с топинамбуром
+отруби с яблоком
+отруби со свеклой
+Охотничьи колбаски
+Палтус
+Папайя
+Паста Океан
+Пастила
+Патиссоны
+Пахта
+Паштет печеночный
+Пельмени отварные
+Перец зеленый сладкий
+Перец красный сладкий
+Перец сладкий мороженный (4 сезона)
+Персики
+Персики сушеные (курага)
+Персиковый сок
+Петрушка (зелень)
+Петрушка (корень)
+Печень говяжья
+Печень кур
+Печень свиная
+Печень трески
+Печенье затяжное
+Печенье сахарное
+Печенье сдобное
+Пиво 1.8% алкоголя
+Пиво 2.8% алкоголя
+Пиво 4.5% алкоголя
+Пиво 4.5% алкоголя
+Пирог с мясом
+Пирог с повидлом
+Пирожное бисквитное с фруктовой начинкой
+Пирожное заварное
+Пирожное крошковое
+Пирожное песочное с фруктовой начинкой
+Пирожное слоеное с кремом
+Пирожное слоеное с фруктовой начинкой
+Пломбир
+Пломбир крем-брюле
+Пломбир шоколадный
+Плюшка московская
+Повидло сливовое
+Повидло яблочное
+Подберезовики
+Подберезовики сушеные
+Подосиновики
+Подосиновики сушеные
+Пончики
+Портвейн 20%алкоголя
+Почки говяжьи
+Почки свиные
+Простокваша
+Пряники
+Пунш 26% алкоголя
+Пшеничная каша (Myllyn Paras)
+Пшенная каша (Myllyn Paras)
+Пшено
+Пюре яблочное
+Рассольник домашний
+Рассольник ленинградский
+Ревень
+редис
+Редька
+Редька зеленая
+Репа
+Рис коричневый
+Рис полированный
+Рис рассыпчатый (т.е. вареный)
+Рис черный Мистраль
+Рожки обсыпные
+Ром 40% алкоголя
+Российский плавленый сыр
+рыбий жир в капсулах
+Рыжики
+Рябина садовая
+Рябина черноплодная
+Ряженка 6 %-ной жирн.
+Ряженка из Простоквашино (Петмол)
+Ряженка Останкинская
+Ряженка Очаковская 4%
+Сазан в томатн.соусе
+Сайра бланшировання в масле
+Салака
+Салака в томатн.соусе
+Салака гор.копч.
+Салат
+Салат кочанный
+Сардельки говяжьи
+Сардельки свиные
+Сардина
+Сардины (ломтики) в масле
+Сахар (песок)
+Сахар-рафинад
+Свекла
+Свекла натур.
+Свекла отварная
+Свекла сырая
+Свекольник
+Свинина жирная
+Свинина отварная
+Свинина тушеная
+Сдоба выборгская с маком
+Сдоба выборгская с повидлом
+Сдоба донская
+Сдоба обыкновенная
+Севрюга в томатн.соусе
+Сельдерей (зелень)
+Сельдерей (корень)
+Сельдь атлантическая соленая
+Сельдь иваси соленая
+Сельдь тихоокеанская жирная хол.копч.
+Семга соленая
+Семга стейк мороженый
+Семечки подсолнечника
+Семечки подсолнуха сушеные
+Семечки тыквы сушеные
+Сердце говяжье
+Сердце кур
+Сердце свиное
+Скумбрия
+Скумбрия в масле
+Скумбрия хол.копч.
+Сладкий картофель
+Слива садовая
+Сливки 10 %-ной жир.
+Сливки 20 %-ной жир.
+Сливки 35 %-ной жир.
+Сливки взбитые с ванилью
+Сливки сгущ. с сахаром
+Сливки сухие Сопью Крима
+Сливовый сок
+Сметана 10 %-ной жир.
+сметана 15% "Домик в деревне"
+Сметана 20 %-ной жир.
+Сметана 25 %-ной жир.
+Сметана 30 %-ной жир.
+сметана 42% Валио
+Смородина белая
+Смородина красная
+Смородина черная
+Сморчки
+Соевое мясо
+сок "Перец красный" (8 овощей)
+Сок морковный
+Сок свекольный
+Сок томатный
+Соломка сладкая
+Солянка овоще-грибная из свежей капусты
+Солянка овощная из квашеной капусты
+Сом
+Сом в томатн.соусе
+Сосиски говяжьи
+Сосиски любительские
+Сосиски молочные
+Сосиски особые
+Сосиски русские
+Соус "Кетчуп паприкаш" (Calve)
+Соус "Кисло-сладкий" для мяса (Calve)
+Соус кубанский
+Соус томатный острый
+Соус яблочный
+Соя сушеная
+Спаржа
+Ставрида
+Ставрида в томатн.соусе
+Ставрида обжаренная в масле
+Ставрида хол.копч.
+Студень из говяжьих ножек
+Судак
+Судак в томатн.соусе
+Сулугуни
+Суп картофельный
+Суп картофельный с бобовыми
+Суп картофельный с грибами
+Суп картофельный с крупой
+Суп картофельный с макаронными изделиями
+Суп крестьянский
+Суп овощной
+Суп овощной с фасолью
+Суп рисовый с мясом
+Суп с бобовыми
+Суп с макаронными изделиями
+Сухари с изюмом
+Сухой белок
+Сухой желток
+Сушки новые
+Сушки простые
+Сыр "Вест" 10% (Швейцарский)
+Сыр "Хит" 17% (Польша)
+Сыр балыковый копченый
+Сыр голландский брусковый
+Сыр голландский круглый
+Сыр домашний 4% (Карат)
+Сыр копченый к пиву
+Сыр костромской
+Сыр латвийский
+Сыр Маскарпоне (IGOR)
+Сыр Моццарелла Cilieqine (Феномен-ХХ)
+Сыр Моццарелла Santa Lucia (Galbani)
+Сыр Ольтерманни 17% (Валио)
+Сыр Ольтерманни 33% (Валио)
+Сыр пармезан
+Сыр плавленый President
+Сыр плавленый Городской (Карат)
+Сыр плавленый Колбасный копченый
+Сыр плавленый Костромской
+Сыр плавленый Латвийский
+Сыр плавленый Советский
+Сыр пошехонский
+Сыр прибалтийский
+Сыр рокфор
+Сыр российский
+Сыр советский
+Сыр Старый голландец
+Сыр Сулугуни
+Сыр Сулугуни (Умалат)
+Сыр сулугуни копч. (сыр-лапша ж - 20%)
+Сыр чеддер
+Сыр швейцарский
+Сыр Эдамский (Hofmeister)
+Сыр эстонский
+Сыр ярославский
+Сырки глазированные
+Сыроежки
+творог 0% (домик в деревне)
+творог 33 коровы 0%
+творог 33 коровы 4%
+творог взбитый 0.8% (Веселый молочник)
+творог Домашний 4%
+Творог жирный 18%
+Творог жирный 9%
+Творог нежирный
+творог нежирный "Славянский" из Вологды
+творог нежирный останкинский 
+творог обезжиренный Svalia
+Творог столовый 2% жирн.
+творог Хуторок нежирный
+Творожный торт Ежевика (Морозный узор)
+телятина запеченая
+телятина грудная часть
+телятина окорок (Метро)
+Терн
+Тесто дрожжевое
+Тесто дрожжевое сдобное
+Тесто слоеное пресное
+тирамису
+Толокно
+томатная паста Дядя Ваня
+Томат-паста
+Томат-пюре
+томаты
+Томаты без кожицы
+Томаты с кожицей
+Томаты соленые
+топинамбур
+Торт "Мистер йогурт" низкокалорийный
+Торт бисквитный с орехово-сливочным кремом
+Торт бисквитный с фруктовой начинкой
+Торт бисквитный с шоколадным кремом
+Торт слоеный с кремом
+Тофу фитосыр из сои (Флора)
+Треска
+Треска гор.копч.
+Треска соленая
+Трюфель (Solo Italia)
+Тунец
+Тунец в масле
+тунец с соб. соку HEINZ
+тунец стейк
+турецкий горох (Muller's Muhle)
+тыква
+Тыква жареная
+Тюлька соленая
+угорь морск. г/к в/у (БИМ продукт)
+Укроп
+Утка жареная
+Утка отварная
+Уха
+Фасоль (стручок)
+фасоль белая в том. соусе (бондюэль)
+Фасоль вареная
+фасоль желтая мороженая хортино
+фасоль Лоби зеленый (4 сезона)
+фасоль сушеная
+фасоль целая мороженая (бондюэль)
+Финики сушеные
+Фисташки
+Фисташки жареные соленые
+Фитнес-шейк +Л-карнитин (Мультипауэр)
+форель свежая филе
+Фруктовая смесь "4 сезона"
+Фруктоза
+Фундук
+Халва подсолнечная ванильная
+Халва тахинная Дружба
+Хамса соленая
+Хек
+Хлеб "8 злаков" (ЩелковоХлеб)
+Хлеб "Аромат"
+Хлеб "Довольство" (кориандр и солод)
+Хлеб "Довольство" (с яблочной подваркой)
+Хлеб "Куликовский"
+Хлеб белково-отрубевой
+Хлеб белый батон нарезной 
+Хлеб бородинский
+Хлеб докторский
+Хлеб Здоровье
+Хлеб зерновой
+Хлеб пониженной калорийности
+Хлеб пшеничный из муки высшего сорта
+Хлеб пшеничный подовый
+Хлеб пшеничный формовой
+Хлеб ржаной московский
+Хлеб ржаной подовый
+Хлеб ржаной формовой
+Хлеб ржаной хрустящий
+Хлеб с семенами подсолнечника (delba)
+Хлеб украинский подовый
+Хлеб украинский формовой
+Хлебцы  Finn Crisp (Sesame)
+Хлебцы  Finn Crisp (Мультизерновые)
+Хлебцы  Finn Crisp (Тмин)
+Хлебцы гречневые (Русская нива)
+Хлебцы ржаные хрустящие (Хлебный дом)
+Хлопья ржаные ячменные
+Хрен
+Хурма
+Цыплята отварные
+Цыплята табака
+Чай черный байховый (сухой)
+Чебуреки
+Черемша
+черешня
+черника
+Черноплодно-рябиновый сок
+Чернослив
+Черносмородинов.сок
+Чеснок
+Четырехзерновая каша (Myllyn Paras)
+Чечевица вареная
+Чечевица красная (Muller's Muhle)
+Шампиньоны
+Шарлотка
+Шашлык из свинины
+Шелковица
+Шерри 20% алкоголя
+Шиповник свежий
+Шиповник сушеный
+Шиповниковый сок
+Шницель
+Шницель свиной
+Шоколад без добавлений
+Шоколад горький 87% "Русский шоколад"
+Шоколад молочно-ореховый
+Шоколад молочно-сливочный
+Шоколад молочный
+Шоколад пористый молочный
+Шоколад с дробленым и целым орехом
+Шоколад черный пористый "Русский шоколад"
+Шпик свиной (без шкурки)
+Шпинат
+Шпроты
+Щавель
+Щи из квашеной капусты с картофелем
+Щи из свежей капусты
+Щи из свежей капусты
+Щи из свежей капусты с картофелем
+Щи суточные
+Щука
+Щука в томатн.соусе
+Эскалоп
+Эскимо
+Яблоки
+Яблоки сушеные
+Яблочный сок
+Язык говяжий
+Яичница-глазунья
+Яичный белок
+Яичный желток
+Яичный порошок
+Яйца куриные вареные вкрутую
+Яйца куриные вареные всмятку
+Яйца куриные сырые
+Ячневая крупа
+Caloric Content of foods
+Bran Flakes Kellogg's
+Alfalfa Seeds Sprouted Raw
+All-Bran Cereal
+Almonds Slivered
+Almonds Whole
+Angelfood Cake From Mix
+Apple Juice Canned
+Apple Pie
+Apples Dried Sulfured
+Apples Raw Peeled Sliced
+Apples Raw Unpeeled 2 Per Lb
+Apples Raw Unpeeled 3 Per Lb
+Applesauce Canned Sweetened
+Applesauce Canned Unsweetened
+Apricot Nectar No Added Vit C
+Apricot Canned Heavy Syrup
+Apricots Canned Juice Pack
+Apricots Dried Cooked Unswtn
+Apricots Dried Uncooked
+Apricots Raw
+Artichokes Globe Cooked Drn
+Asparagus Ckd Frm Frz Dr Sper
+Asparagus Ckd Frm Frz Drn Cut
+Asparagus Ckd Frm Raw Dr Cut
+Asparagus Ckd Frm Raw Dr Sper
+Asparagus Canned Spears Nosalt
+Asparagus Canned Spears W/Salt
+Avocados California
+Avocados Florida
+Bagels Egg
+Bagels Plain
+Baking Powder Low Sodium
+Baking Powder Strght Phosphat
+Baking Powder Sas Ca Po4
+Baking Powder Sas Capo4+Caso4
+Baking Pwdr Biscuits From Mix
+Baking Pwdr Biscuits Homerecpe
+Baking Pwdr Biscuits Refrgdogh
+Bamboo Shoots Canned Drained
+Bananas
+Bananas Sliced
+Barbecue Sauce
+Barley Pearled Light Uncookd
+Bean Sprouts Mung Cookd Dran
+Bean Sprouts Mung Raw
+Bean With Bacon Soup Canned
+Beans Dry Canned W/Frankfurter
+Beans Dry Canned W/Pork+Swtsce
+Beans Dry Canned W/Pork+Tomsce
+Beef And Vegetable Stew Hm Rcp
+Beef Broth Boulln Consm Cnnd
+Beef Gravy Canned
+Beef Heart Braised
+Beef Liver Fried
+Beef Noodle Soup Canned
+Beef Potpie Home Recipe
+Beef Roast Eye O Rnd Lean
+Beef Roast Rib Lean +Fat
+Beef Roast Rib Lean Only
+Beef Steak Sirloin Broil Lean
+Beef Steak Sirloin Broil Ln+Ft
+Beef Canned Corned
+Beef Ckd Bttm Round Lean Only
+Beef Ckd Bttm Round Lean +Fat
+Beef Ckd Chuck Blade Lean+Fat
+Beef Ckd Chuck Blade Leanonly
+Beef Dried Chipped
+Beer Light
+Beer Regular
+Beet Greens Cooked Drained
+Beets Canned Drained No Salt
+Beets Canned Drained W/ Salt
+Beets Cooked Drained Diced
+Beets Cooked Drained Whole
+Black Beans Dry Cooked Drand
+Blackberries Raw
+Blackeye Peas Immatr Raw Cked
+Blackeye Peas Immtr Frzn Cked
+Black-Eyed Peas Dry Cooked
+Blue Cheese
+Blue Cheese Salad Dressing
+Blueberries Frozen Sweetened
+Blueberries Frozen Sweetened
+Blueberries Raw
+Blueberry Muffins Home Recipe
+Blueberry Muffins From Com Mix
+Blueberry Pie
+Blueberry Pie
+Bologna
+Boston Brown Bread W/Whtecrnm
+Boston Brown Bread W/Yllwcrnml
+Bouillon Dehydrtd Unprepared
+Bran Muffins From Commerl Mix
+Bran Muffins Home Recipe
+Braunschweiger
+Brazil Nuts
+Bread Stuffing From Mx Drytype
+Bread Stuffing From Mx Moist
+Breadcrumbs Dry Grated
+Broccoli Frzn Cooked Draned
+Broccoli Raw
+Broccoli Raw Cooked Drained
+Broccoli Raw Cooked Drained
+Brown And Serve Sausage Brwnd
+Brown Gravy From Dry Mix
+Brownies W/ Nuts Frm Home Recp
+Brownies W/ Nuts Frstng Cmmrcl
+Brussels Sprouts Frzn Cooked
+Brussels Sprouts Raw Cooked
+Buckwheat Flour Light Sifted
+Bulgur Uncooked
+Butter Salted
+Butter Salted
+Butter Salted
+Butter Unsalted
+Butter Unsalted
+Butter Unsalted
+Buttermilk Dried
+Buttermilk Fluid
+Cabbage Chinese Pak-Choi Ckd
+Cabbage Chinese Pe-Tsai Raw
+Cabbage Common Cooked Drned
+Cabbage Common Raw
+Cabbage Red Raw
+Cabbage Savoy Raw
+Cake Or Pastry Flour Sifted
+Camembert Cheese
+Cantaloup Raw
+Cap'n Crunch Cereal
+Caramels Plain Or Chocolate
+Carob Flour
+Carrot Cake Cremchese Frst Rec
+Carrot Cake Cremchese Frst Rec
+Carrots Canned Drn W/ Salt
+Carrots Canned Drnd W/O Salt
+Carrots Cooked From Frozen
+Carrots Cooked From Raw
+Carrots Raw Grated
+Carrots Raw Whole
+Cashew Nuts Dry Roastd Salted
+Cashew Nuts Dry Roastd Unsalt
+Cashew Nuts Dry Roastd Unsalt
+Cashew Nuts Dry Roasted Saltd
+Cashew Nuts Oil Roastd Salted
+Cashew Nuts Oil Roastd Salted
+Cashew Nuts Oil Roastd Unsalt
+Cashew Nuts Oil Roastd Unsalt
+Catsup
+Catsup
+Cauliflower Cooked From Frozn
+Cauliflower Cooked From Raw
+Cauliflower Raw
+Celery Seed
+Celery Pascal Type Raw Piece
+Celery Pascal Type Raw Stalk
+Cheddar Cheese
+Cheddar Cheese
+Chedddar Cheese Shredded
+Cheerios Cereal
+Cheese Crackers Plain
+Cheese Crackers Sandwch Peant
+Cheese Sauce W/ Milk Frm Mix
+Cheeseburger 4oz Patty
+Cheeseburger Regular
+Cheesecake
+Cheesecake
+Cherries Sour Red Cannd Water
+Cherries Sweet Raw
+Cherry Pie
+Cherry Pie
+Chestnuts European Roasted
+Chicken A La King Home Recipe
+Chicken And Noodles Home Recp
+Chicken Chow Mein Canned
+Chicken Chow Mein Home Recipe
+Chicken Frankfurter
+Chicken Gravy From Dry Mix
+Chicken Gravy Canned
+Chicken Liver Cooked
+Chicken Noodle Soup Canned
+Chicken Noodle Soup Dehyd Prpd
+Chicken Potpie Home Recipe
+Chicken Rice Soup Canned
+Chicken Roll Light
+Chicken Canned Boneless
+Chicken Fried Batter Breast
+Chicken Fried Batter Drmstck
+Chicken Fried Flour Breast
+Chicken Fried Flour Drmstck
+Chicken Roasted Breast
+Chicken Roasted Drumstick
+Chicken Stewed Light +Dark
+Chickpeas Cooked Drained
+Chili Con Carne W/ Beans Cnnd
+Chili Powder
+Chocolate Chip Cookies Commrcl
+Chocolate Chip Cookies Hme Rcp
+Chocolate Chip Cookies Refrig
+Chocolate Milk Lowfat 1%
+Chocolate Milk Lowfat 2%
+Chocolate Milk Regular
+Chocolate Bitter Ot Baking
+Chop Suey W/ Beef +Pork Hmrcp
+Cinnamon
+Clam Chowder Manhattan Cannd
+Clam Chowder New Eng W/ Milk
+Clams Canned Drained
+Clams Raw
+Club Soda
+Coca Pwdr W/O Nofat Drymlk Prd
+Coca Pwdr W/O Nonfat Dry Milk
+Cocoa Pwdr W/ Nofat Drmlk Prpd
+Cocoa Pwdr With Nonfat Drymilk
+Coconut Dried Sweetnd Shredd
+Coconut Raw Piece
+Coconut Raw Shredded
+Coffee Brewed
+Coffee Instant Prepared
+Coffeecake Crumb From Mix
+Coffeecake Crumb From Mix
+Cola Diet Aspartame Only
+Cola Diet Asprtame +Sacchrn
+Cola Diet Saccharin Only
+Cola Regular
+Collards Cooked From Frozen
+Collards Cooked From Raw
+Cooked Salad Drssing Home Rcp
+Corn Chips
+Corn Flakes Kellogg's
+Corn Flakes Toasties
+Corn Grits Cooked Instant
+Corn Grits Ckd Reg Whte Nosalt
+Corn Grits Ckd Reg Whte W/Salt
+Corn Grits Ckd Reg Yllw Nosalt
+Corn Grits Ckd Reg Yllw W/Salt
+Corn Muffins From Commerl Mix
+Corn Muffins Home Recipe
+Corn Oil
+Corn Oil
+Corn Cnnd Crm Stl Whit No Sal
+Corn Cnnd Crm Stl Whit W/Salt
+Corn Cnnd Crm Stl Yllw No Sal
+Corn Cnnd Crm Stl Yllw W/Salt
+Corn Cooked Frm Frozn White
+Corn Cooked Frm Frozn White
+Corn Cooked Frm Frozn Yellow
+Corn Cooked Frm Frozn Yellow
+Corn Cooked From Raw White
+Corn Cooked From Raw Yellow
+Corn Cnnd Whl Krnl Whte No Sal
+Corn Cnnd Whl Krnl Whte W/Salt
+Corn Cnnd Whl Krnl Yllw No Sal
+Corn Cnnd Whl Krnl Yllw W/Salt
+Cornmeal Bolted Dry Form
+Cornmeal Degermed Enrched Cook
+Cornmeal Degermed Enriched Dry
+Cornmeal Whole-Grnd Unbolt Dry
+Cottage Cheese Cremd Lrge Curd
+Cottage Cheese Cremd Smll Curd
+Cottage Cheese Cremd W/Fruit
+Cottage Cheese Lowfat 2%
+Cottage Cheese Uncreamed
+Cr Of Chicken Soup W/ H20 Cnnd
+Cr Of Chicken Soup W/ Mlk Cnnd
+Cr Of Mushrom Soup W/ H2o Cnnd
+Cr Of Mushrom Soup W/ Mlk Cnnd
+Crabmeat Canned
+Cracked-Wheat Bread
+Cracked-Wheat Bread
+Cracked-Wheat Bread Toasted
+Cranberry Juice Cocktal W/Vitc
+Cranberry Sauce Canned Swtnd
+Cream Cheese
+Cream Of Wheat Ckd Mix N Eat
+Creme Pie
+Creme Pie
+Crm Wheat Ckd Quick No Salt
+Crm Wheat Ckd Quick W/  Salt
+Crm Wheat Ckd Reg Inst No Salt
+Crm Wheat Ckd Reg Inst W/Salt
+Croissants
+Cucumber W/ Peel
+Curry Powder
+Custard Pie
+Custard Pie
+Custard Baked
+Dandelion Greens Cooked Drnd
+Danish Pastry Fruit
+Danish Pastry Plain No Nuts
+Danish Pastry Plain No Nuts
+Danish Pastry Plain No Nuts
+Dates
+Dates Chopped
+Devil's Food Cake Chocfrst Fmx
+Devil's Food Cake Chocfrst Fmx
+Devil's Food Cake Chocfrst Fmx
+Doughnuts Cake Type Plain
+Doughnuts Yeast-Leavend Glzed
+Duck Roasted Flesh Only
+Eggnog
+Eggplant Cooked Steamed
+Eggs Cooked Fried
+Eggs Cooked Hard-Cooked
+Eggs Cooked Poached
+Eggs Cooked Scrambled/Omelet
+Eggs Raw White
+Eggs Raw Whole
+Eggs Raw Yolk
+Enchilada
+Endive Curly Raw
+Eng Muffin Egg Cheese Bacon
+English Muffins Plain
+English Muffins Plain Toastd
+Evaporated Milk Skim Canned
+Evaporated Milk Whole Canned
+Fats Cooking/Vegetbl Shorteng
+Fats Cooking/Vegetbl Shorteng
+Feta Cheese
+Fig Bars
+Figs Dried
+Filberts (Hazelnuts) Chopped
+Filberts (Hazelnuts) Chopped
+Fish Sandwich Lge W/O Cheese
+Fish Sandwich Reg W/ Cheese
+Fish Sticks Frozen Reheated
+Flounder Or Sole Baked Buttr
+Flounder Or Sole Baked Margrn
+Flounder Or Sole Baked W/Ofat
+Fondant Uncoated
+Frankfurter Cooked
+French Bread
+French Or Vienna Bread
+French Salad Dressing Localor
+French Salad Dressing Regular
+French Toast Home Recipe
+Fried Pie Apple
+Fried Pie Cherry
+Froot Loops Cereal
+Fruit Cocktail Cnnd Heavysyrup
+Fruit Cocktail Cnnd Juice Pack
+Fruit Punch Drink Canned
+Fruitcake Dark From recipe
+Fruitcake Dark From recipe
+Fudge Chocolate Plain
+Garlic Powder
+Gelatin Dessert Prepared
+Gelatin Dry
+Gin Rum Vodka Whisky 80-Proof
+Gin Rum Vodka Whisky 86-Proof
+Gin Rum Vodka Whisky 90-Proof
+Ginger Ale
+Gingerbread Cake From Mix
+Gingerbread Cake From Mix
+Golden Grahams Cereal
+Graham Cracker Plain
+Grape Drink Canned
+Grape Juice Canned
+Grape Soda
+Grapefrt Jce Frzn Cncn Unswten
+Grapefrt Jce Frzn Dltd Unswten
+Grapefruit Juice Canned Swtnd
+Grapefruit Juice Canned Unswt
+Grapefruit Juice Raw
+Grapefruit Canned Syrup Pack
+Grapefruit Raw Pink
+Grapefruit Raw White
+Grapejce Frzn Concen Swtnd W/C
+Grapejce Frzn Dilutd Swtnd W/C
+Grape-Nuts Cereal
+Grapes European Raw Thompsn
+Grapes European Raw Tokay
+Gravy And Turkey Frozen
+Great Northn Beans Dry Ckd Drn
+Ground Beef Broiled Lean
+Ground Beef Broiled Regular
+Gum Drops
+Haddock Breaded Fried
+Half And Half Cream
+Half And Half Cream
+Halibut Broiled Butter Lemju
+Hamburger 4oz Patty
+Hamburger Regular
+Hard Candy
+Herring Pickled
+Hollandaise Sce W/ H2o Frm Mx
+Honey
+Honey
+Honey Nut Cheerios Cereal
+Honeydew Melon Raw
+Ice Cream Vanlla Regulr 11%
+Ice Cream Vanlla Rich 16% Ft
+Ice Cream Vanlla Soft Serve
+Ice Milk Vanilla 4% Fat
+Ice Milk Vanilla Softserv 3%
+Imitation Creamers Liquid Frz
+Imitation Creamers Powdered
+Imitation Whipped Topping Frzn
+Imitatn Sour Dressing
+Imitatn Whipd Toping Pressrzd
+Imitatn Whipd Toping Pwdrd Prp
+Italian Bread
+Italian Bread
+Italian Salad Dressing Localor
+Italian Salad Dressing Regular
+Jams And Preserves
+Jellies
+Jelly Beans
+Jerusalem-Artichoke Raw
+Kale Cooked From Frozen
+Kale Cooked From Raw
+Kiwifruit Raw
+Kohlrabi Cooked Drained
+Lamb Rib Roasted Lean +Fat
+Lamb Rib Roasted Lean Only
+Lamb Chops Arm Braised Lean
+Lamb Chops Arm Braised Lean+Ft
+Lamb Chops Loin Broil Lean
+Lamb Chops Loin Broil Lean+Fat
+Lamb Leg Roasted Lean Only
+Lamb Leg Roasted Lean +Fat
+Lard
+Lard
+Lemon Juice Canned
+Lemon Juice Canned
+Lemon Juice Raw
+Lemon Juice Frzn Single-Strngh
+Lemon Meringue Pie
+Lemon Meringue Pie
+Lemonade Concen Frzen Diluted
+Lemonade Concentrate Frz Undil
+Lemon-Lime Soda
+Lemons Raw
+Lentils Dry Cooked
+Lettuce Butterhead Raw Head
+Lettuce Butterhead Raw Leave
+Lettuce Crisphead Raw Head
+Lettuce Crisphead Raw Pieces
+Lettuce Crisphead Raw Wedge
+Lettuce Looseleaf
+Light Coffee Or Table Cream
+Light Coffee Or Table Cream
+Lima Beans Dry Cooked Draned
+Lima Beans Baby Frzn Cked Drn
+Lima Beans Thick Seed Frzn Ckd
+Lime Juice Raw
+Lime Juice Canned
+Limeade Concen Frozen Diluted
+Limeade Concentrate Frzn Undil
+Lucky Charms Cereal
+Macadamia Nuts Oilrstd Salted
+Macadamia Nuts Oilrstd Salted
+Macadamia Nuts Oilrstd Unsalt
+Macadamia Nuts Oilrstd Unsalt
+Macaroni And Cheese Canned
+Macaroni And Cheese Home Rcpe
+Macaroni Cooked Firm
+Macaroni Cooked Tender Hot
+Macaroni Cooked Tender Cold
+Malted Milk Chocolate Powder
+Malted Milk Chocolate Pwdrppd
+Malted Milk Natural Powder
+Malted Milk Natural Pwdr Pprd
+Malt-O-Meal W/O Salt
+Malt-O-Meal With Salt
+Mangos Raw
+Margarine Imitation 40% Fat
+Margarine Imitation 40% Fat
+Margarine Regulr Hard 80% Fat
+Margarine Regulr Hard 80% Fat
+Margarine Regulr Hard 80% Fat
+Margarine Regulr Soft 80% Fat
+Margarine Regulr Soft 80% Fat
+Margarine Spread Hard 60% Fat
+Margarine Spread Hard 60% Fat
+Margarine Spread Hard 60% Fat
+Margarine Spread Soft 60% Fat
+Margarine Spread Soft 60% Fat
+Marshmallows
+Mayonnaise Type Salad Dressing
+Mayonnaise Imitation
+Mayonnaise Regular
+Melba Toast Plain
+Milk Chocolate Candy Plain
+Milk Chocolate Candy W/ Almond
+Milk Chocolate Candy W/ Penuts
+Milk Chocolate Candy W/ Rice C
+Milk Lofat 1% Added Solids
+Milk Lofat 1% No Addedsolid
+Milk Lofat 2% Added Solids
+Milk Lofat 2% No Addedsolid
+Milk Skim Added Milk Solids
+Milk Skim No Added Milksolid
+Milk Whole 3.3% Fat
+Minestrone Soup Canned
+Miso
+Mixed Grain Bread
+Mixed Grain Bread
+Mixed Grain Bread Toasted
+Mixed Nuts W/ Peants Dry Saltd
+Mixed Nuts W/ Peants Dry Unslt
+Mixed Nuts W/ Peants Oil Saltd
+Mixed Nuts W/ Peants Oil Unslt
+Molasses Cane Blackstrap
+Mozzarella Cheese Whole Milk
+Mozzarella Chese Skim Lomoist
+Muenster Cheese
+Mushroom Gravy Canned
+Mushrooms Canned Drnd W/Salt
+Mushrooms Cooked Drained
+Mushrooms Raw
+Mustard Greens Cooked Draned
+Mustard Prepared Yellow
+Nature Valley Granola Cereal
+Nectarines Raw
+Nonfat Dry Milk Instantized
+Nonfat Dry Milk Instantized
+Noodles Chow Mein Canned
+Noodles Egg Cooked
+Oatmeal Bread
+Oatmeal Bread
+Oatmeal Bread Toasted
+Oatmeal W/ Raisins Cookies
+Oatmeal Ckd Instnt Flvrd Fortf
+Oatmeal Ckd Instnt Plain Fortf
+Oatmeal Ckd Rg Qck Inst W/Osal
+Oatmeal Ckd Rg Qck Inst W/Salt
+Ocean Perch Breaded Fried
+Okra Pods Cooked
+Olive Oil
+Olive Oil
+Olives Canned Green
+Olives Canned Ripe Mission
+Onion Powder
+Onion Rings Breaded Frzn Prpd
+Onion Soup Dehydratd Prepred
+Onion Soup Dehydrtd Unprpred
+Onions Raw Chopped
+Onions Raw Cooked Drained
+Onions Raw Sliced
+Onions Spring Raw
+Orange +Grapefruit Juce Cannd
+Orange Juice Canned
+Orange Juice Chilled
+Orange Juice Raw
+Orange Juice Frozen Concentrte
+Orange Juice Frzn Cncn Diluted
+Orange Soda
+Oranges Raw
+Oranges Raw Sections
+Oregano
+Oysters Breaded Fried
+Oysters Raw
+Pancakes Buckwheat From Mix
+Pancakes Plain From Mix
+Pancakes Plain Home Recipe
+Papayas Raw
+Paprika
+Parmesan Cheese Grated
+Parmesan Cheese Grated
+Parmesan Cheese Grated
+Parsley Freeze-Dried
+Parsley Raw
+Parsnips Cooked Drained
+Pasterzd Proces Cheese Swiss
+Pasterzd Proces Cheese Americn
+Pasterzd Proces Chese Food Amr
+Pasterzd Proces Chese Spred Am
+Pea Beans Dry Cooked Drained
+Pea Green Soup Canned
+Peach Pie
+Peach Pie
+Peaches Canned Heavy Syrup
+Peaches Canned Heavy Syrup
+Peaches Canned Juice Pack
+Peaches Canned Juice Pack
+Peaches Dried
+Peaches Dried Cooked Unswetnd
+Peaches Frozen Swetned W/Vitc
+Peaches Frozen Swetned W/Vitc
+Peaches Raw
+Peaches Raw Sliced
+Peanut Butter
+Peanut Butter Cookie Home Recp
+Peanut Oil
+Peanut Oil
+Peanuts Oil Roasted Salted
+Peanuts Oil Roasted Salted
+Peanuts Oil Roasted Unsalted
+Peanuts Oil Roasted Unsalted
+Pears Canned Heavy Syrup
+Pears Canned Heavy Syrup
+Pears Canned Juice Pack
+Pears Canned Juice Pack
+Pears Raw Bartlett
+Pears Raw Bosc
+Pears Raw D'anjou
+Peas Edible Pod Cooked Drned
+Peas Green Cnnd Drnd W/ Salt
+Peas Green Cnnd Drnd W/O Salt
+Peas Split Dry Cooked
+Peas Grn Frozen Cooked Draned
+Pecan Pie
+Pecan Pie
+Pecans Halves
+Pecans Halves
+Pepper Black
+Peppers Hot Chili Raw Green
+Peppers Hot Chili Raw Red
+Peppers Sweet Cooked Green
+Peppers Sweet Cooked Red
+Peppers Sweet Raw Green
+Peppers Sweet Raw Red
+Pepper-Type Soda
+Pickles Cucumber Dill
+Pickles Cucumber Fresh Pack
+Pickles Cucumber Swt Gherkin
+Piecrust From Mix
+Piecrust From Home Recipe
+Pine Nuts
+Pineapple Juice Canned Unswtn
+Pineapple Canned Heavy Syrup
+Pineapple Canned Heavy Syrup
+Pineapple Canned Juice Pack
+Pineapple Canned Juice Pack
+Pineapple Raw Diced
+Pineapple-Grapefruit Juicedrnk
+Pinto Beans Dry Cooked Drained
+Pistachio Nuts
+Pita Bread
+Pizza Cheese
+Plantains Cooked
+Plantains Raw
+Plums Canned Heavy Syrup
+Plums Canned Heavy Syrup
+Plums Canned Juice Pack
+Plums Canned Juice Pack
+Plums Raw 1-1/2-In Diam
+Plums Raw 2-1/8-In Diam
+Popcorn Air-Popped Unsalted
+Popcorn Popped Veg Oil Saltd
+Popcorn Sugar Syrup Coated
+Popsicle
+Pork Chop Loin Broil Lean
+Pork Chop Loin Broil Len+Ft
+Pork Chop Loin Panfry Lean
+Pork Chop Loin Panfry Lean+Ft
+Pork Fresh Ham Roastd Lean
+Pork Fresh Ham Roastd Lean+Ft
+Pork Fresh Rib Roastd Lean
+Pork Fresh Rib Roastd Lean+Ft
+Pork Shoulder Braisd Lean
+Pork Shoulder Braisd Lean+Fat
+Pork Cured Bacon Regul Cked
+Pork Cured Bacon Canadn Cked
+Pork Cured Ham Canned Roast
+Pork Cured Ham Rosted Lean
+Pork Cured Ham Rosted Ln+Ft
+Pork Link Cooked
+Pork Luncheon Meat Canned
+Pork Luncheon Meat Choppd Ham
+Pork Luncheon Meat Ckd Ham Ln
+Pork Luncheon Meat Ckd Ham Rg
+Potato Chips
+Potato Salad Made W/ Mayonnais
+Potatoes Au Gratin From Mix
+Potatoes Au Gratin Home Recp
+Potatoes Baked Flesh Only
+Potatoes Baked With Skin
+Potatoes Boiled Peeled After
+Potatoes Boiled Peeled Befor
+Potatoes Hashed Brown Fr Frzn
+Potatoes Mashed Frm Dehydrted
+Potatoes Mashed Recpe Mlk+Mar
+Potatoes Mashed Recpe W/ Milk
+Potatoes Scalloped From Mix
+Potatoes Scalloped Home Recp
+Potatoes French-Frd Frzn Fried
+Potatoes French-Frd Frzn Oven
+Pound Cake Commercial
+Pound Cake Commercial
+Pound Cake From Home Recipe
+Pound Cake From Home Recipe
+Pretzels Stick
+Pretzels Twisted Dutch
+Pretzels Twisted Thin
+Product 19 Cereal
+Provolone Cheese
+Prune Juice Canned
+Prunes Dried
+Prunes Dried Cooked Unswtned
+Pudding Choc Cooked From Mix
+Pudding Choc Instant Fr Mix
+Pudding Chocolate Canned
+Pudding Rice From Mix
+Pudding Tapioca Canned
+Pudding Tapioca From Mix
+Pudding Vanilla Canned
+Pudding Vnlla Cooked From Mix
+Pudding Vnlla Instant Frm Mix
+Pumpernickel Bread
+Pumpernickel Bread
+Pumpernickel Bread Toasted
+Pumpkin And Squash Kernels
+Pumpkin Pie
+Pumpkin Pie
+Pumpkin Canned
+Pumpkin Cooked From Raw
+Quiche Lorraine
+Radishes Raw
+Raisin Bran Kellogg's
+Raisin Bran Post
+Raisin Bread
+Raisin Bread
+Raisin Bread Toasted
+Raisins
+Raisins
+Raspberries Frozen Sweetened
+Raspberries Frozen Sweetened
+Raspberries Raw
+Red Kidney Beans Dry Canned
+Refried Beans Canned
+Relish Sweet
+Rhubarb Cooked Added Sugar
+Rice Krispies Cereal
+Rice Brown Cooked
+Rice White Cooked
+Rice White Instant Cooked
+Rice White Parboiled Cooked
+Rice White Parboiled Raw
+Rice White Raw
+Ricotta Cheese Part Skim Milk
+Ricotta Cheese Whole Milk
+Roast Beef Sandwich
+Rolls Dinner Commercial
+Rolls Dinner Home Recipe
+Rolls Frankfurter +Hamburger
+Rolls Hard
+Rolls Hoagie Or Submarine
+Root Beer
+Rye Bread Light
+Rye Bread Light
+Rye Bread Light Toasted
+Rye Wafers Whole-Grain
+Safflower Oil
+Safflower Oil
+Salami Cooked Type
+Salami Dry Type
+Salmon Baked Red
+Salmon Canned Pink W/ Bones
+Salmon Smoked
+Salt
+Saltines
+Sandwich Spread Pork Beef
+Sandwich Type Cookie
+Sardines Atlntc Cnned Oil Drn
+Sauerkraut Canned
+Scallops Breaded Frzn Reheat
+Seaweed Kelp Raw
+Seaweed Spirulina Dried
+Self-Rising Flour Unsifted
+Semisweet Chocolate
+Sesame Seeds
+Shakes Thick Chocolate
+Shakes Thick Vanilla
+Sheetcake W/O Frstng recipe
+Sheetcake W/ Whfrstng recipe
+Sheetcake W/ Whfrstng recipe
+Sheetcake W/O Frstng recipe
+Sherbet 2% Fat
+Sherbet 2% Fat
+Shortbread Cookie Commercial
+Shortbread Cookie Home Recipe
+Shredded Wheat Cereal
+Shrimp Canned Drained
+Shrimp French Fried
+Snack Cakes Devils Food Cremfl
+Snack Cakes Sponge Creme Fllng
+Snack Type Crackers
+Snap Bean Cnnd Drnd Green Salt
+Snap Bean Cnnd Drnd Grn Nosalt
+Snap Bean Cnnd Drnd Yllw Salt
+Snap Bean Cnnd Drnd Yllw Nosal
+Snap Bean Frz Ckd Drnd Green
+Snap Bean Frz Ckd Drnd Yellow
+Snap Bean Raw Ckd Drnd Green
+Snap Bean Raw Ckd Drnd Yellow
+Sour Cream
+Sour Cream
+Soy Sauce
+Soybean Oil Hydrogenated
+Soybean Oil Hydrogenated
+Soybean-Cottonseed Oil Hydrgn
+Soybean-Cottonseed Oil Hydrgn
+Soybeans Dry Cooked Drained
+Spaghetti Cooked Firm
+Spaghetti Cooked Tender
+Spaghetti Tom Sauce Chee Hmrp
+Spaghetti Tom Sauce Chees Cnd
+Spaghetti Meatballs Tomsa Hmrp
+Spaghetti Meatballs Tomsac Cnd
+Special K Cereal
+Spinach Souffle
+Spinach Canned Drnd W/ Salt
+Spinach Canned Drnd W/O Salt
+Spinach Cooked Fr Frzen Drnd
+Spinach Cooked From Raw Drnd
+Spinach Raw
+Squash Summer Cooked Draind
+Squash Winter Baked
+Strawberries Frozen Sweetend
+Strawberries Frozen Sweetend
+Strawberries Raw
+Sugar Cookie From Refrig Dogh
+Sugar Frosted Flakes Kellogg
+Sugar Smacks Cereal
+Sugar Brown Pressed Down
+Sugar Powdered Sifted
+Sugar White Granulated
+Sugar White Granulated
+Sugar White Granulated
+Sunflower Oil
+Sunflower Oil
+Sunflower Seeds
+Super Sugar Crisp Cereal
+Sweet (Dark) Chocolate
+Sweetened Condensed Milk Cnnd
+Sweetpotatoes Baked Peeled
+Sweetpotatoes Boiled W/O Peel
+Sweetpotatoes Candied
+Sweetpotatoes Canned Mashed
+Sweetpotatoes Cnned Vac Pack
+Swiss Cheese
+Syrup Chocolate Flavored Thin
+Syrup Chocolate Flvred Fudge
+Table Syrup (Corn And Maple)
+Taco
+Tahini
+Tangerine Juice Canned Swtned
+Tangerines Canned Light Syrp
+Tangerines Raw
+Tartar Sauce
+Tea Brewed
+Tea Instant Preprd Unsweetend
+Tea Instant Prepard Sweetened
+Toaster Pastries
+Tofu
+Tomato Juice Canned W/O Salt
+Tomato Juice Canned With Salt
+Tomato Paste Canned W/O Salt
+Tomato Paste Canned With Salt
+Tomato Puree Canned W/O Salt
+Tomato Puree Canned With Salt
+Tomato Sauce Canned With Salt
+Tomato Soup W/ Water Canned
+Tomato Soup With Milk Canned
+Tomato Veg Soup Dehyd Prepred
+Tomatoes Canned S+L W/ Salt
+Tomatoes Canned S+L W/O Salt
+Tomatoes Raw
+Tortillas Corn
+Total Cereal
+Trix Cereal
+Trout Broiled W/ Buttr Lemju
+Tuna Salad
+Tuna Cannd Drnd Oil Chk Lght
+Tuna Cannd Drnd Watr White
+Turkey Ham Cured Turkey Thigh
+Turkey Loaf Breast Meat W/O C
+Turkey Loaf Breast Meat W/ C
+Turkey Patties Brd Battd Frid
+Turkey Roast Frzn Lght+Drk Ck
+Turkey Roasted Dark Meat
+Turkey Roasted Light +Dark
+Turkey Roasted Light +Dark
+Turkey Roasted Light Meat
+Turnip Greens Cked Frm Frozen
+Turnip Greens Cooked From Raw
+Turnips Cooked Diced
+Vanilla Wafers
+Veal Cutlet Med Fat Brsd Brld
+Veal Rib Med Fat Roasted
+Vegetable Beef Soup Canned
+Vegetable Juice Cocktail Cnnd
+Vegetables Mixed Canned
+Vegetables Mixed Cked Fr Frz
+Vegetarian Soup Canned
+Vienna Bread
+Vienna Sausage
+Vinegar And Oil Salad Dressing
+Vinegar Cider
+Waffles From Home Recipe
+Waffles From Mix
+Walnuts Black Chopped
+Walnuts Black Chopped
+Walnuts English Pieces
+Walnuts English Pieces
+Water Chestnuts Canned
+Watermelon Raw
+Watermelon Raw Diced
+Wheat Bread
+Wheat Bread
+Wheat Bread Toasted
+Wheat Flour All-Purpose Siftd
+Wheat Flour All-Purpose Unsif
+Wheat Thin Crackers
+Wheaties Cereal
+Whipped Topping Pressurized
+Whipped Topping Pressurized
+Whipping Cream Unwhiped Heavy
+Whipping Cream Unwhiped Heavy
+Whipping Cream Unwhiped Light
+Whipping Cream Unwhiped Light
+White Bread
+White Bread Crumbs Soft
+White Bread Cubes
+White Bread Slice 18 Per Loaf
+White Bread Slice 22 Per Loaf
+White Bread Toasted 18 Per
+White Bread Toasted 22 Per
+White Cake W/ Wht Frstng Comml
+White Cake W/ Wht Frstng Comml
+White Sauce W/ Milk From Mix
+White Sauce Medium Home Recp
+Whole-Wheat Bread
+Whole-Wheat Bread
+Whole-Wheat Bread Toasted
+Whole-Wheat Flour Hrd Wht Stir
+Whole-Wheat Wafers Crackers
+Wine Dessert
+Wine Table Red
+Wine Table White
+Yeast Bakers Dry Active
+Yeast Brewers Dry
+Yellow Cake W/ Choc Frst Frmix
+Yellow Cake W/ Choc Frst Frmix
+Yellowcake W/ Chocfrstng Comml
+Yellowcake W/ Chocfrstng Comml
+Yogurt W/ Lofat Milk Plain
+Yogurt W/ Lofat Milk Fruitflv
+Yogurt W/ Nonfat Milk
+Yogurt W/ Whole Milk
