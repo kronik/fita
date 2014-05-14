@@ -123,6 +123,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+#ifdef FREE
     if ([[DKSettingsManager sharedInstance][kSettingThemes] boolValue] == NO) {
         
         DKPurchaseViewController *viewController = [[DKPurchaseViewController alloc] init];
@@ -131,6 +132,7 @@
         
         return;
     }
+#endif
     
     UIColor *selectedColor = self.colors[indexPath.row];
     

@@ -21,6 +21,9 @@
                                                  alpha:1.0]
 @interface UIColor (MLPFlatColors)
 
+- (UIColor *)lighterColor;
+- (UIColor *)darkerColor;
+
 - (NSString *)hexString;
 + (UIColor *)colorFromHexString:(NSString *)hexString;
 

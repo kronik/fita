@@ -7,6 +7,7 @@
 //
 
 #import "DKProgressView.h"
+#import "UIColor+MLPFlatColors.h"
 
 @interface DKProgressView ()
 
@@ -24,11 +25,13 @@
     if (self) {
         // Initialization code
         
-        self.backgroundColor = [UIColor colorWithRed:0.22 green:0.45 blue:0.62 alpha:1];//[UIColor colorWithRed:0.33 green:0.84 blue:0.41 alpha:1];
+        UIColor *mainColor = ApplicationMainColor;
+        
+        self.backgroundColor = [mainColor darkerColor];
         
         _progressView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
         
-        _progressView.backgroundColor = ApplicationMainColor;
+        _progressView.backgroundColor = mainColor;
         
         [self addSubview:_progressView];
     }
