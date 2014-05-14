@@ -276,9 +276,8 @@
     NSURL *appStoreUrl = [NSURL URLWithString:[NSString stringWithFormat:@"http://itunes.apple.com/app/id%@", AppStoreApplicationId]];
     NSString *message = [NSString stringWithFormat:NSLocalizedString(@"Hi,\n\nCheck out FitA - my new personal fitness assistant app!\n\n%@", nil),
                          appStoreUrl];
-    NSString *appIconName = @"AppIcon40x40@2x";
+    NSString *appIconName = @"BigAppImage@2x";
     UIImage *appIcon = [UIImage imageNamed:appIconName];
-
     NSArray *activityItems = @[message, appIcon];
     
     UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems

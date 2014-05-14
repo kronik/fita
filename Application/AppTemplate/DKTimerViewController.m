@@ -11,10 +11,11 @@
 #import "DKTableViewCell.h"
 #import "DKCircleImageView.h"
 #import "DKCircleButton.h"
-#import "Timer.h"
-#import "MZTimerLabel.h"
 #import "DKProgressView.h"
+#import "Timer.h"
 
+#import "MZTimerLabel.h"
+#import "UIView+Screenshot.h"
 #import "MOOPullGestureRecognizer.h"
 #import "MOOCreateView.h"
 #import "NIKFontAwesomeIconFactory.h"
@@ -46,6 +47,8 @@
 @property (nonatomic, strong) NSString *currentTimerConfiguration;
 @property (nonatomic, strong) DKProgressView *workProgressView;
 @property (nonatomic, strong) UIImage *originalBackgroundImage;
+@property (nonatomic, strong) AVAudioPlayer *player;
+@property (nonatomic, strong) UIImage *imageToShare;
 
 @property (nonatomic) int currentRound;
 @property (nonatomic) int currentExercise;
@@ -72,6 +75,8 @@
 @synthesize excersizeLabel = _excersizeLabel;
 @synthesize isCounting = _isCounting;
 @synthesize workProgressView = _workProgressView;
+@synthesize imageToShare = _imageToShare;
+@synthesize player = _player;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -628,8 +633,8 @@
         NSURL *appStoreUrl = [NSURL URLWithString:[NSString stringWithFormat:@"http://itunes.apple.com/app/id%@", AppStoreApplicationId]];
         NSString *message = [NSString stringWithFormat:NSLocalizedString(@"I've just completed workout (%02d:%02d) with #fita!\n\n%@", nil),
                              minutes, seconds, appStoreUrl];
-        NSString *appIconName = @"AppIcon40x40@2x";
-        UIImage *appIcon = [UIImage imageNamed:appIconName];
+        NSString *appIconName = @"BigAppImage@2x";
+        UIImage *appIcon = self.imageToShare ? : [UIImage imageNamed:appIconName];
         
         NSArray *activityItems = appIcon ? @[message, appIcon] : @[message];
         
@@ -860,6 +865,14 @@
                                 }
 
                                 [this.timerLabel start];
+                                
+                                int64_t delayInSeconds = 1;
+                                dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+                                dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
+                                    UIView *viewToSnapshot = [UIApplication sharedApplication].keyWindow;
+
+                                    this.imageToShare = [viewToSnapshot screenshotFast];
+                                });
                             });
                         }];
                     }];
@@ -959,37 +972,47 @@
 }
 
 - (void)playComplete {
-    [self playSound:@"/System/Library/Audio/UISounds/Modern/sms_alert_popcorn.caf" withVibro:YES];
+    [self playAudio:@"/System/Library/Audio/UISounds/Modern/sms_alert_popcorn.caf" withVibro:YES];
 }
 
 - (void)playBeep {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"beep" ofType:@"wav"];
 
-    [self playSound:path withVibro:NO];
+    [self playAudio:path withVibro:NO];
 }
 
 - (void)playDoubleBeep {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"double_beep" ofType:@"wav"];
     
-    [self playSound:path withVibro:NO];
+    [self playAudio:path withVibro:NO];
 }
 
 - (void)playBeepEnd {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"start_beep" ofType:@"wav"];
     
-    [self playSound:path withVibro:NO];
+    [self playAudio:path withVibro:NO];
 }
 
 - (void)playBeepStart {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"start_beep" ofType:@"wav"];
     
-    [self playSound:path withVibro:NO];
+    [self playAudio:path withVibro:NO];
 }
 
-- (void)playAudio: (NSString *)audioFile {
-    AVPlayer *player = [AVPlayer playerWithURL:[NSURL fileURLWithPath:audioFile]];
+- (void)playAudio:(NSString *)audioFile withVibro:(BOOL)vibro {
     
-    [player play];
+    if (self.player) {
+        [self.player stop];
+    }
+    
+    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:audioFile] error:nil];
+    
+    [self.player play];
+    
+    if (vibro) {
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+    }
 }
 
 - (void)playSound: (NSString *)soundAtFile withVibro:(BOOL)vibro {
