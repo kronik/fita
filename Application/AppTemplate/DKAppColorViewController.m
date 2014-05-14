@@ -46,6 +46,17 @@
                     [UIColor flatDarkGrayColor],
                     [UIColor flatBlackColor]];
     
+    NSMutableArray *appColors = [@[ApplicationMainColor] mutableCopy];
+    
+    
+    for (UIColor *color in self.colors) {
+        if ([color isEqual:appColors.firstObject] == NO) {
+            [appColors addObject:color];
+        }
+    }
+    
+    self.colors = appColors;
+    
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;

@@ -113,6 +113,10 @@
     [self.navigationController.navigationBar setBackgroundImage:self.originalBackgroundImage forBarMetrics:UIBarMetricsDefault];
 }
 
+- (void)dealloc {
+    self.timerLabel = nil;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -526,10 +530,10 @@
     __weak typeof(self) this = self;
     
     [UIView animateWithDuration:0.3f delay:0.f options:UIViewAnimationOptionCurveEaseIn animations:^{
-        self.tableView.center = CGPointMake(ScreenWidth / 2, ScreenHeight / 2);
+        this.tableView.center = CGPointMake(ScreenWidth / 2, ScreenHeight / 2);
         
-        self.timePicker.frame = CGRectMake(0, -ScreenHeight, ScreenWidth, ScreenHeight);
-        [self.view layoutIfNeeded];
+        this.timePicker.frame = CGRectMake(0, -ScreenHeight, ScreenWidth, ScreenHeight);
+        [this.view layoutIfNeeded];
     } completion:^(BOOL finished) {
     }];
 
@@ -613,9 +617,7 @@
         return;
     }
     
-    if (buttonIndex == 0) {
-        [self rateApp];
-    } else {
+    if (buttonIndex == 1) {
         NSTimeInterval workTime = [self workTimeFromConfiguration];
         NSTimeInterval restTime = [self restTimeFromConfiguration];
         
@@ -634,7 +636,7 @@
         NSString *message = [NSString stringWithFormat:NSLocalizedString(@"I've just completed workout (%02d:%02d) with #fita!\n\n%@", nil),
                              minutes, seconds, appStoreUrl];
         NSString *appIconName = @"BigAppImage";
-        UIImage *appIcon = self.imageToShare ? : [UIImage imageNamed:appIconName];
+        UIImage *appIcon = self.imageToShare ? [UIImage imageNamed:appIconName] : [UIImage imageNamed:appIconName];
         
         NSArray *activityItems = appIcon ? @[message, appIcon] : @[message];
         
@@ -647,6 +649,8 @@
         [activityVC setValue:[NSString stringWithFormat:NSLocalizedString(@"Total workout time: %02d:%02d", nil), minutes, seconds] forKey:@"subject"];
 
         [self presentViewController:activityVC animated:TRUE completion:nil];
+    } else {
+        [self rateApp];
     }
 }
 
@@ -788,7 +792,7 @@
             
             float scaleFactor = 3;
             
-            self.navigationItem.leftBarButtonItem.enabled = NO;
+            self.navigationItem.backBarButtonItem.enabled = NO;
             
             [this.setTimerButton setTitle:@"3" forState:UIControlStateNormal];
             
@@ -800,6 +804,10 @@
                 this.setTimerButton.alpha = 0.01;
                 
             } completion:^(BOOL finished) {
+                
+                if (finished == NO) {
+                    return;
+                }
                 
                 this.setTimerButton.alpha = 0.0;
                 this.setTimerButton.transform = CGAffineTransformMakeScale(0.1, 0.1);
@@ -816,6 +824,10 @@
                 
                 } completion:^(BOOL finished) {
                     
+                    if (finished == NO) {
+                        return;
+                    }
+                    
                     this.setTimerButton.alpha = 0.0;
                     this.setTimerButton.transform = CGAffineTransformMakeScale(0.1, 0.1);
                     this.setTimerButton.alpha = 1.0;
@@ -830,6 +842,11 @@
                         this.setTimerButton.alpha = 0.01;
                         
                     } completion:^(BOOL finished) {
+                        
+                        if (finished == NO) {
+                            return;
+                        }
+                        
                         [this.setTimerButton setTitle:@"" forState:UIControlStateNormal];
 
                         this.setTimerButton.alpha = 1.0;
@@ -850,13 +867,13 @@
                         } completion:^(BOOL finished) {
                             [this playStartWork];
                             
-                            this.navigationItem.leftBarButtonItem.enabled = YES;
+                            this.navigationItem.backBarButtonItem.enabled = YES;
 
                             int64_t delayInSeconds = 1.2;
                             dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
                             dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
                                 
-                                [self.timerLabel reset];
+                                [this.timerLabel reset];
                                 
                                 if (this.isWorkStage) {
                                     [this.timerLabel setCountDownTime:[this workTimeFromConfiguration]];
@@ -914,11 +931,13 @@
     
     self.timePicker.configuration = self.currentTimerConfiguration;
     
+    __weak typeof(self) this = self;
+    
     [UIView animateWithDuration:0.3f delay:0.f options:UIViewAnimationOptionCurveEaseIn animations:^{
-        self.tableView.center = CGPointMake(ScreenWidth / 2, ScreenHeight + self.tableView.frame.size.height / 2);
-        self.timePicker.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+        this.tableView.center = CGPointMake(ScreenWidth / 2, ScreenHeight + self.tableView.frame.size.height / 2);
+        this.timePicker.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
         
-        [self.view layoutIfNeeded];
+        [this.view layoutIfNeeded];
     } completion:^(BOOL finished) {
     }];
 }

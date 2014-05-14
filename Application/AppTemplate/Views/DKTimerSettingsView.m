@@ -9,6 +9,7 @@
 #import "DKTimerSettingsView.h"
 #import "IZValueSelectorView.h"
 #import "DKCircleButton.h"
+#import "UIColor+MLPFlatColors.h"
 
 #define DKTimerSettingsViewPickerHeight 50.0
 
@@ -110,6 +111,8 @@
 
     yOffset += infoLabel.frame.size.height;
     
+    UIColor *mainColor = ApplicationMainColor;
+    
     self.workTimeView = [[IZValueSelectorView alloc] initWithFrame:CGRectMake(15, yOffset, ScreenWidth - 30, DKTimerSettingsViewPickerHeight)];
     
     self.workTimeView.dataSource = self;
@@ -117,8 +120,8 @@
     self.workTimeView.shouldBeTransparent = YES;
     self.workTimeView.horizontalScrolling = YES;
     self.workTimeView.decelerates = YES;
-    self.workTimeView.backgroundColor = [UIColor colorWithRed:0.22 green:0.45 blue:0.62 alpha:1];
-    self.workTimeView.selectedColor = ApplicationMainColor;
+    self.workTimeView.backgroundColor = [mainColor darkerColor];
+    self.workTimeView.selectedColor = mainColor;
     self.workTimeView.layer.borderWidth = 3.0;
     self.workTimeView.layer.borderColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6].CGColor;
     self.workTimeView.layer.cornerRadius = DKTimerSettingsViewPickerHeight / 2;
@@ -148,8 +151,8 @@
     self.restTimeView.shouldBeTransparent = YES;
     self.restTimeView.horizontalScrolling = YES;
     self.restTimeView.decelerates = YES;
-    self.restTimeView.backgroundColor = [UIColor colorWithRed:0.22 green:0.45 blue:0.62 alpha:1];
-    self.restTimeView.selectedColor = ApplicationMainColor;
+    self.restTimeView.backgroundColor = [mainColor darkerColor];
+    self.restTimeView.selectedColor = mainColor;
     self.restTimeView.layer.borderWidth = 3.0;
     self.restTimeView.layer.borderColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6].CGColor;
     self.restTimeView.layer.cornerRadius = DKTimerSettingsViewPickerHeight / 2;
@@ -179,8 +182,8 @@
     self.execView.shouldBeTransparent = YES;
     self.execView.horizontalScrolling = YES;
     self.execView.decelerates = YES;
-    self.execView.backgroundColor = [UIColor colorWithRed:0.22 green:0.45 blue:0.62 alpha:1];
-    self.execView.selectedColor = ApplicationMainColor;
+    self.execView.backgroundColor = [mainColor darkerColor];
+    self.execView.selectedColor = mainColor;
     self.execView.layer.borderWidth = 3.0;
     self.execView.layer.borderColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6].CGColor;
     self.execView.layer.cornerRadius = DKTimerSettingsViewPickerHeight / 2;
@@ -210,8 +213,8 @@
     self.roundsTimeView.shouldBeTransparent = YES;
     self.roundsTimeView.horizontalScrolling = YES;
     self.roundsTimeView.decelerates = YES;
-    self.roundsTimeView.backgroundColor = [UIColor colorWithRed:0.22 green:0.45 blue:0.62 alpha:1];
-    self.roundsTimeView.selectedColor = ApplicationMainColor;
+    self.roundsTimeView.backgroundColor = [mainColor darkerColor];
+    self.roundsTimeView.selectedColor = mainColor;
     self.roundsTimeView.layer.borderWidth = 3.0;
     self.roundsTimeView.layer.borderColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6].CGColor;
     self.roundsTimeView.layer.cornerRadius = DKTimerSettingsViewPickerHeight / 2;
