@@ -1014,6 +1014,8 @@ typedef enum DKMealViewActionType {
         
         self.textView.text = [words componentsJoinedByString:separator];
         [self hideSuggestions];
+        
+        [Flurry logEvent:@"Selected suggestion meal"];
     }
 }
 

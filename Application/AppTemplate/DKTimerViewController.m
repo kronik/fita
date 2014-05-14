@@ -633,7 +633,7 @@
         NSURL *appStoreUrl = [NSURL URLWithString:[NSString stringWithFormat:@"http://itunes.apple.com/app/id%@", AppStoreApplicationId]];
         NSString *message = [NSString stringWithFormat:NSLocalizedString(@"I've just completed workout (%02d:%02d) with #fita!\n\n%@", nil),
                              minutes, seconds, appStoreUrl];
-        NSString *appIconName = @"BigAppImage@2x";
+        NSString *appIconName = @"BigAppImage";
         UIImage *appIcon = self.imageToShare ? : [UIImage imageNamed:appIconName];
         
         NSArray *activityItems = appIcon ? @[message, appIcon] : @[message];
