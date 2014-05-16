@@ -66,13 +66,13 @@ typedef enum{
 @interface MZTimerLabel : UILabel;
 
 /*Delegate for finish of countdown timer */
-@property (strong) id<MZTimerLabelDelegate> delegate;
+@property (weak) id<MZTimerLabelDelegate> delegate;
 
 /*Time format wish to display in label*/
 @property (nonatomic,copy) NSString *timeFormat;
 
 /*Target label obejct, default self if you do not initWithLabel nor set*/
-@property (nonatomic,strong) UILabel *timeLabel;
+@property (nonatomic, weak) UILabel *timeLabel;
 
 /*Type to choose from stopwatch or timer*/
 @property (assign) MZTimerLabelType timerType;

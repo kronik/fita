@@ -110,7 +110,6 @@
 		0244F77A1909EF0B004AEAB4 /* AMWaveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7771909EF0B004AEAB4 /* AMWaveTransition.m */; };
 		0244F77B1909EF0B004AEAB4 /* AMWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7791909EF0B004AEAB4 /* AMWaveViewController.m */; };
 		0244F831190A1C89004AEAB4 /* DKTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F830190A1C89004AEAB4 /* DKTimerViewController.m */; };
-		0244F835190A389A004AEAB4 /* DKTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F833190A389A004AEAB4 /* DKTimePicker.m */; };
 		0244F838190A4E21004AEAB4 /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F837190A4E21004AEAB4 /* Timer.m */; };
 		0260D4091918D74700EE1A07 /* DKScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4081918D74700EE1A07 /* DKScheduleViewController.m */; };
 		0260D40C1918D80300EE1A07 /* DKWorkoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D40B1918D80300EE1A07 /* DKWorkoutCell.m */; };
@@ -331,6 +330,7 @@
 		029A9027191F6E2200C998C8 /* DKAppColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 029A9026191F6E2200C998C8 /* DKAppColorViewController.m */; };
 		029A90481920378500C998C8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029A90471920378500C998C8 /* CoreTelephony.framework */; };
 		029A90571920391300C998C8 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 029A90561920391300C998C8 /* libGoogleAdMobAds.a */; };
+		02EB20B0192615ED00E8866C /* DKTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EB20AF192615ED00E8866C /* DKTimePicker.m */; };
 		02F125DE18BDF246009434BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F125DD18BDF246009434BA /* Foundation.framework */; };
 		02F125E018BDF246009434BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F125DF18BDF246009434BA /* CoreGraphics.framework */; };
 		02F125E218BDF246009434BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F125E118BDF246009434BA /* UIKit.framework */; };
@@ -744,9 +744,6 @@
 		0244F7791909EF0B004AEAB4 /* AMWaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMWaveViewController.m; sourceTree = "<group>"; };
 		0244F82F190A1C89004AEAB4 /* DKTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKTimerViewController.h; sourceTree = "<group>"; };
 		0244F830190A1C89004AEAB4 /* DKTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKTimerViewController.m; sourceTree = "<group>"; };
-		0244F832190A389A004AEAB4 /* DKTimePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DKTimePicker.h; path = Views/DKTimePicker.h; sourceTree = "<group>"; };
-		0244F833190A389A004AEAB4 /* DKTimePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DKTimePicker.m; path = Views/DKTimePicker.m; sourceTree = "<group>"; };
-		0244F834190A389A004AEAB4 /* DKTimePickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DKTimePickerDelegate.h; path = Views/DKTimePickerDelegate.h; sourceTree = "<group>"; };
 		0244F836190A4E21004AEAB4 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
 		0244F837190A4E21004AEAB4 /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
 		0260D4071918D74700EE1A07 /* DKScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKScheduleViewController.h; sourceTree = "<group>"; };
@@ -1142,6 +1139,8 @@
 		029A90541920391300C998C8 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
 		029A90551920391300C998C8 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
 		029A90561920391300C998C8 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		02EB20AE192615ED00E8866C /* DKTimePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DKTimePicker.h; path = Views/DKTimePicker.h; sourceTree = "<group>"; };
+		02EB20AF192615ED00E8866C /* DKTimePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DKTimePicker.m; path = Views/DKTimePicker.m; sourceTree = "<group>"; };
 		02F125DA18BDF246009434BA /* FitAssist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitAssist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F125DD18BDF246009434BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		02F125DF18BDF246009434BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -2611,9 +2610,6 @@
 				0297F37F18C02D69006AC7F7 /* DKCircleImageView.m */,
 				0244F6D81907977B004AEAB4 /* DKCircleButton.h */,
 				0244F6D91907977B004AEAB4 /* DKCircleButton.m */,
-				0244F832190A389A004AEAB4 /* DKTimePicker.h */,
-				0244F833190A389A004AEAB4 /* DKTimePicker.m */,
-				0244F834190A389A004AEAB4 /* DKTimePickerDelegate.h */,
 				0272728818C0E10C0096A63A /* DKCollectionViewCell.h */,
 				0272728918C0E10C0096A63A /* DKCollectionViewCell.m */,
 				0272728B18C170B30096A63A /* DKTableViewCell.h */,
@@ -2646,6 +2642,8 @@
 				029A901D191F602E00C998C8 /* DKButtonCell.m */,
 				029A9022191F6B6300C998C8 /* DKColorMenuCell.h */,
 				029A9023191F6B6300C998C8 /* DKColorMenuCell.m */,
+				02EB20AE192615ED00E8866C /* DKTimePicker.h */,
+				02EB20AF192615ED00E8866C /* DKTimePicker.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -3867,6 +3865,7 @@
 				0228E5EC18FF77BB00B1A7DB /* MOOCreateView.m in Sources */,
 				0244F6EC1907FC90004AEAB4 /* IDMCaptionView.m in Sources */,
 				02F128EC18BE2FE0009434BA /* MHGalleryImageViewerViewController.m in Sources */,
+				02EB20B0192615ED00E8866C /* DKTimePicker.m in Sources */,
 				0268883D18BE32C3005599FB /* WCFastCell.m in Sources */,
 				02F128EB18BE2FE0009434BA /* MHGalleryCells.m in Sources */,
 				02F128F518BE2FE0009434BA /* NBNumberFormat.m in Sources */,
@@ -3942,7 +3941,6 @@
 				0297F36C18BFFECA006AC7F7 /* MRIconView.m in Sources */,
 				02F128F618BE2FE0009434BA /* NBPhoneMetaData.m in Sources */,
 				02F1280118BE2EE0009434BA /* FXBlurView.m in Sources */,
-				0244F835190A389A004AEAB4 /* DKTimePicker.m in Sources */,
 				02F1268F18BE2ADD009434BA /* AFURLRequestSerialization.m in Sources */,
 				0272739018C20D7F0096A63A /* RETableViewNumberCell.m in Sources */,
 				0280B4F018F054450097C90F /* CLLocation+APTimeZones.m in Sources */,
@@ -4183,8 +4181,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = FitAssist.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppTemplate/Dependencies/iCloud",
@@ -4221,7 +4219,7 @@
 					"-weak-lSystem",
 				);
 				PRODUCT_NAME = "FitAssist Free";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "219CB881-CD6E-419E-BD45-DC77054EFAF5";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -4337,7 +4335,7 @@
 					"-weak-lSystem",
 				);
 				PRODUCT_NAME = "FitAssist Free";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "219CB881-CD6E-419E-BD45-DC77054EFAF5";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -4488,7 +4486,7 @@
 					"-weak-lSystem",
 				);
 				PRODUCT_NAME = FitAssist;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "219CB881-CD6E-419E-BD45-DC77054EFAF5";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -4503,8 +4501,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = FitAssist.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppTemplate/Dependencies/iCloud",
@@ -4540,7 +4538,7 @@
 					"-weak-lSystem",
 				);
 				PRODUCT_NAME = FitAssist;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "219CB881-CD6E-419E-BD45-DC77054EFAF5";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;

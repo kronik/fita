@@ -16,6 +16,7 @@
 #import "Day+Extra.h"
 #import "DKDayCommentCell.h"
 #import "DKButtonCell.h"
+#import "DKTimePicker.h"
 
 #import "UILabel+WhiteUIDatePickerLabels.h"
 #import "NIKFontAwesomeIconFactory.h"
@@ -48,14 +49,15 @@ typedef enum DKMealViewActionType {
 @interface DKMealViewController () <UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate,
                                     UITextViewDelegate, UIActionSheetDelegate, UIImagePickerControllerDelegate,
                                     UINavigationControllerDelegate, UIActionSheetDelegate,
-                                    MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate> {
+                                    MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate,
+                                    DKTimePickerDelegate> {
     CGRect keyboardRect;
     CGRect cellRect;
     NSRange lastRange;
 }
 
 @property (nonatomic, strong) NSMutableArray *mealEntries;
-@property (nonatomic, strong) UIDatePicker *timePicker;
+@property (nonatomic, strong) DKTimePicker *timePicker;
 @property (nonatomic, strong) UITextView *textView;
 @property (nonatomic, strong) UIView *timePickerContainer;
 @property (nonatomic, strong) UIButton *imageButton;
@@ -160,14 +162,17 @@ typedef enum DKMealViewActionType {
 
     [self.view addSubview: self.timePickerContainer];
 
-    self.timePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 60, ScreenWidth, 100)];
+    float heightOffset = 0;
     
-    self.timePicker.datePickerMode = UIDatePickerModeTime;
+    if (ScreenHeight > 480.0) {
+        heightOffset = 20;
+    }
+    
+    self.timePicker = [[DKTimePicker alloc] initWithFrame:CGRectMake(0, 70 + heightOffset, ScreenWidth, 100)];
+    
     self.timePicker.tintColor = [UIColor whiteColor];
     self.timePicker.backgroundColor = ApplicationMainColor;
-    self.timePicker.timeZone = [NSTimeZone localTimeZone];
-    
-    [self.timePicker addTarget:self action:@selector(onTimeChanged) forControlEvents:UIControlEventValueChanged];
+    self.timePicker.delegate = self;
     
     [self.timePickerContainer addSubview: self.timePicker];
     
@@ -182,7 +187,7 @@ typedef enum DKMealViewActionType {
     self.textView.textAlignment = NSTextAlignmentLeft;
     self.textView.font = [UIFont fontWithName:ApplicationBoldFont size:14];
     self.textView.delegate = self;
-    self.textView.returnKeyType = UIReturnKeyNext;
+    self.textView.returnKeyType = UIReturnKeyDone;
     self.textView.keyboardType = UIKeyboardTypeDefault;
     self.textView.editable = YES;
     self.textView.userInteractionEnabled = YES;
@@ -558,10 +563,15 @@ typedef enum DKMealViewActionType {
     }
     
     float buttonHeight = ScreenHeight > 480.0 ? DKMealViewControllerCellHeight - 20 : DKMealViewControllerCellHeight - 20;
+    float heightOffset = 25;
+    
+    if (ScreenHeight > 480.0) {
+        heightOffset = 0;
+    }
 
     if (self.isUpdateMode) {
-        self.updateButton.frame = CGRectMake(60, self.timePicker.frame.origin.y + self.timePicker.frame.size.height - 10,
-                                           ScreenWidth - 120, buttonHeight);
+        self.updateButton.frame = CGRectMake(60, self.timePicker.frame.origin.y + self.timePicker.frame.size.height + 10 - heightOffset,
+                                             ScreenWidth - 120, buttonHeight);
         
         self.saveButton.frame = CGRectZero;
         self.saveShortButton.frame = CGRectZero;
@@ -574,25 +584,25 @@ typedef enum DKMealViewActionType {
         
         CGFloat xOffset = 3;
 
-        self.saveWorkButton.frame = CGRectMake(xOffset, self.timePicker.frame.origin.y + self.timePicker.frame.size.height - 10,
+        self.saveWorkButton.frame = CGRectMake(xOffset, self.timePicker.frame.origin.y + self.timePicker.frame.size.height + 10 - heightOffset,
                                                (ScreenWidth - 15) / 4, buttonHeight);
         
         xOffset += 3 + (ScreenWidth - 15) / 4;
         
         self.saveShortButton.frame = CGRectMake(xOffset,
-                                                self.timePicker.frame.origin.y + self.timePicker.frame.size.height - 10,
+                                                self.timePicker.frame.origin.y + self.timePicker.frame.size.height + 10 - heightOffset,
                                                 (ScreenWidth - 15) / 4, buttonHeight);
 
         xOffset += 3 + (ScreenWidth - 15) / 4;
 
         self.saveDrinkButton.frame = CGRectMake(xOffset,
-                                                self.timePicker.frame.origin.y + self.timePicker.frame.size.height - 10,
+                                                self.timePicker.frame.origin.y + self.timePicker.frame.size.height + 10 - heightOffset,
                                                 (ScreenWidth - 15) / 4, buttonHeight);
 
         xOffset += 3 + (ScreenWidth - 15) / 4;
 
         self.saveButton.frame = CGRectMake(xOffset,
-                                           self.timePicker.frame.origin.y + self.timePicker.frame.size.height - 10,
+                                           self.timePicker.frame.origin.y + self.timePicker.frame.size.height + 10 - heightOffset,
                                            (ScreenWidth - 15) / 4, buttonHeight);
     }
     
@@ -609,8 +619,7 @@ typedef enum DKMealViewActionType {
     }
     
     self.textView.text = self.lastSelectedMeal.text;
-    
-    [self.timePicker setDate:self.lastSelectedMeal.time animated:NO];
+    self.timePicker.time = self.lastSelectedMeal.time;    
 }
 
 - (void)commonSave {
@@ -623,7 +632,7 @@ typedef enum DKMealViewActionType {
     [self.textView resignFirstResponder];
 
     mealToSave.text = self.textView.text;
-    mealToSave.time = self.timePicker.date;
+    mealToSave.time = self.timePicker.time;
     
     if (mealToSave.text.length == 0) {
         [mealToSave MR_deleteEntity];
@@ -645,7 +654,7 @@ typedef enum DKMealViewActionType {
             }
         }
 
-        [this.navigationController setNavigationBarHidden:NO animated:YES];
+//        [this.navigationController setNavigationBarHidden:NO animated:YES];
 
         [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
             this.timePickerContainer.frame = cellRect;
@@ -703,16 +712,26 @@ typedef enum DKMealViewActionType {
     [self commonSave];
 }
 
-- (void)onTimeChanged {
-    
+- (void)timePicker:(DKTimePicker *)timePicker didSelectTime:(NSDate *)time {
     [self.textView resignFirstResponder];
     
     Meal *selectedMeal = self.lastSelectedMeal;
     
-    selectedMeal.time = self.timePicker.date;
+    selectedMeal.time = time;
     
     [self.tableView reloadData];
 }
+
+//- (void)onTimeChanged {
+//    
+//    [self.textView resignFirstResponder];
+//    
+//    Meal *selectedMeal = self.lastSelectedMeal;
+//    
+//    selectedMeal.time = self.timePicker.date;
+//    
+//    [self.tableView reloadData];
+//}
 
 - (void)handleGesture:(UIGestureRecognizer *)gestureRecognizer {
     if (gestureRecognizer.state == UIGestureRecognizerStateRecognized) {
@@ -745,9 +764,36 @@ typedef enum DKMealViewActionType {
     
     [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
         [this reloadAllMealEntries];
+        [this startEditMeal: newMeal];
     }];
+}
+
+- (void)cancelEditMeal {
+    __weak typeof(self) this = self;
     
-    [self startEditMeal: newMeal];
+    Meal *mealToSave = self.lastSelectedMeal;
+    
+    self.lastSelectedMeal = nil;
+    
+    [self.textView resignFirstResponder];
+    
+    if (mealToSave.text.length == 0) {
+        [mealToSave MR_deleteEntity];
+        
+        mealToSave = nil;
+    }
+    
+    [self reloadAllMealEntries];
+    [self.tableView reloadData];
+
+    [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        this.timePickerContainer.frame = cellRect;
+        this.timePickerContainer.alpha = 0;
+    } completion:^(BOOL finished) {
+        if (this.mealEntries.count == 1) {
+            [this startShowItemOptionsTutorial];
+        }
+    }];
 }
 
 - (void)startEditMeal: (Meal *)meal {
@@ -755,10 +801,13 @@ typedef enum DKMealViewActionType {
     __weak typeof(self) this = self;
 
     self.lastSelectedMeal = meal;
-
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
+                                                                                           target:self
+                                                                                           action:@selector(cancelEditMeal)];
     [self updateUI];
     
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+//    [self.navigationController setNavigationBarHidden:YES animated:YES];
     
     this.timePickerContainer.alpha = 0;
 
@@ -1104,6 +1153,10 @@ typedef enum DKMealViewActionType {
     
     [self.view addSubview:self.commentEditView];
     [self.commentEditView becomeFirstResponder];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave
+                                                                                           target:self
+                                                                                           action:@selector(endEditComment)];
 }
 
 - (void)endEditComment {
@@ -1115,6 +1168,7 @@ typedef enum DKMealViewActionType {
     __weak typeof(self) this = self;
 
     [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
+        [this reloadAllMealEntries];
         [this.tableView reloadData];
     }];
 }
@@ -1218,7 +1272,7 @@ typedef enum DKMealViewActionType {
         }
     } else {
         if (textView == self.textView) {
-            self.lastSelectedMeal.text = textView.text;
+//            self.lastSelectedMeal.text = textView.text;
         }
     }
     
@@ -1259,9 +1313,9 @@ typedef enum DKMealViewActionType {
     if (self.mealAutocompleteItems.count > 0) {
         [self.timePickerContainer addSubview:self.suggestTableView];
         
-        self.suggestTableView.frame = CGRectMake(0, self.timePicker.frame.origin.y + 20,
+        self.suggestTableView.frame = CGRectMake(0, self.timePicker.frame.origin.y - 5,
                                                  ScreenWidth,
-                                                 ScreenHeight - keyboardRect.size.height - self.timePicker.frame.origin.y - 20);
+                                                 ScreenHeight - keyboardRect.size.height - self.timePicker.frame.origin.y - ApplicationNavigationAndStatusBarHeight);
     }
 }
 
@@ -1583,7 +1637,7 @@ typedef enum DKMealViewActionType {
 }
 
 - (BOOL)prefersStatusBarHidden {
-    return self.lastSelectedMeal != nil ? YES : NO;
+    return NO;
 }
 
 - (void)setLastSelectedMeal:(Meal *)lastSelectedMeal {
