@@ -304,7 +304,16 @@
     
     self.messageViewController = controller;
     
-    [self presentViewController:controller animated:YES completion:nil];
+    if (controller) {
+        [self presentViewController:controller animated:YES completion:nil];
+    } else {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil
+                                                            message:NSLocalizedString(@"Unable to send a feedback", nil)
+                                                           delegate:nil
+                                                  cancelButtonTitle:NSLocalizedString(@"OK", nil)
+                                                  otherButtonTitles:nil];
+        [alertView show];
+    }
 }
 
 - (void)mailComposeController:(MFMailComposeViewController*)controller

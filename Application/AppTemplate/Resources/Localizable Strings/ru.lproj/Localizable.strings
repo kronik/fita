@@ -110,3 +110,4 @@
 "App themes" = "Темы приложения";
 "Operation failed!" = "Произошла ошибка!";
 "Success!" = "Готово!";
+"Unable to send a feedback" = "Ошибка отправки сообщения";

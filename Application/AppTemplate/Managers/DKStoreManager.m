@@ -97,7 +97,7 @@ NSInteger CompareTransactionInfoInfo(SKPaymentTransaction *transaction1, SKPayme
         
         NSSet *set = [NSSet setWithObjects: kProductTimerUnlock, kProductMealListUnlock, kProductNoAdvUnlock,
                                             kProductCumulativeUnlock, kProductSupportLevel1, kProductSupportLevel2,
-                                            kProductSupportLevel3, kProductThemesItemID, nil];
+                                            kProductSupportLevel3, kProductThemesUnlock, nil];
         
         SKProductsRequest *request = [[SKProductsRequest alloc] initWithProductIdentifiers:set];
         
@@ -153,7 +153,7 @@ NSInteger CompareTransactionInfoInfo(SKPaymentTransaction *transaction1, SKPayme
                     [[NSNotificationCenter defaultCenter] postNotificationName: kUnlockNoAdvProductNotification object: self];
                 }
                 
-                [self saveTransaction: transaction];
+//                [self saveTransaction: transaction];
             } else {
                 [Flurry logEvent:@"RejectedInvalidPurchase"];
                 NSLog(@"Unsuccessfully purchased full app unlock");
@@ -174,7 +174,7 @@ NSInteger CompareTransactionInfoInfo(SKPaymentTransaction *transaction1, SKPayme
             if (wasSuccess) {
                 [Flurry logEvent:@"SuccessValidRestorePurchase"];
                 
-                NSLog(@"Successfully restored full app unlock");
+                NSLog(@"Successfully restored product");
 
                 if ([product.productIdentifier isEqualToString:kProductThemesUnlock] || [product.productIdentifier isEqualToString:kProductCumulativeUnlock]) {
                     
@@ -199,7 +199,7 @@ NSInteger CompareTransactionInfoInfo(SKPaymentTransaction *transaction1, SKPayme
                     [[NSNotificationCenter defaultCenter] postNotificationName: kUnlockNoAdvProductNotification object: self];
                 }
                 
-                [self saveTransaction: transaction];
+//                [self saveTransaction: transaction];
             } else {
                 [Flurry logEvent:@"RejectedInvalidRestorePurchase"];
                 

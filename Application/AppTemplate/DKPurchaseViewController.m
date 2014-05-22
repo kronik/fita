@@ -301,25 +301,34 @@
     [Flurry logEvent:@"TapOnRestoreUnlock"];
 
     SKProduct *themesUnlock = [[DKStoreManager sharedInstance] getProductThemesUnlock];
-    SKProduct *timerUnlock = [[DKStoreManager sharedInstance] getProductTimerUnlock];
-    SKProduct *mealListUnlock = [[DKStoreManager sharedInstance] getProductMealListUnlock];
+//    SKProduct *timerUnlock = [[DKStoreManager sharedInstance] getProductTimerUnlock];
+//    SKProduct *mealListUnlock = [[DKStoreManager sharedInstance] getProductMealListUnlock];
     SKProduct *noAdvUnlock = [[DKStoreManager sharedInstance] getProductNoAdvUnlock];
-    SKProduct *cumulativeUnlock = [[DKStoreManager sharedInstance] getProductCumulativeUnlock];
+//    SKProduct *cumulativeUnlock = [[DKStoreManager sharedInstance] getProductCumulativeUnlock];
     
-    if ((timerUnlock == nil) || (mealListUnlock == nil) || (noAdvUnlock == nil) ||
-        (cumulativeUnlock == nil) || (themesUnlock == nil)) {
+//    if ((timerUnlock == nil) || (mealListUnlock == nil) || (noAdvUnlock == nil) ||
+//        (cumulativeUnlock == nil) || (themesUnlock == nil)) {
+//        
+//        [self showErrorIndicatorWithTitle:NSLocalizedString(@"Operation failed!", nil)];
+//        return;
+//    }
+
+    if ((noAdvUnlock == nil) || (themesUnlock == nil)) {
         
         [self showErrorIndicatorWithTitle:NSLocalizedString(@"Operation failed!", nil)];
         return;
     }
-    
+
     [self showBigBusyIndicatorWithTitle:NSLocalizedString(@"Loading...", nil)];
-    
-    _purchaseResults = [@{timerUnlock.productIdentifier : @(0),
-                          mealListUnlock.productIdentifier : @(0),
-                          noAdvUnlock.productIdentifier : @(0),
-                          themesUnlock.productIdentifier : @(0),
-                          cumulativeUnlock.productIdentifier : @(0)} mutableCopy];
+
+    _purchaseResults = [@{noAdvUnlock.productIdentifier : @(0),
+                          themesUnlock.productIdentifier : @(0)} mutableCopy];
+
+//    _purchaseResults = [@{timerUnlock.productIdentifier : @(0),
+//                          mealListUnlock.productIdentifier : @(0),
+//                          noAdvUnlock.productIdentifier : @(0),
+//                          themesUnlock.productIdentifier : @(0),
+//                          cumulativeUnlock.productIdentifier : @(0)} mutableCopy];
 
     __weak typeof(self) this = self;
 
@@ -331,29 +340,29 @@
                                                                    }
                                                                }];
 
-    [[DKStoreManager sharedInstance] restorePreviousPurchasesForProduct:timerUnlock
-                                                               response:^(BOOL wasSuccess, SKPaymentTransaction *transaction) {
-                                                                   @synchronized (this) {
-                                                                       this.purchaseResults [timerUnlock.productIdentifier] = @(wasSuccess ? 1 : 2);
-                                                                       [this checkPurchaseResults];
-                                                                   }
-                                                               }];
-
-    [[DKStoreManager sharedInstance] restorePreviousPurchasesForProduct:timerUnlock
-                                                               response:^(BOOL wasSuccess, SKPaymentTransaction *transaction) {
-                                                                   @synchronized (this) {
-                                                                       this.purchaseResults [timerUnlock.productIdentifier] = @(wasSuccess ? 1 : 2);
-                                                                       [this checkPurchaseResults];
-                                                                   }
-                                                               }];
-    
-    [[DKStoreManager sharedInstance] restorePreviousPurchasesForProduct:mealListUnlock
-                                                                   response:^(BOOL wasSuccess, SKPaymentTransaction *transaction) {
-                                                                       @synchronized (this) {
-                                                                           this.purchaseResults [mealListUnlock.productIdentifier] = @(wasSuccess ? 1 : 2);
-                                                                           [this checkPurchaseResults];
-                                                                       }
-                                                                   }];
+//    [[DKStoreManager sharedInstance] restorePreviousPurchasesForProduct:timerUnlock
+//                                                               response:^(BOOL wasSuccess, SKPaymentTransaction *transaction) {
+//                                                                   @synchronized (this) {
+//                                                                       this.purchaseResults [timerUnlock.productIdentifier] = @(wasSuccess ? 1 : 2);
+//                                                                       [this checkPurchaseResults];
+//                                                                   }
+//                                                               }];
+//
+//    [[DKStoreManager sharedInstance] restorePreviousPurchasesForProduct:timerUnlock
+//                                                               response:^(BOOL wasSuccess, SKPaymentTransaction *transaction) {
+//                                                                   @synchronized (this) {
+//                                                                       this.purchaseResults [timerUnlock.productIdentifier] = @(wasSuccess ? 1 : 2);
+//                                                                       [this checkPurchaseResults];
+//                                                                   }
+//                                                               }];
+//    
+//    [[DKStoreManager sharedInstance] restorePreviousPurchasesForProduct:mealListUnlock
+//                                                                   response:^(BOOL wasSuccess, SKPaymentTransaction *transaction) {
+//                                                                       @synchronized (this) {
+//                                                                           this.purchaseResults [mealListUnlock.productIdentifier] = @(wasSuccess ? 1 : 2);
+//                                                                           [this checkPurchaseResults];
+//                                                                       }
+//                                                                   }];
     
     [[DKStoreManager sharedInstance] restorePreviousPurchasesForProduct:noAdvUnlock
                                                                    response:^(BOOL wasSuccess, SKPaymentTransaction *transaction) {
@@ -363,13 +372,13 @@
                                                                        }
                                                                    }];
     
-    [[DKStoreManager sharedInstance] restorePreviousPurchasesForProduct:cumulativeUnlock
-                                                                   response:^(BOOL wasSuccess, SKPaymentTransaction *transaction) {
-                                                                       @synchronized (this) {
-                                                                           this.purchaseResults [cumulativeUnlock.productIdentifier] = @(wasSuccess ? 1 : 2);
-                                                                           [this checkPurchaseResults];
-                                                                       }
-                                                                   }];
+//    [[DKStoreManager sharedInstance] restorePreviousPurchasesForProduct:cumulativeUnlock
+//                                                                   response:^(BOOL wasSuccess, SKPaymentTransaction *transaction) {
+//                                                                       @synchronized (this) {
+//                                                                           this.purchaseResults [cumulativeUnlock.productIdentifier] = @(wasSuccess ? 1 : 2);
+//                                                                           [this checkPurchaseResults];
+//                                                                       }
+//                                                                   }];
 }
 
 - (void)purchaseTimerItem {

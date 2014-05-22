@@ -17,7 +17,15 @@
 #define DURATION    0.65
 #define MAX_DELAY   0.15
 
+#ifdef FREE
+
+@interface DKBaseViewController () <UISearchBarDelegate, UIGestureRecognizerDelegate, UINavigationControllerDelegate, GADBannerViewDelegate>
+
+#else
+
 @interface DKBaseViewController () <UISearchBarDelegate, UIGestureRecognizerDelegate, UINavigationControllerDelegate>
+
+#endif
 
 @property (nonatomic, strong) MRProgressOverlayView *progressView;
 @property (nonatomic, strong) NSTimer *progresViewTimer;
@@ -88,14 +96,20 @@
     if ([[DKSettingsManager sharedInstance][kSettingNoAdvApp] boolValue] == NO) {
         self.adBanner = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
         
-        self.adBanner.adUnitID = @"a1536ff71496902";
+        self.adBanner.adUnitID = @"a1537d9e2ad3e9b";
+        self.adBanner.adUnitID = @"222c4d9d07304db1";
         self.adBanner.delegate = self;
         self.adBanner.rootViewController = self;
-        
-        [self.adBanner loadRequest:[self createRequest]];
-        
         self.adBanner.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
-                
+
+        __weak typeof(self) this = self;
+        
+//        int64_t delayInSeconds = 1;
+//        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+//        dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
+            [this.adBanner loadRequest:[this createRequest]];
+//            });
+        
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(unlockNoAdvProduct:) name:kUnlockNoAdvProductNotification object:nil];
     }
 #endif
@@ -337,15 +351,22 @@
 }
 
 - (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-    self.navigationController.delegate = nil;
-    
 #ifdef FREE
-    
     self.adBanner.delegate = nil;
     self.adBanner = nil;
     
 #endif
+
+    [self.progresViewTimer invalidate];
+    
+    self.progresViewTimer = nil;
+    
+    [self.progressView dismiss:NO completion:nil];
+    
+    self.progressView = nil;
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    self.navigationController.delegate = nil;
 }
 
 - (BOOL)prefersStatusBarHidden {
@@ -551,7 +572,16 @@
 }
 
 - (void)unlockNoAdvProduct: (NSNotification *)notification {
-    [self.adBanner removeFromSuperview];
+    if (self.tableView.tableFooterView == self.adBanner) {
+        self.tableView.tableFooterView = nil;
+    } else if (self.tableView.tableHeaderView == self.adBanner) {
+        self.tableView.tableHeaderView = nil;
+    } else {
+        [self.adBanner removeFromSuperview];
+    }
+    
+    self.adBanner.delegate = nil;
+    self.adBanner = nil;
 }
 
 - (GADRequest *)createRequest {
@@ -575,7 +605,7 @@
     
     __weak typeof(self) this = self;
     
-    int64_t delayInSeconds = 5;
+    int64_t delayInSeconds = 3;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         [this retryGetAd];
