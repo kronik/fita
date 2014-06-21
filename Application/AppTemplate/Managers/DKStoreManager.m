@@ -22,10 +22,10 @@
 #define kProductSupportLevel3 @"com.fitafree.supportlevel3"
 
 #define kProductThemesItemID @"877567887"
-#define kProductTimerItemID @""
+#define kProductTimerItemID @"891944032"
 #define kProductMealListItemID @""
 #define kProductNoAdvItemID @"877567935"
-#define kProductCumulativeItemID @""
+#define kProductCumulativeItemID @"891944344"
 #define kProductSupportLevel1ID @"877563688"
 #define kProductSupportLevel2ID @"877563778"
 #define kProductSupportLevel3ID @"877563828"

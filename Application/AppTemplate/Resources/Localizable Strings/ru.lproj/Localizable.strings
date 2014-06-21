@@ -111,3 +111,11 @@
 "Operation failed!" = "Произошла ошибка!";
 "Success!" = "Готово!";
 "Unable to send a feedback" = "Ошибка отправки сообщения";
+"Less than 30 minutes after your last meal" = "Не прошло и 30 минут после приема пищи";
+"More than 3 hours after your last meal" = "Прошло более 3х часов после приема пищи";
+"Less than 1.5 hours after your last meal" = "Не прошло и 1.5 часа после приема пищи";
+"Less than 30 minutes after your last water" = "Не прошло и 30 минут после приема воды";
+"Start your day with a glass of water" = "Начни день со стакана воды";
+"Thank you!" = "Спасибо!";
+"Full version" = "Полная версия";
+"Full app unlock" = "Все в одном";

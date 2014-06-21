@@ -96,12 +96,14 @@
     if ([[DKSettingsManager sharedInstance][kSettingNoAdvApp] boolValue] == NO) {
         self.adBanner = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
         
-        self.adBanner.adUnitID = @"a1537d9e2ad3e9b";
-        self.adBanner.adUnitID = @"222c4d9d07304db1";
+        // Disable wi-fi to test the ad
+        
+//        self.adBanner.adUnitID = @"pub-6418819291105012";
+        self.adBanner.adUnitID = @"ca-app-pub-6418819291105012/8611587085";
         self.adBanner.delegate = self;
         self.adBanner.rootViewController = self;
         self.adBanner.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
-
+        
         __weak typeof(self) this = self;
         
 //        int64_t delayInSeconds = 1;
@@ -589,7 +591,8 @@
     
     // Make the request for a test ad. Put in an identifier for the simulator as
     // well as any devices you want to receive test ads.
-    self.request.testDevices = @[];
+//    self.request.testDevices = @[];
+//    self.request.testDevices = @[@"e33f87077b26ca5a9c75f8446d160c2e"];
     return self.request;
 }
 

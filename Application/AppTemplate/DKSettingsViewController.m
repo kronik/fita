@@ -75,6 +75,13 @@
                                @"type": kSettingsColorKeyType,
                                @"format": NSLocalizedString(@"Application color", nil)},
 #ifdef FREE
+
+//                             @{@"text": NSLocalizedString(@"Full version", nil),
+//                               @"key": @"",
+//                               @"type": @"",
+//                               @"format": NSLocalizedString(@"Full version", nil)},
+
+  
                              @{@"text": NSLocalizedString(@"Purchases", nil),
                                @"key": @"",
                                @"type": @"",
@@ -254,6 +261,11 @@
 
 - (void) openPurchases {
     [Flurry logEvent:@"Open purchases"];
+    
+//    NSURL *appStoreUrl = [NSURL URLWithString:[NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%@", @"872801232"]];
+//    [[UIApplication sharedApplication] openURL:appStoreUrl];
+//
+//    return;
 
     DKPurchaseViewController *viewController = [[DKPurchaseViewController alloc] init];
     

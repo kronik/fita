@@ -51,13 +51,13 @@
         self.imageView.frame = CGRectZero;
     }
     
-    self.detailTextLabel.frame = CGRectMake(5, 5, (self.frame.size.width - imageHeight - 20), (self.frame.size.height - 10) / 3);
+    self.detailTextLabel.frame = CGRectMake(5, 0, (self.frame.size.width - imageHeight - 10), self.frame.size.height / 2);
     
-    self.textLabel.frame = CGRectMake(5, 5 + (self.frame.size.height - 10) / 3,
+    self.textLabel.frame = CGRectMake(5, self.frame.size.height / 2,
                                       (self.frame.size.width - imageHeight - 10),
-                                      (self.frame.size.height - 10) * 2 / 3);
+                                      self.frame.size.height / 2);
     
-    self.lineView.frame = CGRectMake(5, self.frame.size.height - 1, self.frame.size.width - 10, 1);
+    self.lineView.frame = CGRectMake(5, self.frame.size.height - 1, self.frame.size.width - 10, 1);    
 }
 
 - (void)setIsCorrect:(BOOL)isCorrect {

@@ -92,8 +92,10 @@
 //                       [NSString stringWithFormat: @"%@ %@", NSLocalizedString(@"Donate FitA", nil), localizedLevel3Price],
 //                       NSLocalizedString(@"Restore", nil)];
         
-        _menuItems = @[[NSString stringWithFormat: @"%@ %@", NSLocalizedString(@"App themes", nil), localizedThemesPrice],
+        _menuItems = @[[NSString stringWithFormat: @"%@ %@", NSLocalizedString(@"Extended timer", nil), localizedTimerPrice],
+                       [NSString stringWithFormat: @"%@ %@", NSLocalizedString(@"App themes", nil), localizedThemesPrice],
                        [NSString stringWithFormat: @"%@ %@", NSLocalizedString(@"No more Ad", nil), localizedNoAdvPrice],
+                       [NSString stringWithFormat: @"%@ %@", NSLocalizedString(@"Full app unlock", nil), localizedCumulativePrice],
                        [NSString stringWithFormat: @"%@ %@", NSLocalizedString(@"Donate FitA", nil), localizedLevel1Price],
                        [NSString stringWithFormat: @"%@ %@", NSLocalizedString(@"Donate FitA", nil), localizedLevel2Price],
                        [NSString stringWithFormat: @"%@ %@", NSLocalizedString(@"Donate FitA", nil), localizedLevel3Price],
@@ -198,29 +200,30 @@
     
     switch (indexPath.row) {
         case 0:
+            menuImage = [factory createImageForIcon:NIKFontAwesomeIconTime];
+            break;
+        case 1:
             menuImage = [factory createImageForIcon:NIKFontAwesomeIconMagic];
             break;
-//            menuImage = [factory createImageForIcon:NIKFontAwesomeIconTime];
-//            break;
 //        case 1:
 //            menuImage = [factory createImageForIcon:NIKFontAwesomeIconCoffee];
 //            break;
-        case 1:
+        case 2:
             menuImage = [factory createImageForIcon:NIKFontAwesomeIconOkCircle];
             break;
-//        case 3:
-//            menuImage = [factory createImageForIcon:NIKFontAwesomeIconGift];
-//            break;
-        case 2:
-            menuImage = [factory createImageForIcon:NIKFontAwesomeIconThumbsUp];
-            break;
         case 3:
-            menuImage = [factory createImageForIcon:NIKFontAwesomeIconHeartEmpty];
+            menuImage = [factory createImageForIcon:NIKFontAwesomeIconGift];
             break;
         case 4:
-            menuImage = [factory createImageForIcon:NIKFontAwesomeIconMoney];
+            menuImage = [factory createImageForIcon:NIKFontAwesomeIconThumbsUp];
             break;
         case 5:
+            menuImage = [factory createImageForIcon:NIKFontAwesomeIconHeartEmpty];
+            break;
+        case 6:
+            menuImage = [factory createImageForIcon:NIKFontAwesomeIconMoney];
+            break;
+        case 7:
             menuImage = [factory createImageForIcon:NIKFontAwesomeIconCloudDownload];
             break;
             
@@ -238,26 +241,34 @@
     
     switch (indexPath.row) {
         case 0:
-            [self purchaseThemesItem];
+            [self purchaseTimerItem];
             break;
             
         case 1:
-            [self purchaseNoAdvItem];
+            [self purchaseThemesItem];
             break;
             
         case 2:
+            [self purchaseNoAdvItem];
+            break;
+            
+        case 3:
+            [self purchaseCumulativeItem];
+            break;
+            
+        case 4:
             [self purchaseSupportLevel1Item];
             break;
 
-        case 3:
+        case 5:
             [self purchaseSupportLevel2Item];
             break;
 
-        case 4:
+        case 6:
             [self purchaseSupportLevel3Item];
             break;
 
-        case 5:
+        case 7:
             [self restoreItems];
             break;
             
@@ -301,34 +312,33 @@
     [Flurry logEvent:@"TapOnRestoreUnlock"];
 
     SKProduct *themesUnlock = [[DKStoreManager sharedInstance] getProductThemesUnlock];
-//    SKProduct *timerUnlock = [[DKStoreManager sharedInstance] getProductTimerUnlock];
+    SKProduct *timerUnlock = [[DKStoreManager sharedInstance] getProductTimerUnlock];
 //    SKProduct *mealListUnlock = [[DKStoreManager sharedInstance] getProductMealListUnlock];
     SKProduct *noAdvUnlock = [[DKStoreManager sharedInstance] getProductNoAdvUnlock];
-//    SKProduct *cumulativeUnlock = [[DKStoreManager sharedInstance] getProductCumulativeUnlock];
+    SKProduct *cumulativeUnlock = [[DKStoreManager sharedInstance] getProductCumulativeUnlock];
     
-//    if ((timerUnlock == nil) || (mealListUnlock == nil) || (noAdvUnlock == nil) ||
-//        (cumulativeUnlock == nil) || (themesUnlock == nil)) {
-//        
-//        [self showErrorIndicatorWithTitle:NSLocalizedString(@"Operation failed!", nil)];
-//        return;
-//    }
-
-    if ((noAdvUnlock == nil) || (themesUnlock == nil)) {
+    if ((timerUnlock == nil) || (noAdvUnlock == nil) ||
+        (cumulativeUnlock == nil) || (themesUnlock == nil)) {
         
         [self showErrorIndicatorWithTitle:NSLocalizedString(@"Operation failed!", nil)];
         return;
     }
 
+//    if ((noAdvUnlock == nil) || (themesUnlock == nil)) {
+//        
+//        [self showErrorIndicatorWithTitle:NSLocalizedString(@"Operation failed!", nil)];
+//        return;
+//    }
+
     [self showBigBusyIndicatorWithTitle:NSLocalizedString(@"Loading...", nil)];
 
-    _purchaseResults = [@{noAdvUnlock.productIdentifier : @(0),
-                          themesUnlock.productIdentifier : @(0)} mutableCopy];
+//    _purchaseResults = [@{noAdvUnlock.productIdentifier : @(0),
+//                          themesUnlock.productIdentifier : @(0)} mutableCopy];
 
-//    _purchaseResults = [@{timerUnlock.productIdentifier : @(0),
-//                          mealListUnlock.productIdentifier : @(0),
-//                          noAdvUnlock.productIdentifier : @(0),
-//                          themesUnlock.productIdentifier : @(0),
-//                          cumulativeUnlock.productIdentifier : @(0)} mutableCopy];
+    _purchaseResults = [@{timerUnlock.productIdentifier : @(0),
+                          noAdvUnlock.productIdentifier : @(0),
+                          themesUnlock.productIdentifier : @(0),
+                          cumulativeUnlock.productIdentifier : @(0)} mutableCopy];
 
     __weak typeof(self) this = self;
 
@@ -340,13 +350,13 @@
                                                                    }
                                                                }];
 
-//    [[DKStoreManager sharedInstance] restorePreviousPurchasesForProduct:timerUnlock
-//                                                               response:^(BOOL wasSuccess, SKPaymentTransaction *transaction) {
-//                                                                   @synchronized (this) {
-//                                                                       this.purchaseResults [timerUnlock.productIdentifier] = @(wasSuccess ? 1 : 2);
-//                                                                       [this checkPurchaseResults];
-//                                                                   }
-//                                                               }];
+    [[DKStoreManager sharedInstance] restorePreviousPurchasesForProduct:timerUnlock
+                                                               response:^(BOOL wasSuccess, SKPaymentTransaction *transaction) {
+                                                                   @synchronized (this) {
+                                                                       this.purchaseResults [timerUnlock.productIdentifier] = @(wasSuccess ? 1 : 2);
+                                                                       [this checkPurchaseResults];
+                                                                   }
+                                                               }];
 //
 //    [[DKStoreManager sharedInstance] restorePreviousPurchasesForProduct:timerUnlock
 //                                                               response:^(BOOL wasSuccess, SKPaymentTransaction *transaction) {
@@ -372,13 +382,13 @@
                                                                        }
                                                                    }];
     
-//    [[DKStoreManager sharedInstance] restorePreviousPurchasesForProduct:cumulativeUnlock
-//                                                                   response:^(BOOL wasSuccess, SKPaymentTransaction *transaction) {
-//                                                                       @synchronized (this) {
-//                                                                           this.purchaseResults [cumulativeUnlock.productIdentifier] = @(wasSuccess ? 1 : 2);
-//                                                                           [this checkPurchaseResults];
-//                                                                       }
-//                                                                   }];
+    [[DKStoreManager sharedInstance] restorePreviousPurchasesForProduct:cumulativeUnlock
+                                                                   response:^(BOOL wasSuccess, SKPaymentTransaction *transaction) {
+                                                                       @synchronized (this) {
+                                                                           this.purchaseResults [cumulativeUnlock.productIdentifier] = @(wasSuccess ? 1 : 2);
+                                                                           [this checkPurchaseResults];
+                                                                       }
+                                                                   }];
 }
 
 - (void)purchaseTimerItem {
@@ -470,7 +480,7 @@
                                                           [this hideIndicator];
 
                                                           if (wasSuccess) {
-                                                              [self showCompleteIndicatorWithTitle:NSLocalizedString(@"Success!", nil)];
+                                                              [self showCompleteIndicatorWithTitle:NSLocalizedString(@"Thank you!", nil)];
                                                               
                                                               int64_t delayInSeconds = 1.5;
                                                               dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);

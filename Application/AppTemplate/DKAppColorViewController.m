@@ -137,6 +137,11 @@
 #ifdef FREE
     if ([[DKSettingsManager sharedInstance][kSettingThemes] boolValue] == NO) {
         
+//        NSURL *appStoreUrl = [NSURL URLWithString:[NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%@", @"872801232"]];
+//        [[UIApplication sharedApplication] openURL:appStoreUrl];
+//        
+//        return;
+        
         DKPurchaseViewController *viewController = [[DKPurchaseViewController alloc] init];
         
         [self.navigationController pushViewController:viewController animated:YES];

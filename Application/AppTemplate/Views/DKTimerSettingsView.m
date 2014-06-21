@@ -326,6 +326,41 @@
     NSString *configuration = [NSString stringWithFormat:@"%@ %@ %@ %@",
                                self.workTime, self.restTime, self.execTime, self.roundsTime];
     
+#ifdef FREE
+    if ([[DKSettingsManager sharedInstance][kSettingExtendedTimer] boolValue] == NO) {
+        
+        BOOL isExtendedValue = NO;
+        
+        NSArray *parts = [self.workTime componentsSeparatedByString:@":"];
+        
+        if ([parts[0] intValue] >= 1) {
+            isExtendedValue = YES;
+        }
+        
+        parts = [self.restTime componentsSeparatedByString:@":"];
+
+        if (isExtendedValue || [parts[0] intValue] >= 1) {
+            isExtendedValue = YES;
+        }
+
+        if (isExtendedValue || [self.execTime intValue] > 2) {
+            isExtendedValue = YES;
+        }
+
+        if (isExtendedValue || [self.roundsTime intValue] > 1) {
+            isExtendedValue = YES;
+        }
+        
+        if (isExtendedValue && [_delegate respondsToSelector:@selector(openPurchases)]) {
+            [_delegate openPurchases];
+        }
+        
+        if (isExtendedValue) {
+            return;
+        }
+    }
+#endif
+    
     //Send the date to the delegate
     if([_delegate respondsToSelector:@selector(timePicker:saveConfiguration:)]) {
         [_delegate timePicker:self saveConfiguration:configuration];

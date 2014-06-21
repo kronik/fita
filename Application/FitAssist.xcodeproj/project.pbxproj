@@ -149,7 +149,6 @@
 		026888A218BEAAE3005599FB /* DKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 026888A118BEAAE3005599FB /* DKBaseViewController.m */; };
 		026888A518BEAB1C005599FB /* DKCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 026888A418BEAB1C005599FB /* DKCollectionViewController.m */; };
 		026888A918BEAC59005599FB /* DVCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 026888A818BEAC59005599FB /* DVCollectionViewFlowLayout.m */; };
-		026E512A192DE0E0001AEEE6 /* libAdapterIAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 026E5129192DE0E0001AEEE6 /* libAdapterIAd.a */; };
 		02707B3F18D15EDF00CDCD3C /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 02707B3A18D15EDF00CDCD3C /* NSString+URLEncoding.m */; };
 		02707B4018D15EDF00CDCD3C /* UIImage-JTImageCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 02707B3C18D15EDF00CDCD3C /* UIImage-JTImageCrop.m */; };
 		02707B4118D15EDF00CDCD3C /* UIScrollView+GalaxyPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 02707B3E18D15EDF00CDCD3C /* UIScrollView+GalaxyPullToRefresh.m */; };
@@ -209,11 +208,7 @@
 		027273B318C20D7F0096A63A /* REURLValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272738618C20D7F0096A63A /* REURLValidator.m */; };
 		027273B618C2B9AC0096A63A /* DKMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 027273B518C2B9AC0096A63A /* DKMenuViewController.m */; };
 		0272B2F718DD0F9000920867 /* DKTwitterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B2F618DD0F9000920867 /* DKTwitterManager.m */; };
-		0272B30518DD1A3F00920867 /* DKGooglePlusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B30418DD1A3F00920867 /* DKGooglePlusManager.m */; };
 		0272B30D18DD1B0000920867 /* iCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0272B30C18DD1B0000920867 /* iCloud.framework */; };
-		0272B31118DD1B0B00920867 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0272B30E18DD1B0B00920867 /* GoogleOpenSource.framework */; };
-		0272B31218DD1B0B00920867 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0272B30F18DD1B0B00920867 /* GooglePlus.framework */; };
-		0272B31318DD1B0B00920867 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0272B31018DD1B0B00920867 /* GooglePlus.bundle */; };
 		0272B31518DD1B4300920867 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0272B31418DD1B4300920867 /* CoreMotion.framework */; };
 		0272B31D18DD72C100920867 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B31818DD72C100920867 /* NSData+Base64.m */; };
 		0272B31E18DD72C100920867 /* OAuth+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B31A18DD72C100920867 /* OAuth+Additions.m */; };
@@ -290,8 +285,6 @@
 		0275211E19121A2F004C3D82 /* instagram~ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0275211B19121A2F004C3D82 /* instagram~ipad@2x.png */; };
 		0275212119127604004C3D82 /* DKStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0275212019127604004C3D82 /* DKStoreManager.m */; };
 		02752124191276CB004C3D82 /* DKPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02752123191276CB004C3D82 /* DKPurchaseViewController.m */; };
-		0275212E1913DE05004C3D82 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0275212D1913DE05004C3D82 /* AdSupport.framework */; };
-		027521301913DE0C004C3D82 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0275212F1913DE0C004C3D82 /* iAd.framework */; };
 		02768A89191878E800653300 /* Exercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 02768A88191878E800653300 /* Exercise.m */; };
 		02768A8C191878E800653300 /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = 02768A8B191878E800653300 /* Workout.m */; };
 		02768A8F1918826800653300 /* Day+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 02768A8E1918826800653300 /* Day+Extra.m */; };
@@ -330,8 +323,499 @@
 		029A9024191F6B6300C998C8 /* DKColorMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 029A9023191F6B6300C998C8 /* DKColorMenuCell.m */; };
 		029A9027191F6E2200C998C8 /* DKAppColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 029A9026191F6E2200C998C8 /* DKAppColorViewController.m */; };
 		029A90481920378500C998C8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029A90471920378500C998C8 /* CoreTelephony.framework */; };
-		029A90571920391300C998C8 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 029A90561920391300C998C8 /* libGoogleAdMobAds.a */; };
 		02EB20B0192615ED00E8866C /* DKTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EB20AF192615ED00E8866C /* DKTimePicker.m */; };
+		02EE28EC194AF15800183CB3 /* RETableViewInlineDatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272733818C20D7F0096A63A /* RETableViewInlineDatePickerCell.m */; };
+		02EE28ED194AF15800183CB3 /* RENumberItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272735918C20D7F0096A63A /* RENumberItem.m */; };
+		02EE28EE194AF15800183CB3 /* YLProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0268883818BE32C3005599FB /* YLProgressBar.m */; };
+		02EE28EF194AF15800183CB3 /* HMDiallingCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1280C18BE2EF0009434BA /* HMDiallingCode.m */; };
+		02EE28F0194AF15800183CB3 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B3E318DEE80000920867 /* FBShimmeringLayer.m */; };
+		02EE28F1194AF15800183CB3 /* DMBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E59218FF5F0F00B1A7DB /* DMBaseTransition.m */; };
+		02EE28F2194AF15800183CB3 /* Week.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E6201902458400B1A7DB /* Week.m */; };
+		02EE28F3194AF15800183CB3 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F34618BF7B77006AC7F7 /* UIView+Screenshot.m */; };
+		02EE28F4194AF15800183CB3 /* MHPresenterImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1289118BE2FE0009434BA /* MHPresenterImageView.m */; };
+		02EE28F5194AF15800183CB3 /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E6661904BEEC00B1A7DB /* SWTableViewCell.m */; };
+		02EE28F6194AF15800183CB3 /* MRCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F35718BFFEC9006AC7F7 /* MRCircularProgressView.m */; };
+		02EE28F7194AF15800183CB3 /* MOOPullGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E5E718FF77BB00B1A7DB /* MOOPullGestureRecognizer.m */; };
+		02EE28F8194AF15800183CB3 /* REInlinePickerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272735318C20D7F0096A63A /* REInlinePickerItem.m */; };
+		02EE28F9194AF15800183CB3 /* MRProgressOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F35D18BFFECA006AC7F7 /* MRProgressOverlayView.m */; };
+		02EE28FA194AF15800183CB3 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1267B18BE2ADD009434BA /* UIProgressView+AFNetworking.m */; };
+		02EE28FB194AF15800183CB3 /* DKDaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E629190245EC00B1A7DB /* DKDaysViewController.m */; };
+		02EE28FC194AF15800183CB3 /* UIImage-JTImageCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 02707B3C18D15EDF00CDCD3C /* UIImage-JTImageCrop.m */; };
+		02EE28FD194AF15800183CB3 /* DKScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4081918D74700EE1A07 /* DKScheduleViewController.m */; };
+		02EE28FE194AF15800183CB3 /* UITextField+PlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F126B118BE2AEA009434BA /* UITextField+PlaceholderColor.m */; };
+		02EE28FF194AF15800183CB3 /* DKMealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E5FC19000AC300B1A7DB /* DKMealViewController.m */; };
+		02EE2900194AF15800183CB3 /* NSDataAES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F127FE18BE2EE0009434BA /* NSDataAES256.m */; };
+		02EE2901194AF15800183CB3 /* UIAlertView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B34618DDD7EB00920867 /* UIAlertView+MKNetworkKitAdditions.m */; };
+		02EE2902194AF15800183CB3 /* CLSplineInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7481908EFBC004AEAB4 /* CLSplineInterpolator.m */; };
+		02EE2903194AF15800183CB3 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1291B18BE3002009434BA /* SDWebImagePrefetcher.m */; };
+		02EE2904194AF15800183CB3 /* UIColor+MLPFlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F127F118BE2ECC009434BA /* UIColor+MLPFlatColors.m */; };
+		02EE2905194AF15800183CB3 /* IDMZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F6EB1907FC90004AEAB4 /* IDMZoomingScrollView.m */; };
+		02EE2906194AF15800183CB3 /* WCFCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0268883318BE32C3005599FB /* WCFCLabel.m */; };
+		02EE2907194AF15800183CB3 /* NBPhoneNumberDesc.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F128AE18BE2FE0009434BA /* NBPhoneNumberDesc.m */; };
+		02EE2908194AF15800183CB3 /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4131919C61800EE1A07 /* NSAttributeDescription+MagicalDataImport.m */; };
+		02EE2909194AF15800183CB3 /* DKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272728F18C171390096A63A /* DKTableViewController.m */; };
+		02EE290A194AF15800183CB3 /* RERadioItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272735D18C20D7F0096A63A /* RERadioItem.m */; };
+		02EE290B194AF15800183CB3 /* UIViewController+ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B3CC18DED51700920867 /* UIViewController+ECSlidingViewController.m */; };
+		02EE290C194AF15800183CB3 /* CLRotateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7311908EFBC004AEAB4 /* CLRotateTool.m */; };
+		02EE290D194AF15800183CB3 /* DKCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F6D91907977B004AEAB4 /* DKCircleButton.m */; };
+		02EE290E194AF15800183CB3 /* Day.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E6231902458500B1A7DB /* Day.m */; };
+		02EE290F194AF15800183CB3 /* PSPDFTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E61419015DA100B1A7DB /* PSPDFTextView.m */; };
+		02EE2910194AF15800183CB3 /* REDateTimeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272734D18C20D7F0096A63A /* REDateTimeItem.m */; };
+		02EE2911194AF15800183CB3 /* RESegmentedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272735F18C20D7F0096A63A /* RESegmentedItem.m */; };
+		02EE2912194AF15800183CB3 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1267618BE2ADD009434BA /* UIButton+AFNetworking.m */; };
+		02EE2913194AF15800183CB3 /* RETableViewTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272734618C20D7F0096A63A /* RETableViewTextCell.m */; };
+		02EE2914194AF15800183CB3 /* RETableViewInlinePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272733A18C20D7F0096A63A /* RETableViewInlinePickerCell.m */; };
+		02EE2915194AF15800183CB3 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1281F18BE2FA0009434BA /* iRate.m */; };
+		02EE2916194AF15800183CB3 /* DKDayCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02768A941918AB8A00653300 /* DKDayCommentCell.m */; };
+		02EE2917194AF15800183CB3 /* BZGFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F126A018BE2AEA009434BA /* BZGFormField.m */; };
+		02EE2918194AF15800183CB3 /* UILabel+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F126AD18BE2AEA009434BA /* UILabel+TCCustomFont.m */; };
+		02EE2919194AF15800183CB3 /* REBoolItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272734918C20D7F0096A63A /* REBoolItem.m */; };
+		02EE291A194AF15800183CB3 /* CLFilterBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F72A1908EFBC004AEAB4 /* CLFilterBase.m */; };
+		02EE291B194AF15800183CB3 /* CLColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7391908EFBC004AEAB4 /* CLColorPickerView.m */; };
+		02EE291C194AF15800183CB3 /* JTTableViewGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E57E18FE7C4200B1A7DB /* JTTableViewGestureRecognizer.m */; };
+		02EE291D194AF15800183CB3 /* DMScaleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E59618FF5F0F00B1A7DB /* DMScaleTransition.m */; };
+		02EE291E194AF15800183CB3 /* CLToolbarMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7411908EFBC004AEAB4 /* CLToolbarMenuItem.m */; };
+		02EE291F194AF15800183CB3 /* MRWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F36718BFFECA006AC7F7 /* MRWeakProxy.m */; };
+		02EE2920194AF15800183CB3 /* NSManagedObjectContext+MagicalThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4311919C61800EE1A07 /* NSManagedObjectContext+MagicalThreading.m */; };
+		02EE2921194AF15800183CB3 /* DMColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0275211319121994004C3D82 /* DMColorPickerView.m */; };
+		02EE2922194AF15800183CB3 /* NIKFontAwesomeIconFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F127DB18BE2EBB009434BA /* NIKFontAwesomeIconFactory.m */; };
+		02EE2923194AF15800183CB3 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B31818DD72C100920867 /* NSData+Base64.m */; };
+		02EE2924194AF15800183CB3 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B3E518DEE80000920867 /* FBShimmeringView.m */; };
+		02EE2925194AF15800183CB3 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1291018BE3002009434BA /* SDWebImageCompat.m */; };
+		02EE2926194AF15800183CB3 /* NSManagedObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4221919C61800EE1A07 /* NSManagedObject+MagicalDataImport.m */; };
+		02EE2927194AF15800183CB3 /* SWCellScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E6621904BEEC00B1A7DB /* SWCellScrollView.m */; };
+		02EE2928194AF15800183CB3 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1291418BE3002009434BA /* SDWebImageDownloader.m */; };
+		02EE2929194AF15800183CB3 /* _CLImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7511908EFBC004AEAB4 /* _CLImageEditorViewController.m */; };
+		02EE292A194AF15800183CB3 /* CLImageToolInfo+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F73D1908EFBC004AEAB4 /* CLImageToolInfo+Private.m */; };
+		02EE292B194AF15800183CB3 /* CLImageEditorTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7071908EFBC004AEAB4 /* CLImageEditorTheme.m */; };
+		02EE292C194AF15800183CB3 /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4331919C61800EE1A07 /* NSManagedObjectModel+MagicalRecord.m */; };
+		02EE292D194AF15800183CB3 /* DMResizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 027521101912197A004C3D82 /* DMResizerViewController.m */; };
+		02EE292E194AF15800183CB3 /* CLImageToolInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7091908EFBC004AEAB4 /* CLImageToolInfo.m */; };
+		02EE292F194AF15800183CB3 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E6261902458500B1A7DB /* Meal.m */; };
+		02EE2930194AF15800183CB3 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1267D18BE2ADD009434BA /* UIRefreshControl+AFNetworking.m */; };
+		02EE2931194AF15800183CB3 /* MRNavigationBarProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F35B18BFFEC9006AC7F7 /* MRNavigationBarProgressView.m */; };
+		02EE2932194AF15800183CB3 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1292118BE3002009434BA /* UIImage+MultiFormat.m */; };
+		02EE2933194AF15800183CB3 /* DMSlideTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E59818FF5F0F00B1A7DB /* DMSlideTransition.m */; };
+		02EE2934194AF15800183CB3 /* CKCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F126B818BE2AEA009434BA /* CKCalendarView.m */; };
+		02EE2935194AF15800183CB3 /* DKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272728C18C170B30096A63A /* DKTableViewCell.m */; };
+		02EE2936194AF15800183CB3 /* FXKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 027729E218DC67EF00F8B93C /* FXKeychain.m */; };
+		02EE2937194AF15800183CB3 /* AnimatorShowDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1285818BE2FE0009434BA /* AnimatorShowDetail.m */; };
+		02EE2938194AF15800183CB3 /* SWUtilityButtonTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E6681904BEEC00B1A7DB /* SWUtilityButtonTapGestureRecognizer.m */; };
+		02EE2939194AF15800183CB3 /* CLClippingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7131908EFBC004AEAB4 /* CLClippingTool.m */; };
+		02EE293A194AF15800183CB3 /* NSManagedObjectContext+MagicalSaves.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D42F1919C61800EE1A07 /* NSManagedObjectContext+MagicalSaves.m */; };
+		02EE293B194AF15800183CB3 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1291D18BE3002009434BA /* UIButton+WebCache.m */; };
+		02EE293C194AF15800183CB3 /* BEMAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1268218BE2ADD009434BA /* BEMAnimations.m */; };
+		02EE293D194AF15800183CB3 /* APTimeZones.m in Sources */ = {isa = PBXBuildFile; fileRef = 0280B4E818F054450097C90F /* APTimeZones.m */; };
+		02EE293E194AF15800183CB3 /* REPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272736918C20D7F0096A63A /* REPlaceholderTextView.m */; };
+		02EE293F194AF15800183CB3 /* DKMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 027273B518C2B9AC0096A63A /* DKMenuViewController.m */; };
+		02EE2940194AF15800183CB3 /* OAuth+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B31A18DD72C100920867 /* OAuth+Additions.m */; };
+		02EE2941194AF15800183CB3 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B34D18DDD7EB00920867 /* MKNetworkOperation.m */; };
+		02EE2942194AF15800183CB3 /* IDMTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F6E91907FC90004AEAB4 /* IDMTapDetectingView.m */; };
+		02EE2943194AF15800183CB3 /* NIKFontAwesomePathRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F127DF18BE2EBB009434BA /* NIKFontAwesomePathRenderer.m */; };
+		02EE2944194AF15800183CB3 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B3CA18DED51700920867 /* ECSlidingViewController.m */; };
+		02EE2945194AF15800183CB3 /* DALabeledCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F6F819082025004AEAB4 /* DALabeledCircularProgressView.m */; };
+		02EE2946194AF15800183CB3 /* DKDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E6401903AC7600B1A7DB /* DKDayCell.m */; };
+		02EE2947194AF15800183CB3 /* DKTouchScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 027520E6190FF0F9004C3D82 /* DKTouchScrollView.m */; };
+		02EE2948194AF15800183CB3 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1296A18BE3012009434BA /* RESideMenu.m */; };
+		02EE2949194AF15800183CB3 /* CLEffectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7251908EFBC004AEAB4 /* CLEffectBase.m */; };
+		02EE294A194AF15800183CB3 /* CSAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F126A518BE2AEA009434BA /* CSAnimationView.m */; };
+		02EE294B194AF15800183CB3 /* THSpringyFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F2E118BECC60006AC7F7 /* THSpringyFlowLayout.m */; };
+		02EE294C194AF15800183CB3 /* RETableViewCellStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272736D18C20D7F0096A63A /* RETableViewCellStyle.m */; };
+		02EE294D194AF15800183CB3 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1267418BE2ADD009434BA /* UIAlertView+AFNetworking.m */; };
+		02EE294E194AF15800183CB3 /* DKWeeksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E59F18FF65C900B1A7DB /* DKWeeksViewController.m */; };
+		02EE294F194AF15800183CB3 /* DKNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B32D18DDCEFD00920867 /* DKNetworkManager.m */; };
+		02EE2950194AF15800183CB3 /* MRStopButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F36018BFFECA006AC7F7 /* MRStopButton.m */; };
+		02EE2951194AF15800183CB3 /* REEmailValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272738018C20D7F0096A63A /* REEmailValidator.m */; };
+		02EE2952194AF15800183CB3 /* WCFCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0268883518BE32C3005599FB /* WCFCObject.m */; };
+		02EE2953194AF15800183CB3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B35018DDD7EB00920867 /* Reachability.m */; };
+		02EE2954194AF15800183CB3 /* CXCountDownLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F126D418BE2B5B009434BA /* CXCountDownLabel.m */; };
+		02EE2955194AF15800183CB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F125E918BDF246009434BA /* main.m */; };
+		02EE2956194AF15800183CB3 /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E56018FACDB700B1A7DB /* UIImage+RoundedCornerAdditions.m */; };
+		02EE2957194AF15800183CB3 /* DKCompareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 027520E3190FE65D004C3D82 /* DKCompareViewController.m */; };
+		02EE2958194AF15800183CB3 /* AnimatorShowDetailForDismissMHGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1285A18BE2FE0009434BA /* AnimatorShowDetailForDismissMHGallery.m */; };
+		02EE2959194AF15800183CB3 /* DKCircleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F37F18C02D69006AC7F7 /* DKCircleImageView.m */; };
+		02EE295A194AF15800183CB3 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1266518BE2ADD009434BA /* AFSecurityPolicy.m */; };
+		02EE295B194AF15800183CB3 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1295D18BE3012009434BA /* RECommonFunctions.m */; };
+		02EE295C194AF15800183CB3 /* DKWorkoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D40B1918D80300EE1A07 /* DKWorkoutCell.m */; };
+		02EE295D194AF15800183CB3 /* DKSettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B32918DD75CF00920867 /* DKSettingsManager.m */; };
+		02EE295E194AF15800183CB3 /* REMenuContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1296118BE3012009434BA /* REMenuContainerView.m */; };
+		02EE295F194AF15800183CB3 /* UITextField+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F126B318BE2AEA009434BA /* UITextField+TCCustomFont.m */; };
+		02EE2960194AF15800183CB3 /* UIImageView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B34818DDD7EB00920867 /* UIImageView+MKNetworkKitAdditions.m */; };
+		02EE2961194AF15800183CB3 /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 0268882B18BE32C3005599FB /* UITextField+Shake.m */; };
+		02EE2962194AF15800183CB3 /* CLPixellateEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F71F1908EFBC004AEAB4 /* CLPixellateEffect.m */; };
+		02EE2963194AF15800183CB3 /* NSAlert+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B33C18DDD7EB00920867 /* NSAlert+MKNetworkKitAdditions.m */; };
+		02EE2964194AF15800183CB3 /* DKWeekCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E63319039F0B00B1A7DB /* DKWeekCell.m */; };
+		02EE2965194AF15800183CB3 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0230136C191AF9F400503C49 /* DataModel.xcdatamodeld */; };
+		02EE2966194AF15800183CB3 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E68B1906A75A00B1A7DB /* MZTimerLabel.m */; };
+		02EE2967194AF15800183CB3 /* DKFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B33118DDCFB900920867 /* DKFileCache.m */; };
+		02EE2968194AF15800183CB3 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4371919C61800EE1A07 /* NSPersistentStoreCoordinator+MagicalRecord.m */; };
+		02EE2969194AF15800183CB3 /* CLPlacemark+APTimeZones.m in Sources */ = {isa = PBXBuildFile; fileRef = 0280B4ED18F054450097C90F /* CLPlacemark+APTimeZones.m */; };
+		02EE296A194AF15800183CB3 /* DKProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 027521041911F06D004C3D82 /* DKProgressView.m */; };
+		02EE296B194AF15800183CB3 /* NSManagedObjectContext+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D42D1919C61800EE1A07 /* NSManagedObjectContext+MagicalRecord.m */; };
+		02EE296C194AF15800183CB3 /* Exercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 02768A88191878E800653300 /* Exercise.m */; };
+		02EE296D194AF15800183CB3 /* ECSlidingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B3C318DED51700920867 /* ECSlidingAnimationController.m */; };
+		02EE296E194AF15800183CB3 /* NBPhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F128AB18BE2FE0009434BA /* NBPhoneNumber.m */; };
+		02EE296F194AF15800183CB3 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F34218BF7B77006AC7F7 /* NSString+MD5Addition.m */; };
+		02EE2970194AF15800183CB3 /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B36C18DDDC1800920867 /* UIDeviceHardware.m */; };
+		02EE2971194AF15800183CB3 /* CLGloomEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7191908EFBC004AEAB4 /* CLGloomEffect.m */; };
+		02EE2972194AF15800183CB3 /* DKLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02723D7318E5AC230065243E /* DKLocationManager.m */; };
+		02EE2973194AF15800183CB3 /* CLClassList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7461908EFBC004AEAB4 /* CLClassList.m */; };
+		02EE2974194AF15800183CB3 /* DKCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 026888A418BEAB1C005599FB /* DKCollectionViewController.m */; };
+		02EE2975194AF15800183CB3 /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D41D1919C61800EE1A07 /* NSString+MagicalDataImport.m */; };
+		02EE2976194AF15800183CB3 /* CLAdjustmentTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F70D1908EFBC004AEAB4 /* CLAdjustmentTool.m */; };
+		02EE2977194AF15800183CB3 /* CountryPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F126D118BE2B5B009434BA /* CountryPicker.m */; };
+		02EE2978194AF15800183CB3 /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1268618BE2ADD009434BA /* BEMLine.m */; };
+		02EE2979194AF15800183CB3 /* UIImageView+MHGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F128A018BE2FE0009434BA /* UIImageView+MHGallery.m */; };
+		02EE297A194AF15800183CB3 /* RETableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272737218C20D7F0096A63A /* RETableViewManager.m */; };
+		02EE297B194AF15800183CB3 /* DKSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0280B56F18F2CC670097C90F /* DKSettingsViewController.m */; };
+		02EE297C194AF15800183CB3 /* NSArray+NBAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F128B418BE2FE0009434BA /* NSArray+NBAdditions.m */; };
+		02EE297D194AF15800183CB3 /* REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1295418BE3012009434BA /* REFrostedViewController.m */; };
+		02EE297E194AF15800183CB3 /* DMActivityInstagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 0275210D19121917004C3D82 /* DMActivityInstagram.m */; };
+		02EE297F194AF15800183CB3 /* UITextView+DisableCopyPaste.m in Sources */ = {isa = PBXBuildFile; fileRef = 027CA90A18ED47EB00883A11 /* UITextView+DisableCopyPaste.m */; };
+		02EE2980194AF15800183CB3 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1265E18BE2ADD009434BA /* AFHTTPRequestOperationManager.m */; };
+		02EE2981194AF15800183CB3 /* OAuthCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B31C18DD72C100920867 /* OAuthCore.m */; };
+		02EE2982194AF15800183CB3 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F127FC18BE2EE0009434BA /* GameCenterManager.m */; };
+		02EE2983194AF15800183CB3 /* IDMPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F6E41907FC90004AEAB4 /* IDMPhotoBrowser.m */; };
+		02EE2984194AF15800183CB3 /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B34418DDD7EB00920867 /* NSString+MKNetworkKitAdditions.m */; };
+		02EE2985194AF15800183CB3 /* Day+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 02768A8E1918826800653300 /* Day+Extra.m */; };
+		02EE2986194AF15800183CB3 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1266718BE2ADD009434BA /* AFURLConnectionOperation.m */; };
+		02EE2987194AF15800183CB3 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B34018DDD7EB00920867 /* NSDate+RFC1123.m */; };
+		02EE2988194AF15800183CB3 /* AnimatorShowShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1286018BE2FE0009434BA /* AnimatorShowShareView.m */; };
+		02EE2989194AF15800183CB3 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F6FF19082053004AEAB4 /* SVProgressHUD.m */; };
+		02EE298A194AF15800183CB3 /* AMWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7791909EF0B004AEAB4 /* AMWaveViewController.m */; };
+		02EE298B194AF15800183CB3 /* NSData+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1290C18BE3002009434BA /* NSData+GIF.m */; };
+		02EE298C194AF15800183CB3 /* RETableViewDateTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272733418C20D7F0096A63A /* RETableViewDateTimeCell.m */; };
+		02EE298D194AF15800183CB3 /* RETableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272736B18C20D7F0096A63A /* RETableViewCell.m */; };
+		02EE298E194AF15800183CB3 /* REMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1295F18BE3012009434BA /* REMenu.m */; };
+		02EE298F194AF15800183CB3 /* MRMessageInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F36418BFFECA006AC7F7 /* MRMessageInterceptor.m */; };
+		02EE2990194AF15800183CB3 /* NBPhoneNumberUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F128B218BE2FE0009434BA /* NBPhoneNumberUtil.m */; };
+		02EE2991194AF15800183CB3 /* REFloatItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272734F18C20D7F0096A63A /* REFloatItem.m */; };
+		02EE2992194AF15800183CB3 /* REValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272737B18C20D7F0096A63A /* REValidation.m */; };
+		02EE2993194AF15800183CB3 /* NSString+RENumberFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272732A18C20D7F0096A63A /* NSString+RENumberFormat.m */; };
+		02EE2994194AF15800183CB3 /* UIView+CLImageToolInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7431908EFBC004AEAB4 /* UIView+CLImageToolInfo.m */; };
+		02EE2995194AF15800183CB3 /* NSData+MKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B33E18DDD7EB00920867 /* NSData+MKBase64.m */; };
+		02EE2996194AF15800183CB3 /* RETableViewCreditCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272733218C20D7F0096A63A /* RETableViewCreditCardCell.m */; };
+		02EE2997194AF15800183CB3 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1291818BE3002009434BA /* SDWebImageManager.m */; };
+		02EE2998194AF15800183CB3 /* MOOCreateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E5E518FF77BB00B1A7DB /* MOOCreateView.m */; };
+		02EE2999194AF15800183CB3 /* IDMCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F6DD1907FC90004AEAB4 /* IDMCaptionView.m */; };
+		02EE299A194AF15800183CB3 /* MHGalleryImageViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1288B18BE2FE0009434BA /* MHGalleryImageViewerViewController.m */; };
+		02EE299B194AF15800183CB3 /* DKTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EB20AF192615ED00E8866C /* DKTimePicker.m */; };
+		02EE299C194AF15800183CB3 /* WCFastCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0268882F18BE32C3005599FB /* WCFastCell.m */; };
+		02EE299D194AF15800183CB3 /* MHGalleryCells.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1288818BE2FE0009434BA /* MHGalleryCells.m */; };
+		02EE299E194AF15800183CB3 /* NBNumberFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F128A518BE2FE0009434BA /* NBNumberFormat.m */; };
+		02EE299F194AF15800183CB3 /* CSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F126A918BE2AEA009434BA /* CSNavigationController.m */; };
+		02EE29A0194AF15800183CB3 /* RELongTextItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272735518C20D7F0096A63A /* RELongTextItem.m */; };
+		02EE29A1194AF15800183CB3 /* RDActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1293918BE3012009434BA /* RDActionSheet.m */; };
+		02EE29A2194AF15800183CB3 /* DKCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272728918C0E10C0096A63A /* DKCollectionViewCell.m */; };
+		02EE29A3194AF15800183CB3 /* CLPosterizeEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7211908EFBC004AEAB4 /* CLPosterizeEffect.m */; };
+		02EE29A5194AF15800183CB3 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1291218BE3002009434BA /* SDWebImageDecoder.m */; };
+		02EE29A6194AF15800183CB3 /* MagicalRecord+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D43A1919C61800EE1A07 /* MagicalRecord+Actions.m */; };
+		02EE29A7194AF15800183CB3 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1280818BE2EF0009434BA /* UIImage+animatedGIF.m */; };
+		02EE29A8194AF15800183CB3 /* DKWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02723D9418E687850065243E /* DKWeatherViewController.m */; };
+		02EE29A9194AF15800183CB3 /* AnimatorShowDetailForPresentingMHGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1285C18BE2FE0009434BA /* AnimatorShowDetailForPresentingMHGallery.m */; };
+		02EE29AA194AF15800183CB3 /* FXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F127F918BE2EE0009434BA /* FXLabel.m */; };
+		02EE29AB194AF15800183CB3 /* DKTimerSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02233E9F191E13E500EE0F29 /* DKTimerSettingsView.m */; };
+		02EE29AC194AF15800183CB3 /* RETableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272737618C20D7F0096A63A /* RETableViewSection.m */; };
+		02EE29AD194AF15800183CB3 /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B34A18DDD7EB00920867 /* MKNetworkEngine.m */; };
+		02EE29AE194AF15800183CB3 /* CLToneCurveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7341908EFBC004AEAB4 /* CLToneCurveTool.m */; };
+		02EE29AF194AF15800183CB3 /* DKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B3DA18DEE1F000920867 /* DKLoginViewController.m */; };
+		02EE29B0194AF15800183CB3 /* CLCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7371908EFBC004AEAB4 /* CLCircleView.m */; };
+		02EE29B1194AF15800183CB3 /* AnimatorShowOverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1285E18BE2FE0009434BA /* AnimatorShowOverView.m */; };
+		02EE29B2194AF15800183CB3 /* CLImageEditorTheme+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F73B1908EFBC004AEAB4 /* CLImageEditorTheme+Private.m */; };
+		02EE29B3194AF15800183CB3 /* DVCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 026888A818BEAC59005599FB /* DVCollectionViewFlowLayout.m */; };
+		02EE29B4194AF15800183CB3 /* RETableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272736F18C20D7F0096A63A /* RETableViewItem.m */; };
+		02EE29B5194AF15800183CB3 /* UINavigationBar+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F126AF18BE2AEA009434BA /* UINavigationBar+TCCustomFont.m */; };
+		02EE29B6194AF15800183CB3 /* DKWorkoutMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E679190523E000B1A7DB /* DKWorkoutMenuViewController.m */; };
+		02EE29B7194AF15800183CB3 /* MOORefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E5EA18FF77BB00B1A7DB /* MOORefreshView.m */; };
+		02EE29B8194AF15800183CB3 /* DKBaseMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E68519065FF800B1A7DB /* DKBaseMenuCell.m */; };
+		02EE29B9194AF15800183CB3 /* CLImageToolBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F72E1908EFBC004AEAB4 /* CLImageToolBase.m */; };
+		02EE29BA194AF15800183CB3 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1296C18BE3012009434BA /* UIViewController+RESideMenu.m */; };
+		02EE29BB194AF15800183CB3 /* NSNumber+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4171919C61800EE1A07 /* NSNumber+MagicalDataImport.m */; };
+		02EE29BC194AF15800183CB3 /* RECreditCardItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272734B18C20D7F0096A63A /* RECreditCardItem.m */; };
+		02EE29BD194AF15800183CB3 /* REPresenceValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272738418C20D7F0096A63A /* REPresenceValidator.m */; };
+		02EE29BE194AF15800183CB3 /* CSBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F126A718BE2AEA009434BA /* CSBlurView.m */; };
+		02EE29BF194AF15800183CB3 /* MHOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1288E18BE2FE0009434BA /* MHOverViewController.m */; };
+		02EE29C0194AF15800183CB3 /* RETableViewPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272734218C20D7F0096A63A /* RETableViewPickerCell.m */; };
+		02EE29C1194AF15800183CB3 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1267818BE2ADD009434BA /* UIImageView+AFNetworking.m */; };
+		02EE29C2194AF15800183CB3 /* RETableViewOptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272734018C20D7F0096A63A /* RETableViewOptionCell.m */; };
+		02EE29C3194AF15800183CB3 /* RELengthValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272738218C20D7F0096A63A /* RELengthValidator.m */; };
+		02EE29C4194AF15800183CB3 /* NSObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4191919C61800EE1A07 /* NSObject+MagicalDataImport.m */; };
+		02EE29C5194AF15800183CB3 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1265C18BE2ADD009434BA /* AFHTTPRequestOperation.m */; };
+		02EE29C6194AF15800183CB3 /* UIImage+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1295618BE3012009434BA /* UIImage+REFrostedViewController.m */; };
+		02EE29C7194AF15800183CB3 /* SWLongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E6641904BEEC00B1A7DB /* SWLongPressGestureRecognizer.m */; };
+		02EE29C8194AF15800183CB3 /* DKAutoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272729518C17E730096A63A /* DKAutoTableViewController.m */; };
+		02EE29C9194AF15800183CB3 /* REActionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272736518C20D7F0096A63A /* REActionBar.m */; };
+		02EE29CA194AF15800183CB3 /* UIColor+JTGestureBasedTableViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E58318FE7C4200B1A7DB /* UIColor+JTGestureBasedTableViewHelper.m */; };
+		02EE29CB194AF15800183CB3 /* MKNetworkOperation+Duplicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B37018DDDCDC00920867 /* MKNetworkOperation+Duplicate.m */; };
+		02EE29CC194AF15800183CB3 /* NIKFontAwesomeIconFactory+OSX.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F127D918BE2EBB009434BA /* NIKFontAwesomeIconFactory+OSX.m */; };
+		02EE29CD194AF15800183CB3 /* NSManagedObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272732618C1DFC60096A63A /* NSManagedObject+JSON.m */; };
+		02EE29CE194AF15800183CB3 /* DMAlphaTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E59018FF5F0F00B1A7DB /* DMAlphaTransition.m */; };
+		02EE29CF194AF15800183CB3 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F74E1908EFBC004AEAB4 /* UIView+Frame.m */; };
+		02EE29D0194AF15800183CB3 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1292318BE3002009434BA /* UIImageView+WebCache.m */; };
+		02EE29D1194AF15800183CB3 /* MHGalleryGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1289A18BE2FE0009434BA /* MHGalleryGlobals.m */; };
+		02EE29D2194AF15800183CB3 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1267218BE2ADD009434BA /* UIActivityIndicatorView+AFNetworking.m */; };
+		02EE29D3194AF15800183CB3 /* JSBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F33118BECCE8006AC7F7 /* JSBadgeView.m */; };
+		02EE29D4194AF15800183CB3 /* UITextView+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F126B518BE2AEA009434BA /* UITextView+TCCustomFont.m */; };
+		02EE29D5194AF15800183CB3 /* PBWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0280B60D18F502C50097C90F /* PBWebViewController.m */; };
+		02EE29D6194AF15800183CB3 /* DKPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02752123191276CB004C3D82 /* DKPurchaseViewController.m */; };
+		02EE29D7194AF15800183CB3 /* BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B3B418DED4A400920867 /* BButton.m */; };
+		02EE29D8194AF15800183CB3 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E55A18FACDB700B1A7DB /* UIImage+Alpha.m */; };
+		02EE29D9194AF15800183CB3 /* MRActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F35518BFFEC9006AC7F7 /* MRActivityIndicatorView.m */; };
+		02EE29DA194AF15800183CB3 /* CLHighlightShadowEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F71B1908EFBC004AEAB4 /* CLHighlightShadowEffect.m */; };
+		02EE29DB194AF15800183CB3 /* NSError+REValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272737918C20D7F0096A63A /* NSError+REValidation.m */; };
+		02EE29DC194AF15800183CB3 /* DKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F125ED18BDF246009434BA /* DKAppDelegate.m */; };
+		02EE29DD194AF15800183CB3 /* REInlineDatePickerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272735118C20D7F0096A63A /* REInlineDatePickerItem.m */; };
+		02EE29DE194AF15800183CB3 /* DKAppColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 029A9026191F6E2200C998C8 /* DKAppColorViewController.m */; };
+		02EE29DF194AF15800183CB3 /* UIViewController+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1295A18BE3012009434BA /* UIViewController+REFrostedViewController.m */; };
+		02EE29E0194AF15800183CB3 /* MRBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F35018BFFEC9006AC7F7 /* MRBlurView.m */; };
+		02EE29E1194AF15800183CB3 /* RETableViewSegmentedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272734418C20D7F0096A63A /* RETableViewSegmentedCell.m */; };
+		02EE29E2194AF15800183CB3 /* CLImageEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7051908EFBC004AEAB4 /* CLImageEditor.m */; };
+		02EE29E3194AF15800183CB3 /* DKFacebookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 027729E618DC7D0500F8B93C /* DKFacebookManager.m */; };
+		02EE29E4194AF15800183CB3 /* MRIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F35918BFFEC9006AC7F7 /* MRIconView.m */; };
+		02EE29E5194AF15800183CB3 /* NBPhoneMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F128A718BE2FE0009434BA /* NBPhoneMetaData.m */; };
+		02EE29E6194AF15800183CB3 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F127F618BE2EE0009434BA /* FXBlurView.m */; };
+		02EE29E7194AF15800183CB3 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1266918BE2ADD009434BA /* AFURLRequestSerialization.m */; };
+		02EE29E8194AF15800183CB3 /* RETableViewNumberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272733E18C20D7F0096A63A /* RETableViewNumberCell.m */; };
+		02EE29E9194AF15800183CB3 /* CLLocation+APTimeZones.m in Sources */ = {isa = PBXBuildFile; fileRef = 0280B4EB18F054450097C90F /* CLLocation+APTimeZones.m */; };
+		02EE29EA194AF15800183CB3 /* CLSpotEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7231908EFBC004AEAB4 /* CLSpotEffect.m */; };
+		02EE29EB194AF15800183CB3 /* UIDevice+SystemVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F74A1908EFBC004AEAB4 /* UIDevice+SystemVersion.m */; };
+		02EE29EC194AF15800183CB3 /* IZValueSelectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02233E9C191E136100EE0F29 /* IZValueSelectorView.m */; };
+		02EE29ED194AF15800183CB3 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F34B18BF7C01006AC7F7 /* UIImage+animatedGIF.m */; };
+		02EE29EE194AF15800183CB3 /* DKStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0275212019127604004C3D82 /* DKStoreManager.m */; };
+		02EE29EF194AF15800183CB3 /* UIScrollView+GalaxyPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 02707B3E18D15EDF00CDCD3C /* UIScrollView+GalaxyPullToRefresh.m */; };
+		02EE29F0194AF15800183CB3 /* MHShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1289418BE2FE0009434BA /* MHShareViewController.m */; };
+		02EE29F1194AF15800183CB3 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1266018BE2ADD009434BA /* AFHTTPSessionManager.m */; };
+		02EE29F2194AF15800183CB3 /* JTTransformableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E58018FE7C4200B1A7DB /* JTTransformableTableViewCell.m */; };
+		02EE29F3194AF15800183CB3 /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4441919C61800EE1A07 /* MagicalRecord+ShorthandSupport.m */; };
+		02EE29F4194AF15800183CB3 /* NBPhoneMetaDataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F128A918BE2FE0009434BA /* NBPhoneMetaDataGenerator.m */; };
+		02EE29F5194AF15800183CB3 /* DKTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F830190A1C89004AEAB4 /* DKTimerViewController.m */; };
+		02EE29F6194AF15800183CB3 /* NSManagedObject+MagicalRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4281919C61800EE1A07 /* NSManagedObject+MagicalRequests.m */; };
+		02EE29F7194AF15800183CB3 /* NSManagedObject+MagicalAggregation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4201919C61800EE1A07 /* NSManagedObject+MagicalAggregation.m */; };
+		02EE29F8194AF15800183CB3 /* NIKFontAwesomePathFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F127DD18BE2EBB009434BA /* NIKFontAwesomePathFactory.m */; };
+		02EE29F9194AF15800183CB3 /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D43E1919C61800EE1A07 /* MagicalRecord+iCloud.m */; };
+		02EE29FA194AF15800183CB3 /* REURLValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272738618C20D7F0096A63A /* REURLValidator.m */; };
+		02EE29FB194AF15800183CB3 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1266318BE2ADD009434BA /* AFNetworkReachabilityManager.m */; };
+		02EE29FC194AF15800183CB3 /* ECSlidingSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B3C818DED51700920867 /* ECSlidingSegue.m */; };
+		02EE29FD194AF15800183CB3 /* FRDLivelyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F33518BED421006AC7F7 /* FRDLivelyButton.m */; };
+		02EE29FE194AF15800183CB3 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1291618BE3002009434BA /* SDWebImageDownloaderOperation.m */; };
+		02EE29FF194AF15800183CB3 /* REValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272737D18C20D7F0096A63A /* REValidator.m */; };
+		02EE2A00194AF15800183CB3 /* UILabel+WhiteUIDatePickerLabels.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E60B190111C200B1A7DB /* UILabel+WhiteUIDatePickerLabels.m */; };
+		02EE2A01194AF15800183CB3 /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F74C1908EFBC004AEAB4 /* UIImage+Utility.m */; };
+		02EE2A02194AF15800183CB3 /* CLBlurTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7101908EFBC004AEAB4 /* CLBlurTool.m */; };
+		02EE2A03194AF15800183CB3 /* RETextItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272736118C20D7F0096A63A /* RETextItem.m */; };
+		02EE2A04194AF15800183CB3 /* NSPersistentStore+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4351919C61800EE1A07 /* NSPersistentStore+MagicalRecord.m */; };
+		02EE2A05194AF15800183CB3 /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F6F619082025004AEAB4 /* DACircularProgressView.m */; };
+		02EE2A06194AF15800183CB3 /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B34218DDD7EB00920867 /* NSDictionary+RequestEncoding.m */; };
+		02EE2A07194AF15800183CB3 /* RETableViewOptionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272737418C20D7F0096A63A /* RETableViewOptionsController.m */; };
+		02EE2A08194AF15800183CB3 /* UIButton+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F126AB18BE2AEA009434BA /* UIButton+TCCustomFont.m */; };
+		02EE2A09194AF15800183CB3 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 02723D8D18E6846C0065243E /* UIImage+ImageEffects.m */; };
+		02EE2A0A194AF15800183CB3 /* REMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1296518BE3012009434BA /* REMenuItemView.m */; };
+		02EE2A0B194AF15800183CB3 /* DKStepMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E68219065DEE00B1A7DB /* DKStepMenuCell.m */; };
+		02EE2A0C194AF15800183CB3 /* CLFilterTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F72C1908EFBC004AEAB4 /* CLFilterTool.m */; };
+		02EE2A0D194AF15800183CB3 /* DKMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E67C190556BA00B1A7DB /* DKMenuCell.m */; };
+		02EE2A0E194AF15800183CB3 /* DKTwitterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B2F618DD0F9000920867 /* DKTwitterManager.m */; };
+		02EE2A0F194AF15800183CB3 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1266B18BE2ADD009434BA /* AFURLResponseSerialization.m */; };
+		02EE2A10194AF15800183CB3 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1291F18BE3002009434BA /* UIImage+GIF.m */; };
+		02EE2A11194AF15800183CB3 /* CLHueEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F71D1908EFBC004AEAB4 /* CLHueEffect.m */; };
+		02EE2A12194AF15800183CB3 /* NSManagedObject+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4261919C61800EE1A07 /* NSManagedObject+MagicalRecord.m */; };
+		02EE2A13194AF15800183CB3 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1296818BE3012009434BA /* RECommonFunctions.m */; };
+		02EE2A14194AF15800183CB3 /* CSAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F126A318BE2AEA009434BA /* CSAnimation.m */; };
+		02EE2A15194AF15800183CB3 /* DKWeatherManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B3E918DF1ED000920867 /* DKWeatherManager.m */; };
+		02EE2A16194AF15800183CB3 /* DKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 026888A118BEAAE3005599FB /* DKBaseViewController.m */; };
+		02EE2A17194AF15800183CB3 /* Week+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 02768A911918840E00653300 /* Week+Extra.m */; };
+		02EE2A18194AF15800183CB3 /* DMExpandTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E59418FF5F0F00B1A7DB /* DMExpandTransition.m */; };
+		02EE2A19194AF15800183CB3 /* GTMStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B32318DD733D00920867 /* GTMStringEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		02EE2A1A194AF15800183CB3 /* NSMutableArray+SWUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E6601904BEEC00B1A7DB /* NSMutableArray+SWUtilityButtons.m */; };
+		02EE2A1B194AF15800183CB3 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 02707B3A18D15EDF00CDCD3C /* NSString+URLEncoding.m */; };
+		02EE2A1C194AF15800183CB3 /* UIView+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1295818BE3012009434BA /* UIView+REFrostedViewController.m */; };
+		02EE2A1D194AF15800183CB3 /* DKMealCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E62F1902BF2600B1A7DB /* DKMealCell.m */; };
+		02EE2A1E194AF15800183CB3 /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4401919C61800EE1A07 /* MagicalRecord+Options.m */; };
+		02EE2A1F194AF15800183CB3 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E55C18FACDB700B1A7DB /* UIImage+AlphaAdditions.m */; };
+		02EE2A20194AF15800183CB3 /* CLBloomEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7171908EFBC004AEAB4 /* CLBloomEffect.m */; };
+		02EE2A21194AF15800183CB3 /* MHUIImageViewContentViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1289718BE2FE0009434BA /* MHUIImageViewContentViewAnimation.m */; };
+		02EE2A22194AF15800183CB3 /* CLEffectTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7271908EFBC004AEAB4 /* CLEffectTool.m */; };
+		02EE2A23194AF15800183CB3 /* RETableViewFloatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272733618C20D7F0096A63A /* RETableViewFloatCell.m */; };
+		02EE2A24194AF15800183CB3 /* DKWeatherCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 02723D8718E678490065243E /* DKWeatherCondition.m */; };
+		02EE2A25194AF15800183CB3 /* BTGlassScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02723D8B18E6846C0065243E /* BTGlassScrollView.m */; };
+		02EE2A26194AF15800183CB3 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4461919C61800EE1A07 /* MagicalRecord.m */; };
+		02EE2A27194AF15800183CB3 /* UIImage+MRImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F35218BFFEC9006AC7F7 /* UIImage+MRImageEffects.m */; };
+		02EE2A28194AF15800183CB3 /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D41B1919C61800EE1A07 /* NSRelationshipDescription+MagicalDataImport.m */; };
+		02EE2A29194AF15800183CB3 /* REMultipleChoiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272735718C20D7F0096A63A /* REMultipleChoiceItem.m */; };
+		02EE2A2A194AF15800183CB3 /* AMWaveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7771909EF0B004AEAB4 /* AMWaveTransition.m */; };
+		02EE2A2B194AF15800183CB3 /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1268418BE2ADD009434BA /* BEMCircle.m */; };
+		02EE2A2C194AF15800183CB3 /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = 02768A8B191878E800653300 /* Workout.m */; };
+		02EE2A2D194AF15800183CB3 /* DKButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 029A901D191F602E00C998C8 /* DKButtonCell.m */; };
+		02EE2A2E194AF15800183CB3 /* NSString+RETableViewManagerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272736318C20D7F0096A63A /* NSString+RETableViewManagerAdditions.m */; };
+		02EE2A2F194AF15800183CB3 /* NSManagedObjectContext+MagicalObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D42B1919C61800EE1A07 /* NSManagedObjectContext+MagicalObserving.m */; };
+		02EE2A30194AF15800183CB3 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1267F18BE2ADD009434BA /* UIWebView+AFNetworking.m */; };
+		02EE2A31194AF15800183CB3 /* REPickerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272735B18C20D7F0096A63A /* REPickerItem.m */; };
+		02EE2A32194AF15800183CB3 /* IDMPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F6E11907FC90004AEAB4 /* IDMPhoto.m */; };
+		02EE2A33194AF15800183CB3 /* SWUtilityButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E66A1904BEEC00B1A7DB /* SWUtilityButtonView.m */; };
+		02EE2A34194AF15800183CB3 /* REFormattedNumberField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272732C18C20D7F0096A63A /* REFormattedNumberField.m */; };
+		02EE2A35194AF15800183CB3 /* REMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1296318BE3012009434BA /* REMenuItem.m */; };
+		02EE2A36194AF15800183CB3 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F34418BF7B77006AC7F7 /* UIDevice+IdentifierAddition.m */; };
+		02EE2A37194AF15800183CB3 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1289D18BE2FE0009434BA /* UIImage+ImageEffects.m */; };
+		02EE2A38194AF15800183CB3 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1266D18BE2ADD009434BA /* AFURLSessionManager.m */; };
+		02EE2A39194AF15800183CB3 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4111919C61800EE1A07 /* MagicalImportFunctions.m */; };
+		02EE2A3A194AF15800183CB3 /* MagicalRecord+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D43C1919C61800EE1A07 /* MagicalRecord+ErrorHandling.m */; };
+		02EE2A3B194AF15800183CB3 /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4421919C61800EE1A07 /* MagicalRecord+Setup.m */; };
+		02EE2A3C194AF15800183CB3 /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1268818BE2ADD009434BA /* BEMSimpleLineGraphView.m */; };
+		02EE2A3D194AF15800183CB3 /* IDMTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F6E71907FC90004AEAB4 /* IDMTapDetectingImageView.m */; };
+		02EE2A3E194AF15800183CB3 /* NIKFontAwesomeIconFactory+iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F127D718BE2EBB009434BA /* NIKFontAwesomeIconFactory+iOS.m */; };
+		02EE2A3F194AF15800183CB3 /* DKEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 029A9020191F638800C998C8 /* DKEnvironment.m */; };
+		02EE2A40194AF15800183CB3 /* UIColor+BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B3B818DED4A400920867 /* UIColor+BButton.m */; };
+		02EE2A41194AF15800183CB3 /* DKColorMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 029A9023191F6B6300C998C8 /* DKColorMenuCell.m */; };
+		02EE2A42194AF15800183CB3 /* NBAsYouTypeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F128A318BE2FE0009434BA /* NBAsYouTypeFormatter.m */; };
+		02EE2A43194AF15800183CB3 /* DKSwitchMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E67F1906578D00B1A7DB /* DKSwitchMenuCell.m */; };
+		02EE2A44194AF15800183CB3 /* RETableViewLongTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272733C18C20D7F0096A63A /* RETableViewLongTextCell.m */; };
+		02EE2A45194AF15800183CB3 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4151919C61800EE1A07 /* NSEntityDescription+MagicalDataImport.m */; };
+		02EE2A46194AF15800183CB3 /* REFrostedContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1295218BE3012009434BA /* REFrostedContainerViewController.m */; };
+		02EE2A47194AF15800183CB3 /* WCFCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0268883118BE32C3005599FB /* WCFCImageView.m */; };
+		02EE2A48194AF15800183CB3 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1267018BE2ADD009434BA /* AFNetworkActivityIndicatorManager.m */; };
+		02EE2A49194AF15800183CB3 /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F837190A4E21004AEAB4 /* Timer.m */; };
+		02EE2A4A194AF15800183CB3 /* NSManagedObject+MagicalFinders.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4241919C61800EE1A07 /* NSManagedObject+MagicalFinders.m */; };
+		02EE2A4B194AF15800183CB3 /* UIImage+ResizeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E55E18FACDB700B1A7DB /* UIImage+ResizeAdditions.m */; };
+		02EE2A4C194AF15800183CB3 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B3C118DED51700920867 /* ECPercentDrivenInteractiveTransition.m */; };
+		02EE2A4D194AF15800183CB3 /* RETableViewBoolCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272733018C20D7F0096A63A /* RETableViewBoolCell.m */; };
+		02EE2A4E194AF15800183CB3 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B3B618DED4A400920867 /* NSString+FontAwesome.m */; };
+		02EE2A4F194AF15800183CB3 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1290E18BE3002009434BA /* SDImageCache.m */; };
+		02EE2A50194AF15800183CB3 /* ECSlidingInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B3C618DED51700920867 /* ECSlidingInteractiveTransition.m */; };
+		02EE2A51194AF15800183CB3 /* ABFullScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1261A18BE2AC1009434BA /* ABFullScrollViewController.m */; };
+		02EE2A53194AF15800183CB3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029A90471920378500C998C8 /* CoreTelephony.framework */; };
+		02EE2A54194AF15800183CB3 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0275212F1913DE0C004C3D82 /* iAd.framework */; };
+		02EE2A55194AF15800183CB3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0275212D1913DE05004C3D82 /* AdSupport.framework */; };
+		02EE2A56194AF15800183CB3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027CA8A718E937A300883A11 /* StoreKit.framework */; };
+		02EE2A57194AF15800183CB3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0228E56918FD2CD300B1A7DB /* AudioToolbox.framework */; };
+		02EE2A58194AF15800183CB3 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0272B31418DD1B4300920867 /* CoreMotion.framework */; };
+		02EE2A59194AF15800183CB3 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F1279618BE2B7F009434BA /* Accelerate.framework */; };
+		02EE2A5A194AF15800183CB3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F127BE18BE2E9F009434BA /* libz.dylib */; };
+		02EE2A5B194AF15800183CB3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0272B37818DE684F00920867 /* FacebookSDK.framework */; };
+		02EE2A5C194AF15800183CB3 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0260D4661919D1EB00EE1A07 /* Crashlytics.framework */; };
+		02EE2A5D194AF15800183CB3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F1279D18BE2BD8009434BA /* AVFoundation.framework */; };
+		02EE2A5E194AF15800183CB3 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0272B30E18DD1B0B00920867 /* GoogleOpenSource.framework */; };
+		02EE2A5F194AF15800183CB3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F1279E18BE2BD8009434BA /* CFNetwork.framework */; };
+		02EE2A60194AF15800183CB3 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F1279F18BE2BD8009434BA /* CoreAudio.framework */; };
+		02EE2A61194AF15800183CB3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F127A018BE2BD8009434BA /* CoreData.framework */; };
+		02EE2A62194AF15800183CB3 /* libAdapterIAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 026E5129192DE0E0001AEEE6 /* libAdapterIAd.a */; };
+		02EE2A63194AF15800183CB3 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F127A118BE2BD8009434BA /* CoreImage.framework */; };
+		02EE2A64194AF15800183CB3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F127A218BE2BD8009434BA /* CoreLocation.framework */; };
+		02EE2A65194AF15800183CB3 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F127A318BE2BD8009434BA /* CoreText.framework */; };
+		02EE2A66194AF15800183CB3 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F127A518BE2BD8009434BA /* MessageUI.framework */; };
+		02EE2A67194AF15800183CB3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F127A618BE2BD8009434BA /* MobileCoreServices.framework */; };
+		02EE2A68194AF15800183CB3 /* libFlurry_5.0.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0230137B191BB1FB00503C49 /* libFlurry_5.0.0.a */; };
+		02EE2A69194AF15800183CB3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F127A718BE2BD8009434BA /* QuartzCore.framework */; };
+		02EE2A6A194AF15800183CB3 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F127A818BE2BD8009434BA /* Social.framework */; };
+		02EE2A6B194AF15800183CB3 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F127A918BE2BD8009434BA /* SpriteKit.framework */; };
+		02EE2A6C194AF15800183CB3 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0228E57518FE6B4500B1A7DB /* GameKit.framework */; };
+		02EE2A6E194AF15800183CB3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F127AB18BE2BD8009434BA /* SystemConfiguration.framework */; };
+		02EE2A6F194AF15800183CB3 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F127AC18BE2BD8009434BA /* Twitter.framework */; };
+		02EE2A70194AF15800183CB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F125DF18BDF246009434BA /* CoreGraphics.framework */; };
+		02EE2A71194AF15800183CB3 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 029A90561920391300C998C8 /* libGoogleAdMobAds.a */; };
+		02EE2A72194AF15800183CB3 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F1279A18BE2B86009434BA /* AddressBook.framework */; };
+		02EE2A73194AF15800183CB3 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F1279818BE2B82009434BA /* Accounts.framework */; };
+		02EE2A74194AF15800183CB3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F1279418BE2B7A009434BA /* Security.framework */; };
+		02EE2A75194AF15800183CB3 /* iCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0272B30C18DD1B0000920867 /* iCloud.framework */; };
+		02EE2A76194AF15800183CB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F125E118BDF246009434BA /* UIKit.framework */; };
+		02EE2A77194AF15800183CB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F125DD18BDF246009434BA /* Foundation.framework */; };
+		02EE2A79194AF15800183CB3 /* _CLImageEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0244F7521908EFBC004AEAB4 /* _CLImageEditorViewController.xib */; };
+		02EE2A7A194AF15800183CB3 /* right_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1287B18BE2FE0009434BA /* right_arrow@2x.png */; };
+		02EE2A7B194AF15800183CB3 /* EditControlSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1286618BE2FE0009434BA /* EditControlSelected.png */; };
+		02EE2A7C194AF15800183CB3 /* NBPhoneNumberMetadataForTesting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02F128B018BE2FE0009434BA /* NBPhoneNumberMetadataForTesting.plist */; };
+		02EE2A7D194AF15800183CB3 /* instagram~ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0275211B19121A2F004C3D82 /* instagram~ipad@2x.png */; };
+		02EE2A7E194AF15800183CB3 /* ic_square@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1286D18BE2FE0009434BA /* ic_square@2x.png */; };
+		02EE2A7F194AF15800183CB3 /* EditControl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1286518BE2FE0009434BA /* EditControl@2x.png */; };
+		02EE2A80194AF15800183CB3 /* Meal_ru.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0228E6421903B71E00B1A7DB /* Meal_ru.txt */; };
+		02EE2A81194AF15800183CB3 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02F128BF18BE2FE0009434BA /* OpenSans-Regular.ttf */; };
+		02EE2A82194AF15800183CB3 /* left_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1286F18BE2FE0009434BA /* left_arrow@2x.png */; };
+		02EE2A83194AF15800183CB3 /* error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1286918BE2FE0009434BA /* error@2x.png */; };
+		02EE2A84194AF15800183CB3 /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1287518BE2FE0009434BA /* pause@2x.png */; };
+		02EE2A85194AF15800183CB3 /* playButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1287918BE2FE0009434BA /* playButton@2x.png */; };
+		02EE2A86194AF15800183CB3 /* EditControlSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1286718BE2FE0009434BA /* EditControlSelected@2x.png */; };
+		02EE2A87194AF15800183CB3 /* videoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1288318BE2FE0009434BA /* videoIcon.png */; };
+		02EE2A88194AF15800183CB3 /* notification.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 0244F6D61907792C004AEAB4 /* notification.aiff */; };
+		02EE2A89194AF15800183CB3 /* SheetButtonPrimaryTouch.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1294C18BE3012009434BA /* SheetButtonPrimaryTouch.png */; };
+		02EE2A8A194AF15800183CB3 /* messageMH@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1287318BE2FE0009434BA /* messageMH@2x.png */; };
+		02EE2A8B194AF15800183CB3 /* ic_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1286C18BE2FE0009434BA /* ic_square.png */; };
+		02EE2A8C194AF15800183CB3 /* SheetButtonGenericTouch.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1294818BE3012009434BA /* SheetButtonGenericTouch.png */; };
+		02EE2A8D194AF15800183CB3 /* mailMH@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1287118BE2FE0009434BA /* mailMH@2x.png */; };
+		02EE2A8E194AF15800183CB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0228E5A518FF762800B1A7DB /* Images.xcassets */; };
+		02EE2A8F194AF15800183CB3 /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1286E18BE2FE0009434BA /* left_arrow.png */; };
+		02EE2A90194AF15800183CB3 /* PhoneNumberMetaDataForTesting.json in Resources */ = {isa = PBXBuildFile; fileRef = 02F128B618BE2FE0009434BA /* PhoneNumberMetaDataForTesting.json */; };
+		02EE2A91194AF15800183CB3 /* SheetButtonPrimary@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1294B18BE3012009434BA /* SheetButtonPrimary@2x.png */; };
+		02EE2A92194AF15800183CB3 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02F128B918BE2FE0009434BA /* OpenSans-BoldItalic.ttf */; };
+		02EE2A93194AF15800183CB3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0228E5DD18FF772F00B1A7DB /* Localizable.strings */; };
+		02EE2A94194AF15800183CB3 /* DMResizerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0275211919121A2F004C3D82 /* DMResizerViewController.xib */; };
+		02EE2A95194AF15800183CB3 /* instagram@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02752116191219DC004C3D82 /* instagram@2x.png */; };
+		02EE2A96194AF15800183CB3 /* messageMH.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1287218BE2FE0009434BA /* messageMH.png */; };
+		02EE2A97194AF15800183CB3 /* SheetButtonDismissTouch.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1294418BE3012009434BA /* SheetButtonDismissTouch.png */; };
+		02EE2A98194AF15800183CB3 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02F128BB18BE2FE0009434BA /* OpenSans-ExtraBoldItalic.ttf */; };
+		02EE2A99194AF15800183CB3 /* start_beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 027520EC191086DE004C3D82 /* start_beep.wav */; };
+		02EE2A9B194AF15800183CB3 /* DiallingCodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02F1280A18BE2EF0009434BA /* DiallingCodes.plist */; };
+		02EE2A9C194AF15800183CB3 /* double_beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 027520EE19109108004C3D82 /* double_beep.wav */; };
+		02EE2A9D194AF15800183CB3 /* SheetButtonPrimary.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1294A18BE3012009434BA /* SheetButtonPrimary.png */; };
+		02EE2A9E194AF15800183CB3 /* activityMH.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1286218BE2FE0009434BA /* activityMH.png */; };
+		02EE2A9F194AF15800183CB3 /* facebookMH.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1286A18BE2FE0009434BA /* facebookMH.png */; };
+		02EE2AA0194AF15800183CB3 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1287418BE2FE0009434BA /* pause.png */; };
+		02EE2AA1194AF15800183CB3 /* SheetButtonDismiss.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1294218BE3012009434BA /* SheetButtonDismiss.png */; };
+		02EE2AA2194AF15800183CB3 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02F128C118BE2FE0009434BA /* OpenSans-SemiboldItalic.ttf */; };
+		02EE2AA3194AF15800183CB3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0228E5C318FF76FE00B1A7DB /* Main_iPad.storyboard */; };
+		02EE2AA4194AF15800183CB3 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1287618BE2FE0009434BA /* play.png */; };
+		02EE2AA5194AF15800183CB3 /* Meal.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0228E687190673E800B1A7DB /* Meal.txt */; };
+		02EE2AA6194AF15800183CB3 /* activtyMH@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1286318BE2FE0009434BA /* activtyMH@2x.png */; };
+		02EE2AA7194AF15800183CB3 /* CLImageEditor.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0244F7031908EFBC004AEAB4 /* CLImageEditor.bundle */; };
+		02EE2AA8194AF15800183CB3 /* SheetButtonDismissTouch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1294518BE3012009434BA /* SheetButtonDismissTouch@2x.png */; };
+		02EE2AA9194AF15800183CB3 /* NBPhoneNumberMetadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02F128AF18BE2FE0009434BA /* NBPhoneNumberMetadata.plist */; };
+		02EE2AAA194AF15800183CB3 /* unplay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1288218BE2FE0009434BA /* unplay@2x.png */; };
+		02EE2AAB194AF15800183CB3 /* twitterMH.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1287F18BE2FE0009434BA /* twitterMH.png */; };
+		02EE2AAC194AF15800183CB3 /* SheetButtonGeneric@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1294718BE3012009434BA /* SheetButtonGeneric@2x.png */; };
+		02EE2AAD194AF15800183CB3 /* SheetButtonDestroy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1294018BE3012009434BA /* SheetButtonDestroy@2x.png */; };
+		02EE2AAE194AF15800183CB3 /* unplay.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1288118BE2FE0009434BA /* unplay.png */; };
+		02EE2AAF194AF15800183CB3 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02F127D418BE2EBB009434BA /* FontAwesome.otf */; };
+		02EE2AB0194AF15800183CB3 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 02752115191219DC004C3D82 /* instagram.png */; };
+		02EE2AB1194AF15800183CB3 /* sliderPoint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1287E18BE2FE0009434BA /* sliderPoint@2x.png */; };
+		02EE2AB2194AF15800183CB3 /* facebookMH@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1286B18BE2FE0009434BA /* facebookMH@2x.png */; };
+		02EE2AB3194AF15800183CB3 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02F128C018BE2FE0009434BA /* OpenSans-Semibold.ttf */; };
+		02EE2AB4194AF15800183CB3 /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 02F1281D18BE2FA0009434BA /* iRate.bundle */; };
+		02EE2AB5194AF15800183CB3 /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 027520E81910812E004C3D82 /* beep.wav */; };
+		02EE2AB6194AF15800183CB3 /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1287818BE2FE0009434BA /* playButton.png */; };
+		02EE2AB7194AF15800183CB3 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02F128B818BE2FE0009434BA /* OpenSans-Bold.ttf */; };
+		02EE2AB8194AF15800183CB3 /* RETableViewManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0272737018C20D7F0096A63A /* RETableViewManager.bundle */; };
+		02EE2AB9194AF15800183CB3 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0244F6FD19082053004AEAB4 /* SVProgressHUD.bundle */; };
+		02EE2ABA194AF15800183CB3 /* mailMH.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1287018BE2FE0009434BA /* mailMH.png */; };
+		02EE2ABB194AF15800183CB3 /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1287718BE2FE0009434BA /* play@2x.png */; };
+		02EE2ABC194AF15800183CB3 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02F128BC18BE2FE0009434BA /* OpenSans-Italic.ttf */; };
+		02EE2ABD194AF15800183CB3 /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F126BA18BE2AEA009434BA /* left_arrow.png */; };
+		02EE2ABE194AF15800183CB3 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02F128BD18BE2FE0009434BA /* OpenSans-Light.ttf */; };
+		02EE2ABF194AF15800183CB3 /* saveMH@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1287C18BE2FE0009434BA /* saveMH@2x.png */; };
+		02EE2AC0194AF15800183CB3 /* SheetButtonGeneric.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1294618BE3012009434BA /* SheetButtonGeneric.png */; };
+		02EE2AC1194AF15800183CB3 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02F128BE18BE2FE0009434BA /* OpenSans-LightItalic.ttf */; };
+		02EE2AC2194AF15800183CB3 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02F128BA18BE2FE0009434BA /* OpenSans-ExtraBold.ttf */; };
+		02EE2AC3194AF15800183CB3 /* timezonesDB.json in Resources */ = {isa = PBXBuildFile; fileRef = 0280B4EE18F054450097C90F /* timezonesDB.json */; };
+		02EE2AC4194AF15800183CB3 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0228E5C518FF76FE00B1A7DB /* Main_iPhone.storyboard */; };
+		02EE2AC5194AF15800183CB3 /* SheetButtonDestroyTouch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1294118BE3012009434BA /* SheetButtonDestroyTouch@2x.png */; };
+		02EE2AC6194AF15800183CB3 /* IDMPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0244F6E21907FC90004AEAB4 /* IDMPhotoBrowser.bundle */; };
+		02EE2AC7194AF15800183CB3 /* sliderPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1287D18BE2FE0009434BA /* sliderPoint.png */; };
+		02EE2AC8194AF15800183CB3 /* PhoneNumberMetaData.json in Resources */ = {isa = PBXBuildFile; fileRef = 02F128B518BE2FE0009434BA /* PhoneNumberMetaData.json */; };
+		02EE2AC9194AF15800183CB3 /* SheetBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1293F18BE3012009434BA /* SheetBackground@2x.png */; };
+		02EE2ACA194AF15800183CB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0228E5DB18FF772F00B1A7DB /* InfoPlist.strings */; };
+		02EE2ACB194AF15800183CB3 /* right_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F126BD18BE2AEA009434BA /* right_arrow@2x.png */; };
+		02EE2ACC194AF15800183CB3 /* SheetButtonGenericTouch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1294918BE3012009434BA /* SheetButtonGenericTouch@2x.png */; };
+		02EE2ACD194AF15800183CB3 /* EditControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1286418BE2FE0009434BA /* EditControl.png */; };
+		02EE2ACE194AF15800183CB3 /* MHGallery.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 02F1288518BE2FE0009434BA /* MHGallery.bundle */; };
+		02EE2ACF194AF15800183CB3 /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F126BC18BE2AEA009434BA /* right_arrow.png */; };
+		02EE2AD0194AF15800183CB3 /* twitterMH@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1288018BE2FE0009434BA /* twitterMH@2x.png */; };
+		02EE2AD1194AF15800183CB3 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0272B3DD18DEE57400920867 /* FontAwesome.ttf */; };
+		02EE2AD2194AF15800183CB3 /* SheetBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1293E18BE3012009434BA /* SheetBackground.png */; };
+		02EE2AD3194AF15800183CB3 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0228E58118FE7C4200B1A7DB /* LICENSE */; };
+		02EE2AD4194AF15800183CB3 /* instagram~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0275211A19121A2F004C3D82 /* instagram~ipad.png */; };
+		02EE2AD5194AF15800183CB3 /* Countries.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02F126CF18BE2B5B009434BA /* Countries.plist */; };
+		02EE2AD6194AF15800183CB3 /* IDMPBLocalizations.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0244F6DF1907FC90004AEAB4 /* IDMPBLocalizations.bundle */; };
+		02EE2AD7194AF15800183CB3 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1286818BE2FE0009434BA /* error.png */; };
+		02EE2AD8194AF15800183CB3 /* SheetButtonPrimaryTouch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1294D18BE3012009434BA /* SheetButtonPrimaryTouch@2x.png */; };
+		02EE2AD9194AF15800183CB3 /* videoIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1288418BE2FE0009434BA /* videoIcon@2x.png */; };
+		02EE2ADA194AF15800183CB3 /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1287A18BE2FE0009434BA /* right_arrow.png */; };
+		02EE2ADB194AF15800183CB3 /* left_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F126BB18BE2AEA009434BA /* left_arrow@2x.png */; };
+		02EE2ADC194AF15800183CB3 /* SheetButtonDismiss@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1294318BE3012009434BA /* SheetButtonDismiss@2x.png */; };
 		02F125DE18BDF246009434BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F125DD18BDF246009434BA /* Foundation.framework */; };
 		02F125E018BDF246009434BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F125DF18BDF246009434BA /* CoreGraphics.framework */; };
 		02F125E218BDF246009434BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F125E118BDF246009434BA /* UIKit.framework */; };
@@ -948,12 +1432,8 @@
 		0272B2F518DD0F9000920867 /* DKTwitterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DKTwitterManager.h; path = Managers/DKTwitterManager.h; sourceTree = "<group>"; };
 		0272B2F618DD0F9000920867 /* DKTwitterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DKTwitterManager.m; path = Managers/DKTwitterManager.m; sourceTree = "<group>"; };
 		0272B30218DD14FB00920867 /* DKErrorCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKErrorCodes.h; sourceTree = "<group>"; };
-		0272B30318DD1A3F00920867 /* DKGooglePlusManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DKGooglePlusManager.h; path = Managers/DKGooglePlusManager.h; sourceTree = "<group>"; };
-		0272B30418DD1A3F00920867 /* DKGooglePlusManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DKGooglePlusManager.m; path = Managers/DKGooglePlusManager.m; sourceTree = "<group>"; };
 		0272B30C18DD1B0000920867 /* iCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iCloud.framework; path = AppTemplate/Dependencies/iCloud/iCloud.framework; sourceTree = "<group>"; };
 		0272B30E18DD1B0B00920867 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = AppTemplate/Dependencies/GooglePlus/GoogleOpenSource.framework; sourceTree = "<group>"; };
-		0272B30F18DD1B0B00920867 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = AppTemplate/Dependencies/GooglePlus/GooglePlus.framework; sourceTree = "<group>"; };
-		0272B31018DD1B0B00920867 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = AppTemplate/Dependencies/GooglePlus/GooglePlus.bundle; sourceTree = "<group>"; };
 		0272B31418DD1B4300920867 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		0272B31718DD72C100920867 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		0272B31818DD72C100920867 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
@@ -1143,6 +1623,8 @@
 		029A90561920391300C998C8 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
 		02EB20AE192615ED00E8866C /* DKTimePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DKTimePicker.h; path = Views/DKTimePicker.h; sourceTree = "<group>"; };
 		02EB20AF192615ED00E8866C /* DKTimePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DKTimePicker.m; path = Views/DKTimePicker.m; sourceTree = "<group>"; };
+		02EE2AE3194AF15800183CB3 /* FitAssist Free.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FitAssist Free.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02EE2AE4194AF15900183CB3 /* FitAssist copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FitAssist copy-Info.plist"; path = "/Users/kronik/work/fita/Application/FitAssist copy-Info.plist"; sourceTree = "<absolute>"; };
 		02F125DA18BDF246009434BA /* FitAssist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitAssist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F125DD18BDF246009434BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		02F125DF18BDF246009434BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1455,13 +1937,54 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		02EE2A52194AF15800183CB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EE2A53194AF15800183CB3 /* CoreTelephony.framework in Frameworks */,
+				02EE2A54194AF15800183CB3 /* iAd.framework in Frameworks */,
+				02EE2A55194AF15800183CB3 /* AdSupport.framework in Frameworks */,
+				02EE2A56194AF15800183CB3 /* StoreKit.framework in Frameworks */,
+				02EE2A57194AF15800183CB3 /* AudioToolbox.framework in Frameworks */,
+				02EE2A58194AF15800183CB3 /* CoreMotion.framework in Frameworks */,
+				02EE2A59194AF15800183CB3 /* Accelerate.framework in Frameworks */,
+				02EE2A5A194AF15800183CB3 /* libz.dylib in Frameworks */,
+				02EE2A5B194AF15800183CB3 /* FacebookSDK.framework in Frameworks */,
+				02EE2A5C194AF15800183CB3 /* Crashlytics.framework in Frameworks */,
+				02EE2A5D194AF15800183CB3 /* AVFoundation.framework in Frameworks */,
+				02EE2A5E194AF15800183CB3 /* GoogleOpenSource.framework in Frameworks */,
+				02EE2A5F194AF15800183CB3 /* CFNetwork.framework in Frameworks */,
+				02EE2A60194AF15800183CB3 /* CoreAudio.framework in Frameworks */,
+				02EE2A61194AF15800183CB3 /* CoreData.framework in Frameworks */,
+				02EE2A62194AF15800183CB3 /* libAdapterIAd.a in Frameworks */,
+				02EE2A63194AF15800183CB3 /* CoreImage.framework in Frameworks */,
+				02EE2A64194AF15800183CB3 /* CoreLocation.framework in Frameworks */,
+				02EE2A65194AF15800183CB3 /* CoreText.framework in Frameworks */,
+				02EE2A66194AF15800183CB3 /* MessageUI.framework in Frameworks */,
+				02EE2A67194AF15800183CB3 /* MobileCoreServices.framework in Frameworks */,
+				02EE2A68194AF15800183CB3 /* libFlurry_5.0.0.a in Frameworks */,
+				02EE2A69194AF15800183CB3 /* QuartzCore.framework in Frameworks */,
+				02EE2A6A194AF15800183CB3 /* Social.framework in Frameworks */,
+				02EE2A6B194AF15800183CB3 /* SpriteKit.framework in Frameworks */,
+				02EE2A6C194AF15800183CB3 /* GameKit.framework in Frameworks */,
+				02EE2A6E194AF15800183CB3 /* SystemConfiguration.framework in Frameworks */,
+				02EE2A6F194AF15800183CB3 /* Twitter.framework in Frameworks */,
+				02EE2A70194AF15800183CB3 /* CoreGraphics.framework in Frameworks */,
+				02EE2A71194AF15800183CB3 /* libGoogleAdMobAds.a in Frameworks */,
+				02EE2A72194AF15800183CB3 /* AddressBook.framework in Frameworks */,
+				02EE2A73194AF15800183CB3 /* Accounts.framework in Frameworks */,
+				02EE2A74194AF15800183CB3 /* Security.framework in Frameworks */,
+				02EE2A75194AF15800183CB3 /* iCloud.framework in Frameworks */,
+				02EE2A76194AF15800183CB3 /* UIKit.framework in Frameworks */,
+				02EE2A77194AF15800183CB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02F125D718BDF246009434BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				029A90481920378500C998C8 /* CoreTelephony.framework in Frameworks */,
-				027521301913DE0C004C3D82 /* iAd.framework in Frameworks */,
-				0275212E1913DE05004C3D82 /* AdSupport.framework in Frameworks */,
 				027CA8A818E937A300883A11 /* StoreKit.framework in Frameworks */,
 				0228E56A18FD2CD300B1A7DB /* AudioToolbox.framework in Frameworks */,
 				0272B31518DD1B4300920867 /* CoreMotion.framework in Frameworks */,
@@ -1470,11 +1993,9 @@
 				0272B37918DE684F00920867 /* FacebookSDK.framework in Frameworks */,
 				0260D4671919D1EB00EE1A07 /* Crashlytics.framework in Frameworks */,
 				02F127AE18BE2BD8009434BA /* AVFoundation.framework in Frameworks */,
-				0272B31118DD1B0B00920867 /* GoogleOpenSource.framework in Frameworks */,
 				02F127AF18BE2BD8009434BA /* CFNetwork.framework in Frameworks */,
 				02F127B018BE2BD8009434BA /* CoreAudio.framework in Frameworks */,
 				02F127B118BE2BD8009434BA /* CoreData.framework in Frameworks */,
-				026E512A192DE0E0001AEEE6 /* libAdapterIAd.a in Frameworks */,
 				02F127B218BE2BD8009434BA /* CoreImage.framework in Frameworks */,
 				02F127B318BE2BD8009434BA /* CoreLocation.framework in Frameworks */,
 				02F127B418BE2BD8009434BA /* CoreText.framework in Frameworks */,
@@ -1485,11 +2006,9 @@
 				02F127B918BE2BD8009434BA /* Social.framework in Frameworks */,
 				02F127BA18BE2BD8009434BA /* SpriteKit.framework in Frameworks */,
 				0228E57618FE6B4500B1A7DB /* GameKit.framework in Frameworks */,
-				0272B31218DD1B0B00920867 /* GooglePlus.framework in Frameworks */,
 				02F127BC18BE2BD8009434BA /* SystemConfiguration.framework in Frameworks */,
 				02F127BD18BE2BD8009434BA /* Twitter.framework in Frameworks */,
 				02F125E018BDF246009434BA /* CoreGraphics.framework in Frameworks */,
-				029A90571920391300C998C8 /* libGoogleAdMobAds.a in Frameworks */,
 				02F1279B18BE2B86009434BA /* AddressBook.framework in Frameworks */,
 				02F1279918BE2B82009434BA /* Accounts.framework in Frameworks */,
 				02F1279518BE2B7A009434BA /* Security.framework in Frameworks */,
@@ -2419,8 +2938,6 @@
 				027729E618DC7D0500F8B93C /* DKFacebookManager.m */,
 				0272B2F518DD0F9000920867 /* DKTwitterManager.h */,
 				0272B2F618DD0F9000920867 /* DKTwitterManager.m */,
-				0272B30318DD1A3F00920867 /* DKGooglePlusManager.h */,
-				0272B30418DD1A3F00920867 /* DKGooglePlusManager.m */,
 			);
 			name = Social;
 			sourceTree = "<group>";
@@ -2680,6 +3197,7 @@
 				02F1260518BDF246009434BA /* FitAssistTests */,
 				02F125DC18BDF246009434BA /* Frameworks */,
 				02F125DB18BDF246009434BA /* Products */,
+				02EE2AE4194AF15900183CB3 /* FitAssist copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2688,6 +3206,7 @@
 			children = (
 				02F125DA18BDF246009434BA /* FitAssist.app */,
 				02F125FE18BDF246009434BA /* FitAssistTests.xctest */,
+				02EE2AE3194AF15800183CB3 /* FitAssist Free.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2717,8 +3236,6 @@
 				0272B37818DE684F00920867 /* FacebookSDK.framework */,
 				02F125DD18BDF246009434BA /* Foundation.framework */,
 				0272B30E18DD1B0B00920867 /* GoogleOpenSource.framework */,
-				0272B31018DD1B0B00920867 /* GooglePlus.bundle */,
-				0272B30F18DD1B0B00920867 /* GooglePlus.framework */,
 				0272B30C18DD1B0000920867 /* iCloud.framework */,
 				02F127BE18BE2E9F009434BA /* libz.dylib */,
 				02F127A518BE2BD8009434BA /* MessageUI.framework */,
@@ -3461,6 +3978,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		02EE28EA194AF15800183CB3 /* FitAssist Free */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02EE2ADE194AF15800183CB3 /* Build configuration list for PBXNativeTarget "FitAssist Free" */;
+			buildPhases = (
+				02EE28EB194AF15800183CB3 /* Sources */,
+				02EE2A52194AF15800183CB3 /* Frameworks */,
+				02EE2A78194AF15800183CB3 /* Resources */,
+				02EE2ADD194AF15800183CB3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FitAssist Free";
+			productName = AppTemplate;
+			productReference = 02EE2AE3194AF15800183CB3 /* FitAssist Free.app */;
+			productType = "com.apple.product-type.application";
+		};
 		02F125D918BDF246009434BA /* FitAssist */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02F1260F18BDF246009434BA /* Build configuration list for PBXNativeTarget "FitAssist" */;
@@ -3507,6 +4042,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Dmitry Klimkin";
 				TargetAttributes = {
+					02EE28EA194AF15800183CB3 = {
+						DevelopmentTeam = 7HCL9D4WBY;
+					};
 					02F125D918BDF246009434BA = {
 						DevelopmentTeam = 7HCL9D4WBY;
 						SystemCapabilities = {
@@ -3550,12 +4088,119 @@
 			projectRoot = "";
 			targets = (
 				02F125D918BDF246009434BA /* FitAssist */,
+				02EE28EA194AF15800183CB3 /* FitAssist Free */,
 				02F125FD18BDF246009434BA /* FitAssistTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		02EE2A78194AF15800183CB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EE2A79194AF15800183CB3 /* _CLImageEditorViewController.xib in Resources */,
+				02EE2A7A194AF15800183CB3 /* right_arrow@2x.png in Resources */,
+				02EE2A7B194AF15800183CB3 /* EditControlSelected.png in Resources */,
+				02EE2A7C194AF15800183CB3 /* NBPhoneNumberMetadataForTesting.plist in Resources */,
+				02EE2A7D194AF15800183CB3 /* instagram~ipad@2x.png in Resources */,
+				02EE2A7E194AF15800183CB3 /* ic_square@2x.png in Resources */,
+				02EE2A7F194AF15800183CB3 /* EditControl@2x.png in Resources */,
+				02EE2A80194AF15800183CB3 /* Meal_ru.txt in Resources */,
+				02EE2A81194AF15800183CB3 /* OpenSans-Regular.ttf in Resources */,
+				02EE2A82194AF15800183CB3 /* left_arrow@2x.png in Resources */,
+				02EE2A83194AF15800183CB3 /* error@2x.png in Resources */,
+				02EE2A84194AF15800183CB3 /* pause@2x.png in Resources */,
+				02EE2A85194AF15800183CB3 /* playButton@2x.png in Resources */,
+				02EE2A86194AF15800183CB3 /* EditControlSelected@2x.png in Resources */,
+				02EE2A87194AF15800183CB3 /* videoIcon.png in Resources */,
+				02EE2A88194AF15800183CB3 /* notification.aiff in Resources */,
+				02EE2A89194AF15800183CB3 /* SheetButtonPrimaryTouch.png in Resources */,
+				02EE2A8A194AF15800183CB3 /* messageMH@2x.png in Resources */,
+				02EE2A8B194AF15800183CB3 /* ic_square.png in Resources */,
+				02EE2A8C194AF15800183CB3 /* SheetButtonGenericTouch.png in Resources */,
+				02EE2A8D194AF15800183CB3 /* mailMH@2x.png in Resources */,
+				02EE2A8E194AF15800183CB3 /* Images.xcassets in Resources */,
+				02EE2A8F194AF15800183CB3 /* left_arrow.png in Resources */,
+				02EE2A90194AF15800183CB3 /* PhoneNumberMetaDataForTesting.json in Resources */,
+				02EE2A91194AF15800183CB3 /* SheetButtonPrimary@2x.png in Resources */,
+				02EE2A92194AF15800183CB3 /* OpenSans-BoldItalic.ttf in Resources */,
+				02EE2A93194AF15800183CB3 /* Localizable.strings in Resources */,
+				02EE2A94194AF15800183CB3 /* DMResizerViewController.xib in Resources */,
+				02EE2A95194AF15800183CB3 /* instagram@2x.png in Resources */,
+				02EE2A96194AF15800183CB3 /* messageMH.png in Resources */,
+				02EE2A97194AF15800183CB3 /* SheetButtonDismissTouch.png in Resources */,
+				02EE2A98194AF15800183CB3 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				02EE2A99194AF15800183CB3 /* start_beep.wav in Resources */,
+				02EE2A9B194AF15800183CB3 /* DiallingCodes.plist in Resources */,
+				02EE2A9C194AF15800183CB3 /* double_beep.wav in Resources */,
+				02EE2A9D194AF15800183CB3 /* SheetButtonPrimary.png in Resources */,
+				02EE2A9E194AF15800183CB3 /* activityMH.png in Resources */,
+				02EE2A9F194AF15800183CB3 /* facebookMH.png in Resources */,
+				02EE2AA0194AF15800183CB3 /* pause.png in Resources */,
+				02EE2AA1194AF15800183CB3 /* SheetButtonDismiss.png in Resources */,
+				02EE2AA2194AF15800183CB3 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				02EE2AA3194AF15800183CB3 /* Main_iPad.storyboard in Resources */,
+				02EE2AA4194AF15800183CB3 /* play.png in Resources */,
+				02EE2AA5194AF15800183CB3 /* Meal.txt in Resources */,
+				02EE2AA6194AF15800183CB3 /* activtyMH@2x.png in Resources */,
+				02EE2AA7194AF15800183CB3 /* CLImageEditor.bundle in Resources */,
+				02EE2AA8194AF15800183CB3 /* SheetButtonDismissTouch@2x.png in Resources */,
+				02EE2AA9194AF15800183CB3 /* NBPhoneNumberMetadata.plist in Resources */,
+				02EE2AAA194AF15800183CB3 /* unplay@2x.png in Resources */,
+				02EE2AAB194AF15800183CB3 /* twitterMH.png in Resources */,
+				02EE2AAC194AF15800183CB3 /* SheetButtonGeneric@2x.png in Resources */,
+				02EE2AAD194AF15800183CB3 /* SheetButtonDestroy@2x.png in Resources */,
+				02EE2AAE194AF15800183CB3 /* unplay.png in Resources */,
+				02EE2AAF194AF15800183CB3 /* FontAwesome.otf in Resources */,
+				02EE2AB0194AF15800183CB3 /* instagram.png in Resources */,
+				02EE2AB1194AF15800183CB3 /* sliderPoint@2x.png in Resources */,
+				02EE2AB2194AF15800183CB3 /* facebookMH@2x.png in Resources */,
+				02EE2AB3194AF15800183CB3 /* OpenSans-Semibold.ttf in Resources */,
+				02EE2AB4194AF15800183CB3 /* iRate.bundle in Resources */,
+				02EE2AB5194AF15800183CB3 /* beep.wav in Resources */,
+				02EE2AB6194AF15800183CB3 /* playButton.png in Resources */,
+				02EE2AB7194AF15800183CB3 /* OpenSans-Bold.ttf in Resources */,
+				02EE2AB8194AF15800183CB3 /* RETableViewManager.bundle in Resources */,
+				02EE2AB9194AF15800183CB3 /* SVProgressHUD.bundle in Resources */,
+				02EE2ABA194AF15800183CB3 /* mailMH.png in Resources */,
+				02EE2ABB194AF15800183CB3 /* play@2x.png in Resources */,
+				02EE2ABC194AF15800183CB3 /* OpenSans-Italic.ttf in Resources */,
+				02EE2ABD194AF15800183CB3 /* left_arrow.png in Resources */,
+				02EE2ABE194AF15800183CB3 /* OpenSans-Light.ttf in Resources */,
+				02EE2ABF194AF15800183CB3 /* saveMH@2x.png in Resources */,
+				02EE2AC0194AF15800183CB3 /* SheetButtonGeneric.png in Resources */,
+				02EE2AC1194AF15800183CB3 /* OpenSans-LightItalic.ttf in Resources */,
+				02EE2AC2194AF15800183CB3 /* OpenSans-ExtraBold.ttf in Resources */,
+				02EE2AC3194AF15800183CB3 /* timezonesDB.json in Resources */,
+				02EE2AC4194AF15800183CB3 /* Main_iPhone.storyboard in Resources */,
+				02EE2AC5194AF15800183CB3 /* SheetButtonDestroyTouch@2x.png in Resources */,
+				02EE2AC6194AF15800183CB3 /* IDMPhotoBrowser.bundle in Resources */,
+				02EE2AC7194AF15800183CB3 /* sliderPoint.png in Resources */,
+				02EE2AC8194AF15800183CB3 /* PhoneNumberMetaData.json in Resources */,
+				02EE2AC9194AF15800183CB3 /* SheetBackground@2x.png in Resources */,
+				02EE2ACA194AF15800183CB3 /* InfoPlist.strings in Resources */,
+				02EE2ACB194AF15800183CB3 /* right_arrow@2x.png in Resources */,
+				02EE2ACC194AF15800183CB3 /* SheetButtonGenericTouch@2x.png in Resources */,
+				02EE2ACD194AF15800183CB3 /* EditControl.png in Resources */,
+				02EE2ACE194AF15800183CB3 /* MHGallery.bundle in Resources */,
+				02EE2ACF194AF15800183CB3 /* right_arrow.png in Resources */,
+				02EE2AD0194AF15800183CB3 /* twitterMH@2x.png in Resources */,
+				02EE2AD1194AF15800183CB3 /* FontAwesome.ttf in Resources */,
+				02EE2AD2194AF15800183CB3 /* SheetBackground.png in Resources */,
+				02EE2AD3194AF15800183CB3 /* LICENSE in Resources */,
+				02EE2AD4194AF15800183CB3 /* instagram~ipad.png in Resources */,
+				02EE2AD5194AF15800183CB3 /* Countries.plist in Resources */,
+				02EE2AD6194AF15800183CB3 /* IDMPBLocalizations.bundle in Resources */,
+				02EE2AD7194AF15800183CB3 /* error.png in Resources */,
+				02EE2AD8194AF15800183CB3 /* SheetButtonPrimaryTouch@2x.png in Resources */,
+				02EE2AD9194AF15800183CB3 /* videoIcon@2x.png in Resources */,
+				02EE2ADA194AF15800183CB3 /* right_arrow.png in Resources */,
+				02EE2ADB194AF15800183CB3 /* left_arrow@2x.png in Resources */,
+				02EE2ADC194AF15800183CB3 /* SheetButtonDismiss@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02F125D818BDF246009434BA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3593,7 +4238,6 @@
 				02F1297A18BE3012009434BA /* SheetButtonDismissTouch.png in Resources */,
 				02F1290318BE2FE0009434BA /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				027520ED191086DE004C3D82 /* start_beep.wav in Resources */,
-				0272B31318DD1B0B00920867 /* GooglePlus.bundle in Resources */,
 				02F1281518BE2EF0009434BA /* DiallingCodes.plist in Resources */,
 				027520EF19109108004C3D82 /* double_beep.wav in Resources */,
 				02F1298018BE3012009434BA /* SheetButtonPrimary.png in Resources */,
@@ -3687,9 +4331,386 @@
 			shellPath = /bin/sh;
 			shellScript = "./Crashlytics.framework/run acae1e61f9e2e9800669e34d9a16778891aae7c0 83b16209b0415b3d15b6cc94498edb1168aa556ec316fbda215d2614da87bed7";
 		};
+		02EE2ADD194AF15800183CB3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run acae1e61f9e2e9800669e34d9a16778891aae7c0 83b16209b0415b3d15b6cc94498edb1168aa556ec316fbda215d2614da87bed7";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		02EE28EB194AF15800183CB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EE28EC194AF15800183CB3 /* RETableViewInlineDatePickerCell.m in Sources */,
+				02EE28ED194AF15800183CB3 /* RENumberItem.m in Sources */,
+				02EE28EE194AF15800183CB3 /* YLProgressBar.m in Sources */,
+				02EE28EF194AF15800183CB3 /* HMDiallingCode.m in Sources */,
+				02EE28F0194AF15800183CB3 /* FBShimmeringLayer.m in Sources */,
+				02EE28F1194AF15800183CB3 /* DMBaseTransition.m in Sources */,
+				02EE28F2194AF15800183CB3 /* Week.m in Sources */,
+				02EE28F3194AF15800183CB3 /* UIView+Screenshot.m in Sources */,
+				02EE28F4194AF15800183CB3 /* MHPresenterImageView.m in Sources */,
+				02EE28F5194AF15800183CB3 /* SWTableViewCell.m in Sources */,
+				02EE28F6194AF15800183CB3 /* MRCircularProgressView.m in Sources */,
+				02EE28F7194AF15800183CB3 /* MOOPullGestureRecognizer.m in Sources */,
+				02EE28F8194AF15800183CB3 /* REInlinePickerItem.m in Sources */,
+				02EE28F9194AF15800183CB3 /* MRProgressOverlayView.m in Sources */,
+				02EE28FA194AF15800183CB3 /* UIProgressView+AFNetworking.m in Sources */,
+				02EE28FB194AF15800183CB3 /* DKDaysViewController.m in Sources */,
+				02EE28FC194AF15800183CB3 /* UIImage-JTImageCrop.m in Sources */,
+				02EE28FD194AF15800183CB3 /* DKScheduleViewController.m in Sources */,
+				02EE28FE194AF15800183CB3 /* UITextField+PlaceholderColor.m in Sources */,
+				02EE28FF194AF15800183CB3 /* DKMealViewController.m in Sources */,
+				02EE2900194AF15800183CB3 /* NSDataAES256.m in Sources */,
+				02EE2901194AF15800183CB3 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
+				02EE2902194AF15800183CB3 /* CLSplineInterpolator.m in Sources */,
+				02EE2903194AF15800183CB3 /* SDWebImagePrefetcher.m in Sources */,
+				02EE2904194AF15800183CB3 /* UIColor+MLPFlatColors.m in Sources */,
+				02EE2905194AF15800183CB3 /* IDMZoomingScrollView.m in Sources */,
+				02EE2906194AF15800183CB3 /* WCFCLabel.m in Sources */,
+				02EE2907194AF15800183CB3 /* NBPhoneNumberDesc.m in Sources */,
+				02EE2908194AF15800183CB3 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
+				02EE2909194AF15800183CB3 /* DKTableViewController.m in Sources */,
+				02EE290A194AF15800183CB3 /* RERadioItem.m in Sources */,
+				02EE290B194AF15800183CB3 /* UIViewController+ECSlidingViewController.m in Sources */,
+				02EE290C194AF15800183CB3 /* CLRotateTool.m in Sources */,
+				02EE290D194AF15800183CB3 /* DKCircleButton.m in Sources */,
+				02EE290E194AF15800183CB3 /* Day.m in Sources */,
+				02EE290F194AF15800183CB3 /* PSPDFTextView.m in Sources */,
+				02EE2910194AF15800183CB3 /* REDateTimeItem.m in Sources */,
+				02EE2911194AF15800183CB3 /* RESegmentedItem.m in Sources */,
+				02EE2912194AF15800183CB3 /* UIButton+AFNetworking.m in Sources */,
+				02EE2913194AF15800183CB3 /* RETableViewTextCell.m in Sources */,
+				02EE2914194AF15800183CB3 /* RETableViewInlinePickerCell.m in Sources */,
+				02EE2915194AF15800183CB3 /* iRate.m in Sources */,
+				02EE2916194AF15800183CB3 /* DKDayCommentCell.m in Sources */,
+				02EE2917194AF15800183CB3 /* BZGFormField.m in Sources */,
+				02EE2918194AF15800183CB3 /* UILabel+TCCustomFont.m in Sources */,
+				02EE2919194AF15800183CB3 /* REBoolItem.m in Sources */,
+				02EE291A194AF15800183CB3 /* CLFilterBase.m in Sources */,
+				02EE291B194AF15800183CB3 /* CLColorPickerView.m in Sources */,
+				02EE291C194AF15800183CB3 /* JTTableViewGestureRecognizer.m in Sources */,
+				02EE291D194AF15800183CB3 /* DMScaleTransition.m in Sources */,
+				02EE291E194AF15800183CB3 /* CLToolbarMenuItem.m in Sources */,
+				02EE291F194AF15800183CB3 /* MRWeakProxy.m in Sources */,
+				02EE2920194AF15800183CB3 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
+				02EE2921194AF15800183CB3 /* DMColorPickerView.m in Sources */,
+				02EE2922194AF15800183CB3 /* NIKFontAwesomeIconFactory.m in Sources */,
+				02EE2923194AF15800183CB3 /* NSData+Base64.m in Sources */,
+				02EE2924194AF15800183CB3 /* FBShimmeringView.m in Sources */,
+				02EE2925194AF15800183CB3 /* SDWebImageCompat.m in Sources */,
+				02EE2926194AF15800183CB3 /* NSManagedObject+MagicalDataImport.m in Sources */,
+				02EE2927194AF15800183CB3 /* SWCellScrollView.m in Sources */,
+				02EE2928194AF15800183CB3 /* SDWebImageDownloader.m in Sources */,
+				02EE2929194AF15800183CB3 /* _CLImageEditorViewController.m in Sources */,
+				02EE292A194AF15800183CB3 /* CLImageToolInfo+Private.m in Sources */,
+				02EE292B194AF15800183CB3 /* CLImageEditorTheme.m in Sources */,
+				02EE292C194AF15800183CB3 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
+				02EE292D194AF15800183CB3 /* DMResizerViewController.m in Sources */,
+				02EE292E194AF15800183CB3 /* CLImageToolInfo.m in Sources */,
+				02EE292F194AF15800183CB3 /* Meal.m in Sources */,
+				02EE2930194AF15800183CB3 /* UIRefreshControl+AFNetworking.m in Sources */,
+				02EE2931194AF15800183CB3 /* MRNavigationBarProgressView.m in Sources */,
+				02EE2932194AF15800183CB3 /* UIImage+MultiFormat.m in Sources */,
+				02EE2933194AF15800183CB3 /* DMSlideTransition.m in Sources */,
+				02EE2934194AF15800183CB3 /* CKCalendarView.m in Sources */,
+				02EE2935194AF15800183CB3 /* DKTableViewCell.m in Sources */,
+				02EE2936194AF15800183CB3 /* FXKeychain.m in Sources */,
+				02EE2937194AF15800183CB3 /* AnimatorShowDetail.m in Sources */,
+				02EE2938194AF15800183CB3 /* SWUtilityButtonTapGestureRecognizer.m in Sources */,
+				02EE2939194AF15800183CB3 /* CLClippingTool.m in Sources */,
+				02EE293A194AF15800183CB3 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
+				02EE293B194AF15800183CB3 /* UIButton+WebCache.m in Sources */,
+				02EE293C194AF15800183CB3 /* BEMAnimations.m in Sources */,
+				02EE293D194AF15800183CB3 /* APTimeZones.m in Sources */,
+				02EE293E194AF15800183CB3 /* REPlaceholderTextView.m in Sources */,
+				02EE293F194AF15800183CB3 /* DKMenuViewController.m in Sources */,
+				02EE2940194AF15800183CB3 /* OAuth+Additions.m in Sources */,
+				02EE2941194AF15800183CB3 /* MKNetworkOperation.m in Sources */,
+				02EE2942194AF15800183CB3 /* IDMTapDetectingView.m in Sources */,
+				02EE2943194AF15800183CB3 /* NIKFontAwesomePathRenderer.m in Sources */,
+				02EE2944194AF15800183CB3 /* ECSlidingViewController.m in Sources */,
+				02EE2945194AF15800183CB3 /* DALabeledCircularProgressView.m in Sources */,
+				02EE2946194AF15800183CB3 /* DKDayCell.m in Sources */,
+				02EE2947194AF15800183CB3 /* DKTouchScrollView.m in Sources */,
+				02EE2948194AF15800183CB3 /* RESideMenu.m in Sources */,
+				02EE2949194AF15800183CB3 /* CLEffectBase.m in Sources */,
+				02EE294A194AF15800183CB3 /* CSAnimationView.m in Sources */,
+				02EE294B194AF15800183CB3 /* THSpringyFlowLayout.m in Sources */,
+				02EE294C194AF15800183CB3 /* RETableViewCellStyle.m in Sources */,
+				02EE294D194AF15800183CB3 /* UIAlertView+AFNetworking.m in Sources */,
+				02EE294E194AF15800183CB3 /* DKWeeksViewController.m in Sources */,
+				02EE294F194AF15800183CB3 /* DKNetworkManager.m in Sources */,
+				02EE2950194AF15800183CB3 /* MRStopButton.m in Sources */,
+				02EE2951194AF15800183CB3 /* REEmailValidator.m in Sources */,
+				02EE2952194AF15800183CB3 /* WCFCObject.m in Sources */,
+				02EE2953194AF15800183CB3 /* Reachability.m in Sources */,
+				02EE2954194AF15800183CB3 /* CXCountDownLabel.m in Sources */,
+				02EE2955194AF15800183CB3 /* main.m in Sources */,
+				02EE2956194AF15800183CB3 /* UIImage+RoundedCornerAdditions.m in Sources */,
+				02EE2957194AF15800183CB3 /* DKCompareViewController.m in Sources */,
+				02EE2958194AF15800183CB3 /* AnimatorShowDetailForDismissMHGallery.m in Sources */,
+				02EE2959194AF15800183CB3 /* DKCircleImageView.m in Sources */,
+				02EE295A194AF15800183CB3 /* AFSecurityPolicy.m in Sources */,
+				02EE295B194AF15800183CB3 /* RECommonFunctions.m in Sources */,
+				02EE295C194AF15800183CB3 /* DKWorkoutCell.m in Sources */,
+				02EE295D194AF15800183CB3 /* DKSettingsManager.m in Sources */,
+				02EE295E194AF15800183CB3 /* REMenuContainerView.m in Sources */,
+				02EE295F194AF15800183CB3 /* UITextField+TCCustomFont.m in Sources */,
+				02EE2960194AF15800183CB3 /* UIImageView+MKNetworkKitAdditions.m in Sources */,
+				02EE2961194AF15800183CB3 /* UITextField+Shake.m in Sources */,
+				02EE2962194AF15800183CB3 /* CLPixellateEffect.m in Sources */,
+				02EE2963194AF15800183CB3 /* NSAlert+MKNetworkKitAdditions.m in Sources */,
+				02EE2964194AF15800183CB3 /* DKWeekCell.m in Sources */,
+				02EE2965194AF15800183CB3 /* DataModel.xcdatamodeld in Sources */,
+				02EE2966194AF15800183CB3 /* MZTimerLabel.m in Sources */,
+				02EE2967194AF15800183CB3 /* DKFileCache.m in Sources */,
+				02EE2968194AF15800183CB3 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
+				02EE2969194AF15800183CB3 /* CLPlacemark+APTimeZones.m in Sources */,
+				02EE296A194AF15800183CB3 /* DKProgressView.m in Sources */,
+				02EE296B194AF15800183CB3 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
+				02EE296C194AF15800183CB3 /* Exercise.m in Sources */,
+				02EE296D194AF15800183CB3 /* ECSlidingAnimationController.m in Sources */,
+				02EE296E194AF15800183CB3 /* NBPhoneNumber.m in Sources */,
+				02EE296F194AF15800183CB3 /* NSString+MD5Addition.m in Sources */,
+				02EE2970194AF15800183CB3 /* UIDeviceHardware.m in Sources */,
+				02EE2971194AF15800183CB3 /* CLGloomEffect.m in Sources */,
+				02EE2972194AF15800183CB3 /* DKLocationManager.m in Sources */,
+				02EE2973194AF15800183CB3 /* CLClassList.m in Sources */,
+				02EE2974194AF15800183CB3 /* DKCollectionViewController.m in Sources */,
+				02EE2975194AF15800183CB3 /* NSString+MagicalDataImport.m in Sources */,
+				02EE2976194AF15800183CB3 /* CLAdjustmentTool.m in Sources */,
+				02EE2977194AF15800183CB3 /* CountryPicker.m in Sources */,
+				02EE2978194AF15800183CB3 /* BEMLine.m in Sources */,
+				02EE2979194AF15800183CB3 /* UIImageView+MHGallery.m in Sources */,
+				02EE297A194AF15800183CB3 /* RETableViewManager.m in Sources */,
+				02EE297B194AF15800183CB3 /* DKSettingsViewController.m in Sources */,
+				02EE297C194AF15800183CB3 /* NSArray+NBAdditions.m in Sources */,
+				02EE297D194AF15800183CB3 /* REFrostedViewController.m in Sources */,
+				02EE297E194AF15800183CB3 /* DMActivityInstagram.m in Sources */,
+				02EE297F194AF15800183CB3 /* UITextView+DisableCopyPaste.m in Sources */,
+				02EE2980194AF15800183CB3 /* AFHTTPRequestOperationManager.m in Sources */,
+				02EE2981194AF15800183CB3 /* OAuthCore.m in Sources */,
+				02EE2982194AF15800183CB3 /* GameCenterManager.m in Sources */,
+				02EE2983194AF15800183CB3 /* IDMPhotoBrowser.m in Sources */,
+				02EE2984194AF15800183CB3 /* NSString+MKNetworkKitAdditions.m in Sources */,
+				02EE2985194AF15800183CB3 /* Day+Extra.m in Sources */,
+				02EE2986194AF15800183CB3 /* AFURLConnectionOperation.m in Sources */,
+				02EE2987194AF15800183CB3 /* NSDate+RFC1123.m in Sources */,
+				02EE2988194AF15800183CB3 /* AnimatorShowShareView.m in Sources */,
+				02EE2989194AF15800183CB3 /* SVProgressHUD.m in Sources */,
+				02EE298A194AF15800183CB3 /* AMWaveViewController.m in Sources */,
+				02EE298B194AF15800183CB3 /* NSData+GIF.m in Sources */,
+				02EE298C194AF15800183CB3 /* RETableViewDateTimeCell.m in Sources */,
+				02EE298D194AF15800183CB3 /* RETableViewCell.m in Sources */,
+				02EE298E194AF15800183CB3 /* REMenu.m in Sources */,
+				02EE298F194AF15800183CB3 /* MRMessageInterceptor.m in Sources */,
+				02EE2990194AF15800183CB3 /* NBPhoneNumberUtil.m in Sources */,
+				02EE2991194AF15800183CB3 /* REFloatItem.m in Sources */,
+				02EE2992194AF15800183CB3 /* REValidation.m in Sources */,
+				02EE2993194AF15800183CB3 /* NSString+RENumberFormat.m in Sources */,
+				02EE2994194AF15800183CB3 /* UIView+CLImageToolInfo.m in Sources */,
+				02EE2995194AF15800183CB3 /* NSData+MKBase64.m in Sources */,
+				02EE2996194AF15800183CB3 /* RETableViewCreditCardCell.m in Sources */,
+				02EE2997194AF15800183CB3 /* SDWebImageManager.m in Sources */,
+				02EE2998194AF15800183CB3 /* MOOCreateView.m in Sources */,
+				02EE2999194AF15800183CB3 /* IDMCaptionView.m in Sources */,
+				02EE299A194AF15800183CB3 /* MHGalleryImageViewerViewController.m in Sources */,
+				02EE299B194AF15800183CB3 /* DKTimePicker.m in Sources */,
+				02EE299C194AF15800183CB3 /* WCFastCell.m in Sources */,
+				02EE299D194AF15800183CB3 /* MHGalleryCells.m in Sources */,
+				02EE299E194AF15800183CB3 /* NBNumberFormat.m in Sources */,
+				02EE299F194AF15800183CB3 /* CSNavigationController.m in Sources */,
+				02EE29A0194AF15800183CB3 /* RELongTextItem.m in Sources */,
+				02EE29A1194AF15800183CB3 /* RDActionSheet.m in Sources */,
+				02EE29A2194AF15800183CB3 /* DKCollectionViewCell.m in Sources */,
+				02EE29A3194AF15800183CB3 /* CLPosterizeEffect.m in Sources */,
+				02EE29A5194AF15800183CB3 /* SDWebImageDecoder.m in Sources */,
+				02EE29A6194AF15800183CB3 /* MagicalRecord+Actions.m in Sources */,
+				02EE29A7194AF15800183CB3 /* UIImage+animatedGIF.m in Sources */,
+				02EE29A8194AF15800183CB3 /* DKWeatherViewController.m in Sources */,
+				02EE29A9194AF15800183CB3 /* AnimatorShowDetailForPresentingMHGallery.m in Sources */,
+				02EE29AA194AF15800183CB3 /* FXLabel.m in Sources */,
+				02EE29AB194AF15800183CB3 /* DKTimerSettingsView.m in Sources */,
+				02EE29AC194AF15800183CB3 /* RETableViewSection.m in Sources */,
+				02EE29AD194AF15800183CB3 /* MKNetworkEngine.m in Sources */,
+				02EE29AE194AF15800183CB3 /* CLToneCurveTool.m in Sources */,
+				02EE29AF194AF15800183CB3 /* DKLoginViewController.m in Sources */,
+				02EE29B0194AF15800183CB3 /* CLCircleView.m in Sources */,
+				02EE29B1194AF15800183CB3 /* AnimatorShowOverView.m in Sources */,
+				02EE29B2194AF15800183CB3 /* CLImageEditorTheme+Private.m in Sources */,
+				02EE29B3194AF15800183CB3 /* DVCollectionViewFlowLayout.m in Sources */,
+				02EE29B4194AF15800183CB3 /* RETableViewItem.m in Sources */,
+				02EE29B5194AF15800183CB3 /* UINavigationBar+TCCustomFont.m in Sources */,
+				02EE29B6194AF15800183CB3 /* DKWorkoutMenuViewController.m in Sources */,
+				02EE29B7194AF15800183CB3 /* MOORefreshView.m in Sources */,
+				02EE29B8194AF15800183CB3 /* DKBaseMenuCell.m in Sources */,
+				02EE29B9194AF15800183CB3 /* CLImageToolBase.m in Sources */,
+				02EE29BA194AF15800183CB3 /* UIViewController+RESideMenu.m in Sources */,
+				02EE29BB194AF15800183CB3 /* NSNumber+MagicalDataImport.m in Sources */,
+				02EE29BC194AF15800183CB3 /* RECreditCardItem.m in Sources */,
+				02EE29BD194AF15800183CB3 /* REPresenceValidator.m in Sources */,
+				02EE29BE194AF15800183CB3 /* CSBlurView.m in Sources */,
+				02EE29BF194AF15800183CB3 /* MHOverViewController.m in Sources */,
+				02EE29C0194AF15800183CB3 /* RETableViewPickerCell.m in Sources */,
+				02EE29C1194AF15800183CB3 /* UIImageView+AFNetworking.m in Sources */,
+				02EE29C2194AF15800183CB3 /* RETableViewOptionCell.m in Sources */,
+				02EE29C3194AF15800183CB3 /* RELengthValidator.m in Sources */,
+				02EE29C4194AF15800183CB3 /* NSObject+MagicalDataImport.m in Sources */,
+				02EE29C5194AF15800183CB3 /* AFHTTPRequestOperation.m in Sources */,
+				02EE29C6194AF15800183CB3 /* UIImage+REFrostedViewController.m in Sources */,
+				02EE29C7194AF15800183CB3 /* SWLongPressGestureRecognizer.m in Sources */,
+				02EE29C8194AF15800183CB3 /* DKAutoTableViewController.m in Sources */,
+				02EE29C9194AF15800183CB3 /* REActionBar.m in Sources */,
+				02EE29CA194AF15800183CB3 /* UIColor+JTGestureBasedTableViewHelper.m in Sources */,
+				02EE29CB194AF15800183CB3 /* MKNetworkOperation+Duplicate.m in Sources */,
+				02EE29CC194AF15800183CB3 /* NIKFontAwesomeIconFactory+OSX.m in Sources */,
+				02EE29CD194AF15800183CB3 /* NSManagedObject+JSON.m in Sources */,
+				02EE29CE194AF15800183CB3 /* DMAlphaTransition.m in Sources */,
+				02EE29CF194AF15800183CB3 /* UIView+Frame.m in Sources */,
+				02EE29D0194AF15800183CB3 /* UIImageView+WebCache.m in Sources */,
+				02EE29D1194AF15800183CB3 /* MHGalleryGlobals.m in Sources */,
+				02EE29D2194AF15800183CB3 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				02EE29D3194AF15800183CB3 /* JSBadgeView.m in Sources */,
+				02EE29D4194AF15800183CB3 /* UITextView+TCCustomFont.m in Sources */,
+				02EE29D5194AF15800183CB3 /* PBWebViewController.m in Sources */,
+				02EE29D6194AF15800183CB3 /* DKPurchaseViewController.m in Sources */,
+				02EE29D7194AF15800183CB3 /* BButton.m in Sources */,
+				02EE29D8194AF15800183CB3 /* UIImage+Alpha.m in Sources */,
+				02EE29D9194AF15800183CB3 /* MRActivityIndicatorView.m in Sources */,
+				02EE29DA194AF15800183CB3 /* CLHighlightShadowEffect.m in Sources */,
+				02EE29DB194AF15800183CB3 /* NSError+REValidation.m in Sources */,
+				02EE29DC194AF15800183CB3 /* DKAppDelegate.m in Sources */,
+				02EE29DD194AF15800183CB3 /* REInlineDatePickerItem.m in Sources */,
+				02EE29DE194AF15800183CB3 /* DKAppColorViewController.m in Sources */,
+				02EE29DF194AF15800183CB3 /* UIViewController+REFrostedViewController.m in Sources */,
+				02EE29E0194AF15800183CB3 /* MRBlurView.m in Sources */,
+				02EE29E1194AF15800183CB3 /* RETableViewSegmentedCell.m in Sources */,
+				02EE29E2194AF15800183CB3 /* CLImageEditor.m in Sources */,
+				02EE29E3194AF15800183CB3 /* DKFacebookManager.m in Sources */,
+				02EE29E4194AF15800183CB3 /* MRIconView.m in Sources */,
+				02EE29E5194AF15800183CB3 /* NBPhoneMetaData.m in Sources */,
+				02EE29E6194AF15800183CB3 /* FXBlurView.m in Sources */,
+				02EE29E7194AF15800183CB3 /* AFURLRequestSerialization.m in Sources */,
+				02EE29E8194AF15800183CB3 /* RETableViewNumberCell.m in Sources */,
+				02EE29E9194AF15800183CB3 /* CLLocation+APTimeZones.m in Sources */,
+				02EE29EA194AF15800183CB3 /* CLSpotEffect.m in Sources */,
+				02EE29EB194AF15800183CB3 /* UIDevice+SystemVersion.m in Sources */,
+				02EE29EC194AF15800183CB3 /* IZValueSelectorView.m in Sources */,
+				02EE29ED194AF15800183CB3 /* UIImage+animatedGIF.m in Sources */,
+				02EE29EE194AF15800183CB3 /* DKStoreManager.m in Sources */,
+				02EE29EF194AF15800183CB3 /* UIScrollView+GalaxyPullToRefresh.m in Sources */,
+				02EE29F0194AF15800183CB3 /* MHShareViewController.m in Sources */,
+				02EE29F1194AF15800183CB3 /* AFHTTPSessionManager.m in Sources */,
+				02EE29F2194AF15800183CB3 /* JTTransformableTableViewCell.m in Sources */,
+				02EE29F3194AF15800183CB3 /* MagicalRecord+ShorthandSupport.m in Sources */,
+				02EE29F4194AF15800183CB3 /* NBPhoneMetaDataGenerator.m in Sources */,
+				02EE29F5194AF15800183CB3 /* DKTimerViewController.m in Sources */,
+				02EE29F6194AF15800183CB3 /* NSManagedObject+MagicalRequests.m in Sources */,
+				02EE29F7194AF15800183CB3 /* NSManagedObject+MagicalAggregation.m in Sources */,
+				02EE29F8194AF15800183CB3 /* NIKFontAwesomePathFactory.m in Sources */,
+				02EE29F9194AF15800183CB3 /* MagicalRecord+iCloud.m in Sources */,
+				02EE29FA194AF15800183CB3 /* REURLValidator.m in Sources */,
+				02EE29FB194AF15800183CB3 /* AFNetworkReachabilityManager.m in Sources */,
+				02EE29FC194AF15800183CB3 /* ECSlidingSegue.m in Sources */,
+				02EE29FD194AF15800183CB3 /* FRDLivelyButton.m in Sources */,
+				02EE29FE194AF15800183CB3 /* SDWebImageDownloaderOperation.m in Sources */,
+				02EE29FF194AF15800183CB3 /* REValidator.m in Sources */,
+				02EE2A00194AF15800183CB3 /* UILabel+WhiteUIDatePickerLabels.m in Sources */,
+				02EE2A01194AF15800183CB3 /* UIImage+Utility.m in Sources */,
+				02EE2A02194AF15800183CB3 /* CLBlurTool.m in Sources */,
+				02EE2A03194AF15800183CB3 /* RETextItem.m in Sources */,
+				02EE2A04194AF15800183CB3 /* NSPersistentStore+MagicalRecord.m in Sources */,
+				02EE2A05194AF15800183CB3 /* DACircularProgressView.m in Sources */,
+				02EE2A06194AF15800183CB3 /* NSDictionary+RequestEncoding.m in Sources */,
+				02EE2A07194AF15800183CB3 /* RETableViewOptionsController.m in Sources */,
+				02EE2A08194AF15800183CB3 /* UIButton+TCCustomFont.m in Sources */,
+				02EE2A09194AF15800183CB3 /* UIImage+ImageEffects.m in Sources */,
+				02EE2A0A194AF15800183CB3 /* REMenuItemView.m in Sources */,
+				02EE2A0B194AF15800183CB3 /* DKStepMenuCell.m in Sources */,
+				02EE2A0C194AF15800183CB3 /* CLFilterTool.m in Sources */,
+				02EE2A0D194AF15800183CB3 /* DKMenuCell.m in Sources */,
+				02EE2A0E194AF15800183CB3 /* DKTwitterManager.m in Sources */,
+				02EE2A0F194AF15800183CB3 /* AFURLResponseSerialization.m in Sources */,
+				02EE2A10194AF15800183CB3 /* UIImage+GIF.m in Sources */,
+				02EE2A11194AF15800183CB3 /* CLHueEffect.m in Sources */,
+				02EE2A12194AF15800183CB3 /* NSManagedObject+MagicalRecord.m in Sources */,
+				02EE2A13194AF15800183CB3 /* RECommonFunctions.m in Sources */,
+				02EE2A14194AF15800183CB3 /* CSAnimation.m in Sources */,
+				02EE2A15194AF15800183CB3 /* DKWeatherManager.m in Sources */,
+				02EE2A16194AF15800183CB3 /* DKBaseViewController.m in Sources */,
+				02EE2A17194AF15800183CB3 /* Week+Extra.m in Sources */,
+				02EE2A18194AF15800183CB3 /* DMExpandTransition.m in Sources */,
+				02EE2A19194AF15800183CB3 /* GTMStringEncoding.m in Sources */,
+				02EE2A1A194AF15800183CB3 /* NSMutableArray+SWUtilityButtons.m in Sources */,
+				02EE2A1B194AF15800183CB3 /* NSString+URLEncoding.m in Sources */,
+				02EE2A1C194AF15800183CB3 /* UIView+REFrostedViewController.m in Sources */,
+				02EE2A1D194AF15800183CB3 /* DKMealCell.m in Sources */,
+				02EE2A1E194AF15800183CB3 /* MagicalRecord+Options.m in Sources */,
+				02EE2A1F194AF15800183CB3 /* UIImage+AlphaAdditions.m in Sources */,
+				02EE2A20194AF15800183CB3 /* CLBloomEffect.m in Sources */,
+				02EE2A21194AF15800183CB3 /* MHUIImageViewContentViewAnimation.m in Sources */,
+				02EE2A22194AF15800183CB3 /* CLEffectTool.m in Sources */,
+				02EE2A23194AF15800183CB3 /* RETableViewFloatCell.m in Sources */,
+				02EE2A24194AF15800183CB3 /* DKWeatherCondition.m in Sources */,
+				02EE2A25194AF15800183CB3 /* BTGlassScrollView.m in Sources */,
+				02EE2A26194AF15800183CB3 /* MagicalRecord.m in Sources */,
+				02EE2A27194AF15800183CB3 /* UIImage+MRImageEffects.m in Sources */,
+				02EE2A28194AF15800183CB3 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
+				02EE2A29194AF15800183CB3 /* REMultipleChoiceItem.m in Sources */,
+				02EE2A2A194AF15800183CB3 /* AMWaveTransition.m in Sources */,
+				02EE2A2B194AF15800183CB3 /* BEMCircle.m in Sources */,
+				02EE2A2C194AF15800183CB3 /* Workout.m in Sources */,
+				02EE2A2D194AF15800183CB3 /* DKButtonCell.m in Sources */,
+				02EE2A2E194AF15800183CB3 /* NSString+RETableViewManagerAdditions.m in Sources */,
+				02EE2A2F194AF15800183CB3 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
+				02EE2A30194AF15800183CB3 /* UIWebView+AFNetworking.m in Sources */,
+				02EE2A31194AF15800183CB3 /* REPickerItem.m in Sources */,
+				02EE2A32194AF15800183CB3 /* IDMPhoto.m in Sources */,
+				02EE2A33194AF15800183CB3 /* SWUtilityButtonView.m in Sources */,
+				02EE2A34194AF15800183CB3 /* REFormattedNumberField.m in Sources */,
+				02EE2A35194AF15800183CB3 /* REMenuItem.m in Sources */,
+				02EE2A36194AF15800183CB3 /* UIDevice+IdentifierAddition.m in Sources */,
+				02EE2A37194AF15800183CB3 /* UIImage+ImageEffects.m in Sources */,
+				02EE2A38194AF15800183CB3 /* AFURLSessionManager.m in Sources */,
+				02EE2A39194AF15800183CB3 /* MagicalImportFunctions.m in Sources */,
+				02EE2A3A194AF15800183CB3 /* MagicalRecord+ErrorHandling.m in Sources */,
+				02EE2A3B194AF15800183CB3 /* MagicalRecord+Setup.m in Sources */,
+				02EE2A3C194AF15800183CB3 /* BEMSimpleLineGraphView.m in Sources */,
+				02EE2A3D194AF15800183CB3 /* IDMTapDetectingImageView.m in Sources */,
+				02EE2A3E194AF15800183CB3 /* NIKFontAwesomeIconFactory+iOS.m in Sources */,
+				02EE2A3F194AF15800183CB3 /* DKEnvironment.m in Sources */,
+				02EE2A40194AF15800183CB3 /* UIColor+BButton.m in Sources */,
+				02EE2A41194AF15800183CB3 /* DKColorMenuCell.m in Sources */,
+				02EE2A42194AF15800183CB3 /* NBAsYouTypeFormatter.m in Sources */,
+				02EE2A43194AF15800183CB3 /* DKSwitchMenuCell.m in Sources */,
+				02EE2A44194AF15800183CB3 /* RETableViewLongTextCell.m in Sources */,
+				02EE2A45194AF15800183CB3 /* NSEntityDescription+MagicalDataImport.m in Sources */,
+				02EE2A46194AF15800183CB3 /* REFrostedContainerViewController.m in Sources */,
+				02EE2A47194AF15800183CB3 /* WCFCImageView.m in Sources */,
+				02EE2A48194AF15800183CB3 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				02EE2A49194AF15800183CB3 /* Timer.m in Sources */,
+				02EE2A4A194AF15800183CB3 /* NSManagedObject+MagicalFinders.m in Sources */,
+				02EE2A4B194AF15800183CB3 /* UIImage+ResizeAdditions.m in Sources */,
+				02EE2A4C194AF15800183CB3 /* ECPercentDrivenInteractiveTransition.m in Sources */,
+				02EE2A4D194AF15800183CB3 /* RETableViewBoolCell.m in Sources */,
+				02EE2A4E194AF15800183CB3 /* NSString+FontAwesome.m in Sources */,
+				02EE2A4F194AF15800183CB3 /* SDImageCache.m in Sources */,
+				02EE2A50194AF15800183CB3 /* ECSlidingInteractiveTransition.m in Sources */,
+				02EE2A51194AF15800183CB3 /* ABFullScrollViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02F125D618BDF246009434BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3878,7 +4899,6 @@
 				02F1297118BE3012009434BA /* RDActionSheet.m in Sources */,
 				0272728A18C0E10C0096A63A /* DKCollectionViewCell.m in Sources */,
 				0244F75F1908EFBC004AEAB4 /* CLPosterizeEffect.m in Sources */,
-				0272B30518DD1A3F00920867 /* DKGooglePlusManager.m in Sources */,
 				02F1292718BE3002009434BA /* SDWebImageDecoder.m in Sources */,
 				0260D45E1919C61900EE1A07 /* MagicalRecord+Actions.m in Sources */,
 				02F1281418BE2EF0009434BA /* UIImage+animatedGIF.m in Sources */,
@@ -4185,8 +5205,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = FitAssist.entitlements;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppTemplate/Dependencies/iCloud",
@@ -4223,7 +5243,7 @@
 					"-weak-lSystem",
 				);
 				PRODUCT_NAME = "FitAssist Free";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "F56572D2-F6CE-42A9-95DF-294EB91F5D86";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -4296,8 +5316,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = FitAssist.entitlements;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppTemplate/Dependencies/iCloud",
@@ -4339,7 +5359,7 @@
 					"-weak-lSystem",
 				);
 				PRODUCT_NAME = "FitAssist Free";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "F56572D2-F6CE-42A9-95DF-294EB91F5D86";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -4368,6 +5388,225 @@
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = "Free Debug";
+		};
+		02EE2ADF194AF15800183CB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_DISPLAY_NAME = FitA;
+				APP_ID = com.fita;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = FitAssist.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/iCloud",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/GooglePlus",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/Facebook",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/Parse",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppTemplate/FitAssist-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					TESTING,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/AppTemplate/3rd\\ Party/DHKeyExchange/lib/openssl-1.0.1e/iphoneos/include\"",
+				);
+				INFOPLIST_FILE = "FitAssist copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AppTemplate/3rd\\ Party/DHKeyExchange/lib/openssl-1.0.1e/iphoneos/lib\"",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/Flurry",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/GoogleAdMob",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-fobjc-arc",
+					"-all_load",
+					"-lsqlite3.0",
+					"-framework",
+					Accelerate,
+					"-framework",
+					Foundation,
+					"-weak-lSystem",
+				);
+				PRODUCT_NAME = "FitAssist Free";
+				PROVISIONING_PROFILE = "9A5FD3A7-6A69-4473-AF60-16A6193586BA";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		02EE2AE0194AF15800183CB3 /* Free Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_DISPLAY_NAME = "FitA Free";
+				APP_ID = com.fitafree;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = FitAssist.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/iCloud",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/GooglePlus",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/Facebook",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/Parse",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppTemplate/FitAssist-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					TESTING,
+					FREE,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/AppTemplate/3rd\\ Party/DHKeyExchange/lib/openssl-1.0.1e/iphoneos/include\"",
+				);
+				INFOPLIST_FILE = "FitAssist copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AppTemplate/3rd\\ Party/DHKeyExchange/lib/openssl-1.0.1e/iphoneos/lib\"",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/Flurry",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/GoogleAdMob",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-fobjc-arc",
+					"-all_load",
+					"-lsqlite3.0",
+					"-framework",
+					Accelerate,
+					"-framework",
+					Foundation,
+					"-weak-lSystem",
+				);
+				PRODUCT_NAME = "FitAssist Free";
+				PROVISIONING_PROFILE = "9A5FD3A7-6A69-4473-AF60-16A6193586BA";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Free Debug";
+		};
+		02EE2AE1194AF15800183CB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_DISPLAY_NAME = FitA;
+				APP_ID = com.fita;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = FitAssist.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/iCloud",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/GooglePlus",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/Facebook",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/Parse",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppTemplate/FitAssist-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/AppTemplate/3rd\\ Party/DHKeyExchange/lib/openssl-1.0.1e/iphoneos/include\"",
+				);
+				INFOPLIST_FILE = "FitAssist copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AppTemplate/3rd\\ Party/DHKeyExchange/lib/openssl-1.0.1e/iphoneos/lib\"",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/Flurry",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/GoogleAdMob",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-fobjc-arc",
+					"-all_load",
+					"-lsqlite3.0",
+					"-framework",
+					Accelerate,
+					"-framework",
+					Foundation,
+					"-weak-lSystem",
+				);
+				PRODUCT_NAME = "FitAssist Free";
+				PROVISIONING_PROFILE = "9A5FD3A7-6A69-4473-AF60-16A6193586BA";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		02EE2AE2194AF15800183CB3 /* Free Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_DISPLAY_NAME = "FitA Free";
+				APP_ID = com.fitafree;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = FitAssist.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/iCloud",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/GooglePlus",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/Facebook",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/Parse",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppTemplate/FitAssist-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = FREE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/AppTemplate/3rd\\ Party/DHKeyExchange/lib/openssl-1.0.1e/iphoneos/include\"",
+				);
+				INFOPLIST_FILE = "FitAssist copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AppTemplate/3rd\\ Party/DHKeyExchange/lib/openssl-1.0.1e/iphoneos/lib\"",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/Flurry",
+					"$(PROJECT_DIR)/AppTemplate/Dependencies/GoogleAdMob",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-fobjc-arc",
+					"-all_load",
+					"-lsqlite3.0",
+					"-framework",
+					Accelerate,
+					"-framework",
+					Foundation,
+					"-weak-lSystem",
+				);
+				PRODUCT_NAME = "FitAssist Free";
+				PROVISIONING_PROFILE = "9A5FD3A7-6A69-4473-AF60-16A6193586BA";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Free Release";
 		};
 		02F1260D18BDF246009434BA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -4449,8 +5688,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = FitAssist.entitlements;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppTemplate/Dependencies/iCloud",
@@ -4490,7 +5729,7 @@
 					"-weak-lSystem",
 				);
 				PRODUCT_NAME = FitAssist;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "F56572D2-F6CE-42A9-95DF-294EB91F5D86";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -4505,8 +5744,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = FitAssist.entitlements;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppTemplate/Dependencies/iCloud",
@@ -4542,7 +5781,7 @@
 					"-weak-lSystem",
 				);
 				PRODUCT_NAME = FitAssist;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "F56572D2-F6CE-42A9-95DF-294EB91F5D86";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -4594,6 +5833,17 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		02EE2ADE194AF15800183CB3 /* Build configuration list for PBXNativeTarget "FitAssist Free" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02EE2ADF194AF15800183CB3 /* Debug */,
+				02EE2AE0194AF15800183CB3 /* Free Debug */,
+				02EE2AE1194AF15800183CB3 /* Release */,
+				02EE2AE2194AF15800183CB3 /* Free Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		02F125D518BDF245009434BA /* Build configuration list for PBXProject "FitAssist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

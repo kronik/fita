@@ -12,6 +12,7 @@
 #import "DKCircleImageView.h"
 #import "DKCircleButton.h"
 #import "DKProgressView.h"
+#import "DKPurchaseViewController.h"
 #import "Timer.h"
 
 #import "MZTimerLabel.h"
@@ -134,8 +135,9 @@
     self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 1)];
     self.tableView.backgroundView = nil;
     self.tableView.backgroundColor = [UIColor clearColor];
-    self.tableView.separatorStyle  = UITableViewCellSeparatorStyleNone;
+    self.tableView.separatorStyle  = UITableViewCellSeparatorStyleSingleLine;
     self.tableView.rowHeight = 50;
+    self.tableView.showsVerticalScrollIndicator = NO;
     
     [self.view addSubview: self.tableView];
     
@@ -352,6 +354,12 @@
 
 - (NSMutableArray *)reloadAllTimers {
     
+#ifdef FREE
+    if ([[DKSettingsManager sharedInstance][kSettingExtendedTimer] boolValue] == NO) {
+        return [NSMutableArray new];
+    }
+#endif
+    
     self.timers = [[Timer MR_findAllSortedBy:@"creationDate" ascending:NO] mutableCopy];
 
     __weak typeof(self) this = self;
@@ -400,7 +408,7 @@
         cell.userInteractionEnabled = YES;
 //        cell.selectedBackgroundView = nil;
         cell.selectionStyle = UITableViewCellSelectionStyleDefault;
-        cell.textLabel.font = [UIFont fontWithName:ApplicationLightFont size:27];
+        cell.textLabel.font = [UIFont fontWithName:ApplicationLightFont size:35];
         cell.textLabel.textColor = [UIColor whiteColor];
         cell.textLabel.numberOfLines = 1;
         cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
@@ -468,7 +476,7 @@
     if (indexPath.section == 0) {
         return 0;
     } else {
-        return 60;
+        return 80;
     }
 }
 
@@ -1095,6 +1103,13 @@
         }];
     }];
 }
+
+- (void)openPurchases {
+    DKPurchaseViewController *viewController = [[DKPurchaseViewController alloc] init];
+    
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
 #endif
 
 @end

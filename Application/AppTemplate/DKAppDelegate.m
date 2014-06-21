@@ -30,7 +30,6 @@
 #import "UIColor+MLPFlatColors.h"
 
 #import <Crashlytics/Crashlytics.h>
-#import <GooglePlus/GooglePlus.h>
 #import <FacebookSDK/FacebookSDK.h>
 
 #define DKAppDelegateDefaultAppNameKey @"DKAppDelegateDefaultAppNameKey"
@@ -48,7 +47,7 @@
 
 #define kStoreName @"DataModel.sqlite"
 
-@interface DKAppDelegate () <GPPDeepLinkDelegate>
+@interface DKAppDelegate ()
 
 @property (nonatomic, strong) NSString *defaultAppName;
 @property (nonatomic, strong) NSString *deviceToken;
@@ -168,8 +167,8 @@
 #endif
     
 #endif
-    [GPPDeepLink setDelegate:self];
-    [GPPDeepLink readDeepLinkAfterInstall];
+//    [GPPDeepLink setDelegate:self];
+//    [GPPDeepLink readDeepLinkAfterInstall];
     [FBLoginView class];
     [DKSettingsManager sharedInstance];
 
@@ -517,15 +516,15 @@
   sourceApplication:(NSString *)sourceApplication
          annotation:(id)annotation {
     
-    BOOL handledByGooglePlus = ([GPPURLHandler handleURL:url sourceApplication:sourceApplication annotation:annotation]);
+//    BOOL handledByGooglePlus = ([GPPURLHandler handleURL:url sourceApplication:sourceApplication annotation:annotation]);
     BOOL handledByFacebook = [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
     BOOL handledByApp = ([self application: application handleOpenURL: url]);
     
-    return handledByApp || handledByGooglePlus || handledByFacebook;
+    return handledByApp || handledByFacebook;
 }
 
-- (void)didReceiveDeepLink:(GPPDeepLink *)deepLink {
-}
+//- (void)didReceiveDeepLink:(GPPDeepLink *)deepLink {
+//}
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     return NO;

@@ -16,6 +16,7 @@
 
 @optional
 - (void)timePicker:(DKTimerSettingsView *)timePicker saveConfiguration:(NSString *)configuration;
+- (void)openPurchases;
 
 @end
 

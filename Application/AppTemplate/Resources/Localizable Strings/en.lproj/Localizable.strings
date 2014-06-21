@@ -111,4 +111,11 @@
 "Operation failed!" = "Operation failed!";
 "Success!" = "Success!";
 "Unable to send a feedback" = "Unable to send a feedback";
-
+"Less than 30 minutes after your last meal" = "Less than 30 minutes after your last meal";
+"More than 3 hours after your last meal" = "More than 3 hours after your last meal";
+"Less than 1.5 hours after your last meal" = "Less than 1.5 hours after your last meal";
+"Less than 30 minutes after your last water" = "Less than 30 minutes after your last water";
+"Start your day with a glass of water" = "Start your day with a glass of water";
+"Thank you!" = "Thank you!";
+"Full version" = "Full version";
+"Full app unlock" = "All in one";

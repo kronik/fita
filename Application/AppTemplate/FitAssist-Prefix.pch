@@ -73,7 +73,7 @@
 
 
 #ifdef FREE
-#define AppStoreApplicationId               @"872801232"
+#define AppStoreApplicationId               @"877559966"
 #else
 #define AppStoreApplicationId               @"872801232"
 #endif

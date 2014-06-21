@@ -30,7 +30,8 @@
 #import "UIColor+MLPFlatColors.h"
 
 #define UIACTION_SHEET_PHOTO_OPTIONS_TAG 1024
-#define DKMealViewControllerCellHeight 60
+#define DKMealViewControllerCellHeight 80
+#define DKMealViewControllerImageHeight 60
 #define DKMealViewControllerExtraCellHeight 100
 #define DKMealViewControllerSuggestionCellHeight 44
 #define DKMealViewControllerButtonCellHeight 60
@@ -197,7 +198,7 @@ typedef enum DKMealViewActionType {
     
     self.imageButton = [UIButton buttonWithType:UIButtonTypeCustom];
     
-    self.imageButton.frame = CGRectMake(2, 5, DKMealViewControllerCellHeight + 16, DKMealViewControllerCellHeight + 10);
+    self.imageButton.frame = CGRectMake(2, 15, DKMealViewControllerImageHeight + 16, DKMealViewControllerImageHeight + 10);
     self.imageButton.layer.borderColor = ApplicationMainColor.CGColor;
     self.imageButton.clipsToBounds = YES;
     self.imageButton.layer.cornerRadius = 3;
@@ -562,7 +563,7 @@ typedef enum DKMealViewActionType {
         return;
     }
     
-    float buttonHeight = ScreenHeight > 480.0 ? DKMealViewControllerCellHeight - 20 : DKMealViewControllerCellHeight - 20;
+    float buttonHeight = 40;
     float heightOffset = 25;
     
     if (ScreenHeight > 480.0) {
@@ -907,11 +908,12 @@ typedef enum DKMealViewActionType {
                 cell.textLabel.lineBreakMode = NSLineBreakByTruncatingTail;
                 cell.textLabel.textAlignment = NSTextAlignmentLeft;
 
-                cell.detailTextLabel.font = [UIFont fontWithName:ApplicationFont size:16];
+                cell.detailTextLabel.font = [UIFont fontWithName:ApplicationFont size:14];
                 cell.detailTextLabel.textColor = [UIColor whiteColor];
-                cell.detailTextLabel.numberOfLines = 1;
+                cell.detailTextLabel.numberOfLines = 2;
                 cell.detailTextLabel.lineBreakMode = NSLineBreakByWordWrapping;
                 cell.detailTextLabel.textAlignment = NSTextAlignmentLeft;
+                cell.detailTextLabel.adjustsFontSizeToFitWidth = YES;
 
                 cell.backgroundColor = [UIColor clearColor];
                 cell.contentView.backgroundColor = [UIColor clearColor];
@@ -927,7 +929,6 @@ typedef enum DKMealViewActionType {
             [dateFormatter setLocale:[NSLocale currentLocale]];
 
             cell.textLabel.text = meal.text;
-            cell.detailTextLabel.text = [dateFormatter stringFromDate: meal.time];
             
             if (meal.picture) {
                 cell.imageView.image = [UIImage imageWithData: meal.picture];
@@ -935,17 +936,18 @@ typedef enum DKMealViewActionType {
                 cell.imageView.image = nil;
             }
             
-            BOOL isCorrectTimeForMealAtIndex =  [meal.type isEqualToString:kMealTypeDrink] ? [self isCorrectTimeForWaterAtIndex: indexPath.row] :
-                                                                                             [self isCorrectTimeForMealAtIndex: indexPath.row];
+            NSString *reason =  [meal.type isEqualToString:kMealTypeDrink] ? [self isCorrectTimeForWaterAtIndex: indexPath.row] :
+                                                                             [self isCorrectTimeForMealAtIndex: indexPath.row];
             
-            if (isCorrectTimeForMealAtIndex && ([meal.type isEqualToString:kMealTypeDrink] == NO) &&
+            if ((reason.length == 0) && ([meal.type isEqualToString:kMealTypeDrink] == NO) &&
                 (meal == self.mealEntries.lastObject)) {
                 
-                isCorrectTimeForMealAtIndex = NO;
+                reason = NSLocalizedString(@"Start your day with a glass of water", nil);
             }
             
-            cell.isCorrect = isCorrectTimeForMealAtIndex;
-            
+            cell.isCorrect = (reason.length == 0);
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@", [dateFormatter stringFromDate: meal.time], reason];
+
             return cell;
         } else if (indexPath.section == 1) {
             DKDayCommentCell *cell = (DKDayCommentCell *)[self.tableView dequeueReusableCellWithIdentifier:DKMealViewControllerExtraCellId];
@@ -1374,10 +1376,10 @@ typedef enum DKMealViewActionType {
     return source;
 }
 
-- (BOOL)isCorrectTimeForWaterAtIndex: (NSInteger)mealIndex {
+- (NSString *)isCorrectTimeForWaterAtIndex: (NSInteger)mealIndex {
     
     if ((self.mealEntries.count < 2) || (mealIndex == self.mealEntries.count - 1)) {
-        return YES;
+        return @"";
     }
     
     Meal *prevMeal = nil;
@@ -1394,22 +1396,22 @@ typedef enum DKMealViewActionType {
     }
     
     if (prevMeal == nil) {
-        return YES;
+        return @"";
     }
     
     NSTimeInterval interval = [currentMeal.time timeIntervalSinceDate:prevMeal.time];
 
     if ([currentMeal.type isEqualToString:kMealTypeDrink] && interval < 60 * 30) {
-        return NO;
+        return NSLocalizedString(@"Less than 30 minutes after your last meal", nil);
     }
     
-    return YES;
+    return @"";
 }
 
-- (BOOL)isCorrectTimeForMealAtIndex: (NSInteger)mealIndex {
+- (NSString *)isCorrectTimeForMealAtIndex: (NSInteger)mealIndex {
     
     if ((self.mealEntries.count < 2) || (mealIndex == self.mealEntries.count - 1)) {
-        return YES;
+        return @"";
     }
     
     Meal *prevMeal = nil;
@@ -1432,11 +1434,15 @@ typedef enum DKMealViewActionType {
         interval = [currentMeal.time timeIntervalSinceDate:prevMeal.time];
         
         if ([currentMeal.type isEqualToString:kMealTypeSnack] && (interval < 60 * 30)) {
-            return NO;
+            return NSLocalizedString(@"Less than 30 minutes after your last meal", nil);
         }
         
-        if ([currentMeal.type isEqualToString:kMealTypeRegular] && ((interval > 60 * 60 * 3) || (interval < 60 * 90))) {
-            return NO;
+        if ([currentMeal.type isEqualToString:kMealTypeRegular] && (interval > 60 * 60 * 3)) {
+            return NSLocalizedString(@"More than 3 hours after your last meal", nil);
+        }
+        
+        if ([currentMeal.type isEqualToString:kMealTypeRegular] && (interval < 60 * 90)) {
+            return NSLocalizedString(@"Less than 1.5 hours after your last meal", nil);
         }
     }
     
@@ -1454,7 +1460,7 @@ typedef enum DKMealViewActionType {
     }
     
     if (prevMeal == nil) {
-        return YES;
+        return @"";
     }
     
     interval = [currentMeal.time timeIntervalSinceDate:prevMeal.time];
@@ -1462,10 +1468,10 @@ typedef enum DKMealViewActionType {
     if (([currentMeal.type isEqualToString:kMealTypeSnack] || [currentMeal.type isEqualToString:kMealTypeRegular])
         && (interval < 60 * 30)) {
         
-        return NO;
+        return NSLocalizedString(@"Less than 30 minutes after your last water", nil);
     }
 
-    return YES;
+    return @"";
 }
 
 - (void)scheduleNextWater {
