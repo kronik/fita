@@ -260,14 +260,23 @@
     [self fetchItemsWithPattern: searchText];
 }
 
+- (void)quickHideIndicator {
+    if (self.progressView) {
+        [self.progressView dismiss:NO];
+    }
+
+    [self.progresViewTimer invalidate];
+    
+    self.progresViewTimer = nil;
+}
+
 - (void)showCompleteIndicator {
     [self showCompleteIndicatorWithTitle:@""];
 }
 
 - (void)showCompleteIndicatorWithTitle: (NSString *)title {
-    if (self.progressView) {
-        [self.progressView dismiss:NO];
-    }
+
+    [self quickHideIndicator];
     
     self.progressView = [MRProgressOverlayView new];
     self.progressView.mode = MRProgressOverlayViewModeCheckmark;
@@ -284,9 +293,7 @@
 
 - (void)showErrorIndicatorWithTitle: (NSString *)title {
     
-    if (self.progressView) {
-        [self.progressView dismiss:NO];
-    }
+    [self quickHideIndicator];
     
     self.progressView = [MRProgressOverlayView new];
     self.progressView.mode = MRProgressOverlayViewModeCross;
@@ -303,9 +310,7 @@
 
 - (void)showBigBusyIndicatorWithTitle: (NSString *)title {
     
-    if (self.progressView) {
-        [self.progressView dismiss:NO];
-    }
+    [self quickHideIndicator];
     
     self.progressView = [MRProgressOverlayView new];
     self.progressView.mode = MRProgressOverlayViewModeIndeterminate;
@@ -320,9 +325,7 @@
 
 - (void)showSmallBusyIndicatorWithTitle: (NSString *)title {
     
-    if (self.progressView) {
-        [self.progressView dismiss:NO];
-    }
+    [self quickHideIndicator];
     
     self.progressView = [MRProgressOverlayView new];
     self.progressView.mode = MRProgressOverlayViewModeIndeterminateSmall;

@@ -50,14 +50,11 @@ NSInteger CompareTransactionInfoInfo(SKPaymentTransaction *transaction1, SKPayme
 @property (nonatomic, strong) NSMutableDictionary *productById;
 @property (nonatomic, strong) NSMutableDictionary *responseByProductId;
 @property (nonatomic, strong) MKNetworkEngine *networkManager;
+@property (nonatomic, strong) NSTimer *timer;
 
 @end
 
 @implementation DKStoreManager
-
-@synthesize networkManager = _networkManager;
-@synthesize productById = _productById;
-@synthesize responseByProductId = _responseByProductId;
 
 - (id)init {
 	self = [super init];
@@ -129,7 +126,7 @@ NSInteger CompareTransactionInfoInfo(SKPaymentTransaction *transaction1, SKPayme
             if (wasSuccess) {
                 [Flurry logEvent:@"SuccessValidPurchase"];
                 
-                NSLog(@"Successfully purchased full app unlock");
+                NSLog(@"Successfully purchased");
                 
                 if ([product.productIdentifier isEqualToString:kProductThemesUnlock] || [product.productIdentifier isEqualToString:kProductCumulativeUnlock]) {
                     [DKSettingsManager sharedInstance][kSettingThemes] = @(YES);
@@ -156,7 +153,7 @@ NSInteger CompareTransactionInfoInfo(SKPaymentTransaction *transaction1, SKPayme
 //                [self saveTransaction: transaction];
             } else {
                 [Flurry logEvent:@"RejectedInvalidPurchase"];
-                NSLog(@"Unsuccessfully purchased full app unlock");
+                NSLog(@"Unsuccessfully purchased");
             }
         }
         
@@ -203,7 +200,7 @@ NSInteger CompareTransactionInfoInfo(SKPaymentTransaction *transaction1, SKPayme
             } else {
                 [Flurry logEvent:@"RejectedInvalidRestorePurchase"];
                 
-                NSLog(@"Unsuccessfully restored full app unlock");
+                NSLog(@"Unsuccessfully restored");
             }
         }
         
@@ -220,9 +217,26 @@ NSInteger CompareTransactionInfoInfo(SKPaymentTransaction *transaction1, SKPayme
 }
 
 - (void)purchase:(SKProduct*)product response:(PurchaseResponse)response {
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:30 target:self selector:@selector(onOperationTimeout:) userInfo:product repeats:NO];
+    
     SKPayment *payment = [SKPayment paymentWithProduct:product];
     [self.responseByProductId setObject:[response copy] forKey:product.productIdentifier];
     [[SKPaymentQueue defaultQueue] addPayment:payment];
+}
+
+- (void)onOperationTimeout: (NSTimer *)timer {
+    SKProduct *product = timer.userInfo;
+    
+    [self.timer invalidate];
+    self.timer = nil;
+    
+    PurchaseResponse response = self.responseByProductId[product.productIdentifier];
+    
+    if (response) {
+        [self.responseByProductId removeObjectForKey:product.productIdentifier];
+        response(NO, nil);
+    }
 }
 
 - (SKProduct*)getProductThemesUnlock {

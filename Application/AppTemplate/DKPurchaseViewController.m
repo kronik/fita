@@ -106,13 +106,15 @@
 
 - (void)viewDidLoad {
 
+    UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 30)];
+    
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0,
                                                                    self.view.frame.size.width,
                                                                    self.view.frame.size.height - self.navigationController.navigationBar.frame.size.height)
                                                   style:UITableViewStylePlain];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    self.tableView.tableFooterView = [UIView new];
+    self.tableView.tableFooterView = footerView;
     self.tableView.backgroundView = nil;
     self.tableView.backgroundColor = ApplicationMainColor;
     self.tableView.separatorColor = [UIColor clearColor];
@@ -476,8 +478,6 @@
 
     [[DKStoreManager sharedInstance] purchaseNonconsumable:itemToPurchase
                                                       response:^(BOOL wasSuccess, SKPaymentTransaction *transaction) {
-
-                                                          [this hideIndicator];
 
                                                           if (wasSuccess) {
                                                               [self showCompleteIndicatorWithTitle:NSLocalizedString(@"Thank you!", nil)];
