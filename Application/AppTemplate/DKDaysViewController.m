@@ -197,9 +197,9 @@ typedef enum DKDaysViewActionType {
     [self.compareButton setTitleColor:[UIColor colorWithWhite:1 alpha:1.0] forState:UIControlStateSelected];
     [self.compareButton setTitleColor:[UIColor colorWithWhite:1 alpha:1.0] forState:UIControlStateHighlighted];
     
-    [self.compareButton setTitle:NSLocalizedString(@"Compare weeks", nil) forState:UIControlStateNormal];
-    [self.compareButton setTitle:NSLocalizedString(@"Compare weeks", nil) forState:UIControlStateSelected];
-    [self.compareButton setTitle:NSLocalizedString(@"Compare weeks", nil) forState:UIControlStateHighlighted];
+    [self.compareButton setTitle:NSLocalizedString(@"Compare\nweeks", nil) forState:UIControlStateNormal];
+    [self.compareButton setTitle:NSLocalizedString(@"Compare\nweeks", nil) forState:UIControlStateSelected];
+    [self.compareButton setTitle:NSLocalizedString(@"Compare\nweeks", nil) forState:UIControlStateHighlighted];
     
     [self.tableFooterView addSubview: self.compareButton];
 

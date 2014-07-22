@@ -1,0 +1,161 @@
+PODS:
+  - AFNetworking (2.3.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.3.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.3.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.3.1)
+  - AFNetworking/Security (2.3.1)
+  - AFNetworking/Serialization (2.3.1)
+  - AFNetworking/UIKit (2.3.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AFViewShaker (0.0.2)
+  - APTimeZones (1.1)
+  - DACircularProgress (2.2.0)
+  - DHSmartScreenshot (1.2.0)
+  - DRDynamicSlideShow (1.0)
+  - FRDLivelyButton (1.1.3)
+  - FXBlurView (1.6.2)
+  - FXKeychain (1.5.1)
+  - FXLabel (1.5.8)
+  - IDMPhotoBrowser (1.3.5):
+    - AFNetworking (~> 2.2.3)
+    - DACircularProgress (~> 2.2)
+    - SVProgressHUD (~> 1.0)
+  - INTULocationManager (1.2.0)
+  - iRate (1.10.2)
+  - JVFloatLabeledTextField (0.0.8)
+  - MagicalRecord (2.2):
+    - MagicalRecord/Core
+  - MagicalRecord/Core (2.2)
+  - MKNetworkKit (0.87):
+    - Reachability (~> 3.1.0)
+  - MRProgress (0.5.1):
+    - MRProgress/ActivityIndicator
+    - MRProgress/Blur
+    - MRProgress/Circular
+    - MRProgress/Helper
+    - MRProgress/Icons
+    - MRProgress/MessageInterceptor
+    - MRProgress/NavigationBarProgress
+    - MRProgress/Overlay
+    - MRProgress/Stopable
+    - MRProgress/WeakProxy
+  - MRProgress/ActivityIndicator (0.5.1):
+    - MRProgress/Stopable
+  - MRProgress/Blur (0.5.1):
+    - MRProgress/Helper
+  - MRProgress/Circular (0.5.1):
+    - MRProgress/Helper
+    - MRProgress/Stopable
+  - MRProgress/Helper (0.5.1)
+  - MRProgress/Icons (0.5.1)
+  - MRProgress/MessageInterceptor (0.5.1)
+  - MRProgress/NavigationBarProgress (0.5.1)
+  - MRProgress/Overlay (0.5.1):
+    - MRProgress/ActivityIndicator
+    - MRProgress/Blur
+    - MRProgress/Circular
+    - MRProgress/Helper
+    - MRProgress/Icons
+  - MRProgress/Stopable (0.5.1):
+    - MRProgress/Helper
+  - MRProgress/WeakProxy (0.5.1)
+  - NYSegmentedControl (1.0.3)
+  - pop (1.0.6)
+  - POP+MCAnimate (1.1):
+    - pop (~> 1.0)
+    - POP+MCAnimate/Animations
+    - POP+MCAnimate/Group
+    - POP+MCAnimate/Internal
+    - POP+MCAnimate/Shorthand
+    - POP+MCAnimate/Velocity
+  - POP+MCAnimate/Animations (1.1):
+    - pop (~> 1.0)
+    - POP+MCAnimate/Group
+    - POP+MCAnimate/Internal
+    - POP+MCAnimate/Shorthand
+    - POP+MCAnimate/Velocity
+  - POP+MCAnimate/Group (1.1):
+    - pop (~> 1.0)
+  - POP+MCAnimate/Internal (1.1):
+    - pop (~> 1.0)
+  - POP+MCAnimate/Shorthand (1.1):
+    - pop (~> 1.0)
+  - POP+MCAnimate/Velocity (1.1):
+    - pop (~> 1.0)
+    - POP+MCAnimate/Internal
+  - Reachability (3.1.1)
+  - Realm (0.80.0)
+  - SDWebImage (3.7.0):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.7.0)
+  - Shimmer (1.0.1)
+  - SVProgressHUD (1.0)
+  - WCFastCell (1.1)
+
+DEPENDENCIES:
+  - AFNetworking
+  - AFViewShaker
+  - APTimeZones
+  - DHSmartScreenshot
+  - DRDynamicSlideShow
+  - FRDLivelyButton
+  - FXBlurView
+  - FXKeychain
+  - FXLabel
+  - IDMPhotoBrowser
+  - INTULocationManager
+  - iRate
+  - JVFloatLabeledTextField
+  - MagicalRecord
+  - MKNetworkKit
+  - MRProgress
+  - NYSegmentedControl
+  - pop
+  - POP+MCAnimate
+  - Realm
+  - SDWebImage
+  - Shimmer
+  - WCFastCell
+
+SPEC CHECKSUMS:
+  AFNetworking: 6d7b76aa5d04c8c37daad3eef4b7e3f2a7620da3
+  AFViewShaker: 40bd7a2725ea81a9472134f27f0086d398d1bf91
+  APTimeZones: 887a7b5a7abd4a05fcc4de3ff7427d5248becdaf
+  DACircularProgress: 3b41941891a56dc6aa17971f5322a9a38a6f446e
+  DHSmartScreenshot: a276eb51f91cd85378084afe065d8fdc1314de30
+  DRDynamicSlideShow: da23c532676a5dead0cf35d2b71a6a1cb6291b06
+  FRDLivelyButton: 7ef8c4f9b116b211dc64eb3c388adc65b342e63c
+  FXBlurView: 47496afc9160097fa34af35fc4b310bd85d65dca
+  FXKeychain: beb642a4218ba783507af08865eda05e9b26a612
+  FXLabel: d7c2cb1d2903d7a7ac04855d470ecf2079f4881e
+  IDMPhotoBrowser: d691bcdf470553e165f8eb982c5cd8e9a58bcdef
+  INTULocationManager: 596c57e35a00ca1ee9d59bf4cc2b63dc299b580e
+  iRate: 7d204971bab2f727195b868e32e05216fe257681
+  JVFloatLabeledTextField: 16dea87b899a7b62026eb8d8cf9902c08b1953da
+  MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224
+  MKNetworkKit: 83e6296a8d42e98a71880424a889773654846d74
+  MRProgress: 7853c177e7d79b90e6f0910561967ebcf3289eb1
+  NYSegmentedControl: 74094b886a80bfc4e9f6d415601e9b11797b22b7
+  pop: e518794da38942c05255eb64b36d894e70cb4f00
+  POP+MCAnimate: 3ad540606cbf21547f79585c8d5b63f9da69d52b
+  Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
+  Realm: 07cff9612cc0aae4f9a01820676a09f8e46007a7
+  SDWebImage: 791cb0f588046cb0bb7802ae8ae8f5462947b773
+  Shimmer: 35aa2a57b8fbc17f9e16706021665966fd93dbd1
+  SVProgressHUD: 5034c6e22b8c2ca3e09402e48d41ed0340aa1c50
+  WCFastCell: 8a9c6507a2a9d3eae9959dd3458a11ba5560503e
+
+COCOAPODS: 0.33.1

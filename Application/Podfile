@@ -1,0 +1,39 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, "7.0"
+
+target "FitAssist" do
+
+pod "AFNetworking"
+pod "iRate"
+pod "FRDLivelyButton"
+pod "FXKeychain"
+pod "MRProgress"
+pod "Shimmer"
+pod "MKNetworkKit"
+pod "pop"
+pod "POP+MCAnimate"
+pod "DRDynamicSlideShow"
+pod "NYSegmentedControl"
+pod "DHSmartScreenshot"
+pod "IDMPhotoBrowser"
+pod "FXLabel"
+pod "FXBlurView"
+pod "JVFloatLabeledTextField"
+pod "WCFastCell"
+pod "APTimeZones"
+pod "INTULocationManager"
+pod "AFViewShaker"
+pod "Realm"
+pod "SDWebImage"
+pod "MagicalRecord"
+
+end
+
+target "FitAssist Free" do
+
+end
+
+target "FitAssistTests" do
+
+end
+

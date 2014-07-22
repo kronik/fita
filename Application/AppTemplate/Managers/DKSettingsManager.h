@@ -62,6 +62,4 @@ typedef void (^DetectLocationBlock)(CLPlacemark *place);
 
 - (void)removeObjectForKey:(id)key;
 
-- (void)detectCurrentLocation: (DetectLocationBlock)locationDetectedBlock;
-
 @end

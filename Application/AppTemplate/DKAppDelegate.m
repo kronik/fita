@@ -9,10 +9,7 @@
 #import "DKAppDelegate.h"
 #import "DKBaseViewController.h"
 #import "DKMenuViewController.h"
-#import "DKNetworkManager.h"
-#import "DKLoginViewController.h"
 #import "DKSettingsManager.h"
-#import "DKWeatherViewController.h"
 #import "DKMenuViewController.h"
 #import "DKMealViewController.h"
 #import "DKAppColorViewController.h"
@@ -52,7 +49,6 @@
 @property (nonatomic, strong) NSString *defaultAppName;
 @property (nonatomic, strong) NSString *deviceToken;
 @property (nonatomic, strong) ECSlidingViewController *slidingViewController;
-@property (nonatomic, strong) DKLoginViewController *loginViewController;
 @property (nonatomic, strong) UIPageViewController *pageViewController;
 @property (nonatomic, strong) NSMutableDictionary *viewControllersCache;
 
@@ -65,22 +61,12 @@
 @synthesize defaultAppName = _defaultAppName;
 @synthesize deviceToken = _deviceToken;
 @synthesize slidingViewController = _slidingViewController;
-@synthesize loginViewController = _loginViewController;
-@synthesize locations = _locations;
 @synthesize viewControllersCache = _viewControllersCache;
 @synthesize pageViewController = _pageViewController;
 
 #if 0
 + (void)initialize
 {
-    //configure iRate
-//    [iRate sharedInstance].appStoreID = APPSTOREID;// App Id
-//    [iRate sharedInstance].applicationName = @"ThreadWeather";
-//    [iRate sharedInstance].messageTitle = LIKE_THIS_APP;
-//    [iRate sharedInstance].message = PLEASE_RATE_APP;
-//    [iRate sharedInstance].rateButtonLabel = RATE_TXT;
-//    [iRate sharedInstance].cancelButtonLabel = NO_LATER_TXT;
-//    [iRate sharedInstance].remindButtonLabel = DO_LATER_TXT;
     [iRate sharedInstance].daysUntilPrompt = 1;
     [iRate sharedInstance].usesUntilPrompt = 3;
     [iRate sharedInstance].remindPeriod = 3;
@@ -167,16 +153,12 @@
 #endif
     
 #endif
-//    [GPPDeepLink setDelegate:self];
-//    [GPPDeepLink readDeepLinkAfterInstall];
     [FBLoginView class];
     [DKSettingsManager sharedInstance];
 
     NSURLCache *URLCache = [[NSURLCache alloc] initWithMemoryCapacity:4 * 1024 * 1024 diskCapacity:20 * 1024 * 1024 diskPath:nil];
 
     [NSURLCache setSharedURLCache:URLCache];
-
-//    [AFNetworkActivityIndicatorManager sharedManager].enabled  = YES;
 
     [application setMinimumBackgroundFetchInterval:60 * 60]; // 1 hour
 
@@ -187,47 +169,7 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-//    DKHomeViewController *homeViewController = [[DKHomeViewController alloc] init];
-//    
-//    FRDLivelyButton *button = [[FRDLivelyButton alloc] initWithFrame:CGRectMake(0,0,25,25)];
-//    [button setOptions:@{ kFRDLivelyButtonLineWidth: @(2.0f),
-//                          kFRDLivelyButtonHighlightedColor: [UIColor colorWithRed:0.5 green:0.8 blue:1.0 alpha:1.0],
-//                          kFRDLivelyButtonColor: [UIColor blueColor]
-//                          }];
-//    
-//    [button setStyle:kFRDLivelyButtonStyleHamburger animated:NO];
-//    [button addTarget:self action:@selector(onMenuButtonTap) forControlEvents:UIControlEventTouchUpInside];
-//    
-//    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
-//    homeViewController.navigationItem.rightBarButtonItem = buttonItem;
-//
-//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
-    
-    
-//    _viewControllers = [NSMutableArray new];
-//    _viewControllersCache = [NSMutableDictionary new];
-//    
-//    self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:0];
-//    
-////    [self.pageViewController setViewControllers:_viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
-//    [self.pageViewController.view setBackgroundColor:ApplicationMainColor];
-//    [self.pageViewController setDelegate:self];
-//    [self.pageViewController setDataSource:self];
-//    
-//    // THIS IS A HACK INTO THE PAGEVIEWCONTROLLER
-//    // PROCEED WITH CAUTION
-//    // MAY CONTAIN BUG!! (I HAVENT RAN INTO ONE YET)
-//    // looking for the subview that is a scrollview so we can attach a delegate onto the view to mornitor scrolling
-//    for (UIView *subview in self.pageViewController.view.subviews) {
-//        if ([subview isKindOfClass:[UIScrollView class]]) {
-//            UIScrollView *scrollview = (UIScrollView *) subview;
-//            [scrollview setDelegate:self];
-//        }
-//    }
-    
     DKMenuViewController *menuViewController = [[DKMenuViewController alloc] init];
-        
-//    menuViewController.title = NSLocalizedString(@"Fit Assistent", nil);
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:menuViewController];
     
@@ -247,8 +189,6 @@
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-//    [[UINavigationBar appearance] setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
-
     //weird voodoo to remove navigation bar background
     [navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
     [navigationController.navigationBar setShadowImage:[UIImage new]];
@@ -257,23 +197,6 @@
     navigationController.navigationBar.backgroundColor = ApplicationMainColor;
     navigationController.navigationBar.translucent = NO;
     
-//    [navigationController setNavigationBarHidden:YES animated:NO];
-    
-    // configure sliding view controller
-//    self.slidingViewController = [ECSlidingViewController slidingWithTopViewController:self.pageViewController];
-//    self.slidingViewController.underLeftViewController  = nil;
-//    self.slidingViewController.underRightViewController = menuViewController;
-    //
-    //    // enable swiping on the top view
-    //    [navigationController.view addGestureRecognizer:self.slidingViewController.panGesture];
-    //
-    // configure anchored layout
-//    self.slidingViewController.anchorRightPeekAmount  = 270.0;
-//    self.slidingViewController.anchorLeftRevealAmount = 270.0;
-
-//    self.window.rootViewController = self.slidingViewController;
-    
-//    navigationController.navigationBar.hidden = YES;
     self.window.rootViewController = navigationController;
     
     self.window.backgroundColor = ApplicationMainColor;
@@ -282,22 +205,6 @@
 #ifdef FREE
     [DKStoreManager sharedInstance];
 #endif
-
-//    NSString *loggedInUser = [DKSettingsManager sharedInstance][kSettingLoggedInUser];
-//        
-//    if (loggedInUser.length == 0) {
-//        self.loginViewController = [[DKLoginViewController alloc] init];
-//        
-//        [self.window.rootViewController presentViewController:self.loginViewController animated:NO completion:nil];
-//        
-//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onUserDidLogin:) name:kSuccessLoginNotification object:nil];
-//    } else {
-//        // Load previously stored locations
-//        
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            [self updateCurrentLocation];
-//        });
-//    }
     
     NSLog(@"Launched in background %d", UIApplicationStateBackground == application.applicationState);
     
@@ -331,8 +238,6 @@
     UIRectFill(rect);   // Fill it with your color
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    
-    //    [[UINavigationBar appearance] setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
     
     //weird voodoo to remove navigation bar background
     [navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
@@ -398,133 +303,16 @@
     [self addNewMeal];
 }
 
-- (void)onMenuDidDeleteLocation: (NSNotification *)notification {
-    
-    NSDictionary *deletedLocation = notification.object;
-    NSMutableArray *locations = [[DKSettingsManager sharedInstance][kSettingLocations] mutableCopy];
-    
-    if (locations == nil) {
-        locations = [NSMutableArray new];
-    }
-    
-    for (NSDictionary *existingLocation in locations) {
-        if ([existingLocation[kLocationFieldTitle] isEqualToString:deletedLocation[kLocationFieldTitle]]) {
-
-            [locations removeObject:existingLocation];
-            
-            if ([existingLocation[kLocationFieldTitle] isEqualToString:[DKSettingsManager sharedInstance][kSettingLastLocation]]) {
-                [[DKSettingsManager sharedInstance] removeObjectForKey:kSettingLastLocation];
-            }
-            
-            break;
-        }
-    }
-    
-    [DKSettingsManager sharedInstance][kSettingLocations] = locations;
-    
-    self.locations = locations;
-}
-
-- (void)updateCurrentLocation {
-    
-    return;
-    
-    __weak typeof(self) this = self;
-
-    [[DKSettingsManager sharedInstance] detectCurrentLocation:^(CLPlacemark *placemark) {
-        
-        if (placemark == nil) {
-            // TODO: Navigate user to the location picker menu. Block everything else.
-            [this addNewLocation: nil];
-            
-        } else {
-            CLLocationCoordinate2D coordinate = placemark.location.coordinate;
-            
-            //            NSString *addresstext = [NSString stringWithFormat:@"%@ %@ %@ %@ %@",
-            //                                         placemark.thoroughfare,
-            //                                         placemark.postalCode, placemark.locality,
-            //                                         placemark.administrativeArea,
-            //                                         placemark.country];
-            
-            NSString *adminCode1 = placemark.administrativeArea;
-            
-            if (adminCode1.length == 0) {
-                adminCode1 = placemark.country;
-            }
-            
-            NSString *addresstext = [NSString stringWithFormat:@"%@ %@", placemark.locality, adminCode1];
-            
-            NSDictionary *location = @{kLocationFieldTitle    : placemark.locality,
-                                       kLocationFieldLocation : addresstext,
-                                       kLocationFieldLatitude : @(coordinate.latitude),
-                                       kLocationFieldLongitude: @(coordinate.longitude)};
-            [this addNewLocation: location];
-
-            [DKSettingsManager sharedInstance][kSettingLastLocation] = location[kLocationFieldTitle];
-            [[NSNotificationCenter defaultCenter] postNotificationName:kSwitchLocation object:location];
-        }
-        
-        [this.loginViewController dismissViewControllerAnimated:YES completion:^{
-            this.loginViewController = nil;
-            
-            [this registerForRemoteNotificationsWithAPNS];
-        }];
-    }];
-}
-
-- (void)onUserDidLogin: (NSNotification *)notification {
-    [self.loginViewController showBigBusyIndicatorWithTitle:NSLocalizedString(@"Discovering location...", nil)];
-    [self updateCurrentLocation];
-}
-
-- (void)addNewLocation: (NSDictionary *)location {
-    
-    NSMutableArray *locations = [[DKSettingsManager sharedInstance][kSettingLocations] mutableCopy];
-
-    if (locations == nil) {
-        locations = [NSMutableArray new];
-    }
-    
-    BOOL isLocationExists = NO;
-    
-    for (NSDictionary *existingLocation in locations) {
-        if ([existingLocation[kLocationFieldTitle] isEqualToString:location[kLocationFieldTitle]]) {
-            isLocationExists = YES;
-            break;
-        }
-    }
-    
-    if (location && (isLocationExists == NO)) {
-        [locations insertObject:location atIndex:0];
-        
-        [DKSettingsManager sharedInstance][kSettingLastLocation] = location[kLocationFieldTitle];
-        
-        [Flurry logEvent:@"Added new location"];
-
-        [DKSettingsManager sharedInstance][kSettingLocations] = locations;
-    }
-    
-    self.locations = locations;
-}
-
-- (void)setLocations:(NSArray *)locations {
-    _locations = locations;    
-}
-
 - (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication
          annotation:(id)annotation {
     
-//    BOOL handledByGooglePlus = ([GPPURLHandler handleURL:url sourceApplication:sourceApplication annotation:annotation]);
     BOOL handledByFacebook = [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
     BOOL handledByApp = ([self application: application handleOpenURL: url]);
     
     return handledByApp || handledByFacebook;
 }
-
-//- (void)didReceiveDeepLink:(GPPDeepLink *)deepLink {
-//}
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     return NO;
@@ -548,8 +336,6 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-//    [[NSNotificationCenter defaultCenter] postNotificationName:kNeedUpdateLocationAndWeather object:nil userInfo:nil];
-//    [[DKFacebookManager sharedInstance] resumeSession];
     
     // Clear badge and update installation, required for auto-incrementing badges.
     if (application.applicationIconBadgeNumber != 0) {
@@ -561,12 +347,6 @@
     
     application.applicationIconBadgeNumber = 1;
     application.applicationIconBadgeNumber = 0;
-    
-    NSString *loggedInUser = [DKSettingsManager sharedInstance][kSettingLoggedInUser];
-    
-    if (loggedInUser.length > 0) {
-        [self updateCurrentLocation];
-    }
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
@@ -633,8 +413,6 @@
 }
 
 - (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
-
-    [self updateCurrentLocation];
 
 //    if (/** NEW DATA EXISTS AND WAS SUCCESSFULLY PROCESSED **/) {
 //        completionHandler(UIBackgroundFetchResultNewData);

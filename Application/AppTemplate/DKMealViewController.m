@@ -382,7 +382,9 @@ typedef enum DKMealViewActionType {
         
         NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Meal" ofType:@"txt"];
         
-        if ([[NSFileManager defaultManager] fileExistsAtPath:filePath isDirectory:NO]) {
+        BOOL isDir = NO;
+        
+        if ([[NSFileManager defaultManager] fileExistsAtPath:filePath isDirectory:&isDir]) {
             this.mealSuggestions = [NSArray arrayWithContentsOfFile:filePath];
         
 //        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Meal_ru" ofType:@"txt"];

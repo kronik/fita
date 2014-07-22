@@ -7,7 +7,6 @@
 //
 
 #import "DKSettingsManager.h"
-#import "DKLocationManager.h"
 #import "FXKeychain.h"
 
 #define kSettingDummyValidationValueKey @"kSettingDummyValidationValueKey"
@@ -122,12 +121,6 @@
     } else {
         return [[NSUserDefaults standardUserDefaults] objectForKey:key];
     }
-}
-
-- (void)detectCurrentLocation: (DetectLocationBlock)locationDetectedBlock {
-    [[DKLocationManager sharedInstance] updateLocation:^(CLLocation *newLocation, CLPlacemark *place) {
-        locationDetectedBlock(place);
-    } withInteractionAllowed: YES];
 }
 
 @end
