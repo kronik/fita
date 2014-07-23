@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5F08E918-EB99-4EC6-9863-6CD497B82C5C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FitAssist</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FFA76A5D-7AC0-434E-8977-440A54320B17</key>
+		<string>ssh://github.com/kronik/fita.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Application/FitAssist.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FFA76A5D-7AC0-434E-8977-440A54320B17</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/kronik/fita.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FFA76A5D-7AC0-434E-8977-440A54320B17</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FFA76A5D-7AC0-434E-8977-440A54320B17</string>
+			<key>IDESourceControlWCCName</key>
+			<string>fita</string>
+		</dict>
+	</array>
+</dict>
+</plist>

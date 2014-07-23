@@ -16,7 +16,6 @@
 #endif
 
 // MagicalRecord Shorthand support
-//#define MR_SHORTHAND
 #import "CoreData+MagicalRecord.h"
 #import "DKErrorCodes.h"
 #import "DKNotifications.h"

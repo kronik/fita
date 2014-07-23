@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021276C4197E93BE0026C106 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 021276C3197E93BE0026C106 /* libc++.dylib */; };
+		021276CA197F20710026C106 /* DKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 021276C9197F20710026C106 /* DKModel.m */; };
 		02233E9D191E136100EE0F29 /* IZValueSelectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02233E9C191E136100EE0F29 /* IZValueSelectorView.m */; };
 		02233EA0191E13E500EE0F29 /* DKTimerSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02233E9F191E13E500EE0F29 /* DKTimerSettingsView.m */; };
 		0228E56118FACDB700B1A7DB /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E55A18FACDB700B1A7DB /* UIImage+Alpha.m */; };
@@ -731,6 +733,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		021276C3197E93BE0026C106 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		021276C8197F20710026C106 /* DKModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKModel.h; sourceTree = "<group>"; };
+		021276C9197F20710026C106 /* DKModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKModel.m; sourceTree = "<group>"; };
 		02233E9B191E136100EE0F29 /* IZValueSelectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IZValueSelectorView.h; sourceTree = "<group>"; };
 		02233E9C191E136100EE0F29 /* IZValueSelectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IZValueSelectorView.m; sourceTree = "<group>"; };
 		02233E9E191E13E500EE0F29 /* DKTimerSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DKTimerSettingsView.h; path = Views/DKTimerSettingsView.h; sourceTree = "<group>"; };
@@ -1397,6 +1402,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				021276C4197E93BE0026C106 /* libc++.dylib in Frameworks */,
 				029A90481920378500C998C8 /* CoreTelephony.framework in Frameworks */,
 				027CA8A818E937A300883A11 /* StoreKit.framework in Frameworks */,
 				0228E56A18FD2CD300B1A7DB /* AudioToolbox.framework in Frameworks */,
@@ -1793,6 +1799,8 @@
 				02768A911918840E00653300 /* Week+Extra.m */,
 				029A901F191F638800C998C8 /* DKEnvironment.h */,
 				029A9020191F638800C998C8 /* DKEnvironment.m */,
+				021276C8197F20710026C106 /* DKModel.h */,
+				021276C9197F20710026C106 /* DKModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -2259,6 +2267,7 @@
 		02F125DC18BDF246009434BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				021276C3197E93BE0026C106 /* libc++.dylib */,
 				029A90471920378500C998C8 /* CoreTelephony.framework */,
 				0260D4661919D1EB00EE1A07 /* Crashlytics.framework */,
 				0275212F1913DE0C004C3D82 /* iAd.framework */,
@@ -3391,6 +3400,7 @@
 				0268884118BE32C3005599FB /* YLProgressBar.m in Sources */,
 				0228E59A18FF5F0F00B1A7DB /* DMBaseTransition.m in Sources */,
 				0228E6211902458400B1A7DB /* Week.m in Sources */,
+				021276CA197F20710026C106 /* DKModel.m in Sources */,
 				0297F34918BF7B77006AC7F7 /* UIView+Screenshot.m in Sources */,
 				02F128EE18BE2FE0009434BA /* MHPresenterImageView.m in Sources */,
 				0228E66E1904BEEC00B1A7DB /* SWTableViewCell.m in Sources */,
@@ -3736,6 +3746,7 @@
 				APP_ID = com.fitafree;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_ENTITLEMENTS = FitAssist.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -3747,6 +3758,7 @@
 					"$(PROJECT_DIR)/AppTemplate/Dependencies/Parse",
 					"$(PROJECT_DIR)",
 				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppTemplate/FitAssist-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = FREE;
@@ -3764,16 +3776,10 @@
 					"$(PROJECT_DIR)/AppTemplate/Dependencies/GoogleAdMob",
 				);
 				OTHER_LDFLAGS = (
-					"-lc++",
 					"-ObjC",
-					"-fobjc-arc",
-					"-all_load",
-					"-lsqlite3.0",
+					"-lc++",
 					"-framework",
-					Accelerate,
-					"-framework",
-					Foundation,
-					"-weak-lSystem",
+					Realm,
 				);
 				PRODUCT_NAME = "FitAssist Free";
 				PROVISIONING_PROFILE = "7C669612-9138-4794-BA49-C322D93F75C1";
@@ -3849,6 +3855,7 @@
 				APP_ID = com.fitafree;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_ENTITLEMENTS = FitAssist.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -3860,6 +3867,7 @@
 					"$(PROJECT_DIR)/AppTemplate/Dependencies/Parse",
 					"$(PROJECT_DIR)",
 				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppTemplate/FitAssist-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3882,16 +3890,10 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
-					"-lc++",
 					"-ObjC",
-					"-fobjc-arc",
-					"-all_load",
-					"-lsqlite3.0",
+					"-lc++",
 					"-framework",
-					Accelerate,
-					"-framework",
-					Foundation,
-					"-weak-lSystem",
+					Realm,
 				);
 				PRODUCT_NAME = "FitAssist Free";
 				PROVISIONING_PROFILE = "7C669612-9138-4794-BA49-C322D93F75C1";
@@ -4223,6 +4225,7 @@
 				APP_ID = com.fita;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_ENTITLEMENTS = FitAssist.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -4234,6 +4237,7 @@
 					"$(PROJECT_DIR)/AppTemplate/Dependencies/Parse",
 					"$(PROJECT_DIR)",
 				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppTemplate/FitAssist-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -4253,17 +4257,12 @@
 					"$(PROJECT_DIR)/AppTemplate/Dependencies/Flurry",
 					"$(PROJECT_DIR)/AppTemplate/Dependencies/GoogleAdMob",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
-					"-lc++",
 					"-ObjC",
-					"-fobjc-arc",
-					"-all_load",
-					"-lsqlite3.0",
+					"-lc++",
 					"-framework",
-					Accelerate,
-					"-framework",
-					Foundation,
-					"-weak-lSystem",
+					Realm,
 				);
 				PRODUCT_NAME = FitAssist;
 				PROVISIONING_PROFILE = "7C669612-9138-4794-BA49-C322D93F75C1";
@@ -4281,6 +4280,7 @@
 				APP_ID = com.fita;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_ENTITLEMENTS = FitAssist.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -4292,6 +4292,7 @@
 					"$(PROJECT_DIR)/AppTemplate/Dependencies/Parse",
 					"$(PROJECT_DIR)",
 				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppTemplate/FitAssist-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -4308,16 +4309,10 @@
 					"$(PROJECT_DIR)/AppTemplate/Dependencies/GoogleAdMob",
 				);
 				OTHER_LDFLAGS = (
-					"-lc++",
 					"-ObjC",
-					"-fobjc-arc",
-					"-all_load",
-					"-lsqlite3.0",
+					"-lc++",
 					"-framework",
-					Accelerate,
-					"-framework",
-					Foundation,
-					"-weak-lSystem",
+					Realm,
 				);
 				PRODUCT_NAME = FitAssist;
 				PROVISIONING_PROFILE = "7C669612-9138-4794-BA49-C322D93F75C1";

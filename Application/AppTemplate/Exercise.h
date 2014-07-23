@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-
 @interface Exercise : NSManagedObject
 
 @property (nonatomic, retain) NSString * title;
@@ -17,3 +16,4 @@
 @property (nonatomic, retain) NSManagedObject *workout;
 
 @end
+

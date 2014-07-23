@@ -7,6 +7,7 @@
 //
 
 @import UIKit;
+#import "DKModel.h"
 
 #ifdef FREE
 
@@ -38,6 +39,8 @@ typedef void (^SaveCompletionBlock)(BOOL isFailedToSave);
 @property (nonatomic, strong) NSMutableArray *items;
 @property (nonatomic, strong) UISearchBar *searchBar;
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) RLMArray *array;
+@property (nonatomic, strong) RLMNotificationToken *notification;
 
 - (void)fetchAllItems;
 - (void)fetchItemsWithPattern: (NSString *)pattern;
