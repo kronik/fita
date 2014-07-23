@@ -7,10 +7,10 @@
 //
 
 #import "DKBaseViewController.h"
-#import "Week.h"
+#import "DKModel.h"
 
 @interface DKDaysViewController : DKBaseViewController
 
-- (id)initWithWeek: (Week *)week;
+- (id)initWithWeek: (DKWeek *)week;
 
 @end

@@ -36,22 +36,15 @@ typedef void (^SaveCompletionBlock)(BOOL isFailedToSave);
 @interface DKBaseViewController : UIViewController
 
 #endif
-@property (nonatomic, strong) NSMutableArray *items;
+
 @property (nonatomic, strong) UISearchBar *searchBar;
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) RLMArray *array;
 @property (nonatomic, strong) RLMNotificationToken *notification;
-
-- (void)fetchAllItems;
-- (void)fetchItemsWithPattern: (NSString *)pattern;
-
-- (void)saveChangesAsync;
-- (void)saveChangesSync;
-- (void)saveChangesAsyncAndSilent;
-- (void)saveChangesAsyncWithBlock: (SaveCompletionBlock)completeBlock;
+@property (nonatomic, strong) NSMutableArray *items;
 
 - (void)customInit;
 - (void)updateUI;
+- (void)reloadData;
 
 - (void)showCompleteIndicator;
 - (void)showCompleteIndicatorWithTitle: (NSString *)title;

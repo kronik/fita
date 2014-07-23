@@ -7,13 +7,12 @@
 //
 
 #import "DKBaseViewController.h"
-#import "Week.h"
 
 @interface DKWeeksViewController : DKBaseViewController
 
-- (id)initWithWeeks: (NSArray *)weeks;
+- (id)initWithWeeks: (NSMutableArray *)weeks;
 
-+ (NSString *)exportTextForWeek: (Week *)week;
-- (void)exportWeek:(Week *)week withAlertInView: (UIView *)view;
++ (NSString *)exportTextForWeek: (DKWeek *)week;
+- (void)exportWeek:(DKWeek *)week withAlertInView: (UIView *)view;
 
 @end

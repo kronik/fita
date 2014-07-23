@@ -9,6 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <Realm/Realm.h>
 
+typedef void (^DKArrayResultBlock)(NSArray *objects, NSError *error);
+typedef void (^DKIntegerResultBlock)(int number, NSError *error);
+typedef void (^DKBooleanResultBlock)(BOOL success, NSError *error);
+typedef void (^DKItemResultBlock)(RLMObject *object, NSError *error);
+typedef void (^DKMultiArrayResultBlock)(NSArray *objects, NSMutableDictionary *data, NSError *error);
+typedef void (^DKUpdateItemBlock)(void);
+
 @interface DKTimer : RLMObject
 
 @property NSString * value;
@@ -20,14 +27,10 @@ RLM_ARRAY_TYPE(DKTimer)
 
 @class DKWorkout;
 
-@interface DKModel : NSObject
-
-@end
-
 @interface DKExercise : RLMObject
 
-@property NSString *title;
-@property NSNumber *repeats;
+@property NSString  *title;
+@property NSInteger repeats;
 @property DKWorkout *workout;
 
 @end
@@ -49,7 +52,7 @@ RLM_ARRAY_TYPE(DKWorkout)
 
 @interface DKMeal : RLMObject
 
-@property NSData * picture;
+@property NSString * picture;
 @property NSString * text;
 @property NSDate * time;
 @property NSString * type;
@@ -63,12 +66,14 @@ RLM_ARRAY_TYPE(DKMeal)
 
 @interface DKDay : RLMObject
 
-@property NSDate * date;
+@property NSDate *date;
 @property DKWeek *week;
 @property NSString *name;
 @property NSString *comment;
-@property NSNumber * seqNumber;
-@property RLMArray<DKMeal> *meals;
+@property NSInteger seqNumber;
+
+- (NSString *)shortDescription;
+- (NSString *)fullDescription;
 
 @end
 
@@ -76,16 +81,42 @@ RLM_ARRAY_TYPE(DKDay)
 
 @interface DKWeek : RLMObject
 
-@property (nonatomic, retain) NSNumber * seqNumber;
-@property (nonatomic, retain) NSDate   * startDate;
-@property (nonatomic, retain) NSData * image;
-@property (nonatomic, retain) NSData * imageSide;
-@property RLMArray<DKDay> *days;
+@property NSInteger  seqNumber;
+@property NSDate   * startDate;
+@property NSString * image;
+@property NSString * imageSide;
+@property NSString * weight;
+@property NSString * height;
+@property NSString * volumes;
+
+- (NSString *)fullDescription;
 
 @end
 
 RLM_ARRAY_TYPE(DKWeek)
 
+@interface DKModel : NSObject
+
++ (instancetype)sharedInstance;
+
+- (void)migrateFromCoreDataToRealmWithBlock:(DKBooleanResultBlock)block;
+
++ (NSMutableArray *)loadAllTimers;
++ (NSMutableArray *)loadAllWeeks;
++ (NSMutableArray *)loadAllDaysByWeek:(DKWeek *)week;
++ (NSMutableArray *)loadAllMealEntriesByDay:(DKDay *)day;
+
++ (void)addObject:(RLMObject *)object;
++ (void)deleteObject:(RLMObject *)object;
++ (void)updateObjectsWithBlock:(DKUpdateItemBlock)block;
+
++ (NSString *)linkFromImage:(UIImage *)image;
++ (NSString *)linkFromData:(NSData *)data;
++ (UIImage *)imageFromLink:(NSString *)link;
+
++ (NSMutableArray *)arrayFromRLMArray:(RLMArray *)array;
+
+@end
 
 
 

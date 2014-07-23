@@ -10,9 +10,7 @@
 #import "DKTableViewCell.h"
 #import "DKSettingsViewController.h"
 #import "DKMealViewController.h"
-#import "Week.h"
 #import "DKDayCell.h"
-#import "Meal.h"
 #import "DKCircleImageView.h"
 #import "DKWeeksViewController.h"
 #import "DKCircleButton.h"
@@ -49,7 +47,6 @@ typedef enum DKDaysViewActionType {
                                     UIImagePickerControllerDelegate, UINavigationControllerDelegate,
                                     CLImageEditorDelegate, CLImageEditorTransitionDelegate, CLImageEditorThemeDelegate>
 
-@property (nonatomic, strong) NSMutableArray *days;
 @property (nonatomic, strong) MOOCreateView *createView;
 @property (nonatomic, strong) MOOPullGestureRecognizer *recognizer;
 @property (nonatomic, strong) UIViewController *messageViewController;
@@ -60,8 +57,8 @@ typedef enum DKDaysViewActionType {
 @property (nonatomic, strong) NSArray *buttons;
 @property (nonatomic) DKDaysViewActionType actionType;
 @property (nonatomic) int weekOffset;
-@property (nonatomic, weak) Week *week;
-@property (nonatomic, weak) Day *selectedDay;
+@property (nonatomic, weak) DKWeek *week;
+@property (nonatomic, weak) DKDay *selectedDay;
 @property (nonatomic) BOOL needButtonAnimation;
 @property (nonatomic, strong) UIImagePickerController *imagePicker;
 
@@ -69,42 +66,14 @@ typedef enum DKDaysViewActionType {
 
 @implementation DKDaysViewController
 
-@synthesize days = _days;
-@synthesize createView = _createView;
-@synthesize recognizer = _recognizer;
-@synthesize selectedDay = _selectedDay;
-@synthesize messageViewController = _messageViewController;
-@synthesize tableFooterView = _tableFooterView;
-@synthesize imageButton = _imageButton;
-@synthesize imageSideButton = _imageSideButton;
-@synthesize compareButton = _compareButton;
-@synthesize buttons = _buttons;
-@synthesize needButtonAnimation = _needButtonAnimation;
-@synthesize imagePicker = _imagePicker;
-
-- (id)initWithWeek: (Week *)week {
+- (id)initWithWeek: (DKWeek *)week {
     self = [super init];
     
     if (self) {
         _week = week;
         _needButtonAnimation = YES;
         
-        _days = [[[week.days allObjects] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-          
-            Day *day1 = (Day *)obj1;
-            Day *day2 = (Day *)obj2;
-            
-            NSComparisonResult result = [day1.seqNumber compare:day2.seqNumber];
-            
-            if (result == NSOrderedAscending) {
-                return NSOrderedDescending;
-            } else if (result == NSOrderedDescending) {
-                return NSOrderedAscending;
-            } else {
-                return NSOrderedSame;
-            }
-            
-        }] mutableCopy];
+        self.items = [DKModel loadAllDaysByWeek:week];
     }
     return self;
 }
@@ -133,8 +102,6 @@ typedef enum DKDaysViewActionType {
     
     self.tableFooterView.backgroundColor = ApplicationMainColor;
     self.tableFooterView.clipsToBounds = YES;
-    
-//    self.tableView.tableFooterView = self.tableFooterView;
     
     self.imageButton = [DKCircleButton buttonWithType:UIButtonTypeCustom];
     
@@ -229,7 +196,7 @@ typedef enum DKDaysViewActionType {
         
         this.createView.configurationBlock = ^(MOOCreateView *view, UITableViewCell *cell, MOOPullState state) {
             
-            if ((![cell isKindOfClass:[UITableViewCell class]]) || (this.days.count == 7)) {
+            if ((![cell isKindOfClass:[UITableViewCell class]]) || (this.items.count == 7)) {
                 return;
             }
             
@@ -243,13 +210,12 @@ typedef enum DKDaysViewActionType {
                     
                     [dateFormatter setDateFormat:@"EEEE"];
                     
-                    Day *day = this.days.lastObject;
+                    DKDay *day = this.items.lastObject;
                     
                     NSDate *lastDate = day ? day.date : [NSDate date];
-                    NSDate *nextDate = [lastDate dateByAddingTimeInterval:(60 * 60 * 24) * this.days.count];
+                    NSDate *nextDate = [lastDate dateByAddingTimeInterval:(60 * 60 * 24) * this.items.count];
 
                     cell.textLabel.text = [dateFormatter stringFromDate:nextDate];
-                    //                cell.textLabel.text = NSLocalizedString(@"Pull to add...", nil);
                 }
                     break;
                 default:break;
@@ -264,7 +230,7 @@ typedef enum DKDaysViewActionType {
     });    
 }
 
-- (void)didSelectActionForDay:(Day *)day {
+- (void)didSelectActionForDay:(DKDay *)day {
     self.selectedDay = day;
     
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@""
@@ -295,13 +261,13 @@ typedef enum DKDaysViewActionType {
         weekShift --;
     }
     
-    NSString *textToShare = [NSString stringWithFormat:@"\n%@ %d %@\n", NSLocalizedString(@"Week", nil),
-                             [self.selectedDay.week.seqNumber intValue] + weekShift, self.selectedDay.name];
+    NSString *textToShare = [NSString stringWithFormat:@"\n%@ %ld %@\n", NSLocalizedString(@"Week", nil),
+                             self.selectedDay.week.seqNumber + weekShift, self.selectedDay.name];
     
     NSPredicate *dayFilter = [NSPredicate predicateWithFormat:@"day = %@", self.selectedDay];
-    NSArray *mealEntries = [Meal MR_findAllSortedBy:@"time" ascending:YES withPredicate:dayFilter];
+    RLMArray *mealEntries = [[DKMeal objectsWithPredicate:dayFilter] arraySortedByProperty:@"time" ascending:YES];
     
-    for (Meal *meal in mealEntries) {
+    for (DKMeal *meal in mealEntries) {
         if (meal.text.length == 0) {
             continue;
         }
@@ -339,8 +305,8 @@ typedef enum DKDaysViewActionType {
             MFMailComposeViewController *controller = [[MFMailComposeViewController alloc] init];
             
             if (self.selectedDay) {
-                controller.subject = [NSString stringWithFormat:@"\n%@ %d %@", NSLocalizedString(@"Week", nil),
-                                      [self.selectedDay.week.seqNumber intValue], self.selectedDay.name];
+                controller.subject = [NSString stringWithFormat:@"\n%@ %ld %@", NSLocalizedString(@"Week", nil),
+                                      (long)self.selectedDay.week.seqNumber, self.selectedDay.name];
             } else {
                 int weekShift = (int)[[NSUserDefaults standardUserDefaults] integerForKey:kSettingsWeekKey];
                 
@@ -348,7 +314,7 @@ typedef enum DKDaysViewActionType {
                     weekShift --;
                 }
                 
-                controller.subject = [NSString stringWithFormat:@"\n%@ %d\n", NSLocalizedString(@"Week", nil), [self.week.seqNumber intValue] + weekShift];
+                controller.subject = [NSString stringWithFormat:@"\n%@ %ld\n", NSLocalizedString(@"Week", nil), self.week.seqNumber + weekShift];
             }
             controller.mailComposeDelegate = self;
             controller.navigationBar.tintColor = [UIColor whiteColor];
@@ -453,27 +419,28 @@ typedef enum DKDaysViewActionType {
         return;
     }
     
-    Day *newDay = [Day MR_createEntity];
+    DKDay *newDay = [DKDay new];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     
     [dateFormatter setDateFormat:@"EEEE"];
     
-    Day *day = self.days.lastObject;
+    DKDay *day = self.items.lastObject;
 
     NSDate *lastDate = day ? day.date : [NSDate date];
-    NSDate *nextDate = [lastDate dateByAddingTimeInterval:(60 * 60 * 24) * self.days.count];
+    NSDate *nextDate = [lastDate dateByAddingTimeInterval:(60 * 60 * 24) * self.items.count];
     
     newDay.name = [dateFormatter stringFromDate:nextDate];
 
-//    newDay.name = [self nameOfDay: self.days.count];
     newDay.week = self.week;
     newDay.date = nextDate;
-    newDay.seqNumber = @(self.days.count);
+    newDay.seqNumber = self.items.count;
     
-    [self.week addDaysObject:newDay];
+    __weak typeof(self) this = self;
     
-    [self.days insertObject:newDay atIndex:0];
+    [DKModel addObject:newDay];
+    
+    [self.items insertObject:newDay atIndex:0];
     
     CGPoint contentOffset = self.tableView.contentOffset;
     contentOffset.y -= CGRectGetMinY(pullGestureRecognizer.triggerView.frame);
@@ -481,26 +448,20 @@ typedef enum DKDaysViewActionType {
     [self.tableView reloadData];
     self.tableView.contentOffset = contentOffset;
 
-    __weak typeof(self) this = self;
+    [Flurry logEvent:@"Added day"];
 
-    [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
+    int64_t delayInSeconds = 0.8;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+
+        [this.tableView.pullGestureRecognizer resetPullState];
+
+        DKMealViewController *mealController = [[DKMealViewController alloc] initWithDay:newDay canAddNewDay:NO];
         
-        [Flurry logEvent:@"Added day"];
-        [this reloadAllDays];
+        mealController.title = newDay.name;
         
-        int64_t delayInSeconds = 0.8;
-        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-
-            [this.tableView.pullGestureRecognizer resetPullState];
-
-            DKMealViewController *mealController = [[DKMealViewController alloc] initWithDay:newDay canAddNewDay:NO];
-            
-            mealController.title = newDay.name;
-            
-            [this.navigationController pushViewController:mealController animated:YES];
-        });
-    }];
+        [this.navigationController pushViewController:mealController animated:YES];
+    });
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -518,10 +479,6 @@ typedef enum DKDaysViewActionType {
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
-//    if (self.days.count == 1) {
-//        [self startShowItemOptionsTutorial];
-//    }
     
     [self updateUI];
     
@@ -557,12 +514,12 @@ typedef enum DKDaysViewActionType {
 }
 
 - (BOOL)canAddNewDay {
-    Day *day = self.days.firstObject;
+    DKDay *day = self.items.firstObject;
     
     if (day == nil) {
         return YES;
     } else {
-        return (self.days.count < 7);
+        return (self.items.count < 7);
     }
     
     NSCalendar *calendar = [NSCalendar currentCalendar];
@@ -576,18 +533,16 @@ typedef enum DKDaysViewActionType {
     
     NSComparisonResult result = [date1 compare:date2];
     
-    return (result == NSOrderedDescending) && (self.days.count < 7);
+    return (result == NSOrderedDescending) && (self.items.count < 7);
 }
 
-- (NSMutableArray *)reloadAllDays {
+- (void)reloadAllDays {
     
-    NSPredicate *weekFilter = [NSPredicate predicateWithFormat:@"week = %@", self.week];
-
-    self.days = [[Day MR_findAllSortedBy:@"seqNumber" ascending:NO withPredicate:weekFilter] mutableCopy];
+    self.items = [DKModel loadAllDaysByWeek:self.week];
     
     self.createView.alpha = [self canAddNewDay] ? 1.0 : 0.0;
     
-    if (self.days.count == 0) {
+    if (self.items.count == 0) {
         [self startCreateNewItemTutorialWithInfo: NSLocalizedString(@"Pull down to add new day", nil)];
         
         self.navigationItem.rightBarButtonItem = nil;
@@ -596,8 +551,6 @@ typedef enum DKDaysViewActionType {
                                                                                                target:self
                                                                                                action:@selector(exportWeek)];
     }
-
-    return self.days;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -606,7 +559,7 @@ typedef enum DKDaysViewActionType {
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
-        return self.days.count;
+        return self.items.count;
     } else {
         return 1;
     }
@@ -634,14 +587,11 @@ typedef enum DKDaysViewActionType {
             cell.textLabel.backgroundColor = [UIColor clearColor];
         }
         
-        Day *day = self.days[indexPath.row];
+        DKDay *day = self.items[indexPath.row];
         
         cell.textLabel.text = day.name;
         cell.day = day;
         
-//        cell.leftUtilityButtons = @[];
-//        cell.rightUtilityButtons = [self rightButtons];
-
         return cell;
     } else {
         UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:DKDaysViewControllerExtraCellId];
@@ -683,7 +633,7 @@ typedef enum DKDaysViewActionType {
 
     switch (index) {
         case 0: {
-            Day *day = self.days[indexPath.row];
+            DKDay *day = self.items[indexPath.row];
             
             [self didSelectActionForDay: day];
         }
@@ -699,7 +649,7 @@ typedef enum DKDaysViewActionType {
         return;
     }
 
-    Day *day = self.days[indexPath.row];
+    DKDay *day = self.items[indexPath.row];
 
     DKMealViewController *mealController = [[DKMealViewController alloc] initWithDay:day canAddNewDay:NO];
     
@@ -725,23 +675,17 @@ typedef enum DKDaysViewActionType {
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        Day *day = self.days[indexPath.row];
+        DKDay *day = self.items[indexPath.row];
 
         [self.tableView beginUpdates];
         
-        [self.days removeObject: day];
+        [self.items removeObjectAtIndex:indexPath.row];
         
-        [day MR_deleteEntity];
+        [DKModel deleteObject:day];
         
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
         
-        [self.tableView endUpdates];
-        
-        __weak typeof(self) this = self;
-        
-        [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
-            [this reloadAllDays];
-        }];
+        [self.tableView endUpdates];        
     }
 }
 
@@ -760,6 +704,11 @@ typedef enum DKDaysViewActionType {
     if (scrollView.pullGestureRecognizer) {
         [scrollView.pullGestureRecognizer resetPullState];
     }
+}
+
+- (void)reloadData {
+    [self reloadAllDays];
+    [self.tableView reloadData];
 }
 
 - (void)exportWeek {
@@ -864,10 +813,10 @@ typedef enum DKDaysViewActionType {
         self.imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
     } else if ([buttonTitle isEqualToString:NSLocalizedString(@"Open", nil)]) {
         
-        NSData *imageData = self.actionType == DKDaysViewActionTypeFrontImage ? self.week.image : self.week.imageSide;
+        NSString *imageKey = self.actionType == DKDaysViewActionTypeFrontImage ? self.week.image : self.week.imageSide;
         UIView *view = self.actionType == DKDaysViewActionTypeFrontImage ? self.imageButton : self.imageSideButton;
         
-        IDMPhoto *photo = [IDMPhoto photoWithImage:[UIImage imageWithData:imageData]];
+        IDMPhoto *photo = [IDMPhoto photoWithImage:[DKModel imageFromLink:imageKey]];
         IDMPhotoBrowser *browser = [[IDMPhotoBrowser alloc] initWithPhotos:@[photo] animatedFromView:view];
         
         browser.delegate = self;
@@ -936,23 +885,24 @@ typedef enum DKDaysViewActionType {
 }
 
 - (void)finishEditImage: (UIImage *)image {
-    if (self.actionType == DKDaysViewActionTypeFrontImage) {
-        self.week.image = UIImageJPEGRepresentation(image, 1.0);
-        
-        [self.imageButton setImage:image forState:UIControlStateNormal];
-    } else {
-        self.week.imageSide = UIImageJPEGRepresentation(image, 1.0);
-        [self.imageSideButton setImage:image forState:UIControlStateNormal];
-    }
-    
     __weak typeof(self) this = self;
-    
-    [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
-        [this reloadAllDays];
+
+    [DKModel updateObjectsWithBlock:^{
+        if (this.actionType == DKDaysViewActionTypeFrontImage) {
+            this.week.image = [DKModel linkFromImage:image];
+            
+            [this.imageButton setImage:image forState:UIControlStateNormal];
+        } else {
+            this.week.imageSide = [DKModel linkFromImage:image];
+            
+            [this.imageSideButton setImage:image forState:UIControlStateNormal];
+        }
+        
+        
         [this updateUI];
+        
+        this.actionType = DKDaysViewActionTypeNone;
     }];
-    
-    self.actionType = DKDaysViewActionTypeNone;
 }
 
 - (void)imageEditor:(CLImageEditor *)editor didFinishEdittingWithImage:(UIImage *)image {
@@ -971,8 +921,8 @@ typedef enum DKDaysViewActionType {
 }
 
 - (void)updateUI {
-    [self.imageButton setImage:[UIImage imageWithData:self.week.image] forState:UIControlStateNormal];
-    [self.imageSideButton setImage:[UIImage imageWithData:self.week.imageSide] forState:UIControlStateNormal];
+    [self.imageButton setImage:[DKModel imageFromLink:self.week.image] forState:UIControlStateNormal];
+    [self.imageSideButton setImage:[DKModel imageFromLink:self.week.imageSide] forState:UIControlStateNormal];
 }
 
 - (void)didTapItem:(UIView *)view {

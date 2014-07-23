@@ -82,14 +82,9 @@
 
     [self setNeedsStatusBarAppearanceUpdate];
     [self.navigationController interactivePopGestureRecognizer];
-    
-//    self.navigationController.interactivePopGestureRecognizer.delegate = self;
-//    
     [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onColorDidChange) name:kAppColorDidChangeNotification object:nil];
-//
-//    [self.navigationController.view setBackgroundColor:ApplicationMainColor];
     
 #ifdef FREE
     
@@ -98,23 +93,27 @@
         
         // Disable wi-fi to test the ad
         
-//        self.adBanner.adUnitID = @"pub-6418819291105012";
         self.adBanner.adUnitID = @"ca-app-pub-6418819291105012/8611587085";
         self.adBanner.delegate = self;
         self.adBanner.rootViewController = self;
         self.adBanner.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
         
-        __weak typeof(self) this = self;
-        
-//        int64_t delayInSeconds = 1;
-//        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-//        dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
-            [this.adBanner loadRequest:[this createRequest]];
-//            });
+        [self.adBanner loadRequest:[this createRequest]];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(unlockNoAdvProduct:) name:kUnlockNoAdvProductNotification object:nil];
     }
 #endif
+    
+    // Set realm notification block
+    __weak typeof(self) this = self;
+    self.notification = [RLMRealm.defaultRealm addNotificationBlock:^(NSString *note, RLMRealm *realm) {
+        [this reloadData];
+    }];
+    [self reloadData];
+}
+
+- (void)reloadData {
+    
 }
 
 - (void)onColorDidChange {
@@ -122,29 +121,12 @@
     self.tableView.backgroundColor = ApplicationMainColor;
 }
 
-//- (void)viewDidAppear:(BOOL)animated {
-//    [super viewDidAppear:animated];
-//    
-////    self.navigationController.delegate = self;
-//}
-
 - (void)updateUI {
     [self hideIndicator];
 }
 
-- (void)fetchAllItems {
-    [self updateUI];
-}
-
-- (void)fetchItemsWithPattern: (NSString *)pattern {
-    
-    [self updateUI];
-}
-
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    
-    [self fetchAllItems];
     
     __weak typeof(self) this = self;
     
@@ -175,61 +157,11 @@
     }];
 }
 
-- (void)saveChangesAsync {
-    
-    [self showBigBusyIndicatorWithTitle: NSLocalizedString(@"Saving...", nil)];
-    
-    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreWithCompletion:^(BOOL success, NSError *error) {
-		if (success) {
-			NSLog(@"You successfully saved your context.");
-            
-            [self showCompleteIndicatorWithTitle:NSLocalizedString(@"Done!", nil)];
-            
-		} else if (error) {
-			NSLog(@"Error saving context: %@", error.description);
-            
-            [self showCompleteIndicatorWithTitle:NSLocalizedString(@"Failed to save!", nil)];
-		}
-	}];
-}
-
-- (void)saveChangesAsyncWithBlock: (SaveCompletionBlock)completeBlock {
-        
-    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreWithCompletion:^(BOOL success, NSError *error) {
-		if (success) {
-			NSLog(@"You successfully saved your context.");
-		} else if (error) {
-			NSLog(@"Error saving context: %@", error.description);
-		}
-        
-        completeBlock(error || !success);
-	}];
-}
-
-- (void)saveChangesAsyncAndSilent {
-    
-    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreWithCompletion:^(BOOL success, NSError *error) {
-		if (success) {
-			NSLog(@"You successfully saved your context.");
-		} else if (error) {
-			NSLog(@"Error saving context: %@", error.description);
-            
-            [self showCompleteIndicatorWithTitle:NSLocalizedString(@"Failed to save!", nil)];
-		}
-	}];
-}
-
-- (void)saveChangesSync {
-	// Save ManagedObjectContext using MagicalRecord
-	[[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
-}
-
 #pragma mark - Search Bar Delegate
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
 	if (self.searchBar.text.length > 0) {
 		[self doSearch];
 	} else {
-		[self fetchAllItems];
 	}
 }
 
@@ -239,8 +171,6 @@
 	self.searchBar.text = @"";
 	// Hide the cancel button
 	self.searchBar.showsCancelButton = NO;
-	// Do a default fetch of the beers
-	[self fetchAllItems];
 }
 
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
@@ -253,11 +183,6 @@
 }
 
 - (void)doSearch {
-	// 1. Get the text from the search bar.
-	NSString *searchText = self.searchBar.text;
-    
-    [self showSmallBusyIndicatorWithTitle: NSLocalizedString(@"Updating...", nil)];
-    [self fetchItemsWithPattern: searchText];
 }
 
 - (void)quickHideIndicator {
@@ -361,6 +286,8 @@
     self.adBanner = nil;
     
 #endif
+    
+    [RLMRealm.defaultRealm removeNotification:self.notification];
 
     [self.progresViewTimer invalidate];
     

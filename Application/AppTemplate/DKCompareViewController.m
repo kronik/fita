@@ -13,8 +13,8 @@
 
 @interface DKCompareViewController () <UIDocumentInteractionControllerDelegate, UIActionSheetDelegate>
 
-@property (nonatomic, strong) Week *firstWeek;
-@property (nonatomic, strong) Week *secondWeek;
+@property (nonatomic, strong) DKWeek *firstWeek;
+@property (nonatomic, strong) DKWeek *secondWeek;
 @property (nonatomic, strong) UIImageView *imageViewLast;
 @property (nonatomic, strong) UIImageView *imageViewOriginal;
 @property (nonatomic, strong) UIImageView *imageViewSideLast;
@@ -27,17 +27,7 @@
 
 @implementation DKCompareViewController
 
-@synthesize firstWeek = _firstWeek;
-@synthesize secondWeek = _secondWeek;
-@synthesize imageViewLast = _imageViewLast;
-@synthesize imageViewOriginal = _imageViewOriginal;
-@synthesize imageViewSideLast = _imageViewSideLast;
-@synthesize imageViewSideOriginal = _imageViewSideOriginal;
-@synthesize compareView = _compareView;
-@synthesize dic = _dic;
-@synthesize imageToShare = _imageToShare;
-
-- (instancetype)initWithFirstWeek: (Week *)firstWeek andSecondWeek: (Week *)secondWeek {
+- (instancetype)initWithFirstWeek: (DKWeek *)firstWeek andSecondWeek: (DKWeek *)secondWeek {
     self = [super init];
     
     if (self) {
@@ -68,7 +58,7 @@
     
     [self.compareView addSubview:self.imageViewLast];
     
-    self.imageViewLast.image = [UIImage imageWithData:self.secondWeek.image];
+    self.imageViewLast.image = [DKModel imageFromLink:self.secondWeek.image];
     
     self.imageViewSideLast = [[UIImageView alloc] initWithFrame:CGRectMake(ScreenWidth / 2, 0, ScreenWidth / 2, ScreenWidth / 2)];
     self.imageViewSideLast.backgroundColor = [UIColor blackColor];
@@ -80,7 +70,7 @@
 
     [self.compareView addSubview:self.imageViewSideLast];
     
-    self.imageViewSideLast.image = [UIImage imageWithData:self.secondWeek.imageSide];
+    self.imageViewSideLast.image = [DKModel imageFromLink:self.secondWeek.imageSide];
     
     self.imageViewOriginal = [[UIImageView alloc] initWithFrame:CGRectMake(0, ScreenWidth / 2, ScreenWidth / 2, ScreenWidth / 2)];
     self.imageViewOriginal.backgroundColor = [UIColor blackColor];
@@ -93,7 +83,7 @@
 
     [self.compareView addSubview:self.imageViewOriginal];
     
-    self.imageViewOriginal.image = [UIImage imageWithData:self.firstWeek.image];
+    self.imageViewOriginal.image = [DKModel imageFromLink:self.firstWeek.image];
 
     self.imageViewSideOriginal = [[UIImageView alloc] initWithFrame:CGRectMake(ScreenWidth / 2, ScreenWidth / 2, ScreenWidth / 2, ScreenWidth / 2)];
     self.imageViewSideOriginal.backgroundColor = [UIColor blackColor];
@@ -106,7 +96,7 @@
 
     [self.compareView addSubview:self.imageViewSideOriginal];
     
-    self.imageViewSideOriginal.image = [UIImage imageWithData:self.firstWeek.imageSide];
+    self.imageViewSideOriginal.image = [DKModel imageFromLink:self.firstWeek.imageSide];
     
     int weekShift = (int)[[NSUserDefaults standardUserDefaults] integerForKey:kSettingsWeekKey];
     
@@ -114,8 +104,8 @@
         weekShift --;
     }
 
-    self.title = [NSString stringWithFormat:@"%d - %d", [self.firstWeek.seqNumber intValue] + weekShift,
-                  [self.secondWeek.seqNumber intValue] + weekShift];
+    self.title = [NSString stringWithFormat:@"%ld - %ld", self.firstWeek.seqNumber + weekShift,
+                  self.secondWeek.seqNumber + weekShift];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
                                                                                            target:self
@@ -182,7 +172,6 @@
         
         self.dic = [UIDocumentInteractionController interactionControllerWithURL:igImageHookFile];
         
-//        self.dic.UTI = @"com.instagram.photo";
         self.dic.UTI = @"com.instagram.exclusivegram";
         self.dic.delegate = self;
         

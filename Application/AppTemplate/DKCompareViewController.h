@@ -11,6 +11,6 @@
 
 @interface DKCompareViewController : DKBaseViewController
 
-- (instancetype)initWithFirstWeek: (Week *)firstWeek andSecondWeek: (Week *)secondWeek;
+- (instancetype)initWithFirstWeek: (DKWeek *)firstWeek andSecondWeek: (DKWeek *)secondWeek;
 
 @end

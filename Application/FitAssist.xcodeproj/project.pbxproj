@@ -110,7 +110,6 @@
 		02707B3F18D15EDF00CDCD3C /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 02707B3A18D15EDF00CDCD3C /* NSString+URLEncoding.m */; };
 		02707B4018D15EDF00CDCD3C /* UIImage-JTImageCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 02707B3C18D15EDF00CDCD3C /* UIImage-JTImageCrop.m */; };
 		02707B4118D15EDF00CDCD3C /* UIScrollView+GalaxyPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 02707B3E18D15EDF00CDCD3C /* UIScrollView+GalaxyPullToRefresh.m */; };
-		02723D8818E678490065243E /* DKWeatherCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 02723D8718E678490065243E /* DKWeatherCondition.m */; };
 		02723D8E18E6846C0065243E /* BTGlassScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02723D8B18E6846C0065243E /* BTGlassScrollView.m */; };
 		02723D8F18E6846C0065243E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 02723D8D18E6846C0065243E /* UIImage+ImageEffects.m */; };
 		0272728A18C0E10C0096A63A /* DKCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272728918C0E10C0096A63A /* DKCollectionViewCell.m */; };
@@ -216,8 +215,6 @@
 		02752124191276CB004C3D82 /* DKPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02752123191276CB004C3D82 /* DKPurchaseViewController.m */; };
 		02768A89191878E800653300 /* Exercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 02768A88191878E800653300 /* Exercise.m */; };
 		02768A8C191878E800653300 /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = 02768A8B191878E800653300 /* Workout.m */; };
-		02768A8F1918826800653300 /* Day+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 02768A8E1918826800653300 /* Day+Extra.m */; };
-		02768A921918840E00653300 /* Week+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 02768A911918840E00653300 /* Week+Extra.m */; };
 		02768A951918AB8A00653300 /* DKDayCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02768A941918AB8A00653300 /* DKDayCommentCell.m */; };
 		027CA8A818E937A300883A11 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027CA8A718E937A300883A11 /* StoreKit.framework */; };
 		027CA90B18ED47EB00883A11 /* UITextView+DisableCopyPaste.m in Sources */ = {isa = PBXBuildFile; fileRef = 027CA90A18ED47EB00883A11 /* UITextView+DisableCopyPaste.m */; };
@@ -332,7 +329,6 @@
 		02EE297F194AF15800183CB3 /* UITextView+DisableCopyPaste.m in Sources */ = {isa = PBXBuildFile; fileRef = 027CA90A18ED47EB00883A11 /* UITextView+DisableCopyPaste.m */; };
 		02EE2981194AF15800183CB3 /* OAuthCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B31C18DD72C100920867 /* OAuthCore.m */; };
 		02EE2982194AF15800183CB3 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F127FC18BE2EE0009434BA /* GameCenterManager.m */; };
-		02EE2985194AF15800183CB3 /* Day+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 02768A8E1918826800653300 /* Day+Extra.m */; };
 		02EE2988194AF15800183CB3 /* AnimatorShowShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1286018BE2FE0009434BA /* AnimatorShowShareView.m */; };
 		02EE298A194AF15800183CB3 /* AMWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7791909EF0B004AEAB4 /* AMWaveViewController.m */; };
 		02EE298C194AF15800183CB3 /* RETableViewDateTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272733418C20D7F0096A63A /* RETableViewDateTimeCell.m */; };
@@ -422,7 +418,6 @@
 		02EE2A11194AF15800183CB3 /* CLHueEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F71D1908EFBC004AEAB4 /* CLHueEffect.m */; };
 		02EE2A13194AF15800183CB3 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1296818BE3012009434BA /* RECommonFunctions.m */; };
 		02EE2A16194AF15800183CB3 /* DKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 026888A118BEAAE3005599FB /* DKBaseViewController.m */; };
-		02EE2A17194AF15800183CB3 /* Week+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 02768A911918840E00653300 /* Week+Extra.m */; };
 		02EE2A18194AF15800183CB3 /* DMExpandTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E59418FF5F0F00B1A7DB /* DMExpandTransition.m */; };
 		02EE2A19194AF15800183CB3 /* GTMStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272B32318DD733D00920867 /* GTMStringEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		02EE2A1A194AF15800183CB3 /* NSMutableArray+SWUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 0228E6601904BEEC00B1A7DB /* NSMutableArray+SWUtilityButtons.m */; };
@@ -434,7 +429,6 @@
 		02EE2A21194AF15800183CB3 /* MHUIImageViewContentViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1289718BE2FE0009434BA /* MHUIImageViewContentViewAnimation.m */; };
 		02EE2A22194AF15800183CB3 /* CLEffectTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7271908EFBC004AEAB4 /* CLEffectTool.m */; };
 		02EE2A23194AF15800183CB3 /* RETableViewFloatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272733618C20D7F0096A63A /* RETableViewFloatCell.m */; };
-		02EE2A24194AF15800183CB3 /* DKWeatherCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 02723D8718E678490065243E /* DKWeatherCondition.m */; };
 		02EE2A25194AF15800183CB3 /* BTGlassScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02723D8B18E6846C0065243E /* BTGlassScrollView.m */; };
 		02EE2A29194AF15800183CB3 /* REMultipleChoiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272735718C20D7F0096A63A /* REMultipleChoiceItem.m */; };
 		02EE2A2A194AF15800183CB3 /* AMWaveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0244F7771909EF0B004AEAB4 /* AMWaveTransition.m */; };
@@ -933,8 +927,6 @@
 		02707B3D18D15EDF00CDCD3C /* UIScrollView+GalaxyPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+GalaxyPullToRefresh.h"; sourceTree = "<group>"; };
 		02707B3E18D15EDF00CDCD3C /* UIScrollView+GalaxyPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+GalaxyPullToRefresh.m"; sourceTree = "<group>"; };
 		02723D6E18E455600065243E /* DKNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKNotifications.h; sourceTree = "<group>"; };
-		02723D8618E678490065243E /* DKWeatherCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKWeatherCondition.h; sourceTree = "<group>"; };
-		02723D8718E678490065243E /* DKWeatherCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKWeatherCondition.m; sourceTree = "<group>"; };
 		02723D8A18E6846C0065243E /* BTGlassScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGlassScrollView.h; sourceTree = "<group>"; };
 		02723D8B18E6846C0065243E /* BTGlassScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTGlassScrollView.m; sourceTree = "<group>"; };
 		02723D8C18E6846C0065243E /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
@@ -1111,10 +1103,6 @@
 		02768A88191878E800653300 /* Exercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exercise.m; sourceTree = "<group>"; };
 		02768A8A191878E800653300 /* Workout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Workout.h; sourceTree = "<group>"; };
 		02768A8B191878E800653300 /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workout.m; sourceTree = "<group>"; };
-		02768A8D1918826800653300 /* Day+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Day+Extra.h"; sourceTree = "<group>"; };
-		02768A8E1918826800653300 /* Day+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Day+Extra.m"; sourceTree = "<group>"; };
-		02768A901918840E00653300 /* Week+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Week+Extra.h"; sourceTree = "<group>"; };
-		02768A911918840E00653300 /* Week+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Week+Extra.m"; sourceTree = "<group>"; };
 		02768A931918AB8A00653300 /* DKDayCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DKDayCommentCell.h; path = Views/DKDayCommentCell.h; sourceTree = "<group>"; };
 		02768A941918AB8A00653300 /* DKDayCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DKDayCommentCell.m; path = Views/DKDayCommentCell.m; sourceTree = "<group>"; };
 		027CA8A718E937A300883A11 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -1791,12 +1779,6 @@
 				0228E6231902458500B1A7DB /* Day.m */,
 				0228E61F1902458400B1A7DB /* Week.h */,
 				0228E6201902458400B1A7DB /* Week.m */,
-				02723D8618E678490065243E /* DKWeatherCondition.h */,
-				02723D8718E678490065243E /* DKWeatherCondition.m */,
-				02768A8D1918826800653300 /* Day+Extra.h */,
-				02768A8E1918826800653300 /* Day+Extra.m */,
-				02768A901918840E00653300 /* Week+Extra.h */,
-				02768A911918840E00653300 /* Week+Extra.m */,
 				029A901F191F638800C998C8 /* DKEnvironment.h */,
 				029A9020191F638800C998C8 /* DKEnvironment.m */,
 				021276C8197F20710026C106 /* DKModel.h */,
@@ -3257,7 +3239,6 @@
 				02EE297F194AF15800183CB3 /* UITextView+DisableCopyPaste.m in Sources */,
 				02EE2981194AF15800183CB3 /* OAuthCore.m in Sources */,
 				02EE2982194AF15800183CB3 /* GameCenterManager.m in Sources */,
-				02EE2985194AF15800183CB3 /* Day+Extra.m in Sources */,
 				02EE2988194AF15800183CB3 /* AnimatorShowShareView.m in Sources */,
 				02EE298A194AF15800183CB3 /* AMWaveViewController.m in Sources */,
 				02EE298C194AF15800183CB3 /* RETableViewDateTimeCell.m in Sources */,
@@ -3347,7 +3328,6 @@
 				02EE2A11194AF15800183CB3 /* CLHueEffect.m in Sources */,
 				02EE2A13194AF15800183CB3 /* RECommonFunctions.m in Sources */,
 				02EE2A16194AF15800183CB3 /* DKBaseViewController.m in Sources */,
-				02EE2A17194AF15800183CB3 /* Week+Extra.m in Sources */,
 				02EE2A18194AF15800183CB3 /* DMExpandTransition.m in Sources */,
 				02EE2A19194AF15800183CB3 /* GTMStringEncoding.m in Sources */,
 				02EE2A1A194AF15800183CB3 /* NSMutableArray+SWUtilityButtons.m in Sources */,
@@ -3359,7 +3339,6 @@
 				02EE2A21194AF15800183CB3 /* MHUIImageViewContentViewAnimation.m in Sources */,
 				02EE2A22194AF15800183CB3 /* CLEffectTool.m in Sources */,
 				02EE2A23194AF15800183CB3 /* RETableViewFloatCell.m in Sources */,
-				02EE2A24194AF15800183CB3 /* DKWeatherCondition.m in Sources */,
 				02EE2A25194AF15800183CB3 /* BTGlassScrollView.m in Sources */,
 				02EE2A29194AF15800183CB3 /* REMultipleChoiceItem.m in Sources */,
 				02EE2A2A194AF15800183CB3 /* AMWaveTransition.m in Sources */,
@@ -3493,7 +3472,6 @@
 				027CA90B18ED47EB00883A11 /* UITextView+DisableCopyPaste.m in Sources */,
 				0272B31F18DD72C100920867 /* OAuthCore.m in Sources */,
 				02F1280318BE2EE0009434BA /* GameCenterManager.m in Sources */,
-				02768A8F1918826800653300 /* Day+Extra.m in Sources */,
 				02F128C618BE2FE0009434BA /* AnimatorShowShareView.m in Sources */,
 				0244F77B1909EF0B004AEAB4 /* AMWaveViewController.m in Sources */,
 				0272738B18C20D7F0096A63A /* RETableViewDateTimeCell.m in Sources */,
@@ -3583,7 +3561,6 @@
 				0244F75D1908EFBC004AEAB4 /* CLHueEffect.m in Sources */,
 				02F1298F18BE3012009434BA /* RECommonFunctions.m in Sources */,
 				026888A218BEAAE3005599FB /* DKBaseViewController.m in Sources */,
-				02768A921918840E00653300 /* Week+Extra.m in Sources */,
 				0228E59B18FF5F0F00B1A7DB /* DMExpandTransition.m in Sources */,
 				0272B32418DD733D00920867 /* GTMStringEncoding.m in Sources */,
 				0228E66B1904BEEC00B1A7DB /* NSMutableArray+SWUtilityButtons.m in Sources */,
@@ -3595,7 +3572,6 @@
 				02F128F018BE2FE0009434BA /* MHUIImageViewContentViewAnimation.m in Sources */,
 				0244F7621908EFBC004AEAB4 /* CLEffectTool.m in Sources */,
 				0272738C18C20D7F0096A63A /* RETableViewFloatCell.m in Sources */,
-				02723D8818E678490065243E /* DKWeatherCondition.m in Sources */,
 				02723D8E18E6846C0065243E /* BTGlassScrollView.m in Sources */,
 				0272739C18C20D7F0096A63A /* REMultipleChoiceItem.m in Sources */,
 				0244F77A1909EF0B004AEAB4 /* AMWaveTransition.m in Sources */,
@@ -3782,7 +3758,7 @@
 					Realm,
 				);
 				PRODUCT_NAME = "FitAssist Free";
-				PROVISIONING_PROFILE = "7C669612-9138-4794-BA49-C322D93F75C1";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -3896,7 +3872,7 @@
 					Realm,
 				);
 				PRODUCT_NAME = "FitAssist Free";
-				PROVISIONING_PROFILE = "7C669612-9138-4794-BA49-C322D93F75C1";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -4265,7 +4241,7 @@
 					Realm,
 				);
 				PRODUCT_NAME = FitAssist;
-				PROVISIONING_PROFILE = "7C669612-9138-4794-BA49-C322D93F75C1";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -4315,7 +4291,7 @@
 					Realm,
 				);
 				PRODUCT_NAME = FitAssist;
-				PROVISIONING_PROFILE = "7C669612-9138-4794-BA49-C322D93F75C1";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;

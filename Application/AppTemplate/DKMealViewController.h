@@ -7,7 +7,7 @@
 //
 
 #import "DKBaseViewController.h"
-#import "Day.h"
+#import "DKModel.h"
 
 #define kMealTypeWork     NSLocalizedString(@"Work", nil)
 #define kMealTypeSnack    NSLocalizedString(@"Snack", nil)
@@ -16,6 +16,6 @@
 
 @interface DKMealViewController : DKBaseViewController
 
-- (id)initWithDay: (Day *)day canAddNewDay: (BOOL)canAddNewDay;
+- (id)initWithDay: (DKDay *)day canAddNewDay: (BOOL)canAddNewDay;
 
 @end

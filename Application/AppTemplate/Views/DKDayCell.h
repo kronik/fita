@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Day.h"
 #import "SWTableViewCell.h"
+#import "DKModel.h"
 
 @interface DKDayCell : UITableViewCell
 
-@property (nonatomic, weak) Day *day;
+@property (nonatomic, weak) DKDay *day;
 
 @end

@@ -152,25 +152,19 @@
     
     __weak typeof(self) this = self;
     
-    [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
-        
-        [Flurry logEvent:@"Added workout"];
-        [this reloadAllWorkouts];
-        
-        int64_t delayInSeconds = 0.8;
-        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-            
-            [this.tableView.pullGestureRecognizer resetPullState];
-            
-//            DKDaysViewController *daysController = [[DKDaysViewController alloc] initWithWeek:newWeek];
+//    [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
+//        
+//        [Flurry logEvent:@"Added workout"];
+//        [this reloadAllWorkouts];
+//        
+//        int64_t delayInSeconds = 0.8;
+//        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+//        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
 //            
-//            daysController.title = [NSString stringWithFormat:@"%@ %d", NSLocalizedString(@"Week", nil),
-//                                    [newWeek.seqNumber intValue] + this.weekShift];
+//            [this.tableView.pullGestureRecognizer resetPullState];
 //            
-//            [this.navigationController pushViewController:daysController animated:YES];
-        });
-    }];
+//        });
+//    }];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -271,9 +265,9 @@
         
         __weak typeof(self) this = self;
         
-        [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
-            [this reloadAllWorkouts];
-        }];
+//        [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
+//            [this reloadAllWorkouts];
+//        }];
     }
 }
 
@@ -333,9 +327,9 @@
     
     __weak typeof(self) this = self;
     
-    [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
-        [this.tableView reloadData];
-    }];
+//    [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
+//        [this.tableView reloadData];
+//    }];
 }
 
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {

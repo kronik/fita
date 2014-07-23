@@ -22,12 +22,6 @@
 
 @implementation DKWeekCell
 
-@synthesize week = _week;
-@synthesize delegate = _delegate;
-@synthesize imageButton = _imageButton;
-@synthesize emptyImage = _emptyImage;
-@synthesize weekShift = _weekShift;
-
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
@@ -81,54 +75,30 @@
     }
 }
 
-- (void)setWeek:(Week *)week withShift: (int)shift {
+- (void)setWeek:(DKWeek *)week withShift: (int)shift {
     _week = week;
     _weekShift = shift;
     
     [self updateUI];
 }
 
-- (void)setWeek:(Week *)week {
+- (void)setWeek:(DKWeek *)week {
     _week = week;
     
     [self updateUI];
 }
 
 - (void)updateUI {
-//    [self.imageButton setBackgroundImage:[UIImage imageWithData:self.week.image] forState:UIControlStateNormal];
-
     self.textLabel.text = NSLocalizedString(@"Week", nil);
     
-    NSString *buttonTitle = [NSString stringWithFormat:@"%d", [self.week.seqNumber intValue] + self.weekShift];
+    NSString *buttonTitle = [NSString stringWithFormat:@"%ld", self.week.seqNumber + self.weekShift];
     
     [self.imageButton setTitle:buttonTitle forState:UIControlStateNormal];
     [self.imageButton setTitle:buttonTitle forState:UIControlStateSelected];
     [self.imageButton setTitle:buttonTitle forState:UIControlStateHighlighted];
 
-//    if (self.week.image == nil) {
-//        [self.imageButton setImage:self.emptyImage forState:UIControlStateNormal];
-//        [self.imageButton setImage:self.emptyImage forState:UIControlStateSelected];
-//        [self.imageButton setImage:self.emptyImage forState:UIControlStateHighlighted];
-//    } else {
-//    }
-    self.textLabel.text = [NSString stringWithFormat:@"%@ %d", NSLocalizedString(@"Week", nil), [self.week.seqNumber intValue] + self.weekShift];
-
-
+    self.textLabel.text = [NSString stringWithFormat:@"%@ %ld", NSLocalizedString(@"Week", nil), self.week.seqNumber + self.weekShift];
     [self layoutSubviews];
 }
-
-//- (void)layoutSubviews {
-//    [super layoutSubviews];
-//    
-//    float imageWidth = self.frame.size.height - 4;
-//    
-////    if (self.week.image == nil) {
-////        self.imageButton.frame = CGRectZero;
-////        self.textLabel.frame = CGRectMake(5, 5, (self.frame.size.width - 20), self.frame.size.height - 10);
-////    } else {
-//        self.imageButton.frame = CGRectMake(self.frame.size.width - imageWidth - 15, 2, imageWidth, imageWidth);
-//        self.textLabel.frame = CGRectMake(5, 5, (self.frame.size.width - imageWidth - 35), self.frame.size.height - 10);
-////    }
-//}
 
 @end

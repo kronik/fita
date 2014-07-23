@@ -35,7 +35,6 @@
 @interface DKTimerViewController () <UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate,
                                      DKTimerSettingsViewDelegate, MZTimerLabelDelegate, UIAlertViewDelegate>
 
-@property (nonatomic, strong) NSMutableArray *timers;
 @property (nonatomic, strong) DKTimerSettingsView *timePicker;
 @property (nonatomic, strong) UIView *timerView;
 @property (nonatomic, strong) MZTimerLabel *timerLabel;
@@ -60,24 +59,7 @@
 
 @implementation DKTimerViewController
 
-@synthesize timers = _timers;
-@synthesize timePicker = _timePicker;
-@synthesize timerLabel = _timerLabel;
-@synthesize timerView = _timerView;
-@synthesize timerInternalLabel = _timerInternalLabel;
-@synthesize startStopButton = _startStopButton;
-@synthesize resetButton = _resetButton;
-@synthesize roundsLabel = _roundsLabel;
-@synthesize setTimerButton = _setTimerButton;
 @synthesize currentTimerConfiguration = _currentTimerConfiguration;
-@synthesize currentRound = _currentRound;
-@synthesize currentExercise = _currentExercise;
-@synthesize isWorkStage = _isWorkStage;
-@synthesize excersizeLabel = _excersizeLabel;
-@synthesize isCounting = _isCounting;
-@synthesize workProgressView = _workProgressView;
-@synthesize imageToShare = _imageToShare;
-@synthesize player = _player;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -252,13 +234,6 @@
     [self.timerView addSubview:self.setTimerButton];
     
     [self resetUI];
-    
-    __weak typeof(self)this = self;
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [this reloadAllTimers];
-        [this.tableView reloadData];
-    });
 }
 
 - (NSString *)currentTimerConfiguration {
@@ -352,7 +327,12 @@
     return minutes * 60 + seconds;
 }
 
-- (NSMutableArray *)reloadAllTimers {
+- (void)reloadData {
+    [self reloadAllTimers];
+    [self.tableView reloadData];
+}
+
+- (void)reloadAllTimers {
     
 #ifdef FREE
     if ([[DKSettingsManager sharedInstance][kSettingExtendedTimer] boolValue] == NO) {
@@ -360,14 +340,13 @@
     }
 #endif
     
-    self.timers = [[Timer MR_findAllSortedBy:@"creationDate" ascending:NO] mutableCopy];
-
+    self.items = [DKModel loadAllTimers];
     __weak typeof(self) this = self;
     
     dispatch_async(dispatch_get_main_queue(), ^{
-        if (this.timers.count == 1) {
+        if (this.items.count == 1) {
             [this startCreateNewItemTutorialWithInfo: NSLocalizedString(@"Pull down to set new timer", nil)];
-        } else if (this.timers.count == 2) {
+        } else if (this.items.count == 2) {
             [this startTutorialWithInfo:NSLocalizedString(@"Scroll up to see your previous timer settings", nil)
                                 atPoint:CGPointMake(ScreenWidth / 2, 150)
            withFingerprintStartingPoint:CGPointMake(ScreenWidth / 2, ScreenHeight - 100)
@@ -376,8 +355,6 @@
 
         }
     });
-    
-    return self.timers;
 }
 
 - (BOOL)canSetTimer {
@@ -392,7 +369,7 @@
     if (section == 0) {
         return 0;
     } else {
-        return self.timers.count;
+        return self.items.count;
     }
 }
 
@@ -428,7 +405,7 @@
 //        }
         
     } else {
-        Timer *timer = self.timers[indexPath.row];
+        Timer *timer = self.items[indexPath.row];
         
         cell.textLabel.text = timer.value;
     }
@@ -441,35 +418,25 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    Timer *timer = self.timers[indexPath.row];
+    DKTimer *timer = self.items[indexPath.row];
 
     self.currentTimerConfiguration = timer.value;
     
     [self.tableView scrollRectToVisible:CGRectMake(0, 0, ScreenWidth, ScreenHeight) animated:YES];
     
-    [self.timers removeObject:timer];
-    
-    [timer MR_deleteEntity];
-    
-    Timer *newTimer = [Timer MR_createEntity];
+    DKTimer *newTimer = [DKTimer new];
     
     newTimer.value = self.currentTimerConfiguration;
     newTimer.creationDate = [NSDate date];
 
-    [self.timers insertObject:timer atIndex:0];
+    [self.items removeObjectAtIndex:indexPath.row];
     
-    __weak typeof(self) this = self;
+    [DKModel deleteObject:timer];
+    [DKModel addObject:newTimer];
+
+    [self.items insertObject:timer atIndex:0];
     
-    [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
-        
-        [Flurry logEvent:@"Replaced timer"];
-
-        [this reloadAllTimers];
-
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [this.tableView reloadData];
-        });
-    }];
+    [Flurry logEvent:@"Replaced timer"];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -487,23 +454,17 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        Timer *timer = self.timers[indexPath.row];
+        DKTimer *timer = self.items[indexPath.row];
         
         [self.tableView beginUpdates];
         
-        [self.timers removeObject: timer];
+        [self.items removeObjectAtIndex:indexPath.row];
         
-        [timer MR_deleteEntity];
+        [DKModel deleteObject:timer];
         
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
         
         [self.tableView endUpdates];
-        
-        __weak typeof(self) this = self;
-        
-        [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
-            [this reloadAllTimers];
-        }];
     }
 }
 
@@ -519,7 +480,7 @@
     
     BOOL canAddNewTimer = YES;
     
-    for (Timer *timer in self.timers) {
+    for (DKTimer *timer in self.items) {
         if ([timer.value isEqualToString:configuration]) {
             canAddNewTimer = NO;
             break;
@@ -527,12 +488,14 @@
     }
     
     if (canAddNewTimer && ([configuration isEqualToString:@"00:00 00:00 00 00"] == NO)) {
-        Timer *timer = [Timer MR_createEntity];
+        DKTimer *timer = [DKTimer new];
         
         timer.value = configuration;
         timer.creationDate = [NSDate date];
         
-        [self.timers insertObject:timer atIndex:0];
+        [self.items insertObject:timer atIndex:0];
+
+        [DKModel addObject:timer];
     }
     
     __weak typeof(self) this = self;
@@ -547,26 +510,7 @@
 
     self.currentTimerConfiguration = configuration;
     
-    [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
-        
-        [Flurry logEvent:@"Added timer"];
-        [this reloadAllTimers];
-        [this.tableView reloadData];
-        
-        //        int64_t delayInSeconds = 0.8;
-        //        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-        //        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        //
-        //            [this.tableView.pullGestureRecognizer resetPullState];
-        //
-        //            DKDaysViewController *daysController = [[DKDaysViewController alloc] initWithWeek:newWeek];
-        //
-        //            daysController.title = [NSString stringWithFormat:@"%@ %d", NSLocalizedString(@"Week", nil),
-        //                                    [newWeek.seqNumber intValue] + this.weekShift];
-        //
-        //            [this.navigationController pushViewController:daysController animated:YES];
-        //        });
-    }];
+    [Flurry logEvent:@"Added timer"];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {

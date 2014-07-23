@@ -10,10 +10,7 @@
 #import "DKTableViewCell.h"
 #import "DKSettingsViewController.h"
 #import "DKDaysViewController.h"
-#import "Day.h"
-#import "Meal.h"
 #import "DKCircleImageView.h"
-#import "Week+Extra.h"
 #import "DKWeekCell.h"
 
 #import "NIKFontAwesomeIconFactory.h"
@@ -32,8 +29,7 @@
                                      DKWeekCellDelegate, UIActionSheetDelegate, IDMPhotoBrowserDelegate,
                                      MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate>
 
-@property (nonatomic, strong) NSMutableArray *weeks;
-@property (nonatomic, weak) Week *selectedWeek;
+@property (nonatomic, weak) DKWeek *selectedWeek;
 @property (nonatomic, strong) UIViewController *messageViewController;
 @property (nonatomic, strong) MOOCreateView *createView;
 @property (nonatomic, strong) MOOPullGestureRecognizer *recognizer;
@@ -43,18 +39,11 @@
 
 @implementation DKWeeksViewController
 
-@synthesize weeks = _weeks;
-@synthesize selectedWeek = _selectedWeek;
-@synthesize messageViewController = _messageViewController;
-@synthesize createView = _createView;
-@synthesize recognizer = _recognizer;
-@synthesize weekShift = _weekShift;
-
-- (id)initWithWeeks: (NSArray *)weeks {
+- (id)initWithWeeks: (NSMutableArray *)weeks {
     self = [super init];
     
     if (self) {
-        _weeks = [weeks mutableCopy];
+        self.items = [weeks mutableCopy];
     }
     
     return self;
@@ -97,19 +86,11 @@
 
         this.recognizer = [[MOOPullGestureRecognizer alloc] initWithTarget:this action:@selector(handleGesture:)];
         
-//        NIKFontAwesomeIconFactory *factory = [NIKFontAwesomeIconFactory barButtonItemIconFactory];
-//        
-//        factory.colors = @[[UIColor whiteColor]];
-//        factory.size = 30;
-//
-//        UIImage *menuImage = [factory createImageForIcon:NIKFontAwesomeIconCalendar];
-        
         // Create cell
         UITableViewCell *newCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
         
         newCell.backgroundColor = [UIColor clearColor];// self.tableView.backgroundColor;
         newCell.contentView.backgroundColor = this.tableView.backgroundColor;
-//        newCell.imageView.image = menuImage;
         newCell.textLabel.font = [UIFont fontWithName:ApplicationLightFont size:30];
         newCell.textLabel.textColor = [UIColor whiteColor];
         newCell.textLabel.textAlignment = NSTextAlignmentRight;
@@ -131,11 +112,10 @@
                     //                cell.textLabel.text = NSLocalizedString(@"Release to add...", nil);
                     //                break;
                 case MOOPullIdle: {
-                    Week *maxWeek = this.weeks.firstObject;
+                    DKWeek *maxWeek = this.items.firstObject;
                     
-                    cell.textLabel.text = [NSString stringWithFormat:@"%@ %d", NSLocalizedString(@"Week", nil),
-                                           ([maxWeek.seqNumber intValue]  + this.weekShift + 1)];
-                    //                cell.textLabel.text = NSLocalizedString(@"Pull to add...", nil);
+                    cell.textLabel.text = [NSString stringWithFormat:@"%@ %ld", NSLocalizedString(@"Week", nil),
+                                           (maxWeek.seqNumber  + this.weekShift + 1)];
                 }
                     break;
                     
@@ -153,7 +133,7 @@
 }
 
 - (void)onWeekExport: (NSNotification *)notification {
-    Week *weekToExport = (Week *)notification.object;
+    DKWeek *weekToExport = (DKWeek *)notification.object;
     UIView *view = (UIView *)notification.userInfo[@"view"];
     
     if ((weekToExport == nil) || (view == nil)) {
@@ -163,7 +143,7 @@
     [self exportWeek:weekToExport withAlertInView:view];
 }
 
-- (void)exportWeek:(Week *)week withAlertInView: (UIView *)view {
+- (void)exportWeek:(DKWeek *)week withAlertInView: (UIView *)view {
     self.selectedWeek = week;
     
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@""
@@ -178,7 +158,7 @@
     [Flurry logEvent:@"Export week"];
 }
 
-+ (NSString *)exportTextForWeek: (Week *)week {
++ (NSString *)exportTextForWeek: (DKWeek *)week {
     return [week fullDescription];
 }
 
@@ -215,7 +195,7 @@
                 weekShift --;
             }
 
-            controller.subject = [NSString stringWithFormat:@"\n%@ %d\n", NSLocalizedString(@"Week", nil), [self.selectedWeek.seqNumber intValue] + weekShift];
+            controller.subject = [NSString stringWithFormat:@"\n%@ %ld\n", NSLocalizedString(@"Week", nil), self.selectedWeek.seqNumber + weekShift];
             controller.mailComposeDelegate = self;
             controller.navigationBar.tintColor = [UIColor whiteColor];
 
@@ -261,6 +241,11 @@
     }
 }
 
+- (void)reloadData {
+    [self reloadAllWeeks];
+    [self.tableView reloadData];
+}
+
 - (void)_pulledToCreate:(UIGestureRecognizer<MOOPullGestureRecognizer> *)pullGestureRecognizer {
     
     self.createView.alpha = [self canAddNewWeek] ? 1.0 : 0.0;
@@ -269,42 +254,42 @@
         return;
     }
     
-    Week *newWeek = [Week MR_createEntity];
+    DKWeek *newWeek = [DKWeek new];
     
-    Week *maxWeek = self.weeks.firstObject;
+    DKWeek *maxWeek = self.items.firstObject;
     
-    newWeek.seqNumber = @([maxWeek.seqNumber intValue] + 1);
+    newWeek.seqNumber = maxWeek.seqNumber + 1;
     newWeek.startDate = [NSDate date];
     
-    [self.weeks insertObject:newWeek atIndex:0];
+    [self.items insertObject:newWeek atIndex:0];
     
     CGPoint contentOffset = self.tableView.contentOffset;
     contentOffset.y -= CGRectGetMinY(pullGestureRecognizer.triggerView.frame);
 
     [self.tableView reloadData];
     self.tableView.contentOffset = contentOffset;
+    
+    [DKModel addObject:newWeek];
 
+    [Flurry logEvent:@"Added week"];
+    [self reloadAllWeeks];
+    
+    
     __weak typeof(self) this = self;
+    
+    int64_t delayInSeconds = 0.8;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
 
-    [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
+        [this.tableView.pullGestureRecognizer resetPullState];
+
+        DKDaysViewController *daysController = [[DKDaysViewController alloc] initWithWeek:newWeek];
+
+        daysController.title = [NSString stringWithFormat:@"%@ %ld", NSLocalizedString(@"Week", nil),
+                                newWeek.seqNumber + this.weekShift];
         
-        [Flurry logEvent:@"Added week"];
-        [this reloadAllWeeks];
-        
-        int64_t delayInSeconds = 0.8;
-        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-
-            [this.tableView.pullGestureRecognizer resetPullState];
-
-            DKDaysViewController *daysController = [[DKDaysViewController alloc] initWithWeek:newWeek];
-
-            daysController.title = [NSString stringWithFormat:@"%@ %d", NSLocalizedString(@"Week", nil),
-                                    [newWeek.seqNumber intValue] + this.weekShift];
-            
-            [this.navigationController pushViewController:daysController animated:YES];
-        });
-    }];
+        [this.navigationController pushViewController:daysController animated:YES];
+    });
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -314,7 +299,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    if (self.weeks.count == 1) {
+    if (self.items.count == 1) {
         [self startShowItemOptionsTutorial];
     }
 }
@@ -323,9 +308,9 @@
     [super viewWillDisappear:animated];
 }
 
-- (NSMutableArray *)reloadAllWeeks {
+- (void)reloadAllWeeks {
     
-    self.weeks = [[Week MR_findAllSortedBy:@"seqNumber" ascending:NO] mutableCopy];
+    self.items = [DKModel loadAllWeeks];
     self.weekShift = (int)[[NSUserDefaults standardUserDefaults] integerForKey:kSettingsWeekKey];
 
     if (self.weekShift > 0) {
@@ -334,14 +319,12 @@
     __weak typeof(self) this = self;
     
     dispatch_async(dispatch_get_main_queue(), ^{
-        if (this.weeks.count == 0) {
+        if (this.items.count == 0) {
             [this startCreateNewItemTutorialWithInfo: NSLocalizedString(@"Pull down to add new week", nil)];
         }
         
         this.createView.alpha = [this canAddNewWeek] ? 1.0 : 0.0;
     });
-
-    return self.weeks;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -349,7 +332,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.weeks.count;
+    return self.items.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -373,22 +356,11 @@
         cell.textLabel.backgroundColor = [UIColor clearColor];
     }
     
-//    NIKFontAwesomeIconFactory *factory = [NIKFontAwesomeIconFactory barButtonItemIconFactory];
-//    
-//    factory.colors = @[[UIColor whiteColor]];
-//    factory.size = 30;
-//    
-//    UIImage *menuImage = [factory createImageForIcon:NIKFontAwesomeIconCalendar];
-    Week *week = self.weeks[indexPath.row];
-    
-//    cell.imageView.image = menuImage;
+    DKWeek *week = self.items[indexPath.row];
     
     [cell setWeek:week withShift:self.weekShift];
     
     cell.delegate = self;
-    
-//    cell.leftUtilityButtons = nil;
-//    cell.rightUtilityButtons = [self rightButtons];
     
     return cell;
 }
@@ -419,31 +391,25 @@
     
     switch (index) {
         case 0: {
-            Week *week = self.weeks[indexPath.row];
+            DKWeek *week = self.items[indexPath.row];
             
             [self exportWeek: week withAlertInView:self.view];
         }
             break;
         case 1: {
-            Week *week = self.weeks[indexPath.row];
+            DKWeek *week = self.items[indexPath.row];
             
             [self.tableView beginUpdates];
             
-            [self.weeks removeObject: week];
-            
-            [week MR_deleteEntity];
+            [self.items removeObjectAtIndex:indexPath.row];
+
+            [DKModel deleteObject:week];
             
             [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
             
             [self.tableView endUpdates];
             
-            __weak typeof(self) this = self;
-            
-            [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
-                [Flurry logEvent:@"Deleted week"];
-                [this reloadAllWeeks];
-            }];
-            
+            [Flurry logEvent:@"Deleted week"];
         }
             break;
         default: break;
@@ -453,11 +419,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    Week *week = self.weeks[indexPath.row];
+    DKWeek *week = self.items[indexPath.row];
 
     DKDaysViewController *daysController = [[DKDaysViewController alloc] initWithWeek:week];
     
-    daysController.title = [NSString stringWithFormat:@"%@ %d", NSLocalizedString(@"Week", nil), [week.seqNumber intValue] + self.weekShift];
+    daysController.title = [NSString stringWithFormat:@"%@ %ld", NSLocalizedString(@"Week", nil), week.seqNumber + self.weekShift];
     
     [self.navigationController pushViewController:daysController animated:YES];
     
@@ -475,23 +441,17 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        Week *week = self.weeks[indexPath.row];
+        DKWeek *week = self.items[indexPath.row];
 
         [self.tableView beginUpdates];
         
-        [self.weeks removeObject: week];
+        [self.items removeObjectAtIndex:indexPath.row];
         
-        [week MR_deleteEntity];
+        [DKModel deleteObject:week];
         
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
         
         [self.tableView endUpdates];
-        
-        __weak typeof(self) this = self;
-        
-        [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
-            [this reloadAllWeeks];
-        }];
     }
 }
 
@@ -513,12 +473,7 @@
 }
 
 - (BOOL)canAddNewWeek {
-    
     return YES;
-    
-    Week *week = self.weeks.firstObject;
-    
-    return (week == nil) || (week.days.count == 7);
 }
 
 - (void)didTapOnPhotoOfWeek: (Week *)week inView: (UIView *)view {

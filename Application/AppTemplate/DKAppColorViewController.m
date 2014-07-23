@@ -27,7 +27,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.colors = @[[UIColor flatRedColor],
+    self.colors = @[[UIColor colorFromHexString:@"#EED5B7"],
+                    [UIColor colorFromHexString:@"#CDB7B5"],
+                    [UIColor colorFromHexString:@"#CD96CD"],
+                    [UIColor colorFromHexString:@"#EEDFCC"],
+                    [UIColor flatRedColor],
                     [UIColor flatDarkRedColor],
                     [UIColor flatGreenColor],
                     [UIColor flatDarkGreenColor],

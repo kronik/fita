@@ -14,7 +14,7 @@
 #import "DKWorkoutMenuViewController.h"
 #import "DKMenuCell.h"
 #import "DKTimerViewController.h"
-#import "Day.h"
+#import "DKModel.h"
 #import "DKMealViewController.h"
 
 #import "NIKFontAwesomeIconFactory.h"
@@ -29,17 +29,12 @@
     NSArray *menuItems;
 }
 
-@property (nonatomic, strong) NSMutableArray *weeks;
 @property (nonatomic, strong) DKWeeksViewController *weeksController;
 @property (nonatomic, strong) UIImageView *backgroundAnimationView;
 
 @end
 
 @implementation DKMenuViewController
-
-@synthesize weeks = _weeks;
-@synthesize weeksController = _weeksController;
-@synthesize backgroundAnimationView = _backgroundAnimationView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -85,9 +80,9 @@
     __weak typeof(self) this = self;
     
     dispatch_async(dispatch_get_main_queue(), ^{
-        this.weeks = [[Week MR_findAllSortedBy:@"seqNumber" ascending:NO] mutableCopy];
+        this.items = [DKModel loadAllWeeks];
         
-        this.weeksController = [[DKWeeksViewController alloc] initWithWeeks:this.weeks];
+        this.weeksController = [[DKWeeksViewController alloc] initWithWeeks:this.items];
     });
     
     [super viewWillAppear:animated];
@@ -192,16 +187,16 @@
         case 1: {
             [Flurry logEvent:@"Open current day"];
 
-            Day *day = nil;
+            DKDay *day = nil;
             
-            if (self.weeks.count == 0) {
+            if (self.items.count == 0) {
                 
-                Week *newWeek = [Week MR_createEntity];
+                DKWeek *newWeek = [DKWeek new];
                 
-                newWeek.seqNumber = @(1);
+                newWeek.seqNumber = 1;
                 newWeek.startDate = [NSDate date];
 
-                Day *newDay = [Day MR_createEntity];
+                DKDay *newDay = [DKDay new];
                 
                 NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
                 
@@ -213,39 +208,20 @@
                 
                 newDay.week = newWeek;
                 newDay.date = nextDate;
-                newDay.seqNumber = @(0);
+                newDay.seqNumber = 0;
 
                 day = newDay;
                 
-                [newWeek addDaysObject:newDay];
-                
-                [self.weeks insertObject:newDay atIndex:0];
-                
-                [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
-                }];
+                [DKModel addObject:newDay];
+                [DKModel addObject:newWeek];
             } else {
-                Week *currentWeek = self.weeks.firstObject;
-                
-                NSArray *days = [[currentWeek.days allObjects] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-                    
-                    Day *day1 = (Day *)obj1;
-                    Day *day2 = (Day *)obj2;
-                    
-                    NSComparisonResult result = [day1.seqNumber compare:day2.seqNumber];
-                    
-                    if (result == NSOrderedAscending) {
-                        return NSOrderedDescending;
-                    } else if (result == NSOrderedDescending) {
-                        return NSOrderedAscending;
-                    } else {
-                        return NSOrderedSame;
-                    }
-                }];
+                DKWeek *currentWeek = self.items.firstObject;
+                NSMutableArray *days = [DKModel loadAllDaysByWeek:currentWeek];
                 
                 day = days.firstObject;
                 
                 if (day == nil) {
-                    Day *newDay = [Day MR_createEntity];
+                    DKDay *newDay = [DKDay new];
                     
                     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
                     
@@ -257,11 +233,11 @@
                     
                     newDay.week = currentWeek;
                     newDay.date = nextDate;
-                    newDay.seqNumber = @(0);
+                    newDay.seqNumber = 0;
                     
                     day = newDay;
                     
-                    [currentWeek addDaysObject:newDay];
+                    [DKModel addObject:newDay];                    
                 }
             }
             

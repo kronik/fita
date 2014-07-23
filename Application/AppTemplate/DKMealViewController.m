@@ -9,11 +9,9 @@
 #import "DKMealViewController.h"
 #import "DKMealCell.h"
 #import "DKSettingsViewController.h"
-#import "Meal.h"
 #import "DKCircleImageView.h"
 #import "DKSettingsViewController.h"
 #import "DKDaysViewController.h"
-#import "Day+Extra.h"
 #import "DKDayCommentCell.h"
 #import "DKButtonCell.h"
 #import "DKTimePicker.h"
@@ -57,7 +55,6 @@ typedef enum DKMealViewActionType {
     NSRange lastRange;
 }
 
-@property (nonatomic, strong) NSMutableArray *mealEntries;
 @property (nonatomic, strong) DKTimePicker *timePicker;
 @property (nonatomic, strong) UITextView *textView;
 @property (nonatomic, strong) UIView *timePickerContainer;
@@ -73,8 +70,8 @@ typedef enum DKMealViewActionType {
 @property (nonatomic, strong) UIViewController *messageViewController;
 @property (nonatomic, strong) UITextView *commentEditView;
 
-@property (nonatomic, weak) Meal *lastSelectedMeal;
-@property (nonatomic, strong) Day *day;
+@property (nonatomic, weak) DKMeal *lastSelectedMeal;
+@property (nonatomic, strong) DKDay *day;
 @property (nonatomic) DKMealViewActionType actionType;
 
 @property (nonatomic) BOOL isUpdateMode;
@@ -84,52 +81,14 @@ typedef enum DKMealViewActionType {
 
 @implementation DKMealViewController
 
-@synthesize mealEntries = _mealEntries;
-@synthesize day = _day;
-@synthesize timePicker = _timePicker;
-@synthesize timePickerContainer = _timePickerContainer;
-@synthesize textView = _textView;
-@synthesize imageButton = _imageButton;
-@synthesize saveButton = _saveButton;
-@synthesize lastSelectedMeal = _lastSelectedMeal;
-@synthesize mealSuggestions = _mealSuggestions;
-@synthesize mealAutocompleteItems = _mealAutocompleteItems;
-@synthesize suggestTableView = _suggestTableView;
-@synthesize saveShortButton = _saveShortButton;
-@synthesize isUpdateMode = _isUpdateMode;
-@synthesize saveDrinkButton = _saveDrinkButton;
-@synthesize updateButton = _updateButton;
-@synthesize saveWorkButton = _saveWorkButton;
-@synthesize actionType = _actionType;
-@synthesize messageViewController = _messageViewController;
-@synthesize commentEditView = _commentEditView;
-@synthesize canAddNewDay = _canAddNewDay;
-
-- (id)initWithDay: (Day *)day canAddNewDay: (BOOL)canAddNewDay {
+- (id)initWithDay: (DKDay *)day canAddNewDay: (BOOL)canAddNewDay {
     self = [super init];
     
     if (self) {
         _day = day;
         _canAddNewDay = canAddNewDay;
         
-        _mealEntries = [[[day.meals allObjects] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-            
-            Meal *meal1 = (Meal *)obj1;
-            Meal *meal2 = (Meal *)obj2;
-            
-//            return [meal1.time compare:meal2.time];
-            
-            NSComparisonResult result = [meal1.time compare:meal2.time];
-            
-            if (result == NSOrderedAscending) {
-                return NSOrderedDescending;
-            } else if (result == NSOrderedDescending) {
-                return NSOrderedAscending;
-            } else {
-                return NSOrderedSame;
-            }
-            
-        }] mutableCopy];
+        self.items = [DKModel loadAllMealEntriesByDay:day];
     }
     return self;
 }
@@ -495,7 +454,7 @@ typedef enum DKMealViewActionType {
     
     [Flurry logEvent:@"Attach meal image tap"];
 
-    Meal *selectedMeal = self.lastSelectedMeal;
+    DKMeal *selectedMeal = self.lastSelectedMeal;
 
     if (selectedMeal == nil) {
         return;
@@ -609,8 +568,8 @@ typedef enum DKMealViewActionType {
                                            (ScreenWidth - 15) / 4, buttonHeight);
     }
     
-    if (self.lastSelectedMeal.picture != nil) {
-        [self.imageButton setImage:[UIImage imageWithData: self.lastSelectedMeal.picture] forState:UIControlStateNormal];
+    if (self.lastSelectedMeal.picture.length > 0) {
+        [self.imageButton setImage:[DKModel imageFromLink:self.lastSelectedMeal.picture] forState:UIControlStateNormal];
     } else {
         
         NIKFontAwesomeIconFactory *factory = [NIKFontAwesomeIconFactory generalFactory];
@@ -628,46 +587,40 @@ typedef enum DKMealViewActionType {
 - (void)commonSave {
     __weak typeof(self) this = self;
     
-    Meal *mealToSave = self.lastSelectedMeal;
+    DKMeal *mealToSave = self.lastSelectedMeal;
     
     self.lastSelectedMeal = nil;
 
     [self.textView resignFirstResponder];
-
-    mealToSave.text = self.textView.text;
-    mealToSave.time = self.timePicker.time;
     
-    if (mealToSave.text.length == 0) {
-        [mealToSave MR_deleteEntity];
+    if (self.textView.text.length == 0) {
+        [DKModel deleteObject:mealToSave];
         
         mealToSave = nil;
     }
+
+    [DKModel updateObjectsWithBlock:^{
+        mealToSave.text = this.textView.text;
+        mealToSave.time = this.timePicker.time;
+    }];
     
-    [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
-        [this reloadAllMealEntries];
-        [this.tableView reloadData];
-        
-        if ((this.isUpdateMode == NO) && (mealToSave)) {
-            if ([mealToSave.type isEqualToString:kMealTypeRegular] == YES) {
-                [this scheduleNextMeal];
-            }
-            
-            if ([mealToSave.type isEqualToString:kMealTypeDrink] == NO) {
-                [this scheduleNextWater];
-            }
+    if ((self.isUpdateMode == NO) && (mealToSave)) {
+        if ([mealToSave.type isEqualToString:kMealTypeRegular] == YES) {
+            [self scheduleNextMeal];
         }
+        
+        if ([mealToSave.type isEqualToString:kMealTypeDrink] == NO) {
+            [self scheduleNextWater];
+        }
+    }
 
-//        [this.navigationController setNavigationBarHidden:NO animated:YES];
-
-        [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-            this.timePickerContainer.frame = cellRect;
-            this.timePickerContainer.alpha = 0;
-//            this.timePickerContainer.center = CGPointMake(ScreenWidth / 2, - ScreenHeight);
-        } completion:^(BOOL finished) {
-            if (this.mealEntries.count == 1) {
-                [this startShowItemOptionsTutorial];
-            }
-        }];
+    [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        self.timePickerContainer.frame = cellRect;
+        self.timePickerContainer.alpha = 0;
+    } completion:^(BOOL finished) {
+        if (self.items.count == 1) {
+            [self startShowItemOptionsTutorial];
+        }
     }];
 }
 
@@ -679,27 +632,38 @@ typedef enum DKMealViewActionType {
         self.textView.text = kMealTypeWork;
     }
     
-    self.lastSelectedMeal.type = kMealTypeWork;
+    __weak typeof(self) this = self;
     
-    [self commonSave];
+    [DKModel updateObjectsWithBlock:^{
+        this.lastSelectedMeal.type = kMealTypeWork;
+        
+        [this commonSave];
+    }];
 }
 
 - (void)onSaveTap {
     
     [Flurry logEvent:@"Save regular meal"];
 
-    self.lastSelectedMeal.type = kMealTypeRegular;
+    __weak typeof(self) this = self;
     
-    [self commonSave];
+    [DKModel updateObjectsWithBlock:^{
+        this.lastSelectedMeal.type = kMealTypeRegular;
+    
+        [this commonSave];
+    }];
 }
 
 - (void)onSaveShortTap {
 
     [Flurry logEvent:@"Save snack meal"];
 
-    self.lastSelectedMeal.type = kMealTypeSnack;
-
-    [self commonSave];
+    __weak typeof(self) this = self;
+    
+    [DKModel updateObjectsWithBlock:^{
+        this.lastSelectedMeal.type = kMealTypeSnack;
+        [this commonSave];
+    }];
 }
 
 - (void)onSaveDrinkTap {
@@ -710,31 +674,24 @@ typedef enum DKMealViewActionType {
         self.textView.text = kMealTypeDrink;
     }
     
-    self.lastSelectedMeal.type = kMealTypeDrink;
+    __weak typeof(self) this = self;
     
-    [self commonSave];
+    [DKModel updateObjectsWithBlock:^{
+        this.lastSelectedMeal.type = kMealTypeDrink;
+    
+        [this commonSave];
+    }];
 }
 
 - (void)timePicker:(DKTimePicker *)timePicker didSelectTime:(NSDate *)time {
     [self.textView resignFirstResponder];
     
-    Meal *selectedMeal = self.lastSelectedMeal;
+    __weak typeof(self) this = self;
     
-    selectedMeal.time = time;
-    
-    [self.tableView reloadData];
+    [DKModel updateObjectsWithBlock:^{
+        this.lastSelectedMeal.time = time;
+    }];
 }
-
-//- (void)onTimeChanged {
-//    
-//    [self.textView resignFirstResponder];
-//    
-//    Meal *selectedMeal = self.lastSelectedMeal;
-//    
-//    selectedMeal.time = self.timePicker.date;
-//    
-//    [self.tableView reloadData];
-//}
 
 - (void)handleGesture:(UIGestureRecognizer *)gestureRecognizer {
     if (gestureRecognizer.state == UIGestureRecognizerStateRecognized) {
@@ -747,15 +704,15 @@ typedef enum DKMealViewActionType {
     
     self.isUpdateMode = NO;
     
-    Meal *newMeal = [Meal MR_createEntity];
+    DKMeal *newMeal = [DKMeal new];
     
     newMeal.day = self.day;
     newMeal.time = [NSDate date];
     newMeal.text = @"";
     
-    [self.day addMealsObject:newMeal];
+    [DKModel addObject:newMeal];
     
-    [self.mealEntries insertObject:newMeal atIndex:0];
+    [self.items insertObject:newMeal atIndex:0];
     
     CGPoint contentOffset = self.tableView.contentOffset;
     contentOffset.y -= CGRectGetMinY(pullGestureRecognizer.triggerView.frame);
@@ -763,43 +720,42 @@ typedef enum DKMealViewActionType {
     [self.tableView reloadData];
     self.tableView.contentOffset = contentOffset;
     
-    __weak typeof(self) this = self;
-    
-    [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
-        [this reloadAllMealEntries];
-        [this startEditMeal: newMeal];
-    }];
+    [self startEditMeal: newMeal];
 }
 
 - (void)cancelEditMeal {
     __weak typeof(self) this = self;
     
-    Meal *mealToSave = self.lastSelectedMeal;
+    DKMeal *mealToSave = self.lastSelectedMeal;
     
     self.lastSelectedMeal = nil;
     
     [self.textView resignFirstResponder];
     
     if (mealToSave.text.length == 0) {
-        [mealToSave MR_deleteEntity];
+        [DKModel deleteObject:mealToSave];
         
         mealToSave = nil;
     }
     
-    [self reloadAllMealEntries];
-    [self.tableView reloadData];
+    [self reloadData];
 
     [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         this.timePickerContainer.frame = cellRect;
         this.timePickerContainer.alpha = 0;
     } completion:^(BOOL finished) {
-        if (this.mealEntries.count == 1) {
+        if (this.items.count == 1) {
             [this startShowItemOptionsTutorial];
         }
     }];
 }
 
-- (void)startEditMeal: (Meal *)meal {
+- (void)reloadData {
+    [self reloadAllMealEntries];
+    [self.tableView reloadData];
+}
+
+- (void)startEditMeal: (DKMeal *)meal {
     
     __weak typeof(self) this = self;
 
@@ -810,14 +766,12 @@ typedef enum DKMealViewActionType {
                                                                                            action:@selector(cancelEditMeal)];
     [self updateUI];
     
-//    [self.navigationController setNavigationBarHidden:YES animated:YES];
-    
     this.timePickerContainer.alpha = 0;
 
     int mealIndex = 0;
     
-    for (int i=0; i<self.mealEntries.count; i++) {
-        Meal *existingMeal = self.mealEntries[i];
+    for (int i=0; i<self.items.count; i++) {
+        DKMeal *existingMeal = self.items[i];
         
         if (meal == existingMeal) {
             mealIndex = i;
@@ -838,19 +792,16 @@ typedef enum DKMealViewActionType {
     [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         this.timePickerContainer.frame = ScreenRect;
         this.timePickerContainer.alpha = 1.0;
-//        this.timePickerContainer.center = CGPointMake(ScreenWidth / 2, ScreenHeight / 2);
     } completion:^(BOOL finished) {
         [this.textView becomeFirstResponder];
     }];
 }
 
-- (NSMutableArray *)reloadAllMealEntries {
+- (void)reloadAllMealEntries {
     
-    NSPredicate *dayFilter = [NSPredicate predicateWithFormat:@"day = %@", self.day];
+    self.items = [DKModel loadAllMealEntriesByDay:self.day];
     
-    self.mealEntries = [[Meal MR_findAllSortedBy:@"time" ascending:NO withPredicate:dayFilter] mutableCopy];
-    
-    if (self.mealEntries.count == 0) {
+    if (self.items.count == 0) {
         [self startCreateNewItemTutorialWithInfo:NSLocalizedString(@"Pull down to add new meal", nil)];
         
         self.navigationItem.rightBarButtonItem = nil;
@@ -859,8 +810,6 @@ typedef enum DKMealViewActionType {
                                                                                                target:self
                                                                                                action:@selector(exportDay)];
     }
-    
-    return self.mealEntries;
 }
 
 - (void)exportDay {
@@ -885,7 +834,7 @@ typedef enum DKMealViewActionType {
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (tableView == self.tableView) {
-        return section == 0 ? self.mealEntries.count : 1;
+        return section == 0 ? self.items.count : 1;
     } else {
         return self.mealAutocompleteItems.count;
     }
@@ -922,7 +871,7 @@ typedef enum DKMealViewActionType {
                 cell.textLabel.backgroundColor = [UIColor clearColor];
             }
             
-            Meal *meal = self.mealEntries[indexPath.row];
+            DKMeal *meal = self.items[indexPath.row];
             
             NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
             
@@ -933,7 +882,7 @@ typedef enum DKMealViewActionType {
             cell.textLabel.text = meal.text;
             
             if (meal.picture) {
-                cell.imageView.image = [UIImage imageWithData: meal.picture];
+                cell.imageView.image = [DKModel imageFromLink:meal.picture];
             } else {
                 cell.imageView.image = nil;
             }
@@ -942,7 +891,7 @@ typedef enum DKMealViewActionType {
                                                                              [self isCorrectTimeForMealAtIndex: indexPath.row];
             
             if ((reason.length == 0) && ([meal.type isEqualToString:kMealTypeDrink] == NO) &&
-                (meal == self.mealEntries.lastObject)) {
+                (meal == self.items.lastObject)) {
                 
                 reason = NSLocalizedString(@"Start your day with a glass of water", nil);
             }
@@ -1040,7 +989,7 @@ typedef enum DKMealViewActionType {
         
         [Flurry logEvent:@"Updated meal"];
 
-        [self startEditMeal: self.mealEntries[indexPath.row]];
+        [self startEditMeal: self.items[indexPath.row]];
     } else {
         NSString *selectedSuggestion = self.mealAutocompleteItems[indexPath.row];
         NSString *separator = @", ";
@@ -1074,41 +1023,28 @@ typedef enum DKMealViewActionType {
 
 - (void)switchToNextDay {
     
-    Week *currentWeek = self.day.week;
+    DKWeek *currentWeek = self.day.week;
+    NSMutableArray *days = [DKModel loadAllDaysByWeek:currentWeek];
     
-    if (currentWeek.days.count >= 7) {
-        NSArray *weeks = [Week MR_findAllSortedBy:@"seqNumber" ascending:NO];
+    if (days.count >= 7) {
+        NSMutableArray *weeks = [DKModel loadAllWeeks];
         
-        currentWeek = [Week MR_createEntity];
-        Week *maxWeek = weeks.firstObject;
+        currentWeek = [DKWeek new];
+        DKWeek *maxWeek = weeks.firstObject;
         
-        currentWeek.seqNumber = @([maxWeek.seqNumber intValue] + 1);
+        currentWeek.seqNumber = maxWeek.seqNumber + 1;
         currentWeek.startDate = [NSDate date];
+        
+        [DKModel addObject:currentWeek];
     }
     
-    Day *newDay = [Day MR_createEntity];
+    DKDay *newDay = [DKDay new];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     
     [dateFormatter setDateFormat:@"EEEE"];
     
-    NSArray *days = [[currentWeek.days allObjects] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-        
-        Day *day1 = (Day *)obj1;
-        Day *day2 = (Day *)obj2;
-        
-        NSComparisonResult result = [day1.seqNumber compare:day2.seqNumber];
-        
-        if (result == NSOrderedAscending) {
-            return NSOrderedDescending;
-        } else if (result == NSOrderedDescending) {
-            return NSOrderedAscending;
-        } else {
-            return NSOrderedSame;
-        }
-    }];
-    
-    Day *day = days.lastObject;
+    DKDay *day = days.lastObject;
     
     NSDate *lastDate = day ? day.date : [NSDate date];
     NSDate *nextDate = [lastDate dateByAddingTimeInterval:(60 * 60 * 24) * days.count];
@@ -1116,20 +1052,12 @@ typedef enum DKMealViewActionType {
     newDay.name = [dateFormatter stringFromDate:nextDate];
     newDay.week = currentWeek;
     newDay.date = nextDate;
-    newDay.seqNumber = @(days.count);
+    newDay.seqNumber = days.count;
     
-    [currentWeek addDaysObject:newDay];
+    [DKModel addObject:newDay];
     
     self.day = newDay;
-    
     self.title = newDay.name;
-        
-    __weak typeof(self) this = self;
-    
-    [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
-        [this reloadAllMealEntries];
-        [this.tableView reloadData];
-    }];
 }
 
 - (void)startEditComment {
@@ -1165,16 +1093,13 @@ typedef enum DKMealViewActionType {
 
 - (void)endEditComment {
     
-    self.day.comment = self.commentEditView.text;
-    
-    [self.commentEditView resignFirstResponder];
-    
     __weak typeof(self) this = self;
 
-    [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
-        [this reloadAllMealEntries];
-        [this.tableView reloadData];
+    [DKModel updateObjectsWithBlock:^{
+        this.day.comment = this.commentEditView.text;
     }];
+    
+    [self.commentEditView resignFirstResponder];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -1196,24 +1121,17 @@ typedef enum DKMealViewActionType {
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        Meal *meal = self.mealEntries[indexPath.row];
+        DKMeal *meal = self.items[indexPath.row];
         
         [self.tableView beginUpdates];
         
-        [self.mealEntries removeObject: meal];
+        [self.items removeObjectAtIndex:indexPath.row];
         
-        [meal MR_deleteEntity];
+        [DKModel deleteObject:meal];
         
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
         
         [self.tableView endUpdates];
-        
-        __weak typeof(self) this = self;
-        
-        [self saveChangesAsyncWithBlock:^(BOOL isFailedToSave) {
-            [this reloadAllMealEntries];
-            [this.tableView reloadData];
-        }];
     }
 }
 
@@ -1328,9 +1246,11 @@ typedef enum DKMealViewActionType {
     
     if (editedImage != nil) {
         
-        Meal *lastMeal = [self lastSelectedMeal];
+        DKMeal *lastMeal = [self lastSelectedMeal];
         
-        lastMeal.picture = UIImageJPEGRepresentation(editedImage, 1.0);
+        [DKModel updateObjectsWithBlock:^{
+            lastMeal.picture = [DKModel linkFromImage:editedImage];
+        }];
         
         [self.imageButton setImage:editedImage forState:UIControlStateNormal];
         
@@ -1380,16 +1300,16 @@ typedef enum DKMealViewActionType {
 
 - (NSString *)isCorrectTimeForWaterAtIndex: (NSInteger)mealIndex {
     
-    if ((self.mealEntries.count < 2) || (mealIndex == self.mealEntries.count - 1)) {
+    if ((self.items.count < 2) || (mealIndex == self.items.count - 1)) {
         return @"";
     }
     
-    Meal *prevMeal = nil;
-    Meal *currentMeal = self.mealEntries[mealIndex];
+    DKMeal *prevMeal = nil;
+    DKMeal *currentMeal = self.items[mealIndex];
     
-    for (NSInteger i=mealIndex + 1; i<self.mealEntries.count; i++) {
+    for (NSInteger i=mealIndex + 1; i<self.items.count; i++) {
         
-        Meal *meal = self.mealEntries[i];
+        DKMeal *meal = self.items[i];
         
         if ([meal.type isEqualToString:kMealTypeDrink] == NO) {
             prevMeal = meal;
@@ -1412,16 +1332,16 @@ typedef enum DKMealViewActionType {
 
 - (NSString *)isCorrectTimeForMealAtIndex: (NSInteger)mealIndex {
     
-    if ((self.mealEntries.count < 2) || (mealIndex == self.mealEntries.count - 1)) {
+    if ((self.items.count < 2) || (mealIndex == self.items.count - 1)) {
         return @"";
     }
     
-    Meal *prevMeal = nil;
-    Meal *currentMeal = self.mealEntries[mealIndex];
+    DKMeal *prevMeal = nil;
+    DKMeal *currentMeal = self.items[mealIndex];
     
-    for (NSInteger i=mealIndex + 1; i<self.mealEntries.count; i++) {
+    for (NSInteger i=mealIndex + 1; i<self.items.count; i++) {
         
-        Meal *meal = self.mealEntries[i];
+        DKMeal *meal = self.items[i];
         
         if ([meal.type isEqualToString:kMealTypeRegular]) {
             prevMeal = meal;
@@ -1451,9 +1371,9 @@ typedef enum DKMealViewActionType {
     // Check water
     prevMeal = nil;
     
-    for (NSInteger i=mealIndex + 1; i<self.mealEntries.count; i++) {
+    for (NSInteger i=mealIndex + 1; i<self.items.count; i++) {
         
-        Meal *meal = self.mealEntries[i];
+        DKMeal *meal = self.items[i];
         
         if ([meal.type isEqualToString:kMealTypeDrink]) {
             prevMeal = meal;
@@ -1484,9 +1404,9 @@ typedef enum DKMealViewActionType {
         return;
     }
     
-    Meal *lastMeal = nil;
+    DKMeal *lastMeal = nil;
     
-    for (Meal *meal in self.mealEntries) {
+    for (DKMeal *meal in self.items) {
         if ([meal.type isEqualToString:kMealTypeDrink] == NO) {
             lastMeal = meal;
             break;
@@ -1565,9 +1485,9 @@ typedef enum DKMealViewActionType {
         return;
     }
     
-    Meal *lastMeal = nil;
+    DKMeal *lastMeal = nil;
     
-    for (Meal *meal in self.mealEntries) {
+    for (DKMeal *meal in self.items) {
         if ([meal.type isEqualToString:kMealTypeRegular]) {
             lastMeal = meal;
             break;
@@ -1648,7 +1568,7 @@ typedef enum DKMealViewActionType {
     return NO;
 }
 
-- (void)setLastSelectedMeal:(Meal *)lastSelectedMeal {
+- (void)setLastSelectedMeal:(DKMeal *)lastSelectedMeal {
     _lastSelectedMeal = lastSelectedMeal;
     
     [self setNeedsStatusBarAppearanceUpdate];
@@ -1681,8 +1601,8 @@ typedef enum DKMealViewActionType {
         case 1: {
             MFMailComposeViewController *controller = [[MFMailComposeViewController alloc] init];
             
-            controller.subject = [NSString stringWithFormat:@"\n%@ %d %@", NSLocalizedString(@"Week", nil),
-                                  [self.day.week.seqNumber intValue], self.day.name];
+            controller.subject = [NSString stringWithFormat:@"\n%@ %ld %@", NSLocalizedString(@"Week", nil),
+                                  self.day.week.seqNumber, self.day.name];
             controller.mailComposeDelegate = self;
             controller.navigationBar.tintColor = [UIColor whiteColor];
             

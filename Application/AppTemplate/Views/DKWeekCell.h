@@ -9,18 +9,19 @@
 #import <UIKit/UIKit.h>
 #import "Week.h"
 #import "SWTableViewCell.h"
+#import "DKModel.h"
 
 @protocol DKWeekCellDelegate <NSObject>
 
-- (void)didTapOnPhotoOfWeek: (Week *)week inView: (UIView *)view;
+- (void)didTapOnPhotoOfWeek: (DKWeek *)week inView: (UIView *)view;
 
 @end
 
 @interface DKWeekCell : UITableViewCell
 
-@property (nonatomic, weak) Week *week;
+@property (nonatomic, weak) DKWeek *week;
 @property (nonatomic, weak) id<DKWeekCellDelegate> delegate;
 
-- (void)setWeek:(Week *)week withShift: (int)shift;
+- (void)setWeek:(DKWeek *)week withShift: (int)shift;
 
 @end
