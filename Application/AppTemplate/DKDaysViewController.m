@@ -57,8 +57,8 @@ typedef enum DKDaysViewActionType {
 @property (nonatomic, strong) NSArray *buttons;
 @property (nonatomic) DKDaysViewActionType actionType;
 @property (nonatomic) int weekOffset;
-@property (nonatomic, weak) DKWeek *week;
-@property (nonatomic, weak) DKDay *selectedDay;
+@property (nonatomic, strong) DKWeek *week;
+@property (nonatomic, strong) DKDay *selectedDay;
 @property (nonatomic) BOOL needButtonAnimation;
 @property (nonatomic, strong) UIImagePickerController *imagePicker;
 
@@ -233,7 +233,7 @@ typedef enum DKDaysViewActionType {
 - (void)didSelectActionForDay:(DKDay *)day {
     self.selectedDay = day;
     
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@""
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"Send via...", nil)
                                                              delegate:self
                                                     cancelButtonTitle:NSLocalizedString(@"Cancel", nil)
                                                destructiveButtonTitle:nil
@@ -438,10 +438,10 @@ typedef enum DKDaysViewActionType {
     
     __weak typeof(self) this = self;
     
-    [DKModel addObject:newDay];
-    
     [self.items insertObject:newDay atIndex:0];
     
+    [DKModel addObject:newDay];
+
     CGPoint contentOffset = self.tableView.contentOffset;
     contentOffset.y -= CGRectGetMinY(pullGestureRecognizer.triggerView.frame);
 
@@ -715,7 +715,7 @@ typedef enum DKDaysViewActionType {
     
     self.selectedDay = nil;
     
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@""
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"Send via...", nil)
                                                              delegate:self
                                                     cancelButtonTitle:NSLocalizedString(@"Cancel", nil)
                                                destructiveButtonTitle:nil
@@ -739,13 +739,13 @@ typedef enum DKDaysViewActionType {
     NSString *openPhotoTitle = self.week.image ? NSLocalizedString(@"Open", nil) : nil;
     
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        actionSheet = [[UIActionSheet alloc] initWithTitle:@""
+        actionSheet = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"Photo", nil)
                                                   delegate:self
                                          cancelButtonTitle:NSLocalizedString(@"Cancel", nil)
                                     destructiveButtonTitle:nil
                                          otherButtonTitles: NSLocalizedString(@"Choose existing photo", nil), openPhotoTitle, nil];
     } else {
-        actionSheet = [[UIActionSheet alloc] initWithTitle:@""
+        actionSheet = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"Photo", nil)
                                                   delegate:self
                                          cancelButtonTitle:NSLocalizedString(@"Cancel", nil)
                                     destructiveButtonTitle:NSLocalizedString(@"Take a photo", nil)
@@ -766,13 +766,13 @@ typedef enum DKDaysViewActionType {
     NSString *openPhotoTitle = self.week.imageSide ? NSLocalizedString(@"Open", nil) : nil;
 
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        actionSheet = [[UIActionSheet alloc] initWithTitle:@""
+        actionSheet = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"Photo", nil)
                                                   delegate:self
                                          cancelButtonTitle:NSLocalizedString(@"Cancel", nil)
                                     destructiveButtonTitle:nil
                                          otherButtonTitles: NSLocalizedString(@"Choose existing photo", nil), openPhotoTitle, nil];
     } else {
-        actionSheet = [[UIActionSheet alloc] initWithTitle:@""
+        actionSheet = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"Photo", nil)
                                                   delegate:self
                                          cancelButtonTitle:NSLocalizedString(@"Cancel", nil)
                                     destructiveButtonTitle:NSLocalizedString(@"Take a photo", nil)

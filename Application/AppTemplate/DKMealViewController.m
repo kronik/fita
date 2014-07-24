@@ -70,7 +70,7 @@ typedef enum DKMealViewActionType {
 @property (nonatomic, strong) UIViewController *messageViewController;
 @property (nonatomic, strong) UITextView *commentEditView;
 
-@property (nonatomic, weak) DKMeal *lastSelectedMeal;
+@property (nonatomic, strong) DKMeal *lastSelectedMeal;
 @property (nonatomic, strong) DKDay *day;
 @property (nonatomic) DKMealViewActionType actionType;
 
@@ -465,13 +465,13 @@ typedef enum DKMealViewActionType {
     UIActionSheet *actionSheet;
     
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        actionSheet = [[UIActionSheet alloc] initWithTitle:@""
+        actionSheet = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"Photo", nil)
                                                   delegate:self
                                          cancelButtonTitle:NSLocalizedString(@"Cancel", nil)
                                     destructiveButtonTitle:nil
                                          otherButtonTitles: NSLocalizedString(@"Choose existing photo", nil), nil];
     } else {
-        actionSheet = [[UIActionSheet alloc] initWithTitle:@""
+        actionSheet = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"Photo", nil)
                                                   delegate:self
                                          cancelButtonTitle:NSLocalizedString(@"Cancel", nil)
                                     destructiveButtonTitle:NSLocalizedString(@"Take a photo", nil)
@@ -605,7 +605,9 @@ typedef enum DKMealViewActionType {
     }];
     
     if ((self.isUpdateMode == NO) && (mealToSave)) {
-        if ([mealToSave.type isEqualToString:kMealTypeRegular] == YES) {
+        if (([mealToSave.type isEqualToString:kMealTypeRegular] == YES) ||
+            ([mealToSave.type isEqualToString:kMealTypeWork] == YES)) {
+            
             [self scheduleNextMeal];
         }
         
@@ -636,9 +638,9 @@ typedef enum DKMealViewActionType {
     
     [DKModel updateObjectsWithBlock:^{
         this.lastSelectedMeal.type = kMealTypeWork;
-        
-        [this commonSave];
     }];
+    
+    [self commonSave];
 }
 
 - (void)onSaveTap {
@@ -649,9 +651,9 @@ typedef enum DKMealViewActionType {
     
     [DKModel updateObjectsWithBlock:^{
         this.lastSelectedMeal.type = kMealTypeRegular;
-    
-        [this commonSave];
     }];
+    
+    [self commonSave];
 }
 
 - (void)onSaveShortTap {
@@ -662,8 +664,9 @@ typedef enum DKMealViewActionType {
     
     [DKModel updateObjectsWithBlock:^{
         this.lastSelectedMeal.type = kMealTypeSnack;
-        [this commonSave];
     }];
+    
+    [self commonSave];
 }
 
 - (void)onSaveDrinkTap {
@@ -678,9 +681,9 @@ typedef enum DKMealViewActionType {
     
     [DKModel updateObjectsWithBlock:^{
         this.lastSelectedMeal.type = kMealTypeDrink;
-    
-        [this commonSave];
     }];
+    
+    [self commonSave];
 }
 
 - (void)timePicker:(DKTimePicker *)timePicker didSelectTime:(NSDate *)time {
@@ -813,7 +816,7 @@ typedef enum DKMealViewActionType {
 }
 
 - (void)exportDay {
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@""
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"Send via...", nil)
                                                              delegate:self
                                                     cancelButtonTitle:NSLocalizedString(@"Cancel", nil)
                                                destructiveButtonTitle:nil
@@ -1194,7 +1197,6 @@ typedef enum DKMealViewActionType {
         }
     } else {
         if (textView == self.textView) {
-//            self.lastSelectedMeal.text = textView.text;
         }
     }
     
@@ -1425,8 +1427,8 @@ typedef enum DKMealViewActionType {
                               NSLocalizedString(@"Drink💧drink💧drink!", nil)];
     
 #ifdef TESTING
-    NSTimeInterval nextMealInterval1 = 40 * 60; // 00:40
-    NSTimeInterval nextMealInterval2 = 60 * 60; // 00:45
+    NSTimeInterval nextMealInterval1 = 05 * 60; // 00:40
+    NSTimeInterval nextMealInterval2 = 10 * 60; // 00:45
 #else
     NSTimeInterval nextMealInterval1 = 40 * 60; // 00:40
     NSTimeInterval nextMealInterval2 = 60 * 60; // 00:45
@@ -1465,16 +1467,16 @@ typedef enum DKMealViewActionType {
     
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     
-    UILocalNotification *localNotification2 = [[UILocalNotification alloc] init];
-    
-    localNotification2.fireDate = notificationTime2;
-    localNotification2.alertBody = bodyMessages[arc4random() % bodyMessages.count];
-    localNotification2.alertAction = NSLocalizedString(@"Add a glass of water", nil);
-    localNotification2.timeZone = [NSTimeZone localTimeZone];
-    localNotification2.soundName = @"notification.aiff";//UILocalNotificationDefaultSoundName;
-    localNotification2.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
-    
-    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification2];
+//    UILocalNotification *localNotification2 = [[UILocalNotification alloc] init];
+//    
+//    localNotification2.fireDate = notificationTime2;
+//    localNotification2.alertBody = bodyMessages[arc4random() % bodyMessages.count];
+//    localNotification2.alertAction = NSLocalizedString(@"Add a glass of water", nil);
+//    localNotification2.timeZone = [NSTimeZone localTimeZone];
+//    localNotification2.soundName = @"notification.aiff";//UILocalNotificationDefaultSoundName;
+//    localNotification2.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
+//    
+//    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification2];
 }
 
 - (void)scheduleNextMeal {
@@ -1506,13 +1508,17 @@ typedef enum DKMealViewActionType {
                               NSLocalizedString(@"Eat 🍅 eat 🍅 eat!", nil)];
     
 #ifdef TESTING
-    NSTimeInterval nextMealInterval1 = 60 * (60 + 60 + 45); // 02:55
-    NSTimeInterval nextMealInterval2 = 60 * (60 + 60 + 55); // 02:55
+    NSTimeInterval nextMealInterval1 = 60 * (10); // 02:55
+    NSTimeInterval nextMealInterval2 = 60 * (15); // 02:55
 
 #else
     NSTimeInterval nextMealInterval1 = 60 * (60 + 60 + 45); // 02:55
     NSTimeInterval nextMealInterval2 = 60 * (60 + 60 + 55); // 02:55
 #endif
+    
+    if ([lastMeal.type isEqualToString:kMealTypeWork]) {
+        nextMealInterval1 = 60 * (15);
+    }
 
     NSDate *notificationTime1 = [lastMeal.time dateByAddingTimeInterval:nextMealInterval1];
     NSDate *notificationTime2 = [lastMeal.time dateByAddingTimeInterval:nextMealInterval2];
@@ -1551,17 +1557,17 @@ typedef enum DKMealViewActionType {
     
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     
-    UILocalNotification* localNotification2 = [[UILocalNotification alloc] init];
-    
-    localNotification2.alertLaunchImage = appIconName;
-    localNotification2.fireDate = notificationTime2;
-    localNotification2.alertBody = bodyMessages[arc4random() % bodyMessages.count];
-    localNotification2.alertAction = NSLocalizedString(@"Add new meal", nil);
-    localNotification2.timeZone = [NSTimeZone localTimeZone];
-    localNotification2.soundName = @"notification.aiff";//UILocalNotificationDefaultSoundName;
-    localNotification2.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
-    
-    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification2];
+//    UILocalNotification* localNotification2 = [[UILocalNotification alloc] init];
+//    
+//    localNotification2.alertLaunchImage = appIconName;
+//    localNotification2.fireDate = notificationTime2;
+//    localNotification2.alertBody = bodyMessages[arc4random() % bodyMessages.count];
+//    localNotification2.alertAction = NSLocalizedString(@"Add new meal", nil);
+//    localNotification2.timeZone = [NSTimeZone localTimeZone];
+//    localNotification2.soundName = @"notification.aiff";//UILocalNotificationDefaultSoundName;
+//    localNotification2.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
+//    
+//    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification2];
 }
 
 - (BOOL)prefersStatusBarHidden {

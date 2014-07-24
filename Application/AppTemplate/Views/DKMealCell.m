@@ -63,7 +63,7 @@
 - (void)setIsCorrect:(BOOL)isCorrect {
     _isCorrect = isCorrect;
     
-    self.detailTextLabel.textColor = isCorrect ? [UIColor whiteColor] : [UIColor redColor];
+    self.detailTextLabel.textColor = isCorrect ? [UIColor whiteColor] : [UIColor colorWithRed:0.99 green:0.72 blue:0.33 alpha:1];
 }
 
 @end

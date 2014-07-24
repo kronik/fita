@@ -152,7 +152,9 @@
         
         index = [self.values indexOfObject:stringValue];
         
-        [self.timeView selectRowAtIndex:[self.values indexOfObject:stringValue] animated:NO];
+        if (index != NSNotFound) {
+            [self.timeView selectRowAtIndex:[self.values indexOfObject:stringValue] animated:NO];
+        }
     }
     
     _stringValue = stringValue;

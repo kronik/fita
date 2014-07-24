@@ -131,12 +131,13 @@
     }
     
     if ([[[UIDevice currentDevice] name] isEqualToString:@"iPhone Simulator"] == NO) {
+#ifndef TESTING
         [Flurry startSession:DKAppDelegateFlurryAppKey];
         [Flurry logPageView];
         [Flurry setSessionContinueSeconds:600];
         [Flurry setCrashReportingEnabled:YES];
-        
         [Crashlytics startWithAPIKey:@"acae1e61f9e2e9800669e34d9a16778891aae7c0"];
+#endif
     }
     
     //white status bar
@@ -209,13 +210,10 @@
     NSLog(@"Launched in background %d", UIApplicationStateBackground == application.applicationState);
     
     if (UIApplicationStateBackground != application.applicationState) {
-        UILocalNotification *locationNotification = launchOptions[UIApplicationLaunchOptionsLocalNotificationKey];
+        UILocalNotification *localNotification = launchOptions[UIApplicationLaunchOptionsLocalNotificationKey];
         
-        if (locationNotification) {
-            // Set icon badge number to zero
-            application.applicationIconBadgeNumber = 0;
-
-            [self addNewMeal];
+        if (localNotification) {
+            [self application:application didReceiveLocalNotification:localNotification];
         }
     }
 
@@ -296,11 +294,20 @@
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
     // TODO: Open corresponding week->day->meals and trigger +
-    
-    // Set icon badge number to zero
-    application.applicationIconBadgeNumber = 0;
-    
-    [self addNewMeal];
+
+    [self handleLocalNotification:notification];
+}
+
+- (void)handleLocalNotification:(UILocalNotification *)notification {
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+
+    if ([[UIApplication sharedApplication] applicationState] == UIApplicationStateActive) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"FitA"
+                                                        message:notification.alertBody
+                                                       delegate:nil cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 - (BOOL)application:(UIApplication *)application
@@ -338,15 +345,15 @@
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     
     // Clear badge and update installation, required for auto-incrementing badges.
-    if (application.applicationIconBadgeNumber != 0) {
-        application.applicationIconBadgeNumber = 0;
-    }
-    
-    // Clears out all notifications from Notification Center.
-    [[UIApplication sharedApplication] cancelAllLocalNotifications];
-    
-    application.applicationIconBadgeNumber = 1;
-    application.applicationIconBadgeNumber = 0;
+//    if (application.applicationIconBadgeNumber != 0) {
+//        application.applicationIconBadgeNumber = 0;
+//    }
+//    
+//    // Clears out all notifications from Notification Center.
+//    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+//    
+//    application.applicationIconBadgeNumber = 1;
+//    application.applicationIconBadgeNumber = 0;
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

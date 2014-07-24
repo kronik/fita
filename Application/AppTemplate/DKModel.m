@@ -180,8 +180,12 @@
 }
 
 + (NSMutableArray *)loadAllDaysByWeek:(DKWeek *)week {
-    NSPredicate *weekFilter = [NSPredicate predicateWithFormat:@"week = %@", week];
-    return [DKModel arrayFromRLMArray:[[DKDay objectsWithPredicate:weekFilter] arraySortedByProperty:@"seqNumber" ascending:NO]];
+    if (week) {
+        NSPredicate *weekFilter = [NSPredicate predicateWithFormat:@"week = %@", week];
+        return [DKModel arrayFromRLMArray:[[DKDay objectsWithPredicate:weekFilter] arraySortedByProperty:@"seqNumber" ascending:NO]];
+    } else {
+        return [NSMutableArray new];
+    }
 }
 
 + (NSMutableArray *)loadAllMealEntriesByDay:(DKDay *)day {
